@@ -3,6 +3,9 @@ import HomeView from '../views/HomeView.vue'
 import ComponentView  from '../views/ComponentView.vue'
 import ArrayView from '../views/ArrayView.vue'
 import TableView from '../views/TableView.vue'
+import ValuableView from '../views/ValuableView.vue'
+import ShartliOperatorView from '../views/ShartliOperatorView.vue'
+import ComponentSlotView from '../views/ComponentSlotView.vue'
 
 const routes = [
   {
@@ -11,6 +14,18 @@ const routes = [
     component: HomeView
   },
   
+  {
+    path: '/valuable',
+    name: 'valuableView',
+    component: ValuableView
+  },
+
+  {
+    path: '/shartli',
+    name: 'shartliOperatorView',
+    component: ShartliOperatorView
+  },
+
   {
     path: '/array',
     name: 'arrayView',
@@ -27,6 +42,12 @@ const routes = [
     path: '/component',
     name: 'сomponentView',
     component: ComponentView
+  },
+  
+  {
+    path: '/slot',
+    name: 'ComponentSlotView',
+    component: ComponentSlotView
   },
   
   {

@@ -6,9 +6,12 @@
       <div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
       <div class="list-group list-group-flush">
         <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/">Main</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/valuable">O`zgaruvchi</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/shartli">Shartli Operator</a>
         <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/array">Array</a>
         <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/table">Table</a>
         <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/component">Component</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/slot">Component Slot</a>
         <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/about">About</a>
       </div>
     </div>
