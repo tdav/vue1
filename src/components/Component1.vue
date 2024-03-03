@@ -7,13 +7,11 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'Component1',
-  props: {
-    msg: String
-  }
-}
+<script setup>
+
+import { ref } from 'vue';
+let msg = ref("comp msg")
+ 
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
