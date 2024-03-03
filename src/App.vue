@@ -7,7 +7,8 @@
       <div class="list-group list-group-flush">
         <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/">Main</a>
         <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/array">Array</a>
-        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/сomponent">Component</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/table">Table</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/component">Component</a>
         <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/about">About</a>
       </div>
     </div>

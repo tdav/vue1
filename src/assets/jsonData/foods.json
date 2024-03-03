@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "name": "Cteyk",
+        "description": "sjdhjsh sjdj",
+        "img": "/assets/images/Image.png",
+        "footType":"Coffee",
+        "price": 3000,
+        "count": 1
+    },
+    {
+        "id": 2,
+        "name": "Baku",
+        "description": "sjdhjsh sjdj",
+        "img": "/assets/images/Image1.png",
+        "footType":"Beverages",
+        "price": 16000,
+        "count": 1
+    },
+    {
+        "id": 3,
+        "name": "Lapshoy",
+        "description": "sjdhjsh sjdj",
+        "img": "/assets/images/Image2.png",
+        "footType":"Bread", 
+        "price": 37000,
+        "count": 1
+    },
+    {
+        "id": 4,
+        "name": "Lag'mon so'rva",
+        "description": "sjdhjsh sjdj",
+        "img": "/assets/images/Placeholder.png",
+        "footType":"Appetizer",
+        "price": 28000,
+        "count": 1
+    },
+    {
+        "id": 5,
+        "name": "Sho'rva",
+        "description": "sjdhjsh sjdj",
+        "img": "/assets/images/Image4.png",
+        "footType":"Snack",
+        "price": 27000,
+        "count": 1
+    },
+    {
+        "id": 6,
+        "name": "Karam sho'rva",
+        "description": "sjdhjsh sjdj",
+        "img": "/assets/images/Placeholder8.png",
+        "footType":"Coffee",
+        "price": 14000,
+        "count": 1
+    },
+    {
+        "id": 7,
+        "name": "Tuxum ovqat",
+        "description": "sjdhjsh sjdj",
+        "img": "/assets/images/Placeholder2.png",
+        "footType":"Beverages",
+        "price": 31500,
+        "count": 1
+    },
+    {
+        "id": 8,
+        "name": "Baliq go'shtli osh",
+        "description": "sjdhjsh sjdj",
+        "img": "/assets/images/Placeholder3.png",
+        "footType":"Bread", 
+        "price": 39000,
+        "count": 1
+    },
+    {
+        "id": 9,
+        "name": "Baliq go'shtli salat",
+        "description": "sjdhjsh sjdj",
+        "img": "/assets/images/Placeholder4.png",
+        "footType":"Appetizer",
+        "price": 40000,
+        "count": 1
+    },
+    {
+        "id": 10,
+        "name": "Gruchgo'ja",
+        "description": "sjdhjsh sjdj",
+        "img": "/assets/images/Placeholder5.png",
+        "footType":"Snack",
+        "price": 20000,
+        "count": 1
+    },
+    {
+        "id": 11,
+        "name": "kechonka",
+        "description": "sjdhjsh sjdj",
+        "img": "/assets/images/Placeholder6.png",
+        "footType":"Coffee",
+        "price": 39000,
+        "count": 1
+    },
+    {
+        "id": 12,
+        "name": "go'shtli sho'rva",
+        "description": "sjdhjsh sjdj",
+        "img": "/assets/images/Placeholder7.png",
+        "footType":"Beverages",
+        "price": 9000,
+        "count": 1
+    }
+]
