@@ -6,6 +6,7 @@ import TableView from '../views/TableView.vue'
 import ValuableView from '../views/ValuableView.vue'
 import ShartliOperatorView from '../views/ShartliOperatorView.vue'
 import ComponentSlotView from '../views/ComponentSlotView.vue'
+import New from '../views/New.vue'
 
 const routes = [
   {
@@ -48,6 +49,12 @@ const routes = [
     path: '/slot',
     name: 'ComponentSlotView',
     component: ComponentSlotView
+  },
+
+  {
+    path: '/New',
+    name: 'New',
+    component: New
   },
   
   {

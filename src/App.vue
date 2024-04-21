@@ -13,6 +13,7 @@
         <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/component">5 - Component</a>
         <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/slot">6 - Component Slot</a>
         <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/about">About</a>
+        <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/New">My test</a>
       </div>
     </div>
 
