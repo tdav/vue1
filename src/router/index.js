@@ -6,6 +6,7 @@ import TableView from '../views/TableView.vue'
 import ValuableView from '../views/ValuableView.vue'
 import ShartliOperatorView from '../views/ShartliOperatorView.vue'
 import ComponentSlotView from '../views/ComponentSlotView.vue'
+import DavronV7 from '../views/DavronV7.vue'
 
 const routes = [
   {
@@ -14,6 +15,12 @@ const routes = [
     component: HomeView
   },
   
+  {
+    path: '/DavronV7',
+    name: 'DavronV7',
+    component: DavronV7
+  },
+
   {
     path: '/valuable',
     name: 'valuableView',
