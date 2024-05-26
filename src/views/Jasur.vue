@@ -62,15 +62,17 @@
                     <th scope="col">Discription</th>
                     <th scope="col">Portsa</th>
                     <th scope="col">Adres</th>
+                    <th scope="col">X</th>
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="it in jasur" :key="it.No">    
+                <tr v-for="it in jasur" :key="it.No" >    
                     <td class="table-primary">{{it.No}}</td>
                     <td class="table-primary">{{it.name}}</td>
                     <td class="table-primary">{{it.description}}</td>
                     <td class="table-primary">{{it.Portsa}}</td>
                     <td class="table-primary">{{it.Adres}}</td>
+                    <td class="table-primary"> <button class="btn btn-danger" @click="Del(it)">X</button></td>
                 </tr>
             </tbody>
         </table>
@@ -125,6 +127,14 @@ let jasur =ref([])
 function saqlash() {
     jasur.value.push( it.value);
     it = ref({});
+}
+
+// function Del(it) {
+//     jasur.value.pop(it.value)
+// }
+
+function Del(it) {
+    jasur.value.pop(it);
 }
 // /3
 </script>
