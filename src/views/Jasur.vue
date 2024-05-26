@@ -135,10 +135,6 @@ function saqlash() {
     it = ref({});
 }
 
-// function Del(it) {
-//     jasur.value.pop(it.value)
-// }
-
 function Del(it) {
     jasur.value.pop(it);
 }
