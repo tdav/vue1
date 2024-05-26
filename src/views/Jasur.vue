@@ -95,14 +95,9 @@ p{
 
 <script setup>
 
-// 1
 import { ref } from 'vue';
 
 let My = ref("My Page")
-// /1
-
-// 2
-
 let aaa = ref(false)
 
 function ocho() {
@@ -112,7 +107,6 @@ function ocho() {
 function yopo() {
     this.aaa = false
 }
-
 
 
 let bbb = ref(false)
