@@ -7,7 +7,7 @@
 
 
     <p v-if="isShow">
-    <h2>MENU</h2>
+    MENU
     </p>
 
 
