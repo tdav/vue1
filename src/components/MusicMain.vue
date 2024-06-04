@@ -1,9 +1,9 @@
 <template>
-    <div style="overflow: auto; max-height: 100vh;">
+    <div style="background-color: rgb(28 28 28); color: white;">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <button class="btn btn-outline-darck" type="submit" style="height: 50px; width: 50px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: white;" fill="currentColor"
                         class="bi bi-chevron-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
@@ -21,9 +21,10 @@
                         <div class="btn-group dropend">
                             <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
                                 aria-expanded="false"
-                                style="background-color: white; color: black; border: none; width: 80px;">Home
+                                style="background-color: rgb(28 28 28); color: white; border: none; width: 80px;">
+                                <p class="me-3" style="color:  rgb(80 80 80);">Home</p>
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" style="color: white;">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li>
@@ -33,11 +34,13 @@
                             </ul>
                         </div>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Popular Artist </a>
+                            <a style="color: white;" class="nav-link active" aria-current="page" href="#">Popular Artist
+                            </a>
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" style="width: 318px;" placeholder="Search"
+                        <input class="form-control me-2" type="search"
+                            style="width: 318px; background-color: transparent;" placeholder="Search"
                             aria-label="Search">
                         <button class="btn btn-outline-darck" type="submit" style="height: 50px; width: 50px;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -57,12 +60,12 @@
                     <h1 style="font-size: 60px;">Ed Sheeran</h1>
                     <p class="d-block">82,736,050 monthly listeners</p>
                     <button class="butt dlfcbh me-2">PLAY</button>
-                    <button class="butt hdsvck"  @click="Kursatish()">
-                        <svg v-if="isShow" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                    <button class="butt hdsvck" @click="Kursatish()">
+                        <svg v-if="isShow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check2" viewBox="0 0 16 16">
                             <path
                                 d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
-                        </svg>FOLLOWING
+                        </svg>FALOVING
                     </button>
                 </div>
                 <div class="col-md-6 col-sm-12 uhsgnod">
@@ -104,14 +107,20 @@
                                 <p class="pt-3">3:27</p>
                             </div>
                             <div class="col-1" style="text-align: center">
-                                <p class="pt-3">$</p>
+                                <p class="pt-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                    </svg>
+                                </p>
                             </div>
                             <div class="col-1" style="text-align: center">
                                 <p class="pt-3">...</p>
                             </div>
                         </div>
                         <hr class="m-1">
-                        <div type="button"  class="row" style=" height: 55px; width: 100%;">
+                        <div type="button" class="row" style=" height: 55px; width: 100%;">
                             <img class="col-1" src="../assets/img/Rectangle2.png" alt="">
                             <div class="col-4">
                                 <p class="pt-3">Perfect</p>
@@ -123,14 +132,20 @@
                                 <p class="pt-3">4:23</p>
                             </div>
                             <div class="col-1" style="text-align: center">
-                                <p class="pt-3">$</p>
+                                <p class="pt-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                    </svg>
+                                </p>
                             </div>
                             <div class="col-1" style="text-align: center">
                                 <p class="pt-3">...</p>
                             </div>
                         </div>
                         <hr class="m-1">
-                        <div type="button"  class="row" style=" height: 55px; width: 100%;">
+                        <div type="button" class="row" style=" height: 55px; width: 100%;">
                             <img class="col-1" src="../assets/img/Rectangle1.png" alt="">
                             <div class="col-4">
                                 <p class="pt-3">Bad Habits</p>
@@ -142,14 +157,20 @@
                                 <p class="pt-3">3:50</p>
                             </div>
                             <div class="col-1" style="text-align: center">
-                                <p class="pt-3">$</p>
+                                <p class="pt-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                    </svg>
+                                </p>
                             </div>
                             <div class="col-1" style="text-align: center">
                                 <p class="pt-3">...</p>
                             </div>
                         </div>
                         <hr class="m-1">
-                        <div  type="button"  class="row" style=" height: 55px; width: 100%;">
+                        <div type="button" class="row" style=" height: 55px; width: 100%;">
                             <img class="col-1" src="../assets/img/Rectangle2.png" alt="">
                             <div class="col-4" style="">
                                 <p class="pt-3">Shape of You</p>
@@ -161,13 +182,22 @@
                                 <p class="pt-3">3:53</p>
                             </div>
                             <div class="col-1" style="text-align: center">
-                                <p class="pt-3">$</p>
+                                <p class="pt-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                    </svg>
+                                </p>
                             </div>
                             <div class="col-1" style="text-align: center">
                                 <p class="pt-3">...</p>
                             </div>
                         </div>
                         <hr class="m-1">
+                        <div v-if="seeAll">
+                            ;oihwrdgvf;pkonqrepadibnpewoiraudnvpoqcenslj
+                        </div>
                     </div>
                 </div>
             </div>
@@ -177,23 +207,29 @@
                 <h4 style="display: inline-block;">Popular Releases</h4>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-2">
+                        <div class="col-2" style="text-align: center;">
+                            <img src="../assets/img/Rectangle3.png" alt="" class="kdscb">
+                            <p>PERU</p>
+                        </div>
+                        <div class="col-2" style="text-align: center;">
                             <img src="../assets/img/Rectangle1.png" alt="" class="kdscb">
+                            <p>SHIVER</p>
                         </div>
-                        <div class="col-2">
-                            <img src="../assets/img/Rectangle2.png" alt=""  class="kdscb">
+                        <div class="col-2" style="text-align: center;">
+                            <img src="../assets/img/Rectangle2.png" alt="" class="kdscb">
+                            <p>PERFECt</p>
                         </div>
-                        <div class="col-2">
-                            <img src="../assets/img/Rectangle1.png" alt=""  class="kdscb">
+                        <div class="col-2" style="text-align: center;">
+                            <img src="../assets/img/Rectangle4.png" alt="" class="kdscb">
+                            <p>xMAN</p>
                         </div>
-                        <div class="col-2">
-                            <img src="../assets/img/Rectangle2.png" alt=""  class="kdscb">
+                        <div class="col-2" style="text-align: center;">
+                            <img src="../assets/img/Rectangle5.png" alt="" class="kdscb">
+                            <p>oNEW</p>
                         </div>
-                        <div class="col-2">
-                            <img src="../assets/img/Rectangle1.png" alt=""  class="kdscb">
-                        </div>
-                        <div class="col-2">
-                            <img src="../assets/img/Rectangle2.png" alt=""  class="kdscb">
+                        <div class="col-2" style="text-align: center;">
+                            <img src="../assets/img/Rectangle6.png" alt="" class="kdscb">
+                            <p>X</p>
                         </div>
                     </div>
                 </div>
@@ -241,8 +277,9 @@
     height: 100px;
     width: 200px;
 }
-.kdscb{
-    height: 100%;
+
+.kdscb {
+    height: 75%;
     width: 100%;
     border-radius: 35px
 }
@@ -254,8 +291,9 @@ import { ref } from 'vue';
 let isShow = ref(false)
 
 function Kursatish() {
-    this.isShow = true
+    this.isShow = true;
 }
 
+let seeAll = ref(false)
 
 </script>
