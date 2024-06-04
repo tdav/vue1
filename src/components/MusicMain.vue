@@ -2,7 +2,7 @@
     <div style="background-color: rgb(28 28 28); color: white;">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <button class="btn btn-outline-darck" type="submit" style="height: 50px; width: 50px;">
+                <button class="btn btn-outline-darck" type="submit" style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: white;" fill="currentColor"
                         class="bi bi-chevron-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -40,9 +40,9 @@
                     </ul>
                     <form class="d-flex">
                         <input class="form-control me-2" type="search"
-                            style="width: 318px; background-color: transparent;" placeholder="Search"
+                            style="width: 318px; background-color: #303030; border-radius: 15px; border: 1px solid #303030" placeholder="Search"
                             aria-label="Search">
-                        <button class="btn btn-outline-darck" type="submit" style="height: 50px; width: 50px;">
+                        <button class="btn btn-outline-darck" type="submit" style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-bell-fill" viewBox="0 0 16 16">
                                 <path
@@ -95,8 +95,8 @@
                         </div>
                     </div>
                     <div class="col-11">
-                        <div type="button" class="row" style=" height: 55px; width: 100%;">
-                            <img class="col-1" src="../assets/img/Rectangle1.png" alt="">
+                        <div type="button" class="row" style=" height: 50px; width: 100%;">
+                            <img class="col-1 uewiu" src="../assets/img/Rectangle1.png" alt="">
                             <div class="col-4">
                                 <p class="pt-3">Shiver</p>
                             </div>
@@ -121,7 +121,7 @@
                         </div>
                         <hr class="m-1">
                         <div type="button" class="row" style=" height: 55px; width: 100%;">
-                            <img class="col-1" src="../assets/img/Rectangle2.png" alt="">
+                            <img class="col-1 uewiu" src="../assets/img/Rectangle2.png" alt="">
                             <div class="col-4">
                                 <p class="pt-3">Perfect</p>
                             </div>
@@ -146,7 +146,7 @@
                         </div>
                         <hr class="m-1">
                         <div type="button" class="row" style=" height: 55px; width: 100%;">
-                            <img class="col-1" src="../assets/img/Rectangle1.png" alt="">
+                            <img class="col-1 uewiu" src="../assets/img/Rectangle1.png" alt="">
                             <div class="col-4">
                                 <p class="pt-3">Bad Habits</p>
                             </div>
@@ -171,7 +171,7 @@
                         </div>
                         <hr class="m-1">
                         <div type="button" class="row" style=" height: 55px; width: 100%;">
-                            <img class="col-1" src="../assets/img/Rectangle2.png" alt="">
+                            <img class="col-1 uewiu" src="../assets/img/Rectangle2.png" alt="">
                             <div class="col-4" style="">
                                 <p class="pt-3">Shape of You</p>
                             </div>
@@ -238,6 +238,11 @@
     </div>
 </template>
 <style>
+.uewiu{
+    padding-top: 5px;
+    height: 85%;
+    width: 100%;
+}
 .dlfcbh {
     border-radius: 40px;
     width: 80px;
@@ -258,7 +263,7 @@
 }
 
 .orfi {
-    height: 56.6vh;
+    height: 50vh;
     width: 90%;
 }
 
@@ -268,7 +273,7 @@
 
 .uhsgno {
     background: url("../assets/img/image.png");
-    height: 56.6vh;
+    height: 50vh;
     width: 100%;
     border-radius: 16px;
 }
