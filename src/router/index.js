@@ -9,6 +9,8 @@ import ComponentSlotView from '../views/ComponentSlotView.vue'
 import DavronV7 from '../views/DavronV7.vue'
 import Jasur from '../views/Jasur.vue'
 import newjasur7 from '../views/newjasur7.vue'
+import Musicium from '../views/Musicium.vue'
+import jasurMusicumAsosiy from '../views/jasurMusicumAsosiy.vue'
 
 const routes = [
   {
@@ -21,6 +23,18 @@ const routes = [
     path: '/DavronV7',
     name: 'DavronV7',
     component: DavronV7
+  },
+  
+  {
+    path: '/jasurMusicumAsosiy',
+    name: 'jasurMusicumAsosiy',
+    component: jasurMusicumAsosiy
+  },
+  
+  {
+    path: '/Musicium',
+    name: 'Musicium',
+    component: Musicium
   },
 
   {
