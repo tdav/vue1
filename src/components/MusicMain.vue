@@ -1,5 +1,5 @@
 <template>
-    <div style="background-color: rgb(28 28 28); color: white;">
+    <div style="background-color: rgb(28 28 28); color: white; overflow-x: auto; max-height: 100vh;">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <button class="btn btn-outline-darck" type="submit" style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
@@ -39,8 +39,8 @@
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search"
-                            style="width: 318px; background-color: #303030; border-radius: 15px; border: 1px solid #303030" placeholder="Search"
+                        <input class="form-control duyvyuc me-2" type="search"
+                            style="width: 318px; background-color: #303030; color: white; border-radius: 15px; border: 1px solid #303030" placeholder="Search"
                             aria-label="Search">
                         <button class="btn btn-outline-darck" type="submit" style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
