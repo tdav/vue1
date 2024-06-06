@@ -2,9 +2,10 @@
     <div style="background-color: rgb(28 28 28); color: white; overflow-x: auto; max-height: 100vh;">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <button class="btn btn-outline-darck" type="submit" style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: white;" fill="currentColor"
-                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                <button class="btn btn-outline-darck" type="submit"
+                    style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: white;"
+                        fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
                     </svg>
@@ -40,11 +41,12 @@
                     </ul>
                     <form class="d-flex">
                         <input class="form-control duyvyuc me-2" type="search"
-                            style="width: 318px; background-color: #303030; color: white; border-radius: 15px; border: 1px solid #303030" placeholder="Search"
-                            aria-label="Search">
-                        <button class="btn btn-outline-darck" type="submit" style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-bell-fill" viewBox="0 0 16 16">
+                            style="width: 318px; background-color: #303030; color: white; border-radius: 15px; border: 1px solid #303030"
+                            placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-darck" type="submit"
+                            style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
+                            <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
                                 <path
                                     d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
                             </svg>
@@ -76,7 +78,7 @@
         <div class="px-4">
             <div>
                 <h4 style="display: inline-block;">Popular</h4>
-                <a style="display: inline-block; float: inline-end; color: #1DB954;">See All</a>
+                <a class="mt-2" style="display: inline-block; float: inline-end; color: #1DB954;">See All</a>
             </div>
             <div class="container">
                 <div class="row">
@@ -109,9 +111,9 @@
                             <div class="col-1" style="text-align: center">
                                 <p class="pt-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-heart" viewBox="0 0 16 16">
-                                        <path
-                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                        class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
                                     </svg>
                                 </p>
                             </div>
@@ -134,9 +136,9 @@
                             <div class="col-1" style="text-align: center">
                                 <p class="pt-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-heart" viewBox="0 0 16 16">
-                                        <path
-                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                        class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
                                     </svg>
                                 </p>
                             </div>
@@ -156,13 +158,15 @@
                             <div class="col-2" style="text-align: center">
                                 <p class="pt-3">3:50</p>
                             </div>
-                            <div class="col-1" style="text-align: center">
-                                <p class="pt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-heart" viewBox="0 0 16 16">
-                                        <path
-                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-                                    </svg>
+                            <div class="col-1 p-0" style="text-align: center;">
+                                <p class="pt-2">
+                                    <button @click="Toggle1()" id="btnh1" class="btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                        </svg>
+                                    </button>
                                 </p>
                             </div>
                             <div class="col-1" style="text-align: center">
@@ -184,9 +188,9 @@
                             <div class="col-1" style="text-align: center">
                                 <p class="pt-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-heart" viewBox="0 0 16 16">
-                                        <path
-                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                        class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
                                     </svg>
                                 </p>
                             </div>
@@ -194,7 +198,6 @@
                                 <p class="pt-3">...</p>
                             </div>
                         </div>
-                        <hr class="m-1">
                         <div v-if="seeAll">
                             ;oihwrdgvf;pkonqrepadibnpewoiraudnvpoqcenslj
                         </div>
@@ -238,11 +241,24 @@
     </div>
 </template>
 <style>
-.uewiu{
+#btnh1{
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    color: white
+}
+#btnh1:hover{
+    color: red;
+}
+#btnh1:active{
+    border: none;
+}
+.uewiu {
     padding-top: 5px;
     height: 85%;
     width: 100%;
 }
+
 .dlfcbh {
     border-radius: 40px;
     width: 80px;
@@ -300,5 +316,15 @@ function Kursatish() {
 }
 
 let seeAll = ref(false)
+
+var btnvar1 = document.getElementById('btnh1');
+
+function Toggle1() {
+      if (btnh1.value === 'red') {
+        btnh1.value = '';
+      } else {
+        btnh1.value = 'red';
+      }
+    }
 
 </script>
