@@ -90,7 +90,7 @@
         <div class="px-4">
             <div>
                 <h4 style="display: inline-block;">Popular</h4>
-                <a class="mt-2" style="display: inline-block; float: inline-end; color: #1DB954;">See All</a>
+                <a class="mt-2" style="display: inline-block; float: inline-end; color: #1DB954;" href="https://www.youtube.com/">See All</a>
             </div>
             <div class="container">
                 <div class="row">
