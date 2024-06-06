@@ -1,10 +1,10 @@
 <template>
     <div class="container-fluid p-0">
         <div class="row p-0">
-            <div class="col-2">
+            <div class="col-2 p-0">
                 <MusicLeft></MusicLeft>
             </div>
-            <div class="col-8">
+            <div class="col-8 p-0">
                 <MusicMain></MusicMain>
             </div>
             <div class="col-2">
