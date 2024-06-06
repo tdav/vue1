@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid bottomnavbar">
         <div class="row range">
-            <input type="range" min="0" max="100" value="0" class="slider range kbk p-0">
+            <input type="range" min="0" max="1000" value="0" class="slider range kbk p-0">
         </div>
         <div class="row">
             <div class="col-3 p-3" style="height: 100vh;">
@@ -95,22 +95,6 @@
         </div>
     </div>
 
-    <!-- <div class="valume-slider">
-        <div class="volume-icon">
-            <span class="material-symbols-outlined">
-                volume-down
-            </span>
-        </div>
-        <div class="range-slider">
-            <input 
-            type="range"
-            min="0"
-            max="100"
-            class="slider"
-            >
-            <div class="progress"></div>
-        </div>
-    </div> -->
 </template>
 
 
