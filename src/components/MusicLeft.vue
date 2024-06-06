@@ -14,6 +14,8 @@
                 <img src="../assets/img/discover.png" alt="2" style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
               <p>Discover</p>
               </a>
+
+
               
               <a href="#" class="list-group-item list-group-item-action cvbn">
                 <img src="../assets/img/radio.png" alt="3" style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
@@ -21,9 +23,10 @@
               </a>
               
               <a href="#" class="list-group-item list-group-item-action cvbn">
-                <img src="../assets/img/albums.png" alt="4" style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
+               <img src="../assets/img/albums.png" alt="4" style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
               <p>Albums</p>
               </a>
+
               
               <a href="#" class="list-group-item list-group-item-action cvbn">
                 <img src="../assets/img/podcast.png" alt="5" style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
