@@ -1,8 +1,7 @@
 <template>
     <div class="container-fluid bottomnavbar">
         <div class="row range">
-            <input type="range" min="0"
-                max="100" value="0" class="slider range kbk p-0">
+            <input type="range" min="0" max="100" value="0" class="slider range kbk p-0">
         </div>
         <div class="row">
             <div class="col-3 p-3" style="height: 100vh;">
@@ -69,23 +68,25 @@
                 <!-- repet -->
             </div>
             <div class="col-3 p-3" style="height: 100vh;">
-                <p class="mt-3" style="font-size: 13px; color: white;">00:00/04:00</p>
-                <svg style="float: right; color: white; " xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                    fill="currentColor" class="bi bi-chat-left-heart mt-2 me-2 ms-4" viewBox="0 0 16 16">
-                    <path
-                        d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                    <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
-                </svg>
-                <input style="float: right;" type="range" min="0" max="100" value="0" class="slider mt-3 mb-3">
-                <svg style="float: right; color: white;" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                    fill="currentColor" class="bi bi-volume-up mt-2 me-2" viewBox="0 0 16 16">
-                    <path
-                        d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z" />
-                    <path
-                        d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z" />
-                    <path
-                        d="M10.025 8a4.5 4.5 0 0 1-1.318 3.182L8 10.475A3.5 3.5 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.5 4.5 0 0 1 10.025 8M7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11" />
-                </svg>
+                <div class="pt-1 " style="float: right;">
+                    <svg style="float: right; color: white; " xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                        fill="currentColor" class="bi bi-chat-left-heart mt-2 me-2 ms-4" viewBox="0 0 16 16">
+                        <path
+                            d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                        <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+                    </svg>
+                    <input style="float: right;" type="range" min="0" max="100" value="0" class="slider mt-3 mb-3">
+                    <svg style="float: right; color: white;" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                        fill="currentColor" class="bi bi-volume-up mt-2 me-2" viewBox="0 0 16 16">
+                        <path
+                            d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z" />
+                        <path
+                            d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z" />
+                        <path
+                            d="M10.025 8a4.5 4.5 0 0 1-1.318 3.182L8 10.475A3.5 3.5 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.5 4.5 0 0 1 10.025 8M7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11" />
+                    </svg>
+                </div>
+                <p class="mt-3 me-2" style="font-size: 13px; color: white; float: right;">00:00/04:00</p>
             </div>
         </div>
     </div>
@@ -115,7 +116,7 @@
 </script>
 
 <style scoped>
-.range::-webkit-slider-thumb{
+.range::-webkit-slider-thumb {
     -webkit-appearance: none;
     box-shadow: -100% 0 0 100% white;
     width: 5px;
@@ -123,18 +124,19 @@
     background-color: white;
     border-radius: 50px;
 }
+
 .kbk {
     width: 100%;
     appearance: none;
     height: 5px;
-    background-color: #777777d2;
+    background-color: #9c9c9cd2;
 }
 
 .bottomnavbar {
     height: 100px;
     position: fixed;
     bottom: 0;
-    background-color: #3a3a3ac4;
+    background-color: #3a3a3a3f;
     backdrop-filter: blur(15px);
 }
 </style>

@@ -109,12 +109,14 @@
                                 <p class="pt-3">3:27</p>
                             </div>
                             <div class="col-1" style="text-align: center">
-                                <p class="pt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
-                                    </svg>
+                                <p class="pt-2">
+                                    <button @click="Toggle1()" id="btnh1" class="btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                        </svg>
+                                    </button>
                                 </p>
                             </div>
                             <div class="col-1" style="text-align: center">
@@ -134,12 +136,14 @@
                                 <p class="pt-3">4:23</p>
                             </div>
                             <div class="col-1" style="text-align: center">
-                                <p class="pt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
-                                    </svg>
+                                <p class="pt-2">
+                                    <button @click="Toggle1()" id="btnh1" class="btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                        </svg>
+                                    </button>
                                 </p>
                             </div>
                             <div class="col-1" style="text-align: center">
@@ -186,12 +190,14 @@
                                 <p class="pt-3">3:53</p>
                             </div>
                             <div class="col-1" style="text-align: center">
-                                <p class="pt-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
-                                    </svg>
+                                <p class="pt-2">
+                                    <button @click="Toggle1()" id="btnh1" class="btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                        </svg>
+                                    </button>
                                 </p>
                             </div>
                             <div class="col-1" style="text-align: center">
