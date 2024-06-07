@@ -2,7 +2,6 @@
     <div class="container-fluid p-0">
         <div class="row ">
             <div class="col-2">
-                
                 <MusicLeft></MusicLeft>
             </div>
             <div class="col-8">
