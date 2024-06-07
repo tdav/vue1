@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid p-0 qwer" style="background-color: #212120; height: 100vh;">
+    <div class="container-fluid p-0 qwer" style="background-color: #212120; height: 100vh; overflow-x: auto;">
             <div class="p-4 pb-3">
               <img src="../assets/img/Logo.png" alt="logo" class="img-logo123 p-0">
             </div>
