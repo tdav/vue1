@@ -62,13 +62,18 @@
                     <h1 style="font-size: 60px;">Ed Sheeran</h1>
                     <p class="d-block">82,736,050 monthly listeners</p>
                     <button class="butt dlfcbh me-2">PLAY</button>
-                    <button class="butt hdsvck" @click="Kursatish()">
-                        <svg v-if="isShow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-check2" viewBox="0 0 16 16">
-                            <path
-                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
-                        </svg>FALOVING
+                    <!-- kenco -->
+                    <!-- <button class="butt hdsvck">
+                        FALOVING
                     </button>
+                    <button class="butt hdsvckk">
+                        FALOVING
+                    </button> -->
+
+                    <button class="butt" :class="{ 'hdsvck': isPlayin, 'hdsvckk': !isPlayin}" @click="toggleButtons()">
+                        FOLLOW
+                    </button>
+                    <!-- kenco -->
                 </div>
                 <div class="col-md-6 col-sm-12 uhsgnod">
                     <img class="orfi" src="../assets/img/fococlipping-20220120-2192 2.png" alt="">
@@ -248,18 +253,21 @@
 </template>
 
 <style>
-#btnh1{
+#btnh1 {
     width: 100%;
     padding: 0px;
     text-align: center;
     color: white
 }
-#btnh1:hover{
+
+#btnh1:hover {
     color: red;
 }
-#btnh1:active{
+
+#btnh1:active {
     border: none;
 }
+
 .uewiu {
     padding-top: 5px;
     height: 85%;
@@ -272,6 +280,13 @@
     border: 1px solid #1DB954;
     background-color: #1DB954;
     color: white;
+}
+
+.hdsvckk {
+    border-radius: 40px;
+    border: 1px solid red;
+    color: rgb(255, 255, 255);
+    background-color: red;
 }
 
 .hdsvck {
@@ -316,22 +331,38 @@
 <script setup>
 import { ref } from 'vue';
 
-let isShow = ref(false)
-
-function Kursatish() {
-    this.isShow = true;
-}
-
 let seeAll = ref(false)
 
 var btnvar1 = document.getElementById('btnh1');
 
 function Toggle1() {
-      if (btnh1.value === 'red') {
+    if (btnh1.value === 'red') {
         btnh1.value = '';
-      } else {
+    } else {
         btnh1.value = 'red';
-      }
     }
+}
 
+const isyurak = ref(false);
+
+function yurakIcons() {
+    isYurak.value = !isYurak.value;
+}
+
+const isPlaying = ref(false);
+
+function toggleIcons() {
+    isPlaying.value = !isPlaying.value;
+}
+
+const isPlayin = ref(false);
+
+function toggleButtons() {
+  isPlayin.value = !isPlayin.value;
+//   if (isPlaying.value) {
+//     buttonText.value = 'FOLLOWING';
+//   } else {
+//     buttonText.value = 'FOLLOW';
+//   }
+}
 </script>
