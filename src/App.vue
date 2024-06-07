@@ -22,6 +22,7 @@
           <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/Jasur">7 - Jasur</a>
           <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/newjasur7">7 -
             newjasur7</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/Music">Music</a>
           <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/about">About</a>
         </div>
       </div>
