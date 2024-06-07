@@ -60,7 +60,14 @@
                 <div class="col-md-6 col-sm-12 p-5 immm">
                     <p>Verified Artist</p>
                     <h1 style="font-size: 60px;">Ed Sheeran</h1>
-                    <p class="d-block">82,736,050 monthly listeners</p>
+                    <p class="d-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-headphones mb-2" viewBox="0 0 16 16">
+                            <path
+                                d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5" />
+                        </svg>
+                        82,736,050 monthly listeners
+                    </p>
                     <button class="butt dlfcbh me-2">PLAY</button>
                     <!-- kenco -->
                     <!-- <button class="butt hdsvck">
@@ -70,7 +77,7 @@
                         FALOVING
                     </button> -->
 
-                    <button class="butt" :class="{ 'hdsvck': isPlayin, 'hdsvckk': !isPlayin}" @click="toggleButtons()">
+                    <button class="butt" :class="{ 'hdsvck': isPlayin, 'hdsvckk': !isPlayin }" @click="toggleButtons()">
                         FOLLOW
                     </button>
                     <!-- kenco -->
@@ -108,9 +115,22 @@
                                 <p class="pt-3">Shiver</p>
                             </div>
                             <div class="col-3">
-                                <p class="pt-3">460,228,511</p>
+                                <p class="pt-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-headphones mb-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5" />
+                                    </svg>
+                                    460,228,511
+                                </p>
                             </div>
                             <div class="col-2" style="text-align: center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-clock mb-1 me-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                                </svg>
                                 <p class="pt-3">3:27</p>
                             </div>
                             <div class="col-1" style="text-align: center">
@@ -135,9 +155,23 @@
                                 <p class="pt-3">Perfect</p>
                             </div>
                             <div class="col-3">
-                                <p class="pt-3">1,952,015,881</p>
+                                <p class="pt-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-headphones mb-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5" />
+                                    </svg>
+                                    1,952,015,881
+
+                                </p>
                             </div>
                             <div class="col-2" style="text-align: center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-clock mb-1 me-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                                </svg>
                                 <p class="pt-3">4:23</p>
                             </div>
                             <div class="col-1" style="text-align: center">
@@ -162,9 +196,22 @@
                                 <p class="pt-3">Bad Habits</p>
                             </div>
                             <div class="col-3">
-                                <p class="pt-3">850,545,959</p>
+                                <p class="pt-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-headphones mb-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5" />
+                                    </svg>
+                                    850,545,959
+                                </p>
                             </div>
                             <div class="col-2" style="text-align: center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-clock mb-1 me-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                                </svg>
                                 <p class="pt-3">3:50</p>
                             </div>
                             <div class="col-1 p-0" style="text-align: center;">
@@ -189,9 +236,22 @@
                                 <p class="pt-3">Shape of You</p>
                             </div>
                             <div class="col-3">
-                                <p class="pt-3">3,024,067,930</p>
+                                <p class="pt-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-headphones mb-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5" />
+                                    </svg>
+                                    3,024,067,930
+                                </p>
                             </div>
                             <div class="col-2" style="text-align: center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-clock mb-1 me-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                                </svg>
                                 <p class="pt-3">3:53</p>
                             </div>
                             <div class="col-1" style="text-align: center">
@@ -358,11 +418,11 @@ function toggleIcons() {
 const isPlayin = ref(false);
 
 function toggleButtons() {
-  isPlayin.value = !isPlayin.value;
-//   if (isPlaying.value) {
-//     buttonText.value = 'FOLLOWING';
-//   } else {
-//     buttonText.value = 'FOLLOW';
-//   }
+    isPlayin.value = !isPlayin.value;
+    //   if (isPlaying.value) {
+    //     buttonText.value = 'FOLLOWING';
+    //   } else {
+    //     buttonText.value = 'FOLLOW';
+    //   }
 }
 </script>
