@@ -1,6 +1,6 @@
 <template>
-    <div class="container-fluid p-0">
-        <div class="row ">
+    <div class="container-fluid p-0" style="background-color: #313131;">
+        <div class="row p-0">
             <div class="col-2">
                 <MusicLeft></MusicLeft>
             </div>
