@@ -73,6 +73,7 @@
                 <img src="../assets/img/playlist.png" alt="1" style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
               <p>Best of Jon Mayer</p>
               </a>
+              <a style="height: 100px;"></a>
 
             </div>
     </div>
