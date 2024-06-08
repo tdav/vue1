@@ -3,7 +3,7 @@
     <div class="p-4 pb-3 mt-3">
       <img src="../assets/img/Logo.png" alt="logo" class="img-logo123 p-0">
     </div>
-    <div class="list-group ps-4">
+    <div class="list-group ps-4 rtyu">
       <a href="#" @click="menuSelect(1)" :class="[ menuSelectActiveIndex == 1 ? 'menuSelectActive' : '']" class="list-group-item list-group-item-action cvbn">
         <img src="../assets/img/home.png" alt="1"
           style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
@@ -48,7 +48,7 @@
       LIBRARY
     </p>
 
-    <div class="list-group ps-4">
+    <div class="list-group ps-4 rtyu">
       <a href="#" @click="menuSelect(6)" :class="[ menuSelectActiveIndex == 6 ? 'menuSelectActive' : '']" class="list-group-item list-group-item-action cvbn">
         <img src="../assets/img/music-square-add.png" alt="1"
           style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
@@ -79,8 +79,7 @@
         class="dfghjk">+</button>
     </p>
 
-    <div class="list-group ps-4">
-
+    <div class="list-group ps-4 rtyu">
       <a href="#" @click="menuSelect(9)" :class="[ menuSelectActiveIndex == 9 ? 'menuSelectActive' : '']" class="list-group-item list-group-item-action cvbn">
         <img src="../assets/img/playlist.png" alt="1"
           style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
@@ -131,7 +130,8 @@ function menuSelect(index) {
 }
 
 .menuSelectActive{
-  background: rgba(29, 185, 84, 1) !important;
+  border-right: 4px solid  rgba(29, 185, 84, 1);
+  color: white;
   
 
 }
@@ -143,38 +143,32 @@ function menuSelect(index) {
 .cvbn {
   background-color: #212121;
   color: rgba(255, 255, 255, 0.64);
-  border: none;
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
   display: inline-block;
   height: 38px;
+  border-radius: 0px;
+
 }
 
 .cvbn:hover {
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
-  color: white;
 }
 
 .cvbn:focus  {
-   background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
-   color: white;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.cvbn:focus .olol{
-  visibility: visible;
-}
+
 
 
 .dfghjk:active {
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
+  color: white;
 }
 
-.olol{
-  visibility: hidden;
-  width: 6px;
-  height: 38px;
-  background: rgba(29, 185, 84, 1);
-  margin-top: -8px;
-  margin-right: -17px;
-  border-radius: 3px;
-
+.rtyu {
+  border-radius: 0%;
 }
 </style>
