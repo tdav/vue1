@@ -4,18 +4,18 @@
               <img src="../assets/img/Logo.png" alt="logo" class="img-logo123 p-0">
             </div>
             <div class="list-group ps-4">
-              <a href="#" class="list-group-item list-group-item-action cvbn">
+              <a href="#" @click="menuSelect(1)" class="list-group-item list-group-item-action cvbn">
               <img src="../assets/img/home.png" alt="1" style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
               <p class="mnb">Home</p>
               <span class="olol float-end"></span>
               </a>
               
-              <a href="#" class="list-group-item list-group-item-action cvbn">
+              <a href="#" @click="menuSelect(2)" class="list-group-item list-group-item-action cvbn">
                 <img src="../assets/img/discover.png" alt="2" style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
               <p>Discover</p>
               </a>
               
-              <a href="#" class="list-group-item list-group-item-action cvbn">
+              <a href="#" @click="menuSelect()" class="list-group-item list-group-item-action cvbn">
                 <img src="../assets/img/radio.png" alt="3" style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
               <p>Radio</p>
               </a>
@@ -83,6 +83,10 @@
 
 <script setup>
 
+  function menuSelect(i){
+
+  }
+
 </script>
 
 <style scoped>
@@ -101,7 +105,7 @@
       color: rgba(255, 255, 255, 0.64);
       border: none;
       display: inline-block;
-      height: 38px;
+      height: 39px;
     }
     .cvbn:hover {
       background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
