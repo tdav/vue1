@@ -26,9 +26,7 @@
       </a>
 
 
-      
 
-      <a href="#" class="list-group-item list-group-item-action cvbn">
       <a href="#" @click="menuSelect(4)" :class="[ menuSelectActiveIndex == 4 ? 'menuSelectActive' : '']" class="list-group-item list-group-item-action cvbn">
         <img src="../assets/img/albums.png" alt="4"
           style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
@@ -137,7 +135,7 @@ function menuSelect(index) {
   
 
 }
-
+/* 
 .qwer {
   height: 139vh;
 } */
