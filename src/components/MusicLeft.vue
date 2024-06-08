@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid p-0 qwer overflow-auto" style="background-color: #212120; height: 100vh;  z-index: 1;">
+  <div class="container-fluid p-0 qwer overflow-hidden" style="background-color: #212120; height: 100vh;  z-index: 1;">
     <div class="p-4 pb-3 mt-3">
       <img src="../assets/img/Logo.png" alt="logo" class="img-logo123 p-0">
     </div>
@@ -25,6 +25,10 @@
         <span class="olol float-end"></span>
       </a>
 
+
+      
+
+      <a href="#" class="list-group-item list-group-item-action cvbn">
       <a href="#" @click="menuSelect(4)" :class="[ menuSelectActiveIndex == 4 ? 'menuSelectActive' : '']" class="list-group-item list-group-item-action cvbn">
         <img src="../assets/img/albums.png" alt="4"
           style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
@@ -107,6 +111,7 @@
 
 
 
+
 <script setup>
 
 import { ref } from 'vue';
@@ -135,7 +140,7 @@ function menuSelect(index) {
 
 .qwer {
   height: 139vh;
-}
+} */
 
 .cvbn {
   background-color: #212121;
