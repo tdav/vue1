@@ -130,7 +130,7 @@ function menuSelect(index) {
 
 }
 
-.menuSelectActiv{
+.menuSelectActive{
   background: rgba(29, 185, 84, 1) !important;
   
 
