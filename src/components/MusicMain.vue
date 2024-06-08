@@ -96,10 +96,10 @@
             <div class="container-fluid">
                 <MusicQator></MusicQator>
                 <hr class="m-1">
-                <div type="button" class="row" style=" height: 55px; width: 100%;">
+                <div type="button" id="2" class="row" style=" height: 55px; width: 100%;">
                     <img class="col-1 uewiu" src="../assets/img/Rectangle2.png" alt="">
                     <div class="col-4">
-                        <p class="pt-3">Perfect</p>
+                        <p class="pt-3">{{ name }}</p>
                     </div>
                     <div class="col-3">
                         <p class="pt-3">
@@ -108,7 +108,7 @@
                                 <path
                                     d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5" />
                             </svg>
-                            1,952,015,881
+                            <p>{{ playCount }}</p>
 
                         </p>
                     </div>
@@ -118,7 +118,7 @@
                             <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
                             <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
                         </svg>
-                        <p class="pt-3">4:23</p>
+                        <p class="pt-3">{{ time }}</p>
                     </div>
                     <div class="col-1" style="text-align: center">
                         <p class="pt-2">
@@ -334,6 +334,8 @@
 </style>
 
 <script setup>
+import playlist from "../assets/jsonData/playlist.json"
+
 import MusicQator from "../components/Music/MusicMain/MusicQtor.vue"
 
 import { ref } from 'vue';
