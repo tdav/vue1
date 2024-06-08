@@ -12,7 +12,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" style="color: white;" fill="currentColor"
                     class="bi bi-chevron-buttom mt-3 jgvuv" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
-                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"  />
                 </svg>
             </div>
         </div>
@@ -113,7 +113,9 @@
 }
 .jgvuv{
     transform: rotate(-90deg);
+
 }
+
 .javvdbxk{
     height: 70px;
     width: 100%;
@@ -150,4 +152,5 @@
     font-size: 12px;
     display: block;
 }
+
 </style>
