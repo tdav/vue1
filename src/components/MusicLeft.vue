@@ -117,7 +117,7 @@
       color: white;
     }
 
-    .olol {
+    .olol  {
       display: inline-block;
       position: relative;
       width: 6px;
@@ -131,6 +131,6 @@
 
     .dfghjk:active {
       background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
-    }
+    } 
   
 </style>
