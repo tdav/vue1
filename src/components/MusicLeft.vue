@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid p-0 qwer" style="background-color: #212120; height: 100vh; overflow-x: auto;">
+    <div class="container-fluid p-0 qwer" style="background-color: #212120; height: 100vh; overflow-x: auto; z-index: 1;">
             <div class="p-4 pb-3">
               <img src="../assets/img/Logo.png" alt="logo" class="img-logo123 p-0">
             </div>
@@ -55,7 +55,7 @@
 
             <p class="mt-4 ms-5" style="color: rgba(255, 255, 255, 0.72);  font-size: 12px; font-weight: 700; line-height: 16.39px; letter-spacing: 0.16em; text-align: left;">
               PLAYLIST 
-              <button style="width: 16px; height: 16px; top: 587px; left: 222px; gap: 0px; opacity: 0px; background-color: #212121; color:white;  margin-left: 5rem;" class="ms-">+</button>
+              <button style="width: 16px; height: 16px; top: 587px; left: 222px; gap: 0px; opacity: 0px; background-color: #212121; color:white;  margin-left: 5rem;" class="dfghjk">+</button>
             </p>
 
             <div class="list-group ps-4">
@@ -101,7 +101,7 @@
       color: rgba(255, 255, 255, 0.64);
       border: none;
       display: inline-block;
-      height: 48px;
+      height: 39px;
     }
     .cvbn:hover {
       background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
@@ -117,5 +117,7 @@
       color: white;
     }
 
-
+    .dfghjk:active {
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
+    }
 </style>
