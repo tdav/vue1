@@ -172,9 +172,11 @@
 
 .hdsvckk {
     border-radius: 40px;
-    border: 1px solid red;
-    color: rgb(255, 255, 255);
-    background-color: red;
+    border: 3px solid white;
+    background-color: #FFFFFF0A;
+    color: #FFFFFF;
+
+    
 }
 
 .hdsvck {
