@@ -1,13 +1,13 @@
 <template>
-    <div class="container-fluid p-0 qwer" style="background-color: #212120; height: 100vh; overflow-x: auto; z-index: 1;">
-            <div class="p-4 pb-3">
+    <div class="container-fluid p-0 qwer overflow-auto" style="background-color: #212120; height: 100vh;  z-index: 1;">
+            <div class="p-4 pb-3 mt-3">
               <img src="../assets/img/Logo.png" alt="logo" class="img-logo123 p-0">
             </div>
             <div class="list-group ps-4">
-              
               <a href="#" class="list-group-item list-group-item-action cvbn">
               <img src="../assets/img/home.png" alt="1" style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
               <p class="mnb">Home</p>
+              <span class="olol float-end"></span>
               </a>
               
               <a href="#" class="list-group-item list-group-item-action cvbn">
@@ -101,7 +101,7 @@
       color: rgba(255, 255, 255, 0.64);
       border: none;
       display: inline-block;
-      height: 39px;
+      height: 38px;
     }
     .cvbn:hover {
       background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
@@ -117,7 +117,20 @@
       color: white;
     }
 
+    .olol {
+      display: inline-block;
+      position: relative;
+      width: 6px;
+      background: rgba(29, 185, 84, 1);
+      float: inline-end;
+      margin-top: -8px;
+      height: 38px;
+      border-radius: 3px 0px 0px 3px;
+      margin-right: -15px;
+    }
+
     .dfghjk:active {
       background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
     }
+  
 </style>
