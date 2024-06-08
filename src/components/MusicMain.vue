@@ -90,9 +90,9 @@
         <div class="px-4">
             <div>
                 <h4 style="display: inline-block;">Popular</h4>
-                <a class="mt-2" style="display: inline-block; float: inline-end; color: #1DB954;" href="https://www.youtube.com/">See All</a>
+                <a class="mt-2" style="display: inline-block; float: inline-end; color: #1DB954; text-decoration: none" href="https://www.youtube.com/">See All</a>
             </div>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-1">
                         <div class="row pt-2" style="height: 60px; text-align: center; align-items: center;">
@@ -371,6 +371,8 @@
 
 .immm {
     color: white;
+    height: 50vh;
+    padding-top: 10vh;
 }
 
 .uhsgno {

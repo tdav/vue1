@@ -128,6 +128,11 @@ function toggleIcons() {
 
 #btnh1:active {
     border: none;
+    color: red;
+}
+
+#btnh1:focus{
+    color: red;
 }
 
 .range::-webkit-slider-thumb {
