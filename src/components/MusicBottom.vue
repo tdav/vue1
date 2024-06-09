@@ -1,10 +1,10 @@
 <template>
-    <div class="container-fluid bottomnavbar" style="z-index: 2;">
+    <div class="container bottomnavbar" style="z-index: 2;">
         <div class="row range">
             <input type="range" min="0" max="1000" value="0" class="slider range kbk p-0">
         </div>
-        <div class="row">
-            <div class="col-3 p-3" style="height: 100vh;">
+        <div class="row" >
+            <div class="col-4 p-3" >
                 <img class="mb-4" src="../assets/img/Rectangle2.png" alt="">
                 <div class="ms-2" style="display: inline-block; width: 100px;">
                     <p style="font-size: 14px; display: inline; color: white">Shape of You</p>
@@ -20,7 +20,7 @@
                     </button>
                 </p>
             </div>
-            <div class="col-6 pt-4" style="height: 100vh; color: white; text-align: center">
+            <div class="col-4" style="color: white;  height: 100px; display: flex; align-items: center;">
                 <!-- <> -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-shuffle"
                     viewBox="0 0 16 16">
@@ -67,7 +67,7 @@
                 </svg>
                 <!-- repet -->
             </div>
-            <div class="col-3 p-3" style="height: 100vh;">
+            <div class="col-4 p-3" >
                 <div class="pt-1 " style="float: right;">
                     <svg style="float: right; color: white; " xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                         fill="currentColor" class="bi bi-chat-left-heart mt-2 me-2 ms-4" viewBox="0 0 16 16">
@@ -106,6 +106,7 @@ function toggleIcons() {
 </script>
 
 <style scoped>
+ 
 .hiuiu {
     appearance: none;
     height: 5px;

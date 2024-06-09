@@ -12,13 +12,15 @@
             </div>
         </div>
         <div class="row">
-            <MusicBottom></MusicBottom>
+            <div class="col-12">
+                <MusicBottom></MusicBottom>
+            </div>
         </div>
     </div>
 </template>
 
 
-<script setup   >
+<script setup>
 import MusicMain from "../components/MusicMain"
 import MusicBottom from "../components/MusicBottom"
 import MusicLeft from "../components/MusicLeft"
