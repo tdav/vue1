@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "imgUrl":"../../assets/img/Rectangle1.png",
+        "name": "Perfect",
+        "artict": "Ed Sheeran"
+    },
+
+    {
+        "id": 2,
+        "imgUrl":"../../assets/img/Rectangle2.png",
+        "name": "Perfect",
+        "artict": "Hanin"
+    },
+
+    {
+        "id": 3,
+        "imgUrl":"../../assets/img/Rectangle3.png",
+        "name": "Title",
+        "artict": "Meghan"
+    },
+
+    {
+        "id": 4,
+        "imgUrl":"../../assets/img/Rectangle5.png",
+        "name": "Perfect",
+        "artict": "Ed Sheeran"
+    },
+
+    
+    {
+        "id": 5,
+        "imgUrl":"../../assets/img/Rectangle4.png",
+        "name": "Perfect",
+        "artict": "Ed Sheeran"
+    },
+
+    {
+        "id": 6,
+        "imgUrl":"../../assets/img/Rectangle1.png",
+        "name": "Perfect",
+        "artict": "Ed Sheeran"
+    }
+]

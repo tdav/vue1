@@ -10,15 +10,13 @@
           style="height: 45px; width: 65px"
           src="../assets/img/Rectangle1.png"
           alt=""
-        />
-        <div class="col-4 p-0 m-0">
+          />
+        <div class="col-8 p-0 m-0 text-center">
           <p class="m-0 p-0 owd">Perfect</p>
-          <br />
-          <p class="m-0 owdg">Ed Sheeran</p>
+          
+          <p class="m-0 mt-3 ms-3 owdg ">Ed Sheeran</p>
         </div>
-        <div class="col-4">
-          <p class="mt-3 aju">2 min ago</p>
-        </div>
+        
       </div>
       <div class="row music-play" style="height: 60px">
         <img
@@ -27,14 +25,13 @@
           src="../assets/img/Rectangle2.png"
           alt=""
         />
-        <div class="col-4 p-0 m-0">
-          <p class="m-0 p-0 owd">Picisan</p>
-          <br />
-          <p class="m-0 owdg">Hanin</p>
+        <div class="col-8 p-0 m-0 text-center">
+          <p class="m-0 p-0 me-4 owd">Picisan</p>
+          
+          <p class="m-0 m mt-3 me-4 owdg ">Hanin</p>
         </div>
-        <div class="col-4">
-          <p class="mt-3 aju">8min ago</p>
-        </div>
+        
+       
       </div>
       <div class="row music-play" style="height: 60px">
         <img
@@ -43,14 +40,13 @@
           src="../assets/img/Rectangle3.png"
           alt=""
         />
-        <div class="col-4 p-0 m-0">
-          <p class="m-0 p-0 owd">Title</p>
-          <br />
-          <p class="m-0 owdg">Meghan</p>
+        <div class="col-8 p-0 m-0 text-center">
+          <p class="m-0 p-0 me-4 owd">Title</p>
+          
+          <p class="m-0 m mt-3 me-4 owdg ">Meghan</p>
         </div>
-        <div class="col-4">
-          <p class="mt-3 aju">2 min ago</p>
-        </div>
+       
+       
       </div>
       <div class="row music-play" style="height: 60px">
         <img
@@ -59,14 +55,13 @@
           src="../assets/img/Rectangle5.png"
           alt=""
         />
-        <div class="col-4 p-0 m-0">
-          <p class="m-0 p-0 owd">Perfect</p>
-          <br />
-          <p class="m-0 owdg">Ed Sheeran</p>
+        <div class="col-8 p-0 m-0 text-center">
+          <p class="m-0 p-0 me-2 owd">Perfect</p>
+          
+          <p class="m-0 m mt-3 me-2 owdg ">Ed Sheeran</p>
         </div>
-        <div class="col-4">
-          <p class="mt-3 aju">1hr ago</p>
-        </div>
+       
+        
       </div>
       <div class="row music-play" style="height: 60px">
         <img
@@ -75,14 +70,14 @@
           src="../assets/img/Rectangle4.png"
           alt=""
         />
-        <div class="col-4 p-0 m-0">
-          <p class="m-0 p-0 owd">Shiver</p>
-          <br />
-          <p class="m-0 owdg">Ed Sheeran</p>
+        
+        <div class="col-8 p-0 m-0 text-center">
+          <p class="m-0 p-0 me-2 owd">Perfect</p>
+          
+          <p class="m-0 m mt-3 me-2 owdg ">Ed Sheeran</p>
         </div>
-        <div class="col-4">
-          <p class="mt-3 aju">4hr ago</p>
-        </div>
+       
+        
       </div>
       <div class="row music-play" style="height: 60px">
         <img
@@ -91,14 +86,11 @@
           src="../assets/img/Rectangle1.png"
           alt=""
         />
-        <div class="col-4 p-0 m-0">
-          <p class="m-0 p-0 owd">Perfect</p>
-          <br />
-          <p class="m-0 owdg">Ed Sheeran</p>
-        </div>
-        <div class="col-4">
-          <p class="mt-3 aju">2 min ago</p>
-        </div>
+        <div class="col-8 p-0 m-0 text-center">
+          <p class="m-0 p-0 me-2 owd">Perfect</p>
+          
+          <p class="m-0 m mt-3 me-2 owdg ">Ed Sheeran</p>
+        </div> 
       </div>
     </div>
 </template>
