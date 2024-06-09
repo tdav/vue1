@@ -18,7 +18,7 @@
 </template>
 
 
-<script setup   >
+<script setup>
 import MusicMain from "../components/MusicMain"
 import MusicBottom from "../components/MusicBottom"
 import MusicLeft from "../components/MusicLeft"
