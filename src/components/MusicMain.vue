@@ -55,7 +55,7 @@
                 </div>
             </div>
         </nav>
-        <div class="uhsgno container-fluid">
+        <div class="uhsgno container-fluid" style="height: 100%; display: flex; align-items: center;">
             <div class="row px-4" style="height: 100%; display: flex; align-items: center;">
                 <div class="col-md-6 col-sm-12 p-5 immm">
                     <p>Verified Artist</p>

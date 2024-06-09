@@ -1,6 +1,6 @@
 <template>
     <div class="container bottomnavbar p-0">
-        <div class="row range">
+        <div class="row">
             <Range></Range>
         </div>
         <div class="row" >
