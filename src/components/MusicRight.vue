@@ -22,10 +22,10 @@
                 <a class="uwhiu">See All</a>
             </div>
             <div class="isucbk">
-                <p class="javvdbxk p-3 pt-2">
+                <div class="javvdbxk p-3 pt-2">
                     <h6>James Arthur</h6>
                     <p>Artist</p>
-                </p>
+                </div>
             </div>
         </div>
         <div>
@@ -119,8 +119,10 @@
     width: 100%;
     color: white;
     border-radius: 0 0 20px 20px ;
-    background-color: #000000e1 ;
+    background-color: #3a3a3a3f;
+    backdrop-filter: blur(15px);
     margin-top: 65%;
+    display: inline-block;
 }
 .isucbk{
     height: 195px;

@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid bottomnavbar">
+    <div class="container-fluid bottomnavbar" style="z-index: 2;">
         <div class="row range">
             <input type="range" min="0" max="1000" value="0" class="slider range kbk p-0">
         </div>
