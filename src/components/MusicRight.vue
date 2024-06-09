@@ -135,7 +135,8 @@
 }
 .uwhiu{
     float: right;
-    color: green
+    color: green;
+    text-decoration: none;
 }
 .khbkk {
     font-size: 12px;

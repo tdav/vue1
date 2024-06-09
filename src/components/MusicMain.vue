@@ -377,6 +377,7 @@
 
 .uhsgno {
     background: url("../assets/img/image.png");
+
     height: 50vh;
     width: 100%;
     border-radius: 16px;

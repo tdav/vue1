@@ -32,7 +32,7 @@
                 <!-- <> -->
                 <!-- < -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                    class="bi bi-rewind-fill ms-4" viewBox="0 0 16 16">
+                    class="bi bi-rewind-fill ms-4 eovi" viewBox="0 0 16 16">
                     <path
                         d="M8.404 7.304a.802.802 0 0 0 0 1.392l6.363 3.692c.52.302 1.233-.043 1.233-.696V4.308c0-.653-.713-.998-1.233-.696z" />
                     <path
@@ -40,19 +40,19 @@
                 </svg>
                 <!-- < -->
                     <svg v-if="isPlaying" xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
-                        class="bi bi-pause-circle-fill ms-4" viewBox="0 0 16 16" @click="toggleIcons">
+                        class="bi bi-pause-circle-fill ms-4 jabx" viewBox="0 0 16 16" @click="toggleIcons">
                         <path
                             d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5m3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5" />
                     </svg>
 
                     <svg v-else xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
-                        class="bi bi-caret-right-fill ms-4" viewBox="0 0 16 16" @click="toggleIcons">
+                        class="bi bi-caret-right-fill ms-4 jabx" viewBox="0 0 16 16" @click="toggleIcons">
                         <path
                             d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
                     </svg>
                 <!-- > -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                    class="bi bi-fast-forward-fill ms-4" viewBox="0 0 16 16">
+                    class="bi bi-fast-forward-fill ms-4 eovi" viewBox="0 0 16 16">
                     <path
                         d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696z" />
                     <path
@@ -131,8 +131,8 @@ function toggleIcons() {
     color: red;
 }
 
-#btnh1:focus{
-    color: red;
+.jabx:active{
+    color: rgb(66, 66, 255);
 }
 
 .range::-webkit-slider-thumb {
@@ -142,6 +142,10 @@ function toggleIcons() {
     height: 5px;
     background-color: white;
     border-radius: 50px;
+}
+
+.eovi:active{
+    color: rgb(66, 66, 255);
 }
 
 .kbk {
