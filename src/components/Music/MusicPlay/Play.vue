@@ -7,7 +7,8 @@
                 <p style="font-size: 14px; color: white;">Ed Sheeran</p>
             </div>
             <p class="m-0">
-                <button id="btnh1" class="btn mb-4">
+                <button id="btnh1" class="btn mb-4" @click="menuSelect(1)"
+                    :class="[menuSelectActiveIndex == 1 ? 'menuSelectActive' : '']">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-heart-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -16,7 +17,8 @@
                 </button>
             </p>
         </div>
-        <div class="col-4 p-0" style="color: white; text-align: center; height: 100px; display: flex; align-items: center;">
+        <div class="col-4 p-0"
+            style="color: white; text-align: center; height: 100px; display: flex; align-items: center;">
             <div style="width: 100%;">
                 <!-- <> -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-shuffle"
@@ -90,6 +92,10 @@
     </div>
 </template>
 <style scoped>
+.menuSelectActive {
+    color: red;
+}
+
 .hiuiu {
     appearance: none;
     height: 5px;
@@ -130,5 +136,9 @@ const isPlaying = ref(false);
 
 function toggleIcons() {
     isPlaying.value = !isPlaying.value;
+}
+
+function menuSelect(index) {
+    menuSelectActiveIndex.value = index;
 }
 </script>

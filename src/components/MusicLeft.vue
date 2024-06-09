@@ -132,8 +132,6 @@ function menuSelect(index) {
 .menuSelectActive{
   border-right: 4px solid  rgba(29, 185, 84, 1);
   color: white;
-  
-
 }
 /* 
 .qwer {
