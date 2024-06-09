@@ -55,9 +55,9 @@
                 </div>
             </div>
         </nav>
-        <div class="uhsgno container-fluid">
-            <div class="row px-4">
-                <div class="col-md-6 col-sm-12 p-5 immm">
+        <div class="uhsgno container">
+            <div class="row px-4" >
+                <div class="col-md-5 col-sm-12 p-5 immm">
                     <p>Verified Artist</p>
                     <h1 style="font-size: 60px;">Ed Sheeran</h1>
                     <p class="d-block">
@@ -82,8 +82,8 @@
                     </button>
                     <!-- kenco -->
                 </div>
-                <div class="col-md-6 col-sm-12 uhsgnod">
-                    <img class="orfi" src="../assets/img/fococlipping-20220120-2192 2.png" alt="">
+                <div class="col-md-7 col-sm-12 uhsgnod">
+                    <img class="orfi" style="width: 470px;" src="../assets/img/fococlipping-20220120-2192 2.png" alt="">
                 </div>
             </div>
         </div>
@@ -150,6 +150,7 @@
                         </div>
                         <hr class="m-1">
                         <div type="button" class="row" style=" height: 55px; width: 100%;">
+
                             <img class="col-1 uewiu" src="../assets/img/Rectangle2.png" alt="">
                             <div class="col-4">
                                 <p class="pt-3">Perfect</p>

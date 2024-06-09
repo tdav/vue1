@@ -20,7 +20,7 @@
                     </button>
                 </p>
             </div>
-            <div class="col-4" style="color: white;  height: 100px; display: flex; align-items: center;">
+            <div class="col-4" style="color: white;  height: 100px; display: flex;  ">
                 <!-- <> -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-shuffle"
                     viewBox="0 0 16 16">
