@@ -62,9 +62,7 @@
     </div>
   </div>
   <div v-else>
-    <div class="container-fluid">
       <router-view></router-view>
-    </div>
   </div>
 
 
