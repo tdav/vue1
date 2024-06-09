@@ -1,6 +1,6 @@
 <template>
-    <div class="row p-0" style="height: 100vh;">
-        <div class="col-4 p-3 p-0">
+    <div class="row" style="height: 100vh;">
+        <div class="col-4 p-0 ps-4 pt-4">
             <img class="mb-4" src="../../../assets/img/Rectangle2.png" alt="">
             <div class="ms-2" style="display: inline-block; width: 100px;">
                 <p style="font-size: 14px; display: inline; color: white">Shape of You</p>
@@ -16,7 +16,7 @@
                 </button>
             </p>
         </div>
-        <div class="col-4" style="color: white; text-align: center; height: 100px; display: flex; align-items: center;">
+        <div class="col-4 p-0" style="color: white; text-align: center; height: 100px; display: flex; align-items: center;">
             <div style="width: 100%;">
                 <!-- <> -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-shuffle"
@@ -65,10 +65,10 @@
                 <!-- repet -->
             </div>
         </div>
-        <div class="col-4 p-3">
+        <div class="col-4 p-3 pe-0  pt-4">
             <div class="pt-1 " style="float: right;">
                 <svg style="float: right; color: white; " xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                    fill="currentColor" class="bi bi-chat-left-heart mt-2 me-2 ms-4" viewBox="0 0 16 16">
+                    fill="currentColor" class="bi bi-chat-left-heart mt-2 me-2 ms-4 pt-1 pe-0" viewBox="0 0 16 16">
                     <path
                         d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
                     <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />

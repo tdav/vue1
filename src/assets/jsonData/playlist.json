@@ -2,7 +2,7 @@
 
 {
     "id":1,
-    "imgUrl":"../../assets/img/Rectangle1.png",
+    "imgUrl":"../img/Rectangle1.png",
     "name":"Shiver",
     "playCount":460228511,
     "time":"3:27",
@@ -12,7 +12,7 @@
 
 {
     "id":2,
-    "imgUrl":"../../assets/img/Rectangle2.png",
+    "imgUrl":"../img/Rectangle2.png",
     "name":"Perfect",
     "playCount":1952015881,
     "time":"4:23",
@@ -22,7 +22,7 @@
 
 {
     "id":3,
-    "imgUrl":"../../assets/img/Rectangle1.png",
+    "imgUrl":"../img/Rectangle3.png",
     "name":"Bad Habits",
     "playCount":850545959,
     "time":"3:50",
@@ -32,7 +32,7 @@
 
 {
     "id":4,
-    "imgUrl":"../../assets/img/Rectangle4.png",
+    "imgUrl":"../img/Rectangle4.png",
     "name":"Shape of You",
     "playCount":3024067930,
     "time":"3:53",
