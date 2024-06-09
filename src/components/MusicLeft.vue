@@ -1,13 +1,13 @@
 <template>
-    <div class="container-fluid p-0 qwer" style="background-color: #212120; height: 100vh; overflow-x: auto; z-index: 1;">
-            <div class="p-4 pb-3">
+    <div class="container-fluid p-0 qwer overflow-auto" style="background-color: #212120; height: 100vh;  z-index: 1;">
+            <div class="p-4 pb-3 mt-3">
               <img src="../assets/img/Logo.png" alt="logo" class="img-logo123 p-0">
             </div>
             <div class="list-group ps-4">
-              
               <a href="#" @click="menuSelect(1)" class="list-group-item list-group-item-action cvbn">
               <img src="../assets/img/home.png" alt="1" style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
               <p class="mnb">Home</p>
+              <span class="olol float-end"></span>
               </a>
               
               <a href="#" @click="menuSelect(2)" class="list-group-item list-group-item-action cvbn">
@@ -15,7 +15,7 @@
               <p>Discover</p>
               </a>
               
-              <a href="#" @click="menuSelect(3)" class="list-group-item list-group-item-action cvbn">
+              <a href="#" @click="menuSelect()" class="list-group-item list-group-item-action cvbn">
                 <img src="../assets/img/radio.png" alt="3" style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
               <p>Radio</p>
               </a>
