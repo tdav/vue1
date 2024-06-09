@@ -50,6 +50,7 @@
 </template>
 
 <script setup>
+import musicPlaylist from "../assets/jsonData/musicPlaylist.json"
 import MusicRightAlbom from '../components/MusicRightAlbom.vue';
 </script>
 
