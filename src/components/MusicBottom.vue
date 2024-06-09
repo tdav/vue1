@@ -96,13 +96,8 @@
 
 
 <script setup>
-import { ref } from 'vue';
-
-const isPlaying = ref(false);
-
-function toggleIcons() {
-    isPlaying.value = !isPlaying.value;
-}
+import Play from "../components/Music/MusicPlay/Play.vue"
+import Range from "../components/Music/MusicRange/Range.vue"
 </script>
 
 <style scoped>
