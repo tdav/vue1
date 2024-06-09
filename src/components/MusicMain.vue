@@ -334,6 +334,8 @@
 </style>
 
 <script setup>
+import playlist from "../assets/jsonData/playlist.json"
+
 import MusicQator from "../components/Music/MusicMain/MusicQtor.vue"
 
 import { ref } from 'vue';
