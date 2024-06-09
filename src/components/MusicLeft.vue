@@ -5,17 +5,17 @@
             </div>
             <div class="list-group ps-4">
               
-              <a href="#" class="list-group-item list-group-item-action cvbn">
+              <a href="#" @click="menuSelect(1)" class="list-group-item list-group-item-action cvbn">
               <img src="../assets/img/home.png" alt="1" style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
               <p class="mnb">Home</p>
               </a>
               
-              <a href="#" class="list-group-item list-group-item-action cvbn">
+              <a href="#" @click="menuSelect(2)" class="list-group-item list-group-item-action cvbn">
                 <img src="../assets/img/discover.png" alt="2" style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
               <p>Discover</p>
               </a>
               
-              <a href="#" class="list-group-item list-group-item-action cvbn">
+              <a href="#" @click="menuSelect(3)" class="list-group-item list-group-item-action cvbn">
                 <img src="../assets/img/radio.png" alt="3" style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
               <p>Radio</p>
               </a>
@@ -82,6 +82,10 @@
 
 
 <script setup>
+
+  function menuSelect(i){
+
+  }
 
 </script>
 
