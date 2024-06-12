@@ -23,7 +23,7 @@
                             <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
                                 aria-expanded="false"
                                 style="background-color: rgb(28 28 28); color: white; border: none; width: 80px;">
-                                <p class="me-3" style="color:  rgb(80 80 80);">Home</p>
+                                <p class="me-3 eiwjnk">Home</p>
                             </button>
                             <ul class="dropdown-menu" style="color: white;">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -141,6 +141,10 @@
 </template>
 
 <style>
+.eiwjnk{
+    color: rgb(163, 163, 163);
+}
+
 #btnh1 {
     width: 100%;
     padding: 0px;
@@ -192,7 +196,7 @@
 
 .orfi {
     height: 50vh;
-    width: 90%;
+    width: 100%;
 }
 
 .immm {
