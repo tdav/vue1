@@ -75,7 +75,7 @@
                         d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
                     <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
                 </svg>
-                <input type="range" min="0" max="100" value="0" class="slider range hiuiu p-0">
+                <input type="range" min="0" max="100" value="0" class="slider range hiuiu p-0" style="width: 56%;">
                 <!-- <input style="float: right;" type="range" min="0" max="100" value="0" class="slider  range mt-3 mb-3"> -->
                 <svg style="float: right; color: white;" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                     fill="currentColor" class="bi bi-volume-up mt-2 me-2" viewBox="0 0 16 16">
@@ -93,7 +93,7 @@
 </template>
 <style scoped>
 .menuSelectActive {
-    color: red;
+    color: red; 
 }
 
 .hiuiu {
@@ -112,14 +112,14 @@
     color: white;
 }
 
-#btnh1:hover {
+/* #btnh1:hover {
     color: red;
-}
+} */
 
-#btnh1:active {
+/* #btnh1:active {
     border: none;
     color: red;
-}
+} */
 
 .jabx:active {
     color: rgb(66, 66, 255);
@@ -138,7 +138,12 @@ function toggleIcons() {
     isPlaying.value = !isPlaying.value;
 }
 
+
+import { Ref } from 'vue';  
+
+let menuSelectActiveIndex = ref(1); 
+
 function menuSelect(index) {
-    menuSelectActiveIndex.value = index;
+    menuSelectActiveIndex = index;
 }
 </script>

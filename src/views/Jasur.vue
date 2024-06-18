@@ -82,9 +82,6 @@
 
 
     <div class="range">
-        <div class="sliderValue">
-            <span>50</span>
-        </div>
         <div class="field">
             <div class="value left">0</div>
             <input type="range" v-model="sliderValue" min="0" max="100" step="1">
