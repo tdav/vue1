@@ -58,31 +58,34 @@
         <div class="uhsgno container-fluid" style="height: 100%; display: flex; align-items: center;">
             <div class="row px-4" style="height: 100%; display: flex; align-items: center;">
                 <div class="col-md-6 col-sm-12 p-5 immm">
-                    <p>Verified Artist</p>
-                    <h1 style="font-size: 50px;">Ed Sheeran</h1>
-                    <p class="d-block">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                            class="bi bi-headphones mb-2" viewBox="0 0 16 16">
-                            <path
-                                d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5" />
-                        </svg>
-                        82,736,050 monthly listeners
-                    </p>
-                    <button class="butt dlfcbh me-2">PLAY</button>
-                    <!-- kenco -->
-                    <!-- <button class="butt hdsvck">
+                    <div class="ifd p-0">
+                        <p>Verified Artist</p>
+                        <h1 style="font-size: 50px;">Ed Sheeran</h1>
+                        <p class="d-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-headphones mb-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5" />
+                            </svg>
+                            82,736,050 monthly listeners
+                        </p>
+                        <button class="butt dlfcbh me-2">PLAY</button>
+                        <!-- kenco -->
+                        <!-- <button class="butt hdsvck">
                         FALOVING
                     </button>
                     <button class="butt hdsvckk">
                         FALOVING
                     </button> -->
 
-                    <button class="butt" :class="{ 'hdsvck': isPlayin, 'hdsvckk': !isPlayin }" @click="toggleButtons()">
-                        FOLLOW
-                    </button>
-                    <!-- kenco -->
+                        <button class="butt" :class="{ 'hdsvck': isPlayin, 'hdsvckk': !isPlayin }"
+                            @click="toggleButtons()">
+                            FOLLOW
+                        </button>
+                        <!-- kenco -->
+                    </div>
                 </div>
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-0">
                     <img class="orfi" src="../assets/img/fococlipping-20220120-2192 2.png" alt="">
                 </div>
             </div>
@@ -141,7 +144,11 @@
 </template>
 
 <style>
-.eiwjnk{
+.ifd{
+    position: relative;
+    top: 20%;
+}
+.eiwjnk {
     color: rgb(163, 163, 163);
 }
 
@@ -180,7 +187,7 @@
     background-color: #FFFFFF0A;
     color: #FFFFFF;
 
-    
+
 }
 
 .hdsvck {
