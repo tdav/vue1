@@ -4,7 +4,7 @@
         <slot ></slot>        
     </p>
 
-    <div class=" list-group   rtyu">
+    <div class=" list-group rtyu">
         <a v-for="it in data.item" :key="it.id" :href="it.path" class="list-group-item list-group-item-action cvbn menuItem">
             <img :src=" require( `../../../assets/img/${it.iconUrl}`)" alt="1" class="logo-image">
             <p    class="items123 menuSelectActive ">{{ it.name }}</p>
@@ -33,7 +33,7 @@ const props = defineProps({
  }
 
 .qwer {
-  height: 139vh;
+  height: vh;
 }
 
 .cvbn {
@@ -45,21 +45,6 @@ const props = defineProps({
 }
 
 .cvbn:hover {
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
-  color: white;
-}
-
-/* .cvbn:focus  {
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
-  color: white;
-} */
-
-.img-logo123  {
-
-}
-
-
-.dfghjk:active {
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
   color: white;
 }

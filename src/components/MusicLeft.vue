@@ -1,7 +1,7 @@
 <template>
    
-    <div v-for="it in MenuList" class="list-group">
-      <MusicLibrary :data="it"> 
+    <div v-for="it in MenuList" class="list-group" style="background-color: #1c1c1c; margin-top:-5px;">
+      <MusicLibrary :data="it" > 
         <button v-if="it.title == 'PLAYLIST'" class="dfghjk myTitleBtn">+</button> 
       </MusicLibrary>
     </div>
@@ -37,7 +37,7 @@ import MusicLibrary from './Music/MusicLeft/MusicLibrary'
     left: 222px;
     gap: 0px;
     opacity: 0px;
-    background-color: #212121;
+    background-color: #1c1c1c;
     color: white;
     margin-left: 5rem;
 }
@@ -57,7 +57,7 @@ import MusicLibrary from './Music/MusicLeft/MusicLibrary'
  
 
 .cvbn {
-  background-color: #212121;
+  background-color: #1c1c1c;
   color: rgba(255, 255, 255, 0.64);
   border-left: none;
   border-bottom: none;
@@ -78,10 +78,10 @@ import MusicLibrary from './Music/MusicLeft/MusicLibrary'
   color: white;
 }
  
-.dfghjk:active {
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
+/* .dfghjk:active {
+  background-color: #1c1c1c;
   color: white;
-}
+} */
 
 .rtyu {
   border-radius: 0%;
