@@ -8,7 +8,6 @@
         <a v-for="it in data.item" :key="it.id" :href="it.path" class="list-group-item list-group-item-action cvbn menuItem">
             <img :src="it.iconUrl" alt="1">
             <p>{{ it.name }}</p>
-            <span class="olol float-end"></span>
         </a>
  
     </div>
