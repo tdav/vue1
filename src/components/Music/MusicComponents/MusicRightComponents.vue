@@ -8,21 +8,21 @@
     <img
         class="col-1"
         style="height: 45px; width: 65px"
-        :src="it.imgUrl"
-        alt=""
+        :src=" require(`../../../assets/img/${it.imgUrl}`)"
+        alt="img"
     />
 
     <div class="col-8 p-0 m-0 text-start">
       <div class="row">
         <p
-          class="m-0 p-0 ms-3"
+          class="m-0 p-0 ms-2"
           style="color: white; float: left; font-size: 14px; display: inline-block"
         >
           {{ it.albomName }}
         </p>
 
         <p
-          class="m-0"
+          class="m-0 p-0 ms-2"
           style="color: white; float: right; font-size: 12px; display: inline-block"
         >
           {{ it.actor }}
