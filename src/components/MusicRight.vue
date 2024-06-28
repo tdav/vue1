@@ -45,7 +45,7 @@
       </div>
     </div>
     
-    <MusicRightAlbom :item="it" class="music-list"></MusicRightAlbom>
+    <MusicRightAlbom :item="it"></MusicRightAlbom>
   </div>
 </template>
 

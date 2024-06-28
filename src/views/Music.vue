@@ -1,6 +1,6 @@
 <template>
     <div class="p-0 m-0 " style="background-color: black;">
-        <div class="container p-0" style="background-color: #212120;">
+        <div class="container p-0" style="background-color: #1c1c1c;">
             <div class="row">
                 <div class="col p-0">
                     <nav class="navbar navbar-expand-lg"

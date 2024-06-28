@@ -37,13 +37,11 @@ const props = defineProps({
 }
 
 .cvbn {
-  background-color: #212121;
+  background-color: #1c1c1c;
   color: rgba(255, 255, 255, 0.64);
-  border-left: -33px;
-  border-bottom: none;
-  border-top: none;
   display: inline-block;
   height: 30px;
+  border: none;
 }
 
 .cvbn:hover {
@@ -51,10 +49,10 @@ const props = defineProps({
   color: white;
 }
 
-.cvbn:focus  {
+/* .cvbn:focus  {
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
   color: white;
-}
+} */
 
 .img-logo123  {
 
@@ -71,7 +69,7 @@ const props = defineProps({
 }
 
 .menuItem {
-    width: 200px;
+    width: 224px;
     height: 40px;
     gap: 0px;
     opacity: 0px;
