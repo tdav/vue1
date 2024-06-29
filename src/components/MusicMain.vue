@@ -80,7 +80,7 @@
                     <button class="butt" :class="{ 'hdsvck': isPlayin, 'hdsvckk': !isPlayin }" @click="toggleButtons()">
                         FOLLOW
                     </button>
-                    <!-- kenco -->
+                    
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <img class="orfi" src="../assets/img/fococlipping-20220120-2192 2.png" alt="">
