@@ -94,7 +94,7 @@
     </div>
 </template>
 
-<script>
+<script setup>
 import { ref, defineProps,   onMounted } from 'vue';
 
 const props = defineProps({ item: {} });
@@ -104,6 +104,7 @@ onMounted(() => {
     // myPath.value =  props.item.imgUrl.value;
 
 })
+
 </script>
 
 <style scoped>
