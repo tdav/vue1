@@ -109,7 +109,7 @@
             <div>
                 <h4 style="display: inline-block;">Popular Releases</h4>
                 <div class="container-fluid">
-                    <div v-for="it in PopularReleasesMusic" :key="it.id" class="row">
+                    <div class="row">
                         <PapularReleses></PapularReleses>
                         <!--                        
                         <div v-for="it in PopularReleasesMusic" :key="it.id" class="col-2" style="text-align: center;">  
@@ -219,7 +219,6 @@
 import PapularReleses from "../components/Music/MusicPapularReleases/PapularReleses.vue"
 import playlist from "../assets/jsonData/playlist.json"
 import MusicRow from "./Music/MusicMain/MusicRow.vue"
-// import PopularReleasesMusic from '..//assets/jsonData/PopularReleasesMusic.json'
 
 import { ref } from 'vue';
 
