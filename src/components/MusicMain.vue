@@ -110,11 +110,11 @@
                 <h4 style="display: inline-block;">Popular Releases</h4>
                 <div class="container-fluid">
                     <div class="row">
-                       
+<!--                        
                         <div v-for="it in PopularReleasesMusic" :key="it.id" class="col-2" style="text-align: center;">  
                             <img :src="it.imageUrl" alt="" class="kdscb">
                             <p>{{ it.name }}</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
