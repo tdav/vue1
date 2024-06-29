@@ -4,7 +4,7 @@
         <p>Recent Played</p>
         <a class="uwhiu" style="text-decoration: none">See All</a>
       </div> 
-      <MusicRightComponents class="mb-2"/>
+      <MusicRightComponents class="musicright"/>
     </div>
 </template>
 
@@ -87,5 +87,10 @@ onMounted(() => {
 .khbk {
   font-size: 12px;
   display: block;
+}
+
+.musicright {
+  position: relative;
+  bottom: 30px;
 }
 </style>
