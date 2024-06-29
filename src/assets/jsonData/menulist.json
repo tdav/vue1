@@ -1,0 +1,67 @@
+{
+    "blok1": {
+        "title": "",
+        "item": [
+            {
+                "iconUrl": "",
+                "name": "Home",
+                "path": ""
+            },
+            {
+                "iconUrl": "",
+                "name": "Discover",
+                "path": ""
+            },
+            {
+                "iconUrl": "",
+                "name": "Radio",
+                "path": ""
+            }
+
+        ]
+    },
+
+    "blok2": {
+        "title": "LIBARARY",
+        "item": [
+            {
+                "iconUrl": "",
+                "name": "Home",
+                "path": ""
+            },
+            {
+                "iconUrl": "",
+                "name": "Discover",
+                "path": ""
+            },
+            {
+                "iconUrl": "",
+                "name": "Radio",
+                "path": ""
+            }
+
+        ]
+    },
+
+    "blok3": {
+        "title": "PLAYLIST",
+        "item": [
+            {
+                "iconUrl": "",
+                "name": "Home",
+                "path": ""
+            },
+            {
+                "iconUrl": "",
+                "name": "Discover",
+                "path": ""
+            },
+            {
+                "iconUrl": "",
+                "name": "Radio",
+                "path": ""
+            }
+
+        ]
+    }
+}

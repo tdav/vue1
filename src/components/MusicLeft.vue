@@ -130,15 +130,14 @@ function menuSelect(index) {
 }
 
 .menuSelectActive{
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
   border-right: 4px solid  rgba(29, 185, 84, 1);
   color: white;
-  
-
 }
-/* 
+
 .qwer {
   height: 139vh;
-} */
+}
 
 .cvbn {
   background-color: #212121;
@@ -154,10 +153,12 @@ function menuSelect(index) {
 
 .cvbn:hover {
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
+  color: white;
 }
 
 .cvbn:focus  {
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
+  color: white;
 }
 
 

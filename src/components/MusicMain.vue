@@ -1,6 +1,6 @@
 <template>
     <div style="background-color: rgb(28 28 28); color: white; overflow-x: auto; max-height: 100vh;">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg form-contro" style="position: fixed; background-color: #212121; width:58%">
             <div class="container-fluid">
                 <button class="btn btn-outline-darck" type="submit"
                     style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
@@ -23,7 +23,7 @@
                             <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
                                 aria-expanded="false"
                                 style="background-color: rgb(28 28 28); color: white; border: none; width: 80px;">
-                                <p class="me-3" style="color:  rgb(80 80 80);">Home</p>
+                                <p class="me-3 eiwjnk">Home</p>
                             </button>
                             <ul class="dropdown-menu" style="color: white;">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -58,31 +58,34 @@
         <div class="uhsgno container-fluid" style="height: 100%; display: flex; align-items: center;">
             <div class="row px-4" style="height: 100%; display: flex; align-items: center;">
                 <div class="col-md-6 col-sm-12 p-5 immm">
-                    <p>Verified Artist</p>
-                    <h1 style="font-size: 50px;">Ed Sheeran</h1>
-                    <p class="d-block">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                            class="bi bi-headphones mb-2" viewBox="0 0 16 16">
-                            <path
-                                d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5" />
-                        </svg>
-                        82,736,050 monthly listeners
-                    </p>
-                    <button class="butt dlfcbh me-2">PLAY</button>
-                    <!-- kenco -->
-                    <!-- <button class="butt hdsvck">
+                    <div class="ifd p-0">
+                        <p>Verified Artist</p>
+                        <h1 style="font-size: 50px;">Ed Sheeran</h1>
+                        <p class="d-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-headphones mb-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5" />
+                            </svg>
+                            82,736,050 monthly listeners
+                        </p>
+                        <button class="butt dlfcbh me-2">PLAY</button>
+                        <!-- kenco -->
+                        <!-- <button class="butt hdsvck">
                         FALOVING
                     </button>
                     <button class="butt hdsvckk">
                         FALOVING
                     </button> -->
 
-                    <button class="butt" :class="{ 'hdsvck': isPlayin, 'hdsvckk': !isPlayin }" @click="toggleButtons()">
-                        FOLLOW
-                    </button>
-                    
+                        <button class="butt" :class="{ 'hdsvck': isPlayin, 'hdsvckk': !isPlayin }"
+                            @click="toggleButtons()">
+                            FOLLOW
+                        </button>
+                        <!-- kenco -->
+                    </div>
                 </div>
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-0">
                     <img class="orfi" src="../assets/img/fococlipping-20220120-2192 2.png" alt="">
                 </div>
             </div>
@@ -90,7 +93,7 @@
         <div class="px-4">
             <div>
                 <h4 style="display: inline-block;">Popular</h4>
-                <a class="mt-2" style="display: inline-block; float: inline-end; color: #1DB954; text-decoration: none"
+                <a class="mt-2" style="display: inline-block; float: right; color: #1DB954; text-decoration: none"
                     href="https://www.youtube.com/">See All</a>
             </div>
             <div class="container-fluid">
@@ -141,6 +144,14 @@
 </template>
 
 <style>
+.ifd{
+    position: relative;
+    top: 20%;
+}
+.eiwjnk {
+    color: rgb(163, 163, 163);
+}
+
 #btnh1 {
     width: 100%;
     padding: 0px;
@@ -176,7 +187,7 @@
     background-color: #FFFFFF0A;
     color: #FFFFFF;
 
-    
+
 }
 
 .hdsvck {
@@ -192,7 +203,7 @@
 
 .orfi {
     height: 50vh;
-    width: 90%;
+    width: 100%;
 }
 
 .immm {
