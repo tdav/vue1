@@ -46,4 +46,55 @@ import MusicLibrary from './Music/MusicLeft/MusicLibrary'
     background-color: #212121;
     color: white;
     margin-left: 5rem;
-}</style>
+}
+
+.img-logo123 {
+  padding-top: 2.2rem;
+  padding-left: 1.2rem;
+
+}
+
+.menuSelectActive{
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
+  border-right: 4px solid  rgba(29, 185, 84, 1);
+  color: white;
+}
+
+.qwer {
+  height: 139vh;
+}
+
+.cvbn {
+  background-color: #212121;
+  color: rgba(255, 255, 255, 0.64);
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
+  display: inline-block;
+  height: 38px;
+  border-radius: 0px;
+
+}
+
+.cvbn:hover {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
+  color: white;
+}
+
+.cvbn:focus  {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
+  color: white;
+}
+
+
+
+
+.dfghjk:active {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
+  color: white;
+}
+
+.rtyu {
+  border-radius: 0%;
+}
+</style>

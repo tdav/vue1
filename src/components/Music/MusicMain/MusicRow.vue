@@ -2,14 +2,14 @@
     <div class="row p-0">
         <div class="col-1 p-0">
             <div class="row pt-2" style="height: 55px; text-align: center; align-items: center;">
-                <p>{{ props.item.id }}</p>
+                <p>{{ item.id }}</p>
             </div>
         </div>
         <div class="col-11 p-0">
             <div type="button" class="row" style=" height: 50px; width: 100%;">
-                <img class="col-1 uewiu" :src="item.imgUrl" alt="">
+                <img class="col-1 uewiu" :src=" require(`../../../assets/img/${it.imgUrl}`)" alt="img">
                 <div class="col-4">
-                    <p class="pt-3">{{ props.item.name }}</p>
+                    <p class="pt-3">{{ item.name }}</p>
                 </div>
                 <div class="col-3">
                     <p class="pt-3">
@@ -27,7 +27,7 @@
                         <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
                         <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
                     </svg>
-                    <p class="pt-3">{{ props.item.time }}</p>
+                    <p class="pt-3">{{ item.time }}</p>
                 </div>
                 <div class="col-1" style="text-align: center">
                     <p class="pt-2">
@@ -41,7 +41,7 @@
                     </p>
                 </div>
                 <div class="col-1" style="text-align: center">
-                    <p class="pt-3">{{ props.item.comment }}</p>
+                    <p class="pt-3">{{ item.comment }}</p>
                 </div>
             </div>
         </div>
@@ -51,11 +51,7 @@
 <script setup>
 import { ref, defineProps,   onMounted } from 'vue';
 
+import { defineProps} from 'vue';
 const props = defineProps({ item: {} });
-
-const myPath = ref("");
-onMounted(() => {
-    myPath.value =  props.item.imgUrl.value;
-})
 
 </script>
