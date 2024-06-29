@@ -22,7 +22,7 @@
         </p>
 
         <p
-          class="m-0 p-0 ms-2"
+          class="m-0 p-0 ms-3"
           style="color: white; float: right; font-size: 12px; display: inline-block"
         >
           {{ it.actor }}
