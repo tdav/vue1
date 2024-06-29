@@ -18,6 +18,3 @@
 <script setup>
 import albomlist from '../../../assets/jsonData/albomlist.json'
 </script>
-<style>
-
-</style>
