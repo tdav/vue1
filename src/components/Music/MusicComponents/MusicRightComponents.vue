@@ -16,3 +16,9 @@
 <script setup>
 import albomlist from "../../../assets/jsonData/albomlist.json"
 </script>
+<style scoped>
+.owdg {
+  color: #ffffff7c;
+  font-size: 12px;
+}
+</style>
