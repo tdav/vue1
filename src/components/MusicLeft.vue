@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid p-0 qwer overflow-hidden" style="background-color: #212120; height: 100vh;  z-index: 1;">
-    <div class="p-4 pb-3 mt-3">
+    <div class="p-4 pt-3 pb-3">
       <img src="../assets/img/Logo.png" alt="logo" class="img-logo123 p-0">
     </div>
 
@@ -85,10 +85,7 @@ import MusicLibrary from './Music/MusicLeft/MusicLibrary'
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
   color: white;
 }
-
-
-
-
+ 
 .dfghjk:active {
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
   color: white;
