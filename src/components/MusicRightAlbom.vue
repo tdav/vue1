@@ -1,10 +1,10 @@
 <template>
     <div>
-      <div class="iwuc mt-4">
+      <div class="iwuc">
         <p>Recent Played</p>
         <a class="uwhiu" style="text-decoration: none">See All</a>
       </div> 
-      <MusicRightComponents style="position: relative; bottom: 100px;" />
+      <MusicRightComponents />
     </div>
 </template>
 
