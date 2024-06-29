@@ -2,17 +2,34 @@
 {
     "list":[
         {
-            "imgUrl":"",
-            "albomName":"",
-            "actor":""
+            "imgUrl":"../assets/img/Rectangle1.png",
+            "albomName":"Perfect",
+            "actor":"Ed Sheeran"
         },
         
         {
-            "imgUrl":"",
-            "albomName":"",
-            "actor":""
-        }
+            "imgUrl":"../assets/img/Rectangle2.png",
+            "albomName":"Picisan",
+            "actor":"Hanin"
+        },
 
+        {
+            "imgUrl":"../assets/img/Rectangle3.pn",
+            "albomName":"Title",
+            "actor":"Meghan"
+        },
+
+        {
+            "imgUrl":"../assets/img/Rectangle5.png",
+            "albomName":"Perfect",
+            "actor":"Ed Sheeran"
+        },
+
+        {
+            "imgUrl":"../assets/img/Rectangle1.png",
+            "albomName":"Perfect",
+            "actor":"Ed Sheeran"
+        }
 
     ]
 }
