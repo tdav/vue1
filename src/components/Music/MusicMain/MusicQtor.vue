@@ -56,7 +56,6 @@ const props = defineProps({ item: {} });
 const myPath = ref("");
 onMounted(() => {
     myPath.value =  props.item.imgUrl.value;
-
 })
 
 function Toggle1() {
