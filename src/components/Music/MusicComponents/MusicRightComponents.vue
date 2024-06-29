@@ -2,7 +2,7 @@
   <div
     v-for="it in albomlist"
     :key="it.id"
-    class="row music-play"
+    class="row music-play mb-3"
     style="height: 60px"
   >
     <img
