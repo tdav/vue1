@@ -1,6 +1,6 @@
 <template>
     <div style="background-color: rgb(28 28 28); color: white; overflow-x: auto; max-height: 100vh;">
-        <nav class="navbar navbar-expand-lg" style="position: fixed; top: 0;     background-color: rgb(28 28 28); width: 58%; ">
+        <nav class="navbar navbar-expand-lg"  style="position: fixed; top: 0; background-color: rgb(28 28 28);">
             <div class="container-fluid">
                 <button class="btn btn-outline-darck" type="submit"
                     style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
