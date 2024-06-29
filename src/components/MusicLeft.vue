@@ -134,10 +134,10 @@ function menuSelect(index) {
   border-right: 4px solid  rgba(29, 185, 84, 1);
   color: white;
 }
-/* 
+
 .qwer {
   height: 139vh;
-} */
+}
 
 .cvbn {
   background-color: #212121;

@@ -1,6 +1,6 @@
 <template>
     <div style="background-color: rgb(28 28 28); color: white; overflow-x: auto; max-height: 100vh;">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg form-contro" style="position: fixed; background-color: #212121; width:58%">
             <div class="container-fluid">
                 <button class="btn btn-outline-darck" type="submit"
                     style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
@@ -93,7 +93,7 @@
         <div class="px-4">
             <div>
                 <h4 style="display: inline-block;">Popular</h4>
-                <a class="mt-2" style="display: inline-block; float: inline-end; color: #1DB954; text-decoration: none"
+                <a class="mt-2" style="display: inline-block; float: right; color: #1DB954; text-decoration: none"
                     href="https://www.youtube.com/">See All</a>
             </div>
             <div class="container-fluid">
