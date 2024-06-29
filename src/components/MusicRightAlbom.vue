@@ -4,7 +4,7 @@
         <p>Recent Played</p>
         <a class="uwhiu" style="text-decoration: none">See All</a>
       </div> 
-      <MusicRightComponents />
+      <MusicRightComponents class="mb-5"/>
     </div>
 </template>
 
