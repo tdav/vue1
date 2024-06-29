@@ -3,7 +3,9 @@
         <img :src="it.imageUrl" alt="" class="kdscb">
         <p>{{ it.name }}</p>
     </div>
+    
 </template>
-<script>
+
+<script setup>
 import PopularReleasesMusic from '../../../assets/jsonData/PopularReleasesMusic.json'
 </script>

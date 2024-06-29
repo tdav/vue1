@@ -1,11 +1,9 @@
-<!-- <template>
+<template>
     <div v-for="it in PopularReleasesMusic" :key="it.id" class="col-2" style="text-align: center;">  
         <img :src="it.imageUrl" alt="" class="kdscb">
         <p>{{ it.name }}</p>
     </div>
-    
 </template>
-
-<script setup>
+<script>
 import PopularReleasesMusic from '../../../assets/jsonData/PopularReleasesMusic.json'
-</script> -->
+</script>
