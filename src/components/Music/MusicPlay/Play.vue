@@ -94,19 +94,10 @@
     </div>
 </template>
 <style scoped>
-.iug:hover {
-    transition: all 1s ;
-    display: inline-block;
-    border: 1px solid;
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    border-color: rgb(105, 105, 255);
-}
 
 .odwi:hover {
     transition: all 3s;
-    rotate: 360deg;
+    rotate: 720deg;
 }
 
 .lekfnnok:hover {
