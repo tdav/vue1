@@ -6,25 +6,29 @@
     style="height: 60px"
   >
     <img
-      class="col-1"
-      style="height: 45px; width: 65px"
-      :src="it.imgUrl"
-      alt=""
+        class="col-1"
+        style="height: 45px; width: 65px"
+        :src="it.imgUrl"
+        alt=""
     />
-    <div class="col-8 p-0 m-0 text-center">
+
+    <div class="col-8 p-0 m-0 text-start">
+      <div class="row">
         <p
-          class=""
+          class="m-0 p-0"
           style="color: white; float: left; font-size: 14px; display: inline-block"
         >
           {{ it.albomName }}
         </p>
 
         <p
-          class=""
+          class="m-0 co"
           style="color: white; float: right; font-size: 12px; display: inline-block"
         >
           {{ it.actor }}
         </p>
+      </div>
+    </div>
   </div>
   </div>
 </template>
