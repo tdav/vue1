@@ -1,15 +1,12 @@
 <template>
-  <div class="container-fluid p-0 qwer overflow-hidden" style="background-color: #212120; height: 100vh;  z-index: 1;">
-
-
-    <div v-for="it in MenuList" class="list-group ps-4 rtyu">
+   
+    <div v-for="it in MenuList" class="list-group">
       <MusicLibrary :data="it"> 
         <button v-if="it.title == 'PLAYLIST'" class="dfghjk myTitleBtn">+</button> 
       </MusicLibrary>
     </div>
   
-  </div>
-
+ 
 </template>
 
 
@@ -57,9 +54,7 @@ import MusicLibrary from './Music/MusicLeft/MusicLibrary'
   color: white;
 }
 
-.qwer {
-  height: 139vh;
-}
+ 
 
 .cvbn {
   background-color: #212121;
