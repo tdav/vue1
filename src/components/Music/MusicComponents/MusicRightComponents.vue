@@ -15,14 +15,14 @@
       <div class="row">
         <p
           class="m-0 p-0 col-6"
-          style="color: white; float: left; display: inline-block"
+          style="color: white; float: left; font-size: 10px; display: inline-block"
         >
           {{ it.albomName }}
         </p>
 
         <p
           class="m-0 col-6"
-          style="color: white; float: right; display: inline-block"
+          style="color: white; float: right; font-size: 10px; display: inline-block"
         >
           {{ it.actor }}
         </p>
