@@ -1,12 +1,13 @@
 <template>
     <p class="mt-4 ms-5 myTitle">
         {{ data.title }}
-        <button class="dfghjk myTitleBtn">+</button>
+        <slot ></slot>
+        
     </p>
 
     <div class=" list-group ps-4 rtyu">
         <a v-for="it in data.item" :key="it.id" :href="it.path" class="list-group-item list-group-item-action cvbn menuItem">
-            <img :src="it.iconUrl" alt="1">
+            <img :src=" require( `../../../assets/img/${it.iconUrl}`)" alt="1">
             <p>{{ it.name }}</p>
         </a>
  
@@ -96,15 +97,5 @@ const props = defineProps({
     text-align: left;
 }
 
-.myTitleBtn {
-    width: 16px;
-    height: 16px;
-    top: 587px;
-    left: 222px;
-    gap: 0px;
-    opacity: 0px;
-    background-color: #212121;
-    color: white;
-    margin-left: 5rem;
-}
+
 </style>

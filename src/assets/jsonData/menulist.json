@@ -4,31 +4,31 @@
         "item": [
             {
                 "id":1,
-                "iconUrl": "/img/home.png",
+                "iconUrl": "home.png",
                 "name": "Home",
                 "path": "home"
             },
             {
                 "id":2,
-                "iconUrl": "/img/discover.png",
+                "iconUrl": "discover.png",
                 "name": "Discover",
                 "path": "discover"
             },
             {
                 "id":3,
-                "iconUrl": "/img/radio.png",
+                "iconUrl": "radio.png",
                 "name": "Radio",
                 "path": "radio"
             },
             {
                 "id":4,
-                "iconUrl": "/img/albums.png",
+                "iconUrl": "albums.png",
                 "name": "Albums",
                 "path": "albums"
             },
             {
                 "id":5,
-                "iconUrl": "/img/podcast.png",
+                "iconUrl": "podcast.png",
                 "name": "Podcast",
                 "path": "podcast"
             }
@@ -41,19 +41,19 @@
         "item": [
             {
                 "id":6,
-                "iconUrl": "/img/music-square-add.png",
+                "iconUrl": "music-square-add.png",
                 "name": "Recently Added",
                 "path": "recently added"
             },
             {
                 "id":7,
-                "iconUrl": "/img/Favorite.png",
+                "iconUrl": "Favorite.png",
                 "name": "Favorite Songs",
                 "path": "favorite songs"
             },
             {
                 "id":8,
-                "iconUrl": "/img/local.png",
+                "iconUrl": "local.png",
                 "name": "Lokal Files",
                 "path": "lokal files"
             }
@@ -66,19 +66,19 @@
         "item": [
             {
                 "id":9,
-                "iconUrl": "/img/playlist.png",
+                "iconUrl": "playlist.png",
                 "name": "Lo-fi Music",
                 "path": "lo-fi music"
             },
             {
                 "id":10,
-                "iconUrl": "/img/playlist.png",
+                "iconUrl": "playlist.png",
                 "name": "Best of Jon Bovi",
                 "path": "best of jon bovi"
             },
             {
                 "id":11,
-                "iconUrl": "/img/playlist.png",
+                "iconUrl": "playlist.png",
                 "name": "Best of Jon Mayer",
                 "path": "best_of_jon_mayer"
             }

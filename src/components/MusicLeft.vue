@@ -6,7 +6,9 @@
 
 
     <div v-for="it in MenuList" class="list-group ps-4 rtyu">
-      <MusicLibrary :data="it"></MusicLibrary>
+      <MusicLibrary :data="it"> 
+        <button v-if="it.title == 'PLAYLIST'" class="dfghjk myTitleBtn">+</button> 
+      </MusicLibrary>
     </div>
   
   </div>
@@ -32,3 +34,16 @@ import MusicLibrary from './Music/MusicLeft/MusicLibrary'
 
 
 </script>
+
+<style scoped>
+.myTitleBtn {
+    width: 16px;
+    height: 16px;
+    top: 587px;
+    left: 222px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #212121;
+    color: white;
+    margin-left: 5rem;
+}</style>
