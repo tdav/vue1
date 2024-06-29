@@ -101,7 +101,6 @@
 
                 <div v-for="it in playlist" :key="it.id" class="row p-0">
                     <MusicRow :item="it"></MusicRow>
-
                     <hr class="m-1">
                 </div>
             </div>

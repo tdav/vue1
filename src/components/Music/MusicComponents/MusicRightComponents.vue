@@ -30,8 +30,8 @@
       </div>
     </div>
   </div>
-  <!-- </div> -->
 </template>
+
 <script setup>
 import albomlist from "../../../assets/jsonData/albomlist.json";
 </script>
