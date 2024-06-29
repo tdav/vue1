@@ -114,29 +114,6 @@
                             <img :src="it.imageUrl" alt="" class="kdscb">
                             <p>{{ it.name }}</p>
                         </div>
-                       
-                       
-                       
-                        <!-- <div class="col-2" style="text-align: center;">
-                            <img src="../assets/img/Rectangle1.png" alt="" class="kdscb">
-                            <p>SHIVER</p>
-                        </div>
-                        <div class="col-2" style="text-align: center;">
-                            <img src="../assets/img/Rectangle2.png" alt="" class="kdscb">
-                            <p>PERFECt</p>
-                        </div>
-                        <div class="col-2" style="text-align: center;">
-                            <img src="../assets/img/Rectangle4.png" alt="" class="kdscb">
-                            <p>xMAN</p>
-                        </div>
-                        <div class="col-2" style="text-align: center;">
-                            <img src="../assets/img/Rectangle5.png" alt="" class="kdscb">
-                            <p>oNEW</p>
-                        </div>
-                        <div class="col-2" style="text-align: center;">
-                            <img src="../assets/img/Rectangle6.png" alt="" class="kdscb">
-                            <p>X</p>
-                        </div> -->
                     </div>
                 </div>
             </div>
