@@ -6,7 +6,7 @@
         style="text-align: center;"
     >
         <img
-            :src="getAssetImg(it.imageUrl)"
+            :src="it.imageUrl"
             alt=""
             class="_img"
         >
