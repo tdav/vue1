@@ -13,14 +13,14 @@
     />
     <div class="col-8 p-0 m-0 text-center">
         <p
-          class="m-0 p-0"
+          class=""
           style="color: white; float: left; font-size: 14px; display: inline-block"
         >
           {{ it.albomName }}
         </p>
 
         <p
-          class="m-0"
+          class=""
           style="color: white; float: right; font-size: 12px; display: inline-block"
         >
           {{ it.actor }}
