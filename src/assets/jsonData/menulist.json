@@ -40,16 +40,19 @@
         "title": "LIBARARY",
         "item": [
             {
+                "id":6,
                 "iconUrl": "/assets/img/music-square-add.png",
                 "name": "Recently Added",
                 "path": "recently added"
             },
             {
+                "id":7,
                 "iconUrl": "/assets/img/Favorite.png",
                 "name": "Favorite Songs",
                 "path": "favorite songs"
             },
             {
+                "id":8,
                 "iconUrl": "/assets/img/local.png",
                 "name": "Lokal Files",
                 "path": "lokal files"
@@ -62,19 +65,22 @@
         "title": "PLAYLIST",
         "item": [
             {
+                "id":9,
                 "iconUrl": "/assets/img/playlist.png",
                 "name": "Lo-fi Music",
                 "path": "lo-fi music"
             },
             {
+                "id":10,
                 "iconUrl": "/assets/img/playlist.png",
                 "name": "Best of Jon Bovi",
                 "path": "best of jon bovi"
             },
             {
+                "id":11,
                 "iconUrl": "/assets/img/playlist.png",
                 "name": "Best of Jon Mayer",
-                "path": "best of jon mayer"
+                "path": "best_of_jon_mayer"
             }
 
         ]
