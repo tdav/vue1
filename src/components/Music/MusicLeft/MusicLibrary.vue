@@ -7,8 +7,8 @@
 
     <div class=" list-group ps-4 rtyu">
         <a v-for="it in data.item" :key="it.id" :href="it.path" class="list-group-item list-group-item-action cvbn menuItem">
-            <img :src=" require( `../../../assets/img/${it.iconUrl}`)" alt="1">
-            <p>{{ it.name }}</p>
+            <img :src=" require( `../../../assets/img/${it.iconUrl}`)" alt="1" class="imgages-logog ">
+            <p class="items123 menuSelectActive ">{{ it.name }}</p>
         </a>
  
     </div>
@@ -30,17 +30,11 @@ const props = defineProps({
 <style scoped>
 
 
-.img-logo123 {
-  padding-top: 2.2rem;
-  padding-left: 1.2rem;
-
-}
-
-.menuSelectActive{
+/* .menuSelectActive:hover{
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
   border-right: 4px solid  rgba(29, 185, 84, 1);
   color: white;
-}
+} */
 
 .qwer {
   height: 139vh;
@@ -49,13 +43,11 @@ const props = defineProps({
 .cvbn {
   background-color: #212121;
   color: rgba(255, 255, 255, 0.64);
-  border-left: none;
+  border-left: -33px;
   border-bottom: none;
   border-top: none;
   display: inline-block;
-  height: 38px;
-  border-radius: 0px;
-
+  height: 30px;
 }
 
 .cvbn:hover {
@@ -68,7 +60,9 @@ const props = defineProps({
   color: white;
 }
 
+.img-logo123  {
 
+}
 
 
 .dfghjk:active {
@@ -81,11 +75,13 @@ const props = defineProps({
 }
 
 .menuItem {
-    width: 24px;
-    height: 24px;
+    width: 200px;
+    height: 40px;
     gap: 0px;
     opacity: 0px;
     margin-right: 8px;
+
+
 }
 
 .myTitle {
@@ -97,5 +93,7 @@ const props = defineProps({
     text-align: left;
 }
 
-
+.items123 {
+    height: 34px;
+}
 </style>
