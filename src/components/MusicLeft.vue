@@ -5,7 +5,7 @@
     </div>
 
 
-    <div v-for="it in data.item" class="list-group ps-4 rtyu">
+    <div v-for="it in MenuList" class="list-group ps-4 rtyu">
       <MusicLibrary :data="it"></MusicLibrary>
     </div>
   
