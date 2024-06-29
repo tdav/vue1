@@ -2,7 +2,7 @@
   <div
     v-for="it in albomlist"
     :key="it.id"
-    class="row music-play "
+    class="row music-play mb-2"
     style="height: 55px"
   >
     <img
@@ -37,5 +37,5 @@ import albomlist from "../../../assets/jsonData/albomlist.json";
 </script>
 
 <style>
-  
+
 </style>
