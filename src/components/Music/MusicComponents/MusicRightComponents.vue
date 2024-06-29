@@ -6,13 +6,11 @@
           :src="require(it.imageUrl)"
           alt=""
         >
+        <img :src="require(it.imageUrl)" alt="" class="kdscb">
         <div class="col-8 p-0 m-0 text-center">
           <p class="m-0 p-0 me-2 owd">{{ it.albomName }}</p>
-          
           <p class="m-0 m mt-3 me-2 owdg ">{{ it.actor }}</p>
         </div>
-       
-        
       </div>
 </template>
 <script setup>
