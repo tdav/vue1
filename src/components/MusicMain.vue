@@ -267,10 +267,10 @@ const isPlayin = ref(false);
 
 function toggleButtons() {
     isPlayin.value = !isPlayin.value;
-    //   if (isPlaying.value) {
-    //     buttonText.value = 'FOLLOWING';
-    //   } else {
-    //     buttonText.value = 'FOLLOW';
-    //   }
+      if (isPlaying.value) {
+        buttonText.value = 'FOLLOWING';
+      } else {
+        buttonText.value = 'FOLLOW';
+      }
 }
 </script>
