@@ -99,7 +99,7 @@
             <div class="container-fluid">
 
                 <div v-for="it in playlist" :key="it.id" class="row p-0">
-                    <MusicQator :item="it"></MusicQator>
+                    <MusicRow :item="it"></MusicRow>
                     <hr class="m-1">
                 </div>
             </div>
@@ -239,7 +239,7 @@
 <script setup>
 
 import playlist from "../assets/jsonData/playlist.json"
-import MusicQator from "../components/Music/MusicMain/MusicQtor.vue"
+import MusicRow from "./Music/MusicMain/MusicRow.vue"
 import PopularReleasesMusic from '..//assets/jsonData/PopularReleasesMusic.json'
 
 import { ref } from 'vue';
