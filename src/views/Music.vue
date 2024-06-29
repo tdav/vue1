@@ -67,7 +67,7 @@
             </div>
             
             <div class="row p-0">
-                <div class="col-2 p-0" style="background-color: #212120;">
+                <div class="col-2 p-0" style="background-color: #1c1c1c;">
                     <MusicLeft></MusicLeft>
                 </div>
                 <div class="col-8 p-0">
