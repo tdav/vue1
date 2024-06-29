@@ -1,53 +1,62 @@
 [
-    {
+    {   
+        "id": 1,    
         "imgUrl":"img/Rectangle1.png",
         "albomName":"Perfect",
         "actor":"Ed Sheeran"
     },
     
-    {
+    {   
+        "id": 2,
         "imgUrl":"img/Rectangle2.png",
         "albomName":"Picisan",
         "actor":"Hanin"
     },
 
-    {
-        "imgUrl":"img/Rectangle3.pn",
+    {   
+        "id": 3,
+        "imgUrl":"img/Rectangle3.png",
         "albomName":"Title",
         "actor":"Meghan"
     },
 
-    {
+    {   
+        "id": 4,
         "imgUrl":"img/Rectangle5.png",
         "albomName":"Perfect",
         "actor":"Ed Sheeran"
     },
 
-    {
+    {   
+        "id": 5,
         "imgUrl":"img/Rectangle1.png",
         "albomName":"Perfect",
         "actor":"Ed Sheeran"
     },
 
-    {
+    {   
+        "id": 6,
         "imgUrl":"img/Rectangle1.png",
         "albomName":"Life Goes On",
         "actor":"Sascha Lappessen"
     },
 
-    {
+    {   
+        "id": 8,
         "imgUrl":"img/Rectangle2.png",
         "albomName":"It's My Life",
         "actor":"Sascha Lappessen"
     },
 
-    {
+    {   
+        "id": 9,
         "imgUrl":"img/Rectangle5.png",
         "albomName":"Trilenium",
         "actor":"Sascha Lappessen"
     },
 
-    {
+    {   
+        "id": 10,
         "imgUrl":"img/Rectangle5.png",
         "albomName":"S4! Sash!",
         "actor":"Sascha Lappessen"

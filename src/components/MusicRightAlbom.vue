@@ -4,7 +4,7 @@
         <p>Recent Played</p>
         <a class="uwhiu" style="text-decoration: none">See All</a>
       </div>
-      <div class="row music-play" style="height: 60px">
+      <!-- <div class="row music-play" style="height: 60px">
         <img
           class="col-1"
           style="height: 45px; width: 65px"
@@ -16,8 +16,8 @@
           
           <p class="m-0 mt-3 ms-3 owdg ">Ed Sheeran</p>
         </div>
-        
-      </div>
+         -->
+      <!-- </div>
       <div class="row music-play" style="height: 60px">
         <img
           class="col-1"
@@ -32,8 +32,8 @@
         </div>
         
        
-      </div>
-      <div class="row music-play" style="height: 60px">
+      </div> -->
+      <!-- <div class="row music-play" style="height: 60px">
         <img
           class="col-1"
           style="height: 45px; width: 65px"
@@ -47,8 +47,8 @@
         </div>
        
        
-      </div>
-      <div class="row music-play" style="height: 60px">
+      </div> -->
+      <!-- <div class="row music-play" style="height: 60px">
         <img
           class="col-1"
           style="height: 45px; width: 65px"
@@ -56,7 +56,7 @@
           alt=""
         />
         <div class="col-8 p-0 m-0 text-center">
-        <!-- <p class="m-0 p-0 me-2 owd">{{ props.item.name }}</p> -->
+        <p class="m-0 p-0 me-2 owd">{{ props.item.name }}</p>
           <p class="m-0 m mt-3 me-2 owdg ">Ed Sheeran</p>
         </div>
        
@@ -68,8 +68,7 @@
           style="height: 45px; width: 65px"
           src="../assets/img/Rectangle4.png"
           alt=""
-        />
-        
+         <
         <div class="col-8 p-0 m-0 text-center">
           <p class="m-0 p-0 me-2 owd">Perfect</p>
           
@@ -77,25 +76,16 @@
         </div>
        
         
-      </div>
-      <div class="row music-play" style="height: 60px">
-        <img
-          class="col-1"
-          style="height: 45px; width: 65px"
-          src="../assets/img/Rectangle1.png"
-          alt=""
-        />
-        <div class="col-8 p-0 m-0 text-center">
-          <p class="m-0 p-0 me-2 owd">Perfect</p>
-          
-          <p class="m-0 m mt-3 me-2 owdg ">Ed Sheeran</p>
-        </div> 
-      </div>
+      </div> -->
+      
+      <MusicRightComponents />
     </div>
 </template>
 
 <script setup>
 import { ref, defineProps,   onMounted } from 'vue';
+
+import MusicRightComponents from '@/components/Music/MusicComponents/MusicRightComponents.vue'
 
 const props = defineProps({ item: {} });
 
@@ -113,10 +103,6 @@ onMounted(() => {
   font-size: 11px;
 }
 
-.owd {
-  color: white;
-  font-size: 15px;
-}
 
 .owdg {
   color: #ffffff7c;
