@@ -1,12 +1,12 @@
 [
     {
         "id":1,
-        "imageUrl":"../assets/img/Rectangle3.png",
+        "imageUrl":"img/Rectangle3.png",
         "name":"PERU"
     },
     {
         "id":2,
-        "imageUrl":"../img/Rectangle1.png",
+        "imageUrl":"img/Rectangle1.png",
         "name":"SHIVER"
     },
     {
