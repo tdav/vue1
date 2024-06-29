@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "Rectangle3.png",
+    "name": "PERU"
+  },
+  {
+    "id": 2,
+    "imageUrl": "Rectangle1.png",
+    "name": "SHIVER"
+  },
+  {
+    "id": 3,
+    "imageUrl": "Rectangle2.png",
+    "name": "PERFECt"
+  },
+  {
+    "id": 4,
+    "imageUrl": "Rectangle4.png",
+    "name": "xMAN"
+  },
+  {
+    "id": 5,
+    "imageUrl": "Rectangle5.png",
+    "name": "oNEW"
+  },
+  {
+    "id": 6,
+    "imageUrl": "Rectangle6.png",
+    "name": "X"
+  }
+]

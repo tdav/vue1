@@ -1,17 +1,15 @@
-
 {
   "name": "vue1",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "serve": "yarn && vue-cli-service serve",
+    "build": "yarn && vue-cli-service build"
   },
   "dependencies": {
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
     "bootstrap": "^5.3.2",
-
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
