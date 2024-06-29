@@ -1,60 +1,5 @@
 <template>
     <div style="background-color: rgb(28 28 28); color: white; overflow-x: auto; max-height: 100vh;">
-        <nav class="navbar navbar-expand-lg"  style="position: fixed; top: 0; background-color: rgb(28 28 28);">
-            <div class="container-fluid">
-                <button class="btn btn-outline-darck" type="submit"
-                    style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: white;"
-                        fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
-                    </svg>
-                </button>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                        </li>
-                        <div class="btn-group dropend">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                                style="background-color: rgb(28 28 28); color: white; border: none; width: 80px;">
-                                <p class="me-3" style="color:  rgb(80 80 80);">Home</p>
-                            </button>
-                            <ul class="dropdown-menu" style="color: white;">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
-                        <li class="nav-item">
-                            <a style="color: white;" class="nav-link active" aria-current="page" href="#">Popular Artist
-                            </a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control duyvyuc me-2" type="search"
-                            style="width: 318px; background-color: #303030; color: white; border-radius: 15px; border: 1px solid #303030"
-                            placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-darck" type="submit"
-                            style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
-                            <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
-                            </svg>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </nav>
         <div class="uhsgno container-fluid" style="height: 100%; display: flex; align-items: center;">
             <div class="row px-4" style="height: 100%; display: flex; align-items: center;">
                 <div class="col-md-6 col-sm-12 p-5 immm">
@@ -93,8 +38,7 @@
         <div class="px-4">
             <div>
                 <h4 style="display: inline-block;">Popular</h4>
-                <a class="mt-2" style="display: inline-block; float: right; color: #1DB954; text-decoration: none"
-                    href="https://freemusicarchive.org/home
+                <a class="mt-2" style="display: inline-block; float: right; color: #1DB954; text-decoration: none" href="https://freemusicarchive.org/home
                     ">See All</a>
             </div>
             <div class="container-fluid">
@@ -127,10 +71,11 @@
 </template>
 
 <style>
-.ifd{
+.ifd {
     position: relative;
     top: 20%;
 }
+
 .eiwjnk {
     color: rgb(163, 163, 163);
 }
@@ -254,10 +199,10 @@ const isPlayin = ref(false);
 
 function toggleButtons() {
     isPlayin.value = !isPlayin.value;
-      if (isPlaying.value) {
+    if (isPlaying.value) {
         buttonText.value = 'FOLLOWING';
-      } else {
+    } else {
         buttonText.value = 'FOLLOW';
-      }
+    }
 }
 </script>
