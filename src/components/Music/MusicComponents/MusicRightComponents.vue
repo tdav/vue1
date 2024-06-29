@@ -8,7 +8,7 @@
     <img
       class="col-1"
       style="height: 45px; width: 65px"
-      :src="it.imgUrl"
+      :src="it.imgUrl",
       alt=""
     />
     <div class="col-8 p-0 m-0 text-center">
