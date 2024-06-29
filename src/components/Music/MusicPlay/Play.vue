@@ -92,6 +92,7 @@
         </div>
     </div>
 </template>
+
 <style scoped>
 
 .odwi:hover {
@@ -151,14 +152,11 @@ import { ref } from 'vue';
 
 const isPlaying = ref(false);
 
+let menuSelectActiveIndex = ref(1);
+
 function toggleIcons() {
     isPlaying.value = !isPlaying.value;
-}
-
-
-import { Ref } from 'vue';
-
-let menuSelectActiveIndex = ref(1);
+} 
 
 function menuSelect(index) {
     menuSelectActiveIndex = index;

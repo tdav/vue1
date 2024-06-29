@@ -100,6 +100,7 @@
 
                 <div v-for="it in playlist" :key="it.id" class="row p-0">
                     <MusicRow :item="it"></MusicRow>
+
                     <hr class="m-1">
                 </div>
             </div>
@@ -108,12 +109,13 @@
             <div>
                 <h4 style="display: inline-block;">Popular Releases</h4>
                 <div class="container-fluid">
-                    <div class="row">
-                       
+                    <div v-for="it in PopularReleasesMusic" :key="it.id" class="row">
+                        <PapularReleses></PapularReleses>
+                        <!--                        
                         <div v-for="it in PopularReleasesMusic" :key="it.id" class="col-2" style="text-align: center;">  
                             <img :src="it.imageUrl" alt="" class="kdscb">
                             <p>{{ it.name }}</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -214,10 +216,10 @@
 </style>
 
 <script setup>
-
+import PapularReleses from "../components/Music/MusicPapularReleases/PapularReleses.vue"
 import playlist from "../assets/jsonData/playlist.json"
 import MusicRow from "./Music/MusicMain/MusicRow.vue"
-import PopularReleasesMusic from '..//assets/jsonData/PopularReleasesMusic.json'
+// import PopularReleasesMusic from '..//assets/jsonData/PopularReleasesMusic.json'
 
 import { ref } from 'vue';
 
