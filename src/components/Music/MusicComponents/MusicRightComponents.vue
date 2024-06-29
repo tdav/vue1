@@ -9,7 +9,7 @@
         <div class="col-8 p-0 m-0 text-center">
           <p class="m-0 p-0 me-2" style="color: white; float: left;">{{ it.albomName }}</p>
           
-          <p class="m-0 m mt-3 me-2" style="color: white;">{{ it.actor }}</p>
+          <p class="m-0 m mt-3 me-2" style="color: white; float: right;">{{ it.actor }}</p>
         </div>
       </div>
 </template>
