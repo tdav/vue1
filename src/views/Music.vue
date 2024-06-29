@@ -17,6 +17,7 @@
                                         d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
                                 </svg>
                             </button>
+
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -65,18 +66,23 @@
                     </nav>
                 </div>
             </div>
-            
+
             <div class="row p-0">
                 <div class="col-2 p-0" style="background-color: #212120; height: 90vh">
                     <MusicLeft></MusicLeft>
                 </div>
-                <div class="col-8 p-0">
+
+                <div :class="[ isShowMenu? 'col-8': 'col-10' ]" class="p-0">
                     <MusicMain></MusicMain>
                 </div>
+
+
                 <div class="col-2 p-0">
                     <MusicRight></MusicRight>
                 </div>
             </div>
+
+
             <div class="row">
                 <div class="col-12">
                     <MusicBottom></MusicBottom>
@@ -92,5 +98,15 @@ import MusicMain from "../components/MusicMain"
 import MusicBottom from "../components/MusicBottom"
 import MusicLeft from "../components/MusicLeft"
 import MusicRight from "../components/MusicRight"
+
+
+import { ref } from 'vue';
+
+let isShowMenu = ref(true);
+
+function onClickShowMenu() {
+    isShowMenu.value = !isShowMenu.value;
+}
+
 
 </script>
