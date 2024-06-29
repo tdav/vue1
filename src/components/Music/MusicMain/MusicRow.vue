@@ -7,7 +7,7 @@
         </div>
         <div class="col-11 p-0">
             <div type="button" class="row" style=" height: 50px; width: 100%;">
-                <img class="col-1 uewiu" :src=" require(`../../../assets/img/${item.imgUrl}`)" alt="img">
+                <img class="col-1 uewiu" :src=" require(`../../../assets/img/${itemem.imgUrl}`)" alt="img">
                 <div class="col-4">
                     <p class="pt-3">{{ item.name }}</p>
                 </div>
