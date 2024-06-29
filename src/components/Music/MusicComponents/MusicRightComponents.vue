@@ -22,7 +22,7 @@
 
         <p
           class="m-0 col-6"
-          style="color: white; float: right; font-size: 14px; display: inline-block"
+          style="color: white; float: right; font-size: 12px; display: inline-block"
         >
           {{ it.actor }}
         </p>
