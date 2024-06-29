@@ -10,15 +10,7 @@
             <p>{{ it.name }}</p>
             <span class="olol float-end"></span>
         </a>
-
-        <!-- <a v-for="it in data.item" :key="it.id" :href="it.path" @click="menuSelect(9)"
-            :class="[menuSelectActiveIndex == 9 ? 'menuSelectActive' : '']"
-            class="list-group-item list-group-item-action cvbn">
-            <img :src="it.iconUrl" alt="1" style="width: 24px; height: 24px; gap: 0px; opacity: 0px; margin-right:8px;">
-            <p>{{ it.name }}</p>
-            <span class="olol float-end"></span>
-        </a> -->
-
+ 
     </div>
 
 </template>
