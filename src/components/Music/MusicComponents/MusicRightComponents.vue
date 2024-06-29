@@ -1,18 +1,32 @@
 <template>
-    <div v-for="it in albomlist" :key="it.id" class="row music-play" style="height: 60px">
-      <img class="col-1" style="height: 45px; width: 65px" :src="it.imgUrl" alt="">
-      <div class="col-8 p-0 m-0 text-center">
-        <p class="text-center" style="color: white; font-size: 14px; display: inline-block; margin: 0;">
+  <div
+    v-for="it in albomlist"
+    :key="it.id"
+    class="row music-play"
+    style="height: 60px"
+  >
+    <img
+      class="col-1"
+      style="height: 45px; width: 65px"
+      :src="it.imgUrl"
+      alt=""
+    />
+    <div class="col-8 p-0 m-0 text-center">
+        <p
+          class=""
+          style="color: white; float: left; font-size: 14px; display: inline-block"
+        >
           {{ it.albomName }}
-        </p> <br>
-        <p class="text-center" style="color: white; font-size: 12px; display: inline-block; margin: 0;">
+        </p>
+
+        <p
+          class=""
+          style="color: white; float: right; font-size: 12px; display: inline-block"
+        >
           {{ it.actor }}
         </p>
-      </div>
-    </div>
-  </template>
-  
-  <script setup>
-  import albomlist from "../../../assets/jsonData/albomlist.json";
-  </script>
-  
+  </div>
+</template>
+<script setup>
+import albomlist from "../../../assets/jsonData/albomlist.json";
+</script>
