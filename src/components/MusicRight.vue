@@ -45,7 +45,7 @@
       </div>
     </div>
     
-    <MusicRightAlbom :item="it"></MusicRightAlbom>
+    <MusicRightAlbom :item="it" class="music-list"></MusicRightAlbom>
   </div>
 </template>
 
@@ -55,6 +55,11 @@ import MusicRightAlbom from "../components/MusicRightAlbom.vue";
 </script>
 
 <style scoped>
+
+.music-list {
+  margin-top: 20px;
+}
+
 .aju {
   color: #ffffff7c;
   font-size: 11px;
