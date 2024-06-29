@@ -3,9 +3,9 @@
         "title": "",
         "item": [
             {
-                "iconUrl": "",
+                "iconUrl": "/assets/img/home.png",
                 "name": "Home",
-                "path": ""
+                "path": "home"
             },
             {
                 "iconUrl": "",
