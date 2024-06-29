@@ -16,9 +16,10 @@
 
 <script setup>
 
+import { onBeforeMount, reactive } from 'vue';
 import MenuList from '../assets/jsonData/menulist.json'
-import MusicLibrary from './Music/MusicLeft/MusicLibrary'
-
+import MusicLibrary from './Music/MusicLeft/MusicLibrary' 
+ 
 
 
 // import { ref } from 'vue';
