@@ -11,6 +11,7 @@
       :src="it.imgUrl"
       alt=""
     />
+    
     <div class="col-8 p-0 m-0 text-center">
       <div class="row">
         <div class="col-md-2">
