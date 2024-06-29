@@ -10,7 +10,7 @@
           style="height: 45px; width: 65px"
           src="../assets/img/Rectangle1.png"
           alt=""
-          />
+        />
         <div class="col-8 p-0 m-0 text-center">
           <p class="m-0 p-0 owd">Perfect</p>
           
@@ -94,7 +94,7 @@
     </div>
 </template>
 
-<script>
+<script setup>
 import { ref, defineProps,   onMounted } from 'vue';
 
 const props = defineProps({ item: {} });
@@ -104,6 +104,7 @@ onMounted(() => {
     // myPath.value =  props.item.imgUrl.value;
 
 })
+
 </script>
 
 <style scoped>

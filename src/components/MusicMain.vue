@@ -110,29 +110,10 @@
                 <h4 style="display: inline-block;">Popular Releases</h4>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-2" style="text-align: center;">
-                            <img src="../assets/img/Rectangle3.png" alt="" class="kdscb">
-                            <p>PERU</p>
-                        </div>
-                        <div class="col-2" style="text-align: center;">
-                            <img src="../assets/img/Rectangle1.png" alt="" class="kdscb">
-                            <p>SHIVER</p>
-                        </div>
-                        <div class="col-2" style="text-align: center;">
-                            <img src="../assets/img/Rectangle2.png" alt="" class="kdscb">
-                            <p>PERFECt</p>
-                        </div>
-                        <div class="col-2" style="text-align: center;">
-                            <img src="../assets/img/Rectangle4.png" alt="" class="kdscb">
-                            <p>xMAN</p>
-                        </div>
-                        <div class="col-2" style="text-align: center;">
-                            <img src="../assets/img/Rectangle5.png" alt="" class="kdscb">
-                            <p>oNEW</p>
-                        </div>
-                        <div class="col-2" style="text-align: center;">
-                            <img src="../assets/img/Rectangle6.png" alt="" class="kdscb">
-                            <p>X</p>
+                       
+                        <div v-for="it in PopularReleasesMusic" :key="it.id" class="col-2" style="text-align: center;">  
+                            <img :src="it.imageUrl" alt="" class="kdscb">
+                            <p>{{ it.name }}</p>
                         </div>
                     </div>
                 </div>
@@ -234,15 +215,20 @@
 </style>
 
 <script setup>
-import playlist from "../assets/jsonData/playlist.json"
 
+import playlist from "../assets/jsonData/playlist.json"
 import MusicRow from "./Music/MusicMain/MusicRow.vue"
+import PopularReleasesMusic from '..//assets/jsonData/PopularReleasesMusic.json'
 
 import { ref } from 'vue';
 
 let seeAll = ref(false)
 
 var btnvar1 = document.getElementById('btnh1');
+
+
+
+
 
 function Toggle1() {
     if (btnh1.value === 'red') {
