@@ -1,7 +1,7 @@
 <template>
   <div
     class="container-fluid p-3"
-    style="background-color: #212121; overflow-x: auto; height: 100vh"
+    style="background-color: #212121; overflow-y: auto; overflow-x: hidden; height: 90vh"
   >
     <div class="p-0 m-0 row">
       <div class="p-0 col-3" style="display: inline-block">

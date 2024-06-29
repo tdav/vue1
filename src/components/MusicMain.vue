@@ -1,5 +1,5 @@
 <template>
-    <div style="background-color: rgb(28 28 28); color: white; overflow-x: auto; max-height: 100vh;">
+    <div style="background-color: rgb(28 28 28); color: white; overflow-x: auto; max-height: 90vh;">
         <div class="uhsgno container-fluid" style="height: 100%; display: flex; align-items: center;">
             <div class="row px-4" style="height: 100%; display: flex; align-items: center;">
                 <div class="col-md-6 col-sm-12 p-5 immm">
