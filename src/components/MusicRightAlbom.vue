@@ -1,10 +1,10 @@
 <template>
     <div>
-      <div class="iwuc mt-4">
+      <div class="iwuc">
         <p>Recent Played</p>
         <a class="uwhiu" style="text-decoration: none">See All</a>
       </div> 
-      <MusicRightComponents class="mt-5"/>
+      <MusicRightComponents />
     </div>
 </template>
 
@@ -61,10 +61,9 @@ onMounted(() => {
 
 .iwuc {
   color: white;
-  height: 9vh;
   width: 100%;
   position: relative;
-  bottom: 30px;
+  /* bottom: 30px; */
 }
 
 .music-play {
@@ -87,5 +86,10 @@ onMounted(() => {
 .khbk {
   font-size: 12px;
   display: block;
+}
+
+.musicright {
+  position: relative;
+  bottom: 200px;
 }
 </style>
