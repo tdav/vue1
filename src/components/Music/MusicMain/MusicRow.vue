@@ -58,11 +58,4 @@ onMounted(() => {
     myPath.value =  props.item.imgUrl.value;
 })
 
-function Toggle1() {
-    if (btnh1.value === 'red') {
-        btnh1.value = '';
-    } else {
-        btnh1.value = 'red';
-    }
-}
 </script>
