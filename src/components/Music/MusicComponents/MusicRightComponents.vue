@@ -6,7 +6,7 @@
     style="height: 55px"
   >
     <img
-        class="col-1"
+        class="col-1 ms-1"
         style="height: 45px; width: 65px"
         :src=" require(`../../../assets/img/${it.imgUrl}`)"
         alt="img"

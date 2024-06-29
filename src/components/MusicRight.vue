@@ -33,7 +33,7 @@
       </div>
     </div>
     <div>
-      <div class="iwuc mt-4">
+      <div class="iwuc mt-5">
         <p>Fans Also Like</p>
         <a class="uwhiu">See All</a>
       </div>
@@ -44,7 +44,7 @@
         </div>
       </div>
     </div>
-    
+
     <MusicRightAlbom :item="it" class="music-list"></MusicRightAlbom>
   </div>
 </template>
@@ -55,7 +55,6 @@ import MusicRightAlbom from "../components/MusicRightAlbom.vue";
 </script>
 
 <style scoped>
-
 .music-list {
   margin-top: 20px;
 }
