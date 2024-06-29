@@ -6,5 +6,5 @@
 </template>
 
 <script setup>
-import PopularReleasesMusic from '../assets/jsonData/PopularReleasesMusic.json'
+import PopularReleasesMusic from '../../../assets/jsonData/PopularReleasesMusic.json'
 </script>
