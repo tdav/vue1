@@ -91,6 +91,6 @@ onMounted(() => {
 
 .musicright {
   position: relative;
-  bottom: 50px;
+  bottom: 200px;
 }
 </style>
