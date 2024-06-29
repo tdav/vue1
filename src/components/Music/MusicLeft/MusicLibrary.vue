@@ -1,14 +1,13 @@
 <template>
-    <p class="mt-4 ms-5 myTitle">
+    <p v-show="data.title != ''" class="mt-4 myTitle">
         {{ data.title }}
-        <slot ></slot>
-        
+        <slot ></slot>        
     </p>
 
-    <div class=" list-group ps-4 rtyu">
+    <div class=" list-group   rtyu">
         <a v-for="it in data.item" :key="it.id" :href="it.path" class="list-group-item list-group-item-action cvbn menuItem">
-            <img :src=" require( `../../../assets/img/${it.iconUrl}`)" alt="1" class="imgages-logog ">
-            <p class="items123 menuSelectActive ">{{ it.name }}</p>
+            <img :src=" require( `../../../assets/img/${it.iconUrl}`)" alt="1" class="logo-image">
+            <p    class="items123 menuSelectActive ">{{ it.name }}</p>
         </a>
  
     </div>
@@ -29,12 +28,9 @@ const props = defineProps({
 
 <style scoped>
 
-
-/* .menuSelectActive:hover{
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
-  border-right: 4px solid  rgba(29, 185, 84, 1);
-  color: white;
-} */
+ .logo-image{
+  padding-right: 5px;
+ }
 
 .qwer {
   height: 139vh;
