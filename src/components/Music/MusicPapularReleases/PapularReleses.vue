@@ -1,13 +1,3 @@
-<script setup>
-import { onBeforeMount, reactive } from 'vue';
-import { replaceArray, getAssetImg } from '@/plugins/services';
-const popularReleasesMusic = reactive([])
-onBeforeMount(async () => {
-    const _popularReleasesMusic = await fetch("../../../assets/jsonData/popular-releases-music.json").then(res => res?.json())
-    replaceArray(popularReleasesMusic, _popularReleasesMusic)
-})
-</script>
-
 <template>
     <div
         v-for="it in popularReleasesMusic"
@@ -23,6 +13,16 @@ onBeforeMount(async () => {
         <p>{{ it.name }}</p>
     </div>
 </template>
+<script setup>
+import { onBeforeMount, reactive } from 'vue';
+import { replaceArray, getAssetImg } from '@/plugins/services';
+const popularReleasesMusic = reactive([])
+onBeforeMount(async () => {
+    const _popularReleasesMusic = await fetch("../../../assets/jsonData/popular-releases-music.json").then(res => res?.json())
+    replaceArray(popularReleasesMusic, _popularReleasesMusic)
+})
+</script>
+
 
 <style lang="scss" scoped>
 ._img {
