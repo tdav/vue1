@@ -103,10 +103,6 @@ onMounted(() => {
   font-size: 11px;
 }
 
-.owd {
-  color: white;
-  font-size: 15px;
-}
 
 .owdg {
   color: #ffffff7c;
