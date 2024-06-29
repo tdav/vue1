@@ -7,9 +7,9 @@
           alt=""
         >
         <div class="col-8 p-0 m-0 text-center">
-          <p class="m-0 p-0 me-2" style="color: white; float: left; font-size: 7px;">{{ it.albomName }}</p>
+          <p class="m-0 p-0 me-2" style="color: white; float: left;  display: inline-block;">{{ it.albomName }}</p>
           
-          <p class="m-0 m mt-3 me-2" style="color: white; float: right; font-size: 7px;">{{ it.actor }}</p>
+          <p class="m-0 m mt-3 me-2" style="color: white; float: right;  display: inline-block;">{{ it.actor }}</p>
         </div>
       </div>
 </template>
