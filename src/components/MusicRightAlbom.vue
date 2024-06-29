@@ -61,7 +61,6 @@ onMounted(() => {
 
 .iwuc {
   color: white;
-  height: 9vh;
   width: 100%;
   position: relative;
   bottom: 30px;
