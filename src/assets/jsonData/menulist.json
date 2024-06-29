@@ -8,14 +8,24 @@
                 "path": "home"
             },
             {
-                "iconUrl": "",
+                "iconUrl": "/assets/img/discover.png",
                 "name": "Discover",
-                "path": ""
+                "path": "discover"
             },
             {
-                "iconUrl": "",
+                "iconUrl": "/assets/img/radio.png",
                 "name": "Radio",
-                "path": ""
+                "path": "radio"
+            },
+            {
+                "iconUrl": "/assets/img/albums.png",
+                "name": "Albums",
+                "path": "albums"
+            },
+            {
+                "iconUrl": "/assets/img/podcast.png",
+                "name": "Podcast",
+                "path": "podcast"
             }
 
         ]
@@ -25,19 +35,19 @@
         "title": "LIBARARY",
         "item": [
             {
-                "iconUrl": "",
-                "name": "Home",
-                "path": ""
+                "iconUrl": "/assets/img/music-square-add.png",
+                "name": "Recently Added",
+                "path": "recently added"
             },
             {
-                "iconUrl": "",
-                "name": "Discover",
-                "path": ""
+                "iconUrl": "/assets/img/Favorite.png",
+                "name": "Favorite Songs",
+                "path": "favorite songs"
             },
             {
-                "iconUrl": "",
-                "name": "Radio",
-                "path": ""
+                "iconUrl": "/assets/img/local.png",
+                "name": "Lokal Files",
+                "path": "lokal files"
             }
 
         ]
@@ -47,19 +57,19 @@
         "title": "PLAYLIST",
         "item": [
             {
-                "iconUrl": "",
-                "name": "Home",
-                "path": ""
+                "iconUrl": "/assets/img/playlist.png",
+                "name": "Lo-fi Music",
+                "path": "lo-fi music"
             },
             {
-                "iconUrl": "",
-                "name": "Discover",
-                "path": ""
+                "iconUrl": "/assets/img/playlist.png",
+                "name": "Best of Jon Bovi",
+                "path": "best of jon bovi"
             },
             {
-                "iconUrl": "",
-                "name": "Radio",
-                "path": ""
+                "iconUrl": "/assets/img/playlist.png",
+                "name": "Best of Jon Mayer",
+                "path": "best of jon mayer"
             }
 
         ]
