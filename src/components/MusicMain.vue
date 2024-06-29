@@ -1,6 +1,6 @@
 <template>
     <div style="background-color: rgb(28 28 28); color: white; overflow-x: auto; max-height: 100vh;">
-        <nav class="navbar navbar-expand-lg form-contro" style="position: fixed; background-color: #212121; width:58%">
+        <nav class="navbar navbar-expand-lg" style="position: fixed; top: 0;     background-color: rgb(28 28 28); width: 58%; ">
             <div class="container-fluid">
                 <button class="btn btn-outline-darck" type="submit"
                     style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
@@ -23,7 +23,7 @@
                             <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
                                 aria-expanded="false"
                                 style="background-color: rgb(28 28 28); color: white; border: none; width: 80px;">
-                                <p class="me-3 eiwjnk">Home</p>
+                                <p class="me-3" style="color:  rgb(80 80 80);">Home</p>
                             </button>
                             <ul class="dropdown-menu" style="color: white;">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -267,10 +267,10 @@ const isPlayin = ref(false);
 
 function toggleButtons() {
     isPlayin.value = !isPlayin.value;
-    //   if (isPlaying.value) {
-    //     buttonText.value = 'FOLLOWING';
-    //   } else {
-    //     buttonText.value = 'FOLLOW';
-    //   }
+      if (isPlaying.value) {
+        buttonText.value = 'FOLLOWING';
+      } else {
+        buttonText.value = 'FOLLOW';
+      }
 }
 </script>

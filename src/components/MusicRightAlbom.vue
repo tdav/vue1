@@ -56,8 +56,7 @@
           alt=""
         />
         <div class="col-8 p-0 m-0 text-center">
-          <p class="m-0 p-0 me-2 owd">Perfect</p>
-          
+        <!-- <p class="m-0 p-0 me-2 owd">{{ props.item.name }}</p> -->
           <p class="m-0 m mt-3 me-2 owdg ">Ed Sheeran</p>
         </div>
        
@@ -94,6 +93,18 @@
       </div>
     </div>
 </template>
+
+<script>
+import { ref, defineProps,   onMounted } from 'vue';
+
+const props = defineProps({ item: {} });
+
+const myPath = ref("");
+onMounted(() => {
+    // myPath.value =  props.item.imgUrl.value;
+
+})
+</script>
 
 <style scoped>
 .aju {

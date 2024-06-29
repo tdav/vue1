@@ -44,14 +44,13 @@
         </div>
       </div>
     </div>
-    <MusicRightAlbom />
+    <MusicRightAlbom :item="it"></MusicRightAlbom>
   </div>
-  
 </template>
 
 <script setup>
-import musicPlaylist from "../assets/jsonData/musicPlaylist.json"
-import MusicRightAlbom from '../components/MusicRightAlbom.vue';
+import musicPlaylist from "../assets/jsonData/musicPlaylist.json";
+import MusicRightAlbom from "../components/MusicRightAlbom.vue";
 </script>
 
 <style scoped>
