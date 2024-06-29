@@ -7,7 +7,7 @@
         </div>
         <div class="col-11 p-0">
             <div type="button" class="row" style=" height: 50px; width: 100%;">
-                <img class="col-1 uewiu" :src=" require(`../../../assets/img/${it.imgUrl}`)" alt="img">
+                <img class="col-1 uewiu" :src=" require(`../../../assets/img/${item.imgUrl}`)" alt="img">
                 <div class="col-4">
                     <p class="pt-3">{{ item.name }}</p>
                 </div>
@@ -49,9 +49,8 @@
 </template>
 
 <script setup>
-import { ref, defineProps,   onMounted } from 'vue';
+import {  defineProps,} from 'vue';
 
-import { defineProps} from 'vue';
 const props = defineProps({ item: {} });
 
 </script>
