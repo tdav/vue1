@@ -12,7 +12,7 @@
         alt=""
     />
 
-    <div class="col-8 p-0 m-0 text-center">
+    <div class="col-8 p-0 m-0 text-left">
       <div class="row">
         <p
           class="m-0 p-0"
