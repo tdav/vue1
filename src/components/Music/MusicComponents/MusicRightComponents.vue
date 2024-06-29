@@ -11,52 +11,21 @@
       :src="it.imgUrl"
       alt=""
     />
-    
     <div class="col-8 p-0 m-0 text-center">
       <div class="row">
-        <div class="col-md-2">
-            <p
-                class="m-0 p-0"
-                style="
-                color: white;
-                float: left;
-                font-size: 14px;
-                display: inline-block;
-                "
-            >
-                {{ it.albomName }}
-            </p>
-        </div>
-        <div class="col-md-5">
-            <p
-                class="m-0 p-0"
-                style="
-                color: white;
-                float: left;
-                font-size: 14px;
-                display: inline-block;
-                "
-            >
-                {{ it.albomName }}
-            </p>
-        </div>
-
-
-        <div class="col-md-5">
-            <p
-                class="m-0 col-6"
-                style="
-                    color: white;
-                    float: right;
-                    font-size: 12px;
-                    display: inline-block;
-                "
-                >
-                {{ it.actor }}
+        <p
+          class="m-0 p-0 col-6"
+          style="color: white; float: left; font-size: 14px; display: inline-block"
+        >
+          {{ it.albomName }}
         </p>
-        </div>
 
-        
+        <p
+          class="m-0 col-6"
+          style="color: white; float: right; font-size: 12px; display: inline-block"
+        >
+          {{ it.actor }}
+        </p>
       </div>
     </div>
   </div>
