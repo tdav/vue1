@@ -63,7 +63,6 @@ onMounted(() => {
   color: white;
   width: 100%;
   position: relative;
-  /* bottom: 30px; */
 }
 
 .music-play {
