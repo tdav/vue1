@@ -6,7 +6,8 @@
                 "id":1,
                 "iconUrl": "home.png",
                 "name": "Home",
-                "path": "home"
+                "path": "home",
+                "active":false
             },
             {
                 "id":2,
