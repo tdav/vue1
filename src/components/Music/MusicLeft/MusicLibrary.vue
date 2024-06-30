@@ -1,16 +1,16 @@
-<template>
-    <p v-show="data.title != ''" class="mt-4 myTitle ">
-        {{ data.title }}
-        <slot ></slot>        
-    </p>
+<template> 
+        <!-- <img  :src=" require( `../../../assets/img/${it.imgUrl}`)" alt=""> -->
+        <p v-show="data.title != ''" class="mt-4 myTitle ">
+            {{ data.title }}
+            <slot></slot>        
+        </p>
 
-    <div class=" list-group rtyu">
-        <a v-for="it in data.item" :key="it.id" :href="it.path" class="list-group-item list-group-item-action cvbn menuItem">
-            <img :src=" require( `../../../assets/img/${it.iconUrl}`)" alt="1" class="logo-image">
-            <p    class="items123 menuSelectActive ">{{ it.name }}</p>
-        </a>
- 
-    </div>
+        <div class=" list-group rtyu">
+            <a v-for="it in data.item" :key="it.id" :href="it.path" class="list-group-item list-group-item-action cvbn menuItem">
+                <img :src=" require( `../../../assets/img/${it.iconUrl}`)" alt="1" class="logo-image">
+                <p    class="items123 menuSelectActive ">{{ it.name }}</p>
+            </a>
+        </div>
 
 </template>
 
@@ -65,6 +65,7 @@ const props = defineProps({
     line-height: 16.39px;
     letter-spacing: 0.16em;
     margin-left: 2rem;
+    display: flex;
 }
 
 .items123 {

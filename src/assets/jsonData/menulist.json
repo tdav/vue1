@@ -4,9 +4,9 @@
         "item": [
             {
                 "id":1,
+                "imageUrl": "Logo.png",
                 "iconUrl": "home.png",
                 "name": "Home",
-                "url":"../../views/Jasur.vue",
                 "path": "home",
                 "active":false
             },

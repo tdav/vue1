@@ -9,7 +9,7 @@
                             <div class="p-4 pt-3 pb-3">
                                 <img src="../assets/img/Logo.png" alt="logo" class="img-logo123 p-0">
                             </div>
-                            <button class="btn btn-outline-darck ms-4" type="submit" @click="onClickShowMenu"
+                            <button class="btn btn-outline-darck ms-4" type="submit"  @click="toggleOffcanvas"
                                 style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: white;"
                                     fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
@@ -68,11 +68,26 @@
             </div>
 
             <div class="row p-0">
-                <div  class="p-0 col-2 pdoiuy" v-show="isShowMenu" style="background-color: #1c1c1c; height: 90vh">
-                    <MusicLeft></MusicLeft>
-                </div>
+                    <!-- <button @click="toggleOffcanvas" class="open-btn">Menu</button> -->
+                    <div :class="['offcanvas', { 'show': isOffcanvasOpen }]">
+                    <button @click="toggleOffcanvas" class="close-btn">&times;</button>
+                    <div v-for="it in MenuList" class="list-group col-2" :key="it.id" style="background-color: #1c1c1c; margin-top:-5px;">
+                        <MusicLibrary :data="it">
+                        <!-- <div v-if="it.title == '.'">
+                            <div class="p-4 pt-3 pb-3">
+                                <img src="../assets/img/Logo.png" alt="logo" class="img-logo123 p-0">
+                            </div>
+                        </div> -->
+                        <button v-if="it.title == 'PLAYLIST'" class="dfghjk myTitleBtn">+</button>
+                        </MusicLibrary>
+                    <!-- <MusicLeft></MusicLeft> -->
+                    </div>
+                    </div>
+                    <div :class="['overlay', { 'show': isOffcanvasOpen }]" @click="toggleOffcanvas"></div>
+                <!-- <div  class="p-0 col-2 pdoiuy" v-show="isShowMenu" style="background-color: #1c1c1c; height: 90vh">
+                </div> -->
 
-                <div :class="[ isShowMenu? 'col-8': 'col-10' ]" class="p-0">
+                <div  class="p-0 col-10"><!--:class="[ isShowMenu? 'col-8': 'col-10' ]"-->
                     <MusicMain></MusicMain>
                 </div>
 
@@ -95,9 +110,17 @@
 <script setup>
 import MusicMain from "../components/MusicMain"
 import MusicBottom from "../components/MusicBottom"
-import MusicLeft from "../components/MusicLeft"
+// import MusicLeft from "../components/MusicLeft"
 import MusicRight from "../components/MusicRight"
+import MusicLibrary from "../components/Music/MusicLeft/MusicLibrary.vue"
+import MenuList from "../assets/jsonData/menulist.json";
+// import MusicLibrary from './Music/MusicLeft/MusicLibrary';
 
+const isOffcanvasOpen = ref(false);
+
+function toggleOffcanvas() {
+  isOffcanvasOpen.value = !isOffcanvasOpen.value;
+}
 
 import { ref } from 'vue';
 
@@ -109,4 +132,75 @@ function onClickShowMenu() {
 </script>
 
 <style scoped>
+.open-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1001;
+  background-color: #1c1c1c;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.offcanvas {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #1c1c1c;
+  overflow-x: hidden;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.offcanvas.show {
+  left: 0;
+  padding-top: 5rem;
+}
+
+.close-btn {
+  /* position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer; */
+  visibility: hidden;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 999;
+  visibility: hidden;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.myTitleBtn {
+  width: 16px;
+  height: 16px;
+  background-color: #1c1c1c;
+  color: white;
+  margin-left: 5rem;
+}
+
+.list-group {
+  background-color: #1c1c1c;
+  margin-top: -5px;
+}
 </style>
