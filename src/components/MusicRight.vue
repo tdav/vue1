@@ -18,7 +18,7 @@
     </div>
     <div>
       <div class="iwuc mt-5 ">
-        <p>Fans Also Like</p>
+        <p style="margin-top:7px;">Fans Also Like</p>
         <a class="uwhiu">See All</a>
       </div>
       <div class="isucbk">
@@ -98,6 +98,7 @@ import MusicRightAlbom from "../components/MusicRightAlbom.vue";
   float: right;
   color: green;
   text-decoration: none;
+  margin-top: 7px;
 }
 
 .khbkk {
