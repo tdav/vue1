@@ -26,23 +26,6 @@ import Range from "../components/Music/MusicRange/Range.vue"
     border-radius: 20px;
     margin-top: 20px
 }
-
-#btnh1 {
-    width: 100%;
-    padding: 0px;
-    text-align: center;
-    color: white;
-}
-
-#btnh1:hover {
-    color: red;
-}
-
-#btnh1:active {
-    border: none;
-    color: red;
-}
-
 .jabx:active{
     color: rgb(66, 66, 255);
 }

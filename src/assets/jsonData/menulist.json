@@ -4,7 +4,6 @@
         "item": [
             {
                 "id":1,
-                "imageUrl": "Logo.png",
                 "iconUrl": "home.png",
                 "name": "Home",
                 "path": "home",

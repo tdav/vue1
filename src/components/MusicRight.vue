@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid p-3" style="background-color: #1c1c1c; overflow-x: auto; height: 90vh">
+  <div class="container-fluid p-3" style="background-color: #1c1c1c; overflow-x: hidden; height: 90vh">
     <div class="p-0 m-0 row" style="height: 25px;">
       <div class="p-0 col-3" style="display: inline-block">
         <img src="../assets/img/music/Ellipse 1.png" alt="" />

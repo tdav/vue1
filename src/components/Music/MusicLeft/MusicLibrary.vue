@@ -1,5 +1,4 @@
 <template> 
-        <!-- <img  :src=" require( `../../../assets/img/${it.imgUrl}`)" alt=""> -->
         <p v-show="data.title != ''" class="mt-4 myTitle ">
             {{ data.title }}
             <slot></slot>        
@@ -36,7 +35,10 @@ const props = defineProps({
   color: rgba(255, 255, 255, 0.64);
   display: inline-block;
   height: 30px;
-  border: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #212121;
 }
 
 .cvbn:hover {

@@ -6,15 +6,18 @@
                 <p style="font-size: 14px; display: inline; color: white">Shape of You</p>
                 <p style="font-size: 14px; color: white;">Ed Sheeran</p>
             </div>
-            <p class="m-0">
-                <button id="btnh1" class="btn mb-4" @click="handleClick" ref="myButton">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-heart-fill lekfnnok" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
-                    </svg>
-                </button>
-            </p>
+                <svg   v-if="isPlayingk" xmlns="http://www.w3.org/2000/svg" style="color: red;" width="16" height="16" fill="currentColor"
+                    class="bi bi-heart-fill"  viewBox="0 0 16 16" @click="toggleIconsl">
+                    <path fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg>
+
+                    
+                <svg  v-else  @click="toggleIconsl" style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg>
         </div>
         <div class="col-4 p-0"
             style="color: white; text-align: center; height: 100px; display: flex; align-items: center;">
@@ -37,14 +40,14 @@
                         d="M.404 7.304a.802.802 0 0 0 0 1.392l6.363 3.692c.52.302 1.233-.043 1.233-.696V4.308c0-.653-.713-.998-1.233-.696z" />
                 </svg>
                 <!-- < -->
-                <div style="display: inline-block; height: 35px; width: 35px; border-radius: 50px; border: 1px solid;" class="p-0 ms-4 m-0 iug">
+                <div style="display: inline-block; height: 35px; width: 35px; border-radius: 50px;" class="p-0 ms-4 m-0 iug">
                     <svg v-if="isPlaying" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                         class="bi bi-pause-circle-fill jabx" style="color: white;" viewBox="0 0 16 16" @click="toggleIcons">
                         <path
                             d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5m3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5" />
                     </svg>
 
-                    <svg v-else xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                    <svg v-else xmlns="http://www.w3.org/2000/svg"  style=" width:35px; height:35px;" fill="currentColor"
                         class="bi bi-caret-right-fill jabx" viewBox="0 0 16 16" @click="toggleIcons">
                         <path
                             d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
@@ -100,10 +103,8 @@
     rotate: 900deg;
 }
 
-.lekfnnok:hover {
-    color: red;
-    transition: all 1s;
-}
+
+
 
 .menuSelectActive {
     color: red;
@@ -118,11 +119,19 @@
     margin-top: 20px
 }
 
-#btnh1 {
+/* #btnh1 {
     width: 100%;
     padding: 0px;
     text-align: center;
     color: white;
+}
+
+#btnh1:active {
+    border-color: #1c1c1c1c;
+} */
+
+.cvbn {
+    color: red;
 }
 
 .jabx:active {
@@ -143,6 +152,14 @@
     height: 22px;
 }
 
+.islike {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
 
 </style>
 
@@ -152,13 +169,15 @@ import { ref } from 'vue';
 
 const isPlaying = ref(false);
 
-let menuSelectActiveIndex = ref(1);
-
 function toggleIcons() {
     isPlaying.value = !isPlaying.value;
 } 
 
-function menuSelect(index) {
-    menuSelectActiveIndex = index;
-}
+const isPlayingk = ref(false);
+
+function toggleIconsl() {
+    isPlayingk.value = !isPlayingk.value;
+} 
+
+
 </script>

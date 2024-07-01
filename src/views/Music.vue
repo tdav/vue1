@@ -70,7 +70,9 @@
             <div class="row p-0">
                     <!-- <button @click="toggleOffcanvas" class="open-btn">Menu</button> -->
                     <div :class="['offcanvas', { 'show': isOffcanvasOpen }]">
-                    <button @click="toggleOffcanvas" class="close-btn">&times;</button>
+                    <div class="close-btn">
+                        <img src="../assets/img/Logo.png" alt="logo1">
+                    </div>
                     <div v-for="it in MenuList" class="list-group col-2" :key="it.id" style="background-color: #1c1c1c; margin-top:-5px;">
                         <MusicLibrary :data="it">
                         <!-- <div v-if="it.title == '.'">
@@ -132,17 +134,6 @@ function onClickShowMenu() {
 </script>
 
 <style scoped>
-.open-btn {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  z-index: 1001;
-  background-color: #1c1c1c;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
 
 .offcanvas {
   position: fixed;
@@ -154,23 +145,19 @@ function onClickShowMenu() {
   overflow-x: hidden;
   transition: 0.3s;
   z-index: 1000;
+
 }
 
 .offcanvas.show {
+  left: 2rem;
+  padding-top: 17px;
   left: 0;
-  padding-top: 5rem;
 }
 
 .close-btn {
-  /* position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 30px;
-  color: white;
-  background: none;
-  border: none;
-  cursor: pointer; */
-  visibility: hidden;
+    padding-bottom: 35px;
+    background-color: #1c1c1c;
+    padding-left: 1rem;
 }
 
 .overlay {
