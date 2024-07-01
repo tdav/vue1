@@ -37,14 +37,14 @@
                         d="M.404 7.304a.802.802 0 0 0 0 1.392l6.363 3.692c.52.302 1.233-.043 1.233-.696V4.308c0-.653-.713-.998-1.233-.696z" />
                 </svg>
                 <!-- < -->
-                <div style="display: inline-block; " class="p-0 ms-4 pt-1 m-0 iug">
-                    <svg v-if="isPlaying" xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
-                        class="bi bi-pause-circle-fill jabx" viewBox="0 0 16 16" @click="toggleIcons">
+                <div style="display: inline-block; height: 35px; width: 35px; border-radius: 50px; border: 1px solid;" class="p-0 ms-4 m-0 iug">
+                    <svg v-if="isPlaying" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-pause-circle-fill jabx" style="color: white;" viewBox="0 0 16 16" @click="toggleIcons">
                         <path
                             d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5m3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5" />
                     </svg>
 
-                    <svg v-else xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
+                    <svg v-else xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                         class="bi bi-caret-right-fill jabx" viewBox="0 0 16 16" @click="toggleIcons">
                         <path
                             d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
@@ -97,7 +97,7 @@
 
 .odwi:hover {
     transition: all 3s;
-    rotate: 720deg;
+    rotate: 900deg;
 }
 
 .lekfnnok:hover {

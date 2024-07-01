@@ -3,13 +3,13 @@
         <div class="container p-0" style="background-color: #1c1c1c;">
             <div class="row" style="height: 10vh">
                 <div class="col p-0">
-                    <nav class="navbar navbar-expand-lg"
+                    <nav class="navbar navbar-expand-lg p-0"
                         style="background-color: rgb(28 28 28); height: 100%;">
                         <div class="container p-0">
                             <div class="p-4 pt-3 pb-3">
                                 <img src="../assets/img/Logo.png" alt="logo" class="img-logo123 p-0">
                             </div>
-                            <button class="btn btn-outline-darck ms-4" type="submit"
+                            <button class="btn btn-outline-darck ms-4" type="submit" @click="onClickShowMenu"
                                 style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: white;"
                                     fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
@@ -52,7 +52,7 @@
                                     <input class="form-control duyvyuc me-2" type="search"
                                         style="width: 318px; background-color: #303030; color: white; border-radius: 15px; border: 1px solid #303030"
                                         placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-outline-darck" type="submit"
+                                    <button class="btn btn-outline-darck iwuys" type="submit"
                                         style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
                                         <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16"
                                             height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
@@ -68,7 +68,7 @@
             </div>
 
             <div class="row p-0">
-                <div class="col-2 p-0" style="background-color: #212120; height: 90vh">
+                <div  class="p-0 col-2 pdoiuy" v-show="isShowMenu" style="background-color: #1c1c1c; height: 90vh">
                     <MusicLeft></MusicLeft>
                 </div>
 
@@ -76,8 +76,7 @@
                     <MusicMain></MusicMain>
                 </div>
 
-
-                <div class="col-2 p-0">
+                <div class="p-0 col-2">
                     <MusicRight></MusicRight>
                 </div>
             </div>
@@ -110,3 +109,6 @@ function onClickShowMenu() {
 
 
 </script>
+
+<style scoped>
+</style>

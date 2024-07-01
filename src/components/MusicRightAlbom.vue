@@ -1,6 +1,6 @@
 <template>
     <div>
-      <div class="iwuc">
+      <div class="iwuc p-0">
         <p>Recent Played</p>
         <a class="uwhiu" style="text-decoration: none">See All</a>
       </div> 

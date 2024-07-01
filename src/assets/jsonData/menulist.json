@@ -6,6 +6,7 @@
                 "id":1,
                 "iconUrl": "home.png",
                 "name": "Home",
+                "url":"../../views/Jasur.vue",
                 "path": "home",
                 "active":false
             },
