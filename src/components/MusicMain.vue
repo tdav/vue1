@@ -15,19 +15,11 @@
                             17.869.241.762 monthly listeners
                         </p>
                         <button class="butt dlfcbh me-2">PLAY</button>
-                        <!-- kenco -->
-                        <!-- <button class="butt hdsvck">
-                        FALOVING
-                    </button>
-                    <button class="butt hdsvckk">
-                        FALOVING
-                    </button> -->
-
+                    
                         <button class="butt" :class="{ 'hdsvck': isPlayin, 'hdsvckk': !isPlayin }"
                             @click="toggleButtons()">
                             FOLLOW
                         </button>
-                        <!-- kenco -->
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-0">

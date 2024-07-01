@@ -72,7 +72,7 @@
             </div>
         </div>
         <div class="col-4 p-3 pe-0  pt-4">
-            <div class="pt-1 " style="float: right;">
+            <div class="pt-1  like-comment" style="float: right;">
                 <svg style="float: right; color: white; " xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                     fill="currentColor" class="bi bi-chat-left-heart mt-2 me-2 ms-4 pt-1 pe-0" viewBox="0 0 16 16">
                     <path
@@ -103,7 +103,9 @@
     rotate: 900deg;
 }
 
-
+/* .like-comment:hover {
+    background: red;
+} */
 
 
 .menuSelectActive {
