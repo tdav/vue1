@@ -1,5 +1,5 @@
 <template>
-    <p v-show="data.title != ''" class="mt-4 myTitle">
+    <p v-show="data.title != ''" class="mt-4 myTitle ">
         {{ data.title }}
         <slot ></slot>        
     </p>
@@ -30,10 +30,6 @@ const props = defineProps({
  .logo-image{
   padding-right: 5px;
  }
-
-.qwer {
-  height: vh;
-}
 
 .cvbn {
   background-color: #1c1c1c;
@@ -68,7 +64,7 @@ const props = defineProps({
     font-weight: 700;
     line-height: 16.39px;
     letter-spacing: 0.16em;
-    text-align: left;
+    margin-left: 2rem;
 }
 
 .items123 {
