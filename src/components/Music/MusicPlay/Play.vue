@@ -103,10 +103,6 @@
     rotate: 900deg;
 }
 
-.like-comment:hover {
-    background: red;
-}
-
 
 .menuSelectActive {
     color: red;
