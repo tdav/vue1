@@ -22,7 +22,7 @@
            
             <h3 class="mt-4">Bajarilgan</h3>
             <div class="col">
-                <ul class="list-group">
+                <ul class="list-group mt-3">
                     <li v-for="it in donelist" :key="it.id">
                         <input type="checkbox" v-model="it.checked" @change="handleCheck(it)" />
                         <p class="mytext ms-2"> {{ it.name }}</p>
