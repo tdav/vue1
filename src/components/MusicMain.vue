@@ -5,7 +5,7 @@
                 <div class="col-md-6 col-sm-12 p-5 immm">
                     <div class="ifd p-0">
                         <p>Verified Artist</p>
-                        <h1 style="font-size: 50px;">Ed Sheeran</h1>
+                        <h1 style="font-size: revert-layer;">Ed Sheeran</h1>
                         <p class="d-block">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                 class="bi bi-headphones mb-2" viewBox="0 0 16 16">
@@ -26,7 +26,6 @@
                         <button class="butt" :class="{ 'hdsvck': isPlayin, 'hdsvckk': !isPlayin }">
                             FOLLOW
                         </button>
-                        <!-- kenco -->
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-0">

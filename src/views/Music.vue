@@ -1,7 +1,7 @@
 <template>
     <div class="p-0 m-0 " style="background-color: black; overflow-x: hidden; overflow-y: hidden;">
         <div class="container p-0" style="background-color: #1c1c1c;">
-            <div class="row" style="height: 10vh">
+            <div class="row" style="height: 12vh;">
                 <div class="col p-0">
                     <nav class="navbar navbar-expand-lg p-0"
                         style="background-color: rgb(28 28 28); height: 100%;">
@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <div class="row p-0">
+            <div class="row p-0" style="height: 88vh;">
                     <!-- <button @click="toggleOffcanvas" class="open-btn">Menu</button> -->
                     <div :class="['offcanvas', { 'show': isOffcanvasOpen }]">
                     <div class="close-btn">
