@@ -30,6 +30,9 @@
     </div>
 
     <MusicRightAlbom :item="it"></MusicRightAlbom>
+    <div style="height: 80px;">
+
+    </div>
   </div>
 </template>
 

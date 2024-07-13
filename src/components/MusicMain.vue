@@ -23,8 +23,7 @@
                         FALOVING
                     </button> -->
 
-                        <button class="butt" :class="{ 'hdsvck': isPlayin, 'hdsvckk': !isPlayin }"
-                            @click="toggleButtons()">
+                        <button class="butt" :class="{ 'hdsvck': isPlayin, 'hdsvckk': !isPlayin }">
                             FOLLOW
                         </button>
                         <!-- kenco -->
