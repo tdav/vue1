@@ -27,11 +27,11 @@
                                     <li class="nav-item">
                                     </li>
                                     <div class="btn-group dropend">
-                                        <!-- <button type="button" class="btn btn-secondary dropdown-toggle"
-                                            data-bs-toggle="dropdown" aria-expanded="false"
-                                            style="background-color: rgb(28 28 28); color: white; border: none; width: 80px;">
-                                            <p class="me-3 sghf" style="color:  rgb(80 80 80);">Home</p>
-                                        </button> -->
+                                            <button type="button" class="btn btn-secondary dropdown-toggle"
+                                                data-bs-toggle="dropdown" aria-expanded="false"
+                                                style="background-color: rgb(28 28 28); color: white; border: none; width: 80px;">
+                                                <p class="me-3 sghf" style="color:  rgb(80 80 80);">Home</p>
+                                            </button>
                                         <ul class="dropdown-menu" style="color: white;">
                                             <li><a class="dropdown-item trgk" href="#">Action</a></li>
                                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -50,7 +50,7 @@
                                 <form class="d-flex">
                                     <input class=" searchyt me-2" type="search"
                                         style="width: 318px; background-color: #303030; color: white; border-radius: 15px; border: 1px solid #303030"
-                                        placeholder="Search" aria-label="Search">
+                                         aria-label="Search">
                                     <button class="btn btn-outline-darck iwuys" type="submit"
                                         style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
                                         <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16"
