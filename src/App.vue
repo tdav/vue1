@@ -7,33 +7,33 @@
       <div v-if="path != '/Music'" class="border-end bg-white" id="sidebar-wrapper">
         <div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
         <div class="list-group list-group-flush">
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/">Main</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/valuable">1 -
+          <a class="list-group-item list-group-item-action list-group-item-light dhg " href="/">Main</a>
+          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/valuable">1 -
             O`zgaruvchi</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/shartli">2 - Shartli
+          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/shartli">2 - Shartli
             Operator</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/array">3 - Array</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/table">4 - Table</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/component">5 -
+          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/array">3 - Array</a>
+          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/table">4 - Table</a>
+          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/component">5 -
             Component</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/slot">6 - Component
+          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/slot">6 - Component
             Slot</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/DavronV7">7 - Davron</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/Jasur">7 - Jasur</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/newjasur7">7 -
+          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/DavronV7">7 - Davron</a>
+          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/Jasur">7 - Jasur</a>
+          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/newjasur7">7 -
             newjasur7</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/Music">Music</a>
+          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/Music">Music</a>
           
           
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/davron_todo">Davron Todo</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/jasur_todo">Jasur Todo</a>
+          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/davron_todo">Davron Todo</a>
+          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/jasur_todo">Jasur Todo</a>
           
 
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/omon_todo">Omon Todo</a>
+          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/omon_todo">Omon Todo</a>
           
           
           
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/about">About</a>
+          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/about">About</a>
         </div>
       </div>
 
@@ -91,4 +91,8 @@ console.log(path);
 
 </script>
 
-<style lang="scss"></style>
+<style scoped>
+.dhg {
+ height: 42px;
+}
+</style>
