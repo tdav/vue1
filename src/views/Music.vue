@@ -1,15 +1,15 @@
 <template>
     <div class="p-0 m-0 " style="background-color: black; overflow-x: hidden; overflow-y: hidden;">
-        <div class="container p-0" style="background-color: #1c1c1c;">
+        <div class="container container-fluid-sm p-0" style="background-color: #1c1c1c;">
             <div class="row" style="height: 12vh;">
-                <div class="col p-0">
-                    <nav class="navbar navbar-expand-lg p-0"
+                <div class="p-0">
+                    <nav class="navbar navbar-expand p-0 brt"
                         style="background-color: rgb(28 28 28); height: 100%;">
                         <div class="container p-0">
-                            <div class="p-4 pt-3 pb-3">
-                                <img src="../assets/img/Logo.png" alt="logo" class="img-logo123 p-0">
+                            <div class="p-4 pt-3 pb-3 yrt">
+                                <img src="../assets/img/Logo.png" alt="logo" class="img-logo123">
                             </div>
-                            <button class="btn btn-outline-darck ms-4" type="submit"  @click="toggleOffcanvas"
+                            <button class="btn btn-outline-darck offcanavas-button" type="submit"  @click="toggleOffcanvas"
                                 style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="color:#FFFFFF">
                                     <path fill-rule="evenodd" 
@@ -27,13 +27,13 @@
                                     <li class="nav-item">
                                     </li>
                                     <div class="btn-group dropend">
-                                        <button type="button" class="btn btn-secondary dropdown-toggle"
+                                        <!-- <button type="button" class="btn btn-secondary dropdown-toggle"
                                             data-bs-toggle="dropdown" aria-expanded="false"
                                             style="background-color: rgb(28 28 28); color: white; border: none; width: 80px;">
-                                            <p class="me-3" style="color:  rgb(80 80 80);">Home</p>
-                                        </button>
+                                            <p class="me-3 sghf" style="color:  rgb(80 80 80);">Home</p>
+                                        </button> -->
                                         <ul class="dropdown-menu" style="color: white;">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item trgk" href="#">Action</a></li>
                                             <li><a class="dropdown-item" href="#">Another action</a></li>
                                             <li>
                                                 <hr class="dropdown-divider">
@@ -42,13 +42,13 @@
                                         </ul>
                                     </div>
                                     <li class="nav-item">
-                                        <a style="color: white;" class="nav-link active" aria-current="page"
+                                        <a style="color: white;" class="nav-link active trgc" aria-current="page"
                                             href="#">Popular Artist
                                         </a>
                                     </li>
                                 </ul>
                                 <form class="d-flex">
-                                    <input class="form-control duyvyuc me-2" type="search"
+                                    <input class=" searchyt me-2" type="search"
                                         style="width: 318px; background-color: #303030; color: white; border-radius: 15px; border: 1px solid #303030"
                                         placeholder="Search" aria-label="Search">
                                     <button class="btn btn-outline-darck iwuys" type="submit"
@@ -134,6 +134,14 @@ function onClickShowMenu() {
 
 <style scoped>
 
+.searchyt {
+     width: 100px;
+     background-color: #303030;
+     color: white;
+     border-radius: 15px;
+     border: 1px solid #303030
+}
+
 .offcanvas {
   position: fixed;
   top: 0;
@@ -189,4 +197,42 @@ function onClickShowMenu() {
   background-color: #1c1c1c;
   margin-top: -5px;
 }
+
+@media only screen and  (max-width: 768px){
+
+.bfbfv {
+
+}
+
+.yrt {
+    visibility: hidden;
+    z-index: 1;
+}
+
+.offcanavas-button {
+    margin-left: -12.5rem;
+}
+
+.searchyt{
+    width: 220px;
+}
+
+
+.trgc {
+    margin-left: 7px;
+    z-index: 2;
+    margin-bottom: -7px;
+}
+
+}
+
+
+@media only screen and  (max-width: 992px){
+
+    .img-logo123 {
+        margin-left: -2rem;
+    }
+
+}
+
 </style>
