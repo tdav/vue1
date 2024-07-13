@@ -89,9 +89,61 @@
         </div>
     </div>
 
+    <div class="grid-container p-3">
+        <div class="grid-item-2">footer</div>
+        <div class="grid-item-3">left</div>
+        <div class="grid-item-4">Menu</div>
+        <div class="grid-item-5">right</div>
+        <div class="grid-item-6">heder</div>
+    </div>
+
+
 </template>
 
 <style>
+
+.grid-container{
+    background-color: black;
+    margin: 10px;
+    height: 90vh;
+    font-size: 40px;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 7% 1fr 7%;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+.grid-item-2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
+.grid-item-3{
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.grid-item-4{
+    background-color: white;
+    text-align: center;
+}
+.grid-item-5{
+    background-color: white;
+    text-align: center;
+}
+.grid-item-6{
+    background-color: white;
+    text-align: center;
+    grid-column: 1 / 4 ;
+    grid-row: 1 / 2;
+}
+
+
+
 .range .field input::-webkit-slider-thumb{
     appearance: none;
     height: 20px;
