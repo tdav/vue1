@@ -20,13 +20,8 @@
             <input type="checkbox" v-model="it.checked" />
             <p class="mytext"> {{ it.name }}</p>
           </li>
-
-
-
-        </ul>
-
+        </ul> 
       </div>
-
     </div>
   </div>
 </template>

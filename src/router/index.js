@@ -12,6 +12,7 @@ import newjasur7 from '../views/newjasur7.vue'
 import Music from '../views/Music.vue'
 
 import DavronTodo from '../views/davron/todo.vue'
+import OmonTodo from '../views/Omon/todo.vue'
 
 const routes = [
   {
@@ -20,7 +21,11 @@ const routes = [
     component: HomeView
   },
   
-  
+  {
+    path: '/omon_todo',
+    name: 'omon_todo',
+    component: OmonTodo
+  },
   
   
   {
