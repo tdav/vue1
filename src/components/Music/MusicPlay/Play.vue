@@ -17,7 +17,7 @@
                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
             </svg>
         </div>
-        <div class="col-7 col-md-4 col-lg-4 p-0"
+        <div class="col-5 col-md-4 col-lg-4 p-0"
             style="color: white; text-align: center; height: 100px; display: flex; align-items: center;">
             <div style="width: 100%;">
                 <!-- <> -->
@@ -71,12 +71,12 @@
                 <!-- repet -->
             </div>
         </div>
-        <div class="col-2 col-md-4 col-lg-4 pe-0  pt-4">
+        <div class="col-4 col-md-4 col-lg-4 pe-0  pt-4">
             <div class="row p-0">
-                <p class="mt-3 col-2 col-md-7 col-lg-6" style="font-size: 10px; color: white; float: right; text-align: end;">
+                <p class="mt-3 col-5 col-md-7 col-lg-6" style="font-size: 10px; color: white; float: right; text-align: end;">
                     <p class="p-0 me-3 mt-1">00:00/04:00</p>
                 </p>
-                <div class="pt-1 col-8 col-md-4 col-lg-6 p-0  like-comment" style="float: right;">
+                <div class="pt-1 col-6 col-md-4 col-lg-6 p-0  like-comment" style="float: right;">
                     <div class="row p-0">
                         <svg style="float: right; color: white;" xmlns="http://www.w3.org/2000/svg" width="30"
                             height="30" fill="currentColor" class="col-2 col-lg-2 p-0 bi bi-volume-up mt-2"
