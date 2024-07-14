@@ -5,7 +5,8 @@
     <div class="d-flex" id="wrapper">
 
       <div v-if="path != '/Music'" class="border-end bg-white" id="sidebar-wrapper">
-        <div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
+        <div class="sidebar-heading border-bottom bg-light jhgjk"> tart Bootstrap
+        </div>
         <div class="list-group list-group-flush">
           <a class="list-group-item list-group-item-action list-group-item-light dhg " href="/">Main</a>
           <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/valuable">1 -
@@ -23,16 +24,18 @@
           <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/newjasur7">7 -
             newjasur7</a>
           <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/Music">Music</a>
-          
-          
-          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/davron_todo">Davron Todo</a>
-          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/jasur_todo">Jasur Todo</a>
-          
+
+
+          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/davron_todo">Davron
+            Todo</a>
+          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/jasur_todo">Jasur
+            Todo</a>
+
 
           <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/omon_todo">Omon Todo</a>
-          
-          
-          
+
+
+
           <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/about">About</a>
         </div>
       </div>
@@ -93,6 +96,11 @@ console.log(path);
 
 <style scoped>
 .dhg {
- height: 42px;
+  height: 42px;
+}
+
+.jhgjk {
+  background-color: #1e222a !important;
+ color: #e5e9f0;
 }
 </style>
