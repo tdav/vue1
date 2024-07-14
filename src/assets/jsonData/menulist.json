@@ -44,19 +44,19 @@
                 "id":6,
                 "iconUrl": "music-square-add.png",
                 "name": "Recently Added",
-                "path": "recently added"
+                "path": "recently_added"
             },
             {
                 "id":7,
                 "iconUrl": "Favorite.png",
                 "name": "Favorite Songs",
-                "path": "favorite songs"
+                "path": "favorite_songs"
             },
             {
                 "id":8,
                 "iconUrl": "local.png",
                 "name": "Lokal Files",
-                "path": "lokal files"
+                "path": "lokal_files"
             }
 
         ]
@@ -69,13 +69,13 @@
                 "id":9,
                 "iconUrl": "playlist.png",
                 "name": "Lo-fi Music",
-                "path": "lo-fi music"
+                "path": "lo-fi_music"
             },
             {
                 "id":10,
                 "iconUrl": "playlist.png",
                 "name": "Best of Jon Bovi",
-                "path": "best of jon bovi"
+                "path": "best_of_jon_bovi"
             },
             {
                 "id":11,
