@@ -1,6 +1,6 @@
 <template>
     <div class="p-0 m-0 " style="background-color: black; overflow-x: hidden; overflow-y: hidden;">
-        <div class="container p-0" style="background-color: #1c1c1c;">
+        <div class="container container-fluid-sm p-0" style="background-color: #1c1c1c;">
             <div class="row" style="height: 12vh;">
                 <div class="col p-0">
                     <nav class="navbar navbar-expand-lg p-0"
@@ -88,11 +88,11 @@
                 <!-- <div  class="p-0 col-2 pdoiuy" v-show="isShowMenu" style="background-color: #1c1c1c; height: 90vh">
                 </div> -->
 
-                <div  class="p-0 col-10"><!--:class="[ isShowMenu? 'col-8': 'col-10' ]"-->
+                <div  class="p-0 col-8 col-md-10"><!--:class="[ isShowMenu? 'col-8': 'col-10' ]"-->
                     <MusicMain></MusicMain>
                 </div>
 
-                <div class="p-0 col-2">
+                <div class="p-0 col-4 col-md-2">
                     <MusicRight></MusicRight>
                 </div>
             </div>
