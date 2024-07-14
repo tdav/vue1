@@ -26,6 +26,7 @@
           
           
           <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/davron_todo">Davron Todo</a>
+          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/jasur_todo">Jasur Todo</a>
           
           
           
