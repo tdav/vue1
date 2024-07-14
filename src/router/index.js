@@ -11,12 +11,24 @@ import Jasur from '../views/Jasur.vue'
 import newjasur7 from '../views/newjasur7.vue'
 import Music from '../views/Music.vue'
 
+import DavronTodo from '../views/davron/todo.vue'
+
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
   },
+  
+  
+  
+  
+  {
+    path: '/davron_todo',
+    name: 'davron_todo',
+    component: DavronTodo
+  },
+  
   
   {
     path: '/DavronV7',
