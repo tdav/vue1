@@ -4,7 +4,7 @@
   <div v-if="path != '/Music'">
     <div class="d-flex" id="wrapper">
 
-      <div v-if="path != '/Music'" class="border-end bg-white" id="sidebar-wrapper">
+      <div v-if="path != '/Music'" class="border-end p-3" id="sidebar-wrapper" style="background-color: #282f39;">
         <div class="sidebar-heading border-bottom jhgjk"> tart Bootstrap
         </div>
         <div class="list-group list-group-flush">
@@ -97,10 +97,12 @@ console.log(path);
 <style scoped>
 .dhg {
   height: 42px;
+  background-color: #282f39;
+  color: #e5e9f0;
 }
 
 .jhgjk {
-  background-color: #1e222a ;
- color: #e5e9f0;
+  background-color: #1e222a;
+  color: #e5e9f0;
 }
 </style>
