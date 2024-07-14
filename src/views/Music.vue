@@ -9,7 +9,7 @@
                             <div class="p-4 pt-3 pb-3 yrt">
                                 <img src="../assets/img/Logo.png" alt="logo" class="img-logo123">
                             </div>
-                            <button class="btn btn-outline-darck offcanavas-button" type="submit"  @click="toggleOffcanvas"
+                            <button class="btn btn-outline-darck offcanavas-button bijg" type="submit"  @click="toggleOffcanvas"
                                 style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="color:#FFFFFF">
                                     <path fill-rule="evenodd" 
@@ -27,11 +27,11 @@
                                     <li class="nav-item">
                                     </li>
                                     <div class="btn-group dropend">
-                                        <!-- <button type="button" class="btn btn-secondary dropdown-toggle"
-                                            data-bs-toggle="dropdown" aria-expanded="false"
-                                            style="background-color: rgb(28 28 28); color: white; border: none; width: 80px;">
-                                            <p class="me-3 sghf" style="color:  rgb(80 80 80);">Home</p>
-                                        </button> -->
+                                            <button type="button" class="btn btn-secondary dropdown-toggle"
+                                                data-bs-toggle="dropdown" aria-expanded="false"
+                                                style="background-color: rgb(28 28 28); color: white; border: none; width: 80px;">
+                                                <p class="me-3 sghf" style="color:  rgb(80 80 80);">Home</p>
+                                            </button>
                                         <ul class="dropdown-menu" style="color: white;">
                                             <li><a class="dropdown-item trgk" href="#">Action</a></li>
                                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -50,7 +50,7 @@
                                 <form class="d-flex">
                                     <input class=" searchyt me-2" type="search"
                                         style="width: 318px; background-color: #303030; color: white; border-radius: 15px; border: 1px solid #303030"
-                                        placeholder="Search" aria-label="Search">
+                                         aria-label="Search">
                                     <button class="btn btn-outline-darck iwuys" type="submit"
                                         style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
                                         <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16"
@@ -88,11 +88,11 @@
                 <!-- <div  class="p-0 col-2 pdoiuy" v-show="isShowMenu" style="background-color: #1c1c1c; height: 90vh">
                 </div> -->
 
-                <div  class="p-0 col-8 col-md-10"><!--:class="[ isShowMenu? 'col-8': 'col-10' ]"-->
+                <div  class="p-0 col-10"><!--:class="[ isShowMenu? 'col-8': 'col-10' ]"-->
                     <MusicMain></MusicMain>
                 </div>
 
-                <div class="p-0 col-4 col-md-2">
+                <div class="p-0 col-2">
                     <MusicRight></MusicRight>
                 </div>
             </div>
@@ -135,7 +135,7 @@ function onClickShowMenu() {
 <style scoped>
 
 .searchyt {
-     width: 100px;
+     width: 300px;
      background-color: #303030;
      color: white;
      border-radius: 15px;
@@ -200,8 +200,9 @@ function onClickShowMenu() {
 
 @media only screen and  (max-width: 768px){
 
-.bfbfv {
-
+.bijg {
+    margin-left: 20px
+    ;
 }
 
 .yrt {
@@ -210,16 +211,16 @@ function onClickShowMenu() {
 }
 
 .offcanavas-button {
-    margin-left: -12.5rem;
+    margin-left: -10rem;
 }
 
 .searchyt{
-    width: 220px;
+    width: 200px;
 }
 
 
 .trgc {
-    margin-left: 7px;
+    margin-left: -0.3rem;
     z-index: 2;
     margin-bottom: -7px;
 }
@@ -227,7 +228,7 @@ function onClickShowMenu() {
 }
 
 
-@media only screen and  (max-width: 992px){
+@media only screen and  (max-width: 993px){
 
     .img-logo123 {
         margin-left: -2rem;
