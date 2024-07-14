@@ -7,8 +7,8 @@
         </div>
         <div class="col-11 p-0">
             <div type="button" class="row" style=" height: 50px; width: 100%;">
-                <img class="col-1 uewiu" :src=" require(`../../../assets/img/${item.imgUrl}`)" alt="img">
-                <div class="col-4">
+                <img class="col-3 col-lg-1 col-md-1 uewiu" :src=" require(`../../../assets/img/${item.imgUrl}`)" alt="img">
+                <div class="col-4 col-md-4">
                     <p class="pt-3">{{ item.name }}</p>
                 </div>
                 <div class="col-3">
@@ -31,13 +31,18 @@
                 </div>
                 <div class="col-1" style="text-align: center">
                     <p class="pt-2">
-                        <button @click="Toggle1()" id="btnh1" class="btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
-                            </svg>
-                        </button>
+                        <svg   v-if="isPlayingk" xmlns="http://www.w3.org/2000/svg" style="color: red;" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill"  viewBox="0 0 16 16" @click="toggleIconsl">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                        </svg>
+
+                            
+                        <svg  v-else  @click="toggleIconsl" style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                        </svg>
                     </p>
                 </div>
                 <div class="col-1" style="text-align: center">
@@ -49,8 +54,15 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import {  defineProps,} from 'vue';
 
 const props = defineProps({ item: {} });
+
+const isPlayingk = ref(false);
+
+function toggleIconsl() {
+    isPlayingk.value = !isPlayingk.value;
+} 
 
 </script>

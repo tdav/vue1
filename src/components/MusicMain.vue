@@ -1,18 +1,18 @@
 <template>
-    <div style="background-color: rgb(28 28 28); color: white; overflow-x: auto; max-height: 100vh;">
-        <div class="uhsgno container-fluid" style="height: 100%; display: flex; align-items: center;">
+    <div style="background-color: rgb(28 28 28); color: white; overflow-x: auto; max-height: 90vh;">
+        <div class="uhsgno container-fluid" style="height: 100%; display: flex;">
             <div class="row px-4" style="height: 100%; display: flex; align-items: center;">
                 <div class="col-md-6 col-sm-12 p-5 immm">
                     <div class="ifd p-0">
                         <p>Verified Artist</p>
-                        <h1 style="font-size: 50px;">Ed Sheeran</h1>
+                        <h1 style="font-size: revert-layer;">Ed Sheeran</h1>
                         <p class="d-block">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                 class="bi bi-headphones mb-2" viewBox="0 0 16 16">
                                 <path
                                     d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5" />
                             </svg>
-                            82,736,050 monthly listeners
+                            17.869.241.762 monthly listeners
                         </p>
                         <button class="butt dlfcbh me-2">PLAY</button>
                         <!-- kenco -->
@@ -23,11 +23,9 @@
                         FALOVING
                     </button> -->
 
-                        <button class="butt" :class="{ 'hdsvck': isPlayin, 'hdsvckk': !isPlayin }"
-                            @click="toggleButtons()">
+                        <button class="butt" :class="{ 'hdsvck': isPlayin, 'hdsvckk': !isPlayin }">
                             FOLLOW
                         </button>
-                        <!-- kenco -->
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-0">
@@ -97,8 +95,8 @@
 
 .uewiu {
     padding-top: 5px;
-    height: 85%;
-    width: 100%;
+    height: 51px;
+    width: 77px;
 }
 
 .dlfcbh {
@@ -126,7 +124,7 @@
 }
 
 .butt {
-    display: inline-block;
+    display: inline-block; 
 }
 
 .orfi {
@@ -142,7 +140,6 @@
 
 .uhsgno {
     background: url("../assets/img/image.png");
-
     height: 50vh;
     width: 100%;
     border-radius: 16px;
@@ -167,34 +164,7 @@ import MusicRow from "./Music/MusicMain/MusicRow.vue"
 
 import { ref } from 'vue';
 
-let seeAll = ref(false)
-
-var btnvar1 = document.getElementById('btnh1');
-
-
-
-
-
-function Toggle1() {
-    if (btnh1.value === 'red') {
-        btnh1.value = '';
-    } else {
-        btnh1.value = 'red';
-    }
-}
-
-const isyurak = ref(false);
-
-function yurakIcons() {
-    isYurak.value = !isYurak.value;
-}
-
 const isPlaying = ref(false);
-
-function toggleIcons() {
-    isPlaying.value = !isPlaying.value;
-}
-
 const isPlayin = ref(false);
 
 function toggleButtons() {
