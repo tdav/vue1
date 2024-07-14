@@ -1,5 +1,5 @@
 <template>
-    <div class="container bottomnavbar p-0">
+    <div class="container-fluid container-lg container-xl container-xxl bottomnavbar p-0">
         <div class="row">
             <Range></Range>
         </div>

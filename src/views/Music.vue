@@ -1,6 +1,6 @@
 <template>
     <div class="p-0 m-0 " style="background-color: black; overflow-x: hidden; overflow-y: hidden;">
-        <div class="container container-fluid-sm p-0" style="background-color: #1c1c1c;">
+        <div class="container-fluid container-lg container-xl container-xxl p-0" style="background-color: #1c1c1c;">
             <div class="row" style="height: 12vh;">
                 <div class="p-0">
                     <nav class="navbar navbar-expand p-0 brt"
