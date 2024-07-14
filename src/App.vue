@@ -11,32 +11,31 @@
         <nav class="list-group list-group-flush">
           <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/">Main</RouterLink>
           <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/valuable">1 - O`zgaruvchi</RouterLink>
-          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/shartli">2 - Shartli
-            Operator</a>
-          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/array">3 - Array</a>
-          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/table">4 - Table</a>
-          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/component">5 -
-            Component</a>
-          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/slot">6 - Component
-            Slot</a>
-          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/DavronV7">7 - Davron</a>
-          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/Jasur">7 - Jasur</a>
-          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/newjasur7">7 -
-            newjasur7</a>
-          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/Music">Music</a>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/shartli">2 - ShartliOperator</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/array">3 - Array</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/table">4 - Table</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/component">5 -
+            Component</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/slot">6 - Component
+            Slot</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/DavronV7">7 - Davron</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/Jasur">7 - Jasur</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/newjasur7">7 -
+            newjasur7</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/Music">Music</RouterLink>
 
 
-          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/davron_todo">Davron
-            Todo</a>
-          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/jasur_todo">Jasur
-            Todo</a>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/davron_todo">Davron
+            Todo</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/jasur_todo">Jasur
+            Todo</RouterLink>
 
 
-          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/omon_todo">Omon Todo</a>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/omon_todo">Omon Todo</RouterLink>
 
 
 
-          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/about">About</a>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/about">About</RouterLink>
         </nav>
       </div>
 
