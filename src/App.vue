@@ -5,7 +5,7 @@
     <div class="d-flex" id="wrapper">
 
       <div v-if="path != '/Music'" class="border-end bg-white" id="sidebar-wrapper">
-        <div class="sidebar-heading border-bottom bg-light jhgjk"> tart Bootstrap
+        <div class="sidebar-heading border-bottom jhgjk"> tart Bootstrap
         </div>
         <div class="list-group list-group-flush">
           <a class="list-group-item list-group-item-action list-group-item-light dhg " href="/">Main</a>
@@ -100,7 +100,7 @@ console.log(path);
 }
 
 .jhgjk {
-  background-color: #1e222a !important;
+  background-color: #1e222a ;
  color: #e5e9f0;
 }
 </style>
