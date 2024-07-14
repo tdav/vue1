@@ -4,13 +4,13 @@
   <div v-if="path != '/Music'">
     <div class="d-flex" id="wrapper">
 
-      <div v-if="path != '/Music'" class="border-end p-3" id="sidebar-wrapper" style="background-color: #282f39;">
-        <div class="sidebar-heading border-bottom jhgjk"> tart Bootstrap
-        </div>
-        <div class="list-group list-group-flush">
-          <a class="list-group-item list-group-item-action list-group-item-light dhg " href="/">Main</a>
-          <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/valuable">1 -
-            O`zgaruvchi</a>
+      <div v-if="path != '/Music'" class="border-end" id="sidebar-wrapper" style="background-color: #282f39;">
+        <div class="sidebar-heading border-bottom" style="color: #e5e9f0;"> Bootstrap        </div>
+
+
+        <nav class="list-group list-group-flush">
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/">Main</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/valuable">1 - O`zgaruvchi</RouterLink>
           <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/shartli">2 - Shartli
             Operator</a>
           <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/array">3 - Array</a>
@@ -37,7 +37,7 @@
 
 
           <a class="list-group-item list-group-item-action list-group-item-light dhg" href="/about">About</a>
-        </div>
+        </nav>
       </div>
 
       <div id="page-content-wrapper">
@@ -84,7 +84,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { useRoute } from 'vue-router'
+import { RouterLink, useRoute } from 'vue-router'
 import { computed } from 'vue'
 
 const route = useRoute();
@@ -99,10 +99,7 @@ console.log(path);
   height: 42px;
   background-color: #282f39;
   color: #e5e9f0;
+  border: none;
 }
 
-.jhgjk {
-  background-color: #1e222a;
-  color: #e5e9f0;
-}
 </style>
