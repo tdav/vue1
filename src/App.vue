@@ -28,7 +28,7 @@
           </RouterLink>
           <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/Music">Music
           </RouterLink>
-          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/omon_todo">Omon Todo
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/omon_todo">Omon
           </RouterLink>
 
 
