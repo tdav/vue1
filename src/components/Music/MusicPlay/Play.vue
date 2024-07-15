@@ -1,9 +1,9 @@
 <template>
     <div class="row" style="height: 100vh;">
         <div class="col-3 col-sm-5 col-md-4 p-0 ps-4 pt-4">
-            <img class="mb-4" src="../../../assets/img/Rectangle2.png" alt="">
+            <img class="mb-4 iuyfghjk" src="../../../assets/img/Rectangle2.png" alt="">
             <div class="ms-2" style="display: inline-block; width: 100px;">
-                <p style="font-size: 14px; display: inline; color: white">Shape of You</p>
+                <p class="opiuytrt" style="font-size: 14px; display: inline; color: white">Shape of You</p>
                 <p style="font-size: 14px; color: white;">Ed Sheeran</p>
             </div>
             <svg v-if="isPlayingk" xmlns="http://www.w3.org/2000/svg" style="color: red;" width="16" height="16"
@@ -63,7 +63,7 @@
                 <!-- > -->
                 <!-- repet -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                    class="bi bi-repeat ms-2 odwi  ms-md-2" viewBox="0 0 16 16">
+                    class="bi bi-repeat ms-2 odwi  oiuygfdcvbj ms-md-2" viewBox="0 0 16 16">
                     <path
                         d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m3.81.086a.5.5 0 0 1 .67.225A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67Z" />
                 </svg>
@@ -104,12 +104,14 @@
 </template>
 
 <style scoped>
+.iuyfghjk{
+    max-width: 100%;
+    height: auto;
+}
 .odwi:hover {
     transition: all 3s;
     rotate: 900deg;
 }
-
-
 .menuSelectActive {
     color: red;
 }

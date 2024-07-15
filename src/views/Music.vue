@@ -3,17 +3,18 @@
         <div class="container-fluid container-lg container-xl container-xxl p-0" style="background-color: #1c1c1c;">
             <div class="row" style="height: 12vh;">
                 <div class="p-0">
-                    <nav class="navbar navbar-expand p-0 brt"
-                        style="background-color: rgb(28 28 28); height: 100%;">
+                    <nav class="navbar navbar-expand p-0 brt" style="background-color: rgb(28 28 28); height: 100%;">
                         <div class="container p-0">
                             <div class="p-4 pt-3 pb-3 yrt">
                                 <img src="../assets/img/Logo.png" alt="logo" class="img-logo123">
                             </div>
-                            <button class="btn btn-outline-darck offcanavas-button bijg" type="submit"  @click="toggleOffcanvas"
+                            <button class="btn btn-outline-darck offcanavas-button bijg" type="submit"
+                                @click="toggleOffcanvas"
                                 style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="color:#FFFFFF">
-                                    <path fill-rule="evenodd" 
-                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-list" viewBox="0 0 16 16" style="color:#FFFFFF">
+                                    <path fill-rule="evenodd"
+                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
                                 </svg>
                             </button>
 
@@ -27,11 +28,11 @@
                                     <li class="nav-item">
                                     </li>
                                     <div class="btn-group dropend">
-                                            <button type="button" class="btn btn-secondary dropdown-toggle"
-                                                data-bs-toggle="dropdown" aria-expanded="false"
-                                                style="background-color: rgb(28 28 28); color: white; border: none; width: 80px;">
-                                                <p class="me-3 sghf" style="color:  rgb(80 80 80);">Home</p>
-                                            </button>
+                                        <button type="button" class="btn btn-secondary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false"
+                                            style="background-color: rgb(28 28 28); color: white; border: none; width: 80px;">
+                                            <p class="me-3 sghf" style="color:  rgb(80 80 80);">Home</p>
+                                        </button>
                                         <ul class="dropdown-menu" style="color: white;">
                                             <li><a class="dropdown-item trgk" href="#">Action</a></li>
                                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -50,7 +51,7 @@
                                 <form class="d-flex">
                                     <input class=" searchyt me-2" type="search"
                                         style="width: 318px; background-color: #303030; color: white; border-radius: 15px; border: 1px solid #303030"
-                                         aria-label="Search">
+                                        aria-label="Search">
                                     <button class="btn btn-outline-darck iwuys" type="submit"
                                         style="height: 50px; width: 50px; background-color: #303030; border-radius:  15px;">
                                         <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16"
@@ -67,34 +68,35 @@
             </div>
 
             <div class="row p-0" style="height: 88vh;">
-                    <!-- <button @click="toggleOffcanvas" class="open-btn">Menu</button> -->
-                    <div :class="['offcanvas', { 'show': isOffcanvasOpen }]">
+                <!-- <button @click="toggleOffcanvas" class="open-btn">Menu</button> -->
+                <div :class="['offcanvas', { 'show': isOffcanvasOpen }]">
                     <div class="close-btn">
                         <img src="../assets/img/Logo.png" alt="logo1">
                     </div>
-                    <div v-for="it in MenuList" class="list-group col-2" :key="it.id" style="background-color: #1c1c1c; margin-top:-5px;">
+                    <div v-for="it in MenuList" class="list-group col-2" :key="it.id"
+                        style="background-color: #1c1c1c; margin-top:-5px;">
                         <MusicLibrary :data="it">
-                        <!-- <div v-if="it.title == '.'">
+                            <!-- <div v-if="it.title == '.'">
                             <div class="p-4 pt-3 pb-3">
                                 <img src="../assets/img/Logo.png" alt="logo" class="img-logo123 p-0">
                             </div>
                         </div> -->
-                        <button v-if="it.title == 'PLAYLIST'" class="dfghjk myTitleBtn">+</button>
+                            <button v-if="it.title == 'PLAYLIST'" class="dfghjk myTitleBtn">+</button>
                         </MusicLibrary>
-                    <!-- <MusicLeft></MusicLeft> -->
+                        <!-- <MusicLeft></MusicLeft> -->
                     </div>
-                    </div>
-                    <div :class="['overlay', { 'show': isOffcanvasOpen }]" @click="toggleOffcanvas"></div>
+                </div>
+                <div :class="['overlay', { 'show': isOffcanvasOpen }]" @click="toggleOffcanvas"></div>
                 <!-- <div  class="p-0 col-2 pdoiuy" v-show="isShowMenu" style="background-color: #1c1c1c; height: 90vh">
                 </div> -->
-
-                <div  class="p-0 col-10"><!--:class="[ isShowMenu? 'col-8': 'col-10' ]"-->
+                <div class="col-md-9  col-lg-9" :class="['p-0', isShowMenu ? 'col-10' : 'col-10', { 'd-none d-sm-block': true }]">
                     <MusicMain></MusicMain>
                 </div>
 
-                <div class="p-0 col-2">
+                <div class="col-12 col-md-3">
                     <MusicRight></MusicRight>
                 </div>
+
             </div>
 
 
@@ -120,7 +122,7 @@ import MenuList from "../assets/jsonData/menulist.json";
 const isOffcanvasOpen = ref(false);
 
 function toggleOffcanvas() {
-  isOffcanvasOpen.value = !isOffcanvasOpen.value;
+    isOffcanvasOpen.value = !isOffcanvasOpen.value;
 }
 
 import { ref } from 'vue';
@@ -133,32 +135,31 @@ function onClickShowMenu() {
 </script>
 
 <style scoped>
-
 .searchyt {
-     width: 300px;
-     background-color: #303030;
-     color: white;
-     border-radius: 15px;
-     border: 1px solid #303030
+    width: 300px;
+    background-color: #303030;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid #303030
 }
 
 .offcanvas {
-  position: fixed;
-  top: 0;
-  left: -250px;
-  width: 250px;
-  height: 100%;
-  background-color: #1c1c1c;
-  overflow-x: hidden;
-  transition: 0.3s;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #1c1c1c;
+    overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 1000;
 
 }
 
 .offcanvas.show {
-  left: 2rem;
-  padding-top: 17px;
-  left: 0;
+    left: 2rem;
+    padding-top: 17px;
+    left: 0;
 }
 
 .close-btn {
@@ -168,72 +169,70 @@ function onClickShowMenu() {
 }
 
 .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: opacity 0.3s;
-  z-index: 999;
-  visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 999;
+    visibility: hidden;
 }
 
 .overlay.show {
-  opacity: 1;
-  visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
 
 .myTitleBtn {
-  width: 16px;
-  height: 16px;
-  background-color: #1c1c1c;
-  color: white;
-  margin-left: 5rem;
+    width: 16px;
+    height: 16px;
+    background-color: #1c1c1c;
+    color: white;
+    margin-left: 5rem;
 }
 
 .list-group {
-  background-color: #1c1c1c;
-  margin-top: -5px;
+    background-color: #1c1c1c;
+    margin-top: -5px;
 }
 
-@media only screen and  (max-width: 768px){
+@media only screen and (max-width: 768px) {
 
-.bijg {
-    margin-left: 20px
-    ;
+    .bijg {
+        margin-left: 20px;
+    }
+
+    .yrt {
+        visibility: hidden;
+        z-index: 1;
+    }
+
+    .offcanavas-button {
+        margin-left: -10rem;
+    }
+
+    .searchyt {
+        width: 200px;
+    }
+
+
+    .trgc {
+        margin-left: -0.3rem;
+        z-index: 2;
+        margin-bottom: -7px;
+    }
+
 }
 
-.yrt {
-    visibility: hidden;
-    z-index: 1;
-}
 
-.offcanavas-button {
-    margin-left: -10rem;
-}
-
-.searchyt{
-    width: 200px;
-}
-
-
-.trgc {
-    margin-left: -0.3rem;
-    z-index: 2;
-    margin-bottom: -7px;
-}
-
-}
-
-
-@media only screen and  (max-width: 993px){
+@media only screen and (max-width: 993px) {
 
     .img-logo123 {
         margin-left: -2rem;
     }
 
 }
-
 </style>

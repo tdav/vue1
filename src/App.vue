@@ -1,45 +1,44 @@
 <template>
 
 
-  <div v-if="path != '/Music'">
+  <div v-if="path != '/Music'" style="height: 100vh">
     <div class="d-flex" id="wrapper">
 
       <div v-if="path != '/Music'" class="border-end" id="sidebar-wrapper" style="background-color: #282f39;">
-        <div class="sidebar-heading border-bottom" style="color: #e5e9f0;"> Bootstrap        </div>
+        <div class="sidebar-heading border-bottom" style="color: #e5e9f0;"> Bootstrap </div>
 
 
         <nav class="list-group list-group-flush">
           <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/">Main</RouterLink>
-          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/valuable">1 - O`zgaruvchi</RouterLink>
-          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/shartli">2 - ShartliOperator</RouterLink>
-          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/array">3 - Array</RouterLink>
-          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/table">4 - Table</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/valuable">1 -
+            O`zgaruvchi</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/shartli">2 -
+            ShartliOperator</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/array">3 - Array
+          </RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/table">4 - Table
+          </RouterLink>
           <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/component">5 -
             Component</RouterLink>
           <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/slot">6 - Component
             Slot</RouterLink>
-          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/DavronV7">7 - Davron</RouterLink>
-          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/Jasur">7 - Jasur</RouterLink>
-          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/newjasur7">7 -
-            newjasur7</RouterLink>
-          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/Music">Music</RouterLink>
-
-
-          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/davron_todo">Davron
-            Todo</RouterLink>
-          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/jasur_todo">Jasur
-            Todo</RouterLink>
-
-
-          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/omon_todo">Omon Todo</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/DavronV7">7 - Davron
+          </RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/Jasur">7 - Jasur
+          </RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/Music">Music
+          </RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/omon_todo">Omon Todo
+          </RouterLink>
 
 
 
-          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/about">About</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/about">About
+          </RouterLink>
         </nav>
       </div>
 
-      <div id="page-content-wrapper">
+      <div id="page-content-wrapper"  style="height: 100vh; overflow-x: auto;">
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
           <div class="container-fluid">
             <!-- <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button> -->
@@ -100,5 +99,4 @@ console.log(path);
   color: #e5e9f0;
   border: none;
 }
-
 </style>
