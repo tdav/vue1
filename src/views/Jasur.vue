@@ -102,7 +102,7 @@
     <div class="row">
     <div class="col">
       <input type="text" v-model="msg">
-      <button @click="onCreate">Янги</button>
+      <button @click="onCreate" class="ms-2" style="border-radius: 5px;">Qo'shish</button>
       <p v-if="exists" class="text-danger">Mavjud</p>
     </div>
   </div>

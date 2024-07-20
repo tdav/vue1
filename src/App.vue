@@ -24,12 +24,33 @@
             Slot</RouterLink>
           <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/DavronV7">7 - Davron
           </RouterLink>
-          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/Jasur">7 - Jasur
-          </RouterLink>
+          <!-- <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/Jasur">7 - Jasur
+          </RouterLink> -->
           <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/Music">Music
           </RouterLink>
           <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/omon_todo">Omon
           </RouterLink>
+
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed lkjnb" style="background-color: rgb(91 99 110); color: white" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Mavzular
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample" style="background-color: #282f39;">
+                <div class="accordion-body p-0 dhg" style="border: white;">
+                  <router-link class="list-group-item list-group-item-action list-group-item-light dhg" to="/Jasur">7 -
+                    Jasur</router-link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
 
 
 
@@ -38,7 +59,7 @@
         </nav>
       </div>
 
-      <div id="page-content-wrapper"  style="height: 100vh; overflow-x: auto;">
+      <div id="page-content-wrapper" style="height: 100vh; overflow-x: auto;">
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
           <div class="container-fluid">
             <!-- <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button> -->
@@ -81,7 +102,7 @@
 
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import { computed } from 'vue'
 
@@ -98,5 +119,10 @@ console.log(path);
   background-color: #282f39;
   color: #e5e9f0;
   border: none;
+}
+.lkjnb{
+  .lkjnb :focus {
+    color: red;
+  }
 }
 </style>
