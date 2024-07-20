@@ -8,14 +8,20 @@ import ShartliOperatorView from '../views/ShartliOperatorView.vue'
 import ComponentSlotView from '../views/ComponentSlotView.vue'
 import DavronV7 from '../views/DavronV7.vue'
 import Jasur from '../views/Jasur.vue'
-import newjasur7 from '../views/newjasur7.vue'
 import Music from '../views/Music.vue'
+import OmonTodo from '../views/Omon/todo.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  
+  {
+    path: '/omon_todo',
+    name: 'omon_todo',
+    component: OmonTodo
   },
   
   {
@@ -71,13 +77,6 @@ const routes = [
     name: 'Jasur',
     component: Jasur
   },
-  
-  {
-    path: '/newjasur7',
-    name: 'newjasur7',
-    component: newjasur7
-  },
-
   
   {
     path: '/about',

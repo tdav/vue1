@@ -1,33 +1,65 @@
 <template>
 
 
-  <div v-if="path != '/Music'">
+  <div v-if="path != '/Music'" style="height: 100vh">
     <div class="d-flex" id="wrapper">
 
-      <div v-if="path != '/Music'" class="border-end bg-white" id="sidebar-wrapper">
-        <div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
-        <div class="list-group list-group-flush">
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/">Main</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/valuable">1 -
-            O`zgaruvchi</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/shartli">2 - Shartli
-            Operator</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/array">3 - Array</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/table">4 - Table</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/component">5 -
-            Component</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/slot">6 - Component
-            Slot</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/DavronV7">7 - Davron</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/Jasur">7 - Jasur</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/newjasur7">7 -
-            newjasur7</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/Music">Music</a>
-          <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/about">About</a>
-        </div>
+      <div v-if="path != '/Music'" class="border-end" id="sidebar-wrapper" style="background-color: #282f39;">
+        <div class="sidebar-heading border-bottom" style="color: #e5e9f0;"> Bootstrap </div>
+
+
+        <nav class="list-group list-group-flush">
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/">Main</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/valuable">1 -
+            O`zgaruvchi</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/shartli">2 -
+            ShartliOperator</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/array">3 - Array
+          </RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/table">4 - Table
+          </RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/component">5 -
+            Component</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/slot">6 - Component
+            Slot</RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/DavronV7">7 - Davron
+          </RouterLink>
+          <!-- <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/Jasur">7 - Jasur
+          </RouterLink> -->
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/Music">Music
+          </RouterLink>
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/omon_todo">Omon
+          </RouterLink>
+
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed lkjnb" style="background-color: rgb(91 99 110); color: white" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Mavzular
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample" style="background-color: #282f39;">
+                <div class="accordion-body p-0 dhg" style="border: white;">
+                  <router-link class="list-group-item list-group-item-action list-group-item-light dhg" to="/Jasur">7 -
+                    Jasur</router-link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/about">About
+          </RouterLink>
+        </nav>
       </div>
 
-      <div id="page-content-wrapper">
+      <div id="page-content-wrapper" style="height: 100vh; overflow-x: auto;">
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
           <div class="container-fluid">
             <!-- <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button> -->
@@ -62,7 +94,7 @@
     </div>
   </div>
   <div v-else>
-      <router-view></router-view>
+    <router-view></router-view>
   </div>
 
 
@@ -70,8 +102,8 @@
 
 
 <script setup>
-import { ref } from 'vue';
-import { useRoute } from 'vue-router'
+import { ref } from 'vue'
+import { RouterLink, useRoute } from 'vue-router'
 import { computed } from 'vue'
 
 const route = useRoute();
@@ -81,4 +113,16 @@ console.log(path);
 
 </script>
 
-<style lang="scss"></style>
+<style scoped>
+.dhg {
+  height: 42px;
+  background-color: #282f39;
+  color: #e5e9f0;
+  border: none;
+}
+.lkjnb{
+  .lkjnb :focus {
+    color: red;
+  }
+}
+</style>

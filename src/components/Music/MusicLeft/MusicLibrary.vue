@@ -1,16 +1,15 @@
-<template>
-    <p v-show="data.title != ''" class="mt-4 myTitle">
-        {{ data.title }}
-        <slot ></slot>        
-    </p>
+<template> 
+        <p v-show="data.title != ''" class="mt-4 myTitle ">
+            {{ data.title }}
+            <slot></slot>        
+        </p>
 
-    <div class=" list-group   rtyu">
-        <a v-for="it in data.item" :key="it.id" :href="it.path" class="list-group-item list-group-item-action cvbn menuItem">
-            <img :src=" require( `../../../assets/img/${it.iconUrl}`)" alt="1" class="logo-image">
-            <p    class="items123 menuSelectActive ">{{ it.name }}</p>
+        <a class=" list-group rtyu">
+            <a v-for="it in data.item" :key="it.id" :href="it.path" class="list-group-item list-group-item-action cvbn menuItem">
+                <img :src=" require( `../../../assets/img/${it.iconUrl}`)" alt="1" class="logo-image">
+                <div class="items123 menuSelectActive ">{{ it.name }}</div>
+            </a>
         </a>
- 
-    </div>
 
 </template>
 
@@ -24,6 +23,7 @@ const props = defineProps({
 
 
 
+
 </script>
 
 <style scoped>
@@ -32,36 +32,28 @@ const props = defineProps({
   padding-right: 5px;
  }
 
-.qwer {
-  height: 139vh;
-}
+ .cvbn:active {
+    background: #1c1c1c;
+ }
 
 .cvbn {
-  background-color: #212121;
+  background-color: #1c1c1c;
   color: rgba(255, 255, 255, 0.64);
-  border-left: -33px;
-  border-bottom: none;
-  border-top: none;
   display: inline-block;
   height: 30px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #212121;
+}
+
+.cvbn:focus {
+    border-left: 5px solid green;
+    color: #FFFFFF;
+    background: #1c1c1c;    
 }
 
 .cvbn:hover {
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
-  color: white;
-}
-
-.cvbn:focus  {
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
-  color: white;
-}
-
-.img-logo123  {
-
-}
-
-
-.dfghjk:active {
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
   color: white;
 }
@@ -71,7 +63,7 @@ const props = defineProps({
 }
 
 .menuItem {
-    width: 200px;
+    width: 224px;
     height: 40px;
     gap: 0px;
     opacity: 0px;
@@ -86,10 +78,12 @@ const props = defineProps({
     font-weight: 700;
     line-height: 16.39px;
     letter-spacing: 0.16em;
-    text-align: left;
+    margin-left: 2rem;
+    display: flex;
 }
 
 .items123 {
     height: 34px;
+    display: inline-block;
 }
 </style>
