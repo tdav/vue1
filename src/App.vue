@@ -10,7 +10,7 @@
 
         <nav class="list-group list-group-flush">
           <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/">Main</RouterLink>
-          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/valuable">1 -
+          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/valuable">1 - 
             O`zgaruvchi</RouterLink>
           <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/shartli">2 -
             ShartliOperator</RouterLink>
