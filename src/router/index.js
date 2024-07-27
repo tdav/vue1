@@ -22,9 +22,9 @@ const routes = [
   },
   
   {
-    path: '/primer',
-    name: 'Primer',
-    component: Omon
+    path: '/omon_todo',
+    name: 'OmonTodo',
+    component: OmonTodo
   },
 
   {
