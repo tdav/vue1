@@ -11,7 +11,7 @@
         <!-- Vazifa ro'yxati bo'limi -->
         <div class="row">
             <div class="col">
-                <h3>Vazifa Ro'yxati</h3>
+                <h3>Vazifa Ro'yxati</h3> 
                 <ul class="list-group">
                     <li v-for="it in list" :key="it.id">
                         <input type="checkbox" v-model="it.checked" @change="handleCheck(it)" />
