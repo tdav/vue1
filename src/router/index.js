@@ -40,9 +40,9 @@ const routes = [
   },
 
   {
-    path: '/primer',
-    name: 'Primer',
-    component: Primer
+    path: '/operatorlar',
+    name: 'Operatorlar',
+    component: Operatorlar
   },
   
   {
