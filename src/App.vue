@@ -28,30 +28,49 @@
           </RouterLink> -->
           <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/Music">Music
           </RouterLink>
-          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/omon_todo">Omon
-          </RouterLink>
+          <!-- <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/omon_todo">Omon
+          </RouterLink> -->
 
-
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" :class="{ collapsed: !isOpen }"
-                  :style="{ backgroundColor: '#5b636e', color: 'white' }" type="button" @click="toggle"
-                  aria-expanded="false" aria-controls="collapseOne">
-                  Jasur
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" :class="{ show: isOpen }"
-                aria-labelledby="headingOne" data-bs-parent="#accordionExample" :style="{ backgroundColor: '#282f39' }">
-                <div class="accordion-body p-0" :style="{ border: '1px solid white' }">
-                  <router-link class="list-group-item list-group-item-action list-group-item-light" to="/Jasur">
+           <div class="accordion" id="accordionExample">
+             <div class="accordion-item">
+               <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" :class="{ collapsed: !isOpen }"
+                    :style="{ backgroundColor: '#282f39', color: 'white' }" type="button" @click="toggle"
+                   aria-expanded="false" aria-controls="collapseOne">
+                    Jasur
+                 </button>
+               </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" :class="{ show: isOpen }"
+                 aria-labelledby="headingOne" data-bs-parent="#accordionExample" :style="{ backgroundColor: '#282f39' }">
+                  <div class="accordion-body p-0" :style="{ border: '1px solid white' }">
+                   <router-link class="list-group-item list-group-item-action list-group-item-light" to="/Jasur">
                     7 - Jasur
-                  </router-link>
+                    </router-link>
+                    </div>
                 </div>
-              </div>
+               </div>
+           </div>
+
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button " :class="{ collapsed: !isOpen2 }"
+                   :style="{ backgroundColor: '#262b33', color: 'white', border: 'none'  }" type="button"
+                    @click="toggle2"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                   Omon
+                  </button>
+                </h2>
+               <div id="collapseTwo" class="accordion-collapse collapse" :class="{ show: isOpen2 }"
+                  aria-labelledby="headingTwo" data-bs-parent="#accordionExample" :style="{ backgroundColor: '#282f39' }">
+                 <div class="accordion-bod p-0" :style="{ border: '1px solid white' }">
+                   <router-link class="list-group-item list-group-item-action list-group-item-light" to="/omon_todo">
+                      omon
+                   </router-link>
+                 </div>
+               </div>
+             </div>
             </div>
-          </div>
 
 
           <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/about">About
@@ -117,7 +136,16 @@ const toggle = () => {
   isOpen.value = !isOpen.value;
 };
 
+const isOpen2 = ref(false);
+
+const toggle2= () => {
+  isOpen2.value = !isOpen2.value;
+};
+
 console.log(path);
+console.log(path);
+
+
 
 </script>
 
@@ -128,10 +156,8 @@ console.log(path);
   color: #e5e9f0;
   border: none;
 }
-
-.lkjnb {
   .lkjnb :focus {
     color: red;
   }
-}
+
 </style>

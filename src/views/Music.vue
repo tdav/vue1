@@ -4,7 +4,7 @@
             <div class="row" style="height: 12vh;">
                 <div class="p-0">
                     <nav class="navbar navbar-expand p-0 brt" style="background-color: rgb(28 28 28); height: 100%;">
-                        <div class="container p-0">
+                        <div class="container p-0 vver">
                             <div class="p-4 pt-3 pb-3 yrt">
                                 <img src="../assets/img/Logo.png" alt="logo" class="img-logo123">
                             </div>
@@ -28,7 +28,7 @@
                                     <li class="nav-item">
                                     </li>
                                     <div class="btn-group dropend">
-                                        <button type="button" class="btn btn-secondary dropdown-toggle"
+                                        <button type="button" class="btn btn-secondary dropdown-toggle fhdrg"
                                             data-bs-toggle="dropdown" aria-expanded="false"
                                             style="background-color: rgb(28 28 28); color: white; border: none; width: 80px;">
                                             <p class="me-3 sghf" style="color:  rgb(80 80 80);">Home</p>
@@ -197,6 +197,25 @@ function onClickShowMenu() {
 .list-group {
     background-color: #1c1c1c;
     margin-top: -5px;
+}
+
+@media only screen and (max-width: 429px) {
+    .fhdrg {
+        visibility: hidden;
+    }
+    .searchyt {
+        margin-left: -135px;
+    }
+    .vver {
+        width: 140  px;
+        margin-left: -40px;
+    }
+
+
+
+    .trgc {
+       visibility: hidden;
+    }
 }
 
 @media only screen and (max-width: 768px) {
