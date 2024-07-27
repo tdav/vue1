@@ -22,14 +22,35 @@
             Component</RouterLink>
           <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/slot">6 - Component
             Slot</RouterLink>
-          <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/DavronV7">7 - Davron
-          </RouterLink>
+          <!-- <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/DavronV7">7 - Davron
+          </RouterLink> -->
           <!-- <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/Jasur">7 - Jasur
           </RouterLink> -->
           <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/Music">Music
           </RouterLink>
           <!-- <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/omon_todo">Omon
           </RouterLink> -->
+          <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingthree">
+                  <button class="accordion-button " :class="{ collapsed: !isOpen3 }"
+                   :style="{ backgroundColor: '#262b33', color: 'white', border: 'none'  }" type="button"
+                    @click="toggle3"
+                    aria-expanded="false" aria-controls="collapseThree">
+                   Davron
+                  </button>
+                </h2>
+               <div id="collapseThree" class="accordion-collapse collapse" :class="{ show: isOpen3 }"
+                  aria-labelledby="headingThree" data-bs-parent="#accordionExample" :style="{ backgroundColor: '#282f39' }">
+                 <div class="accordion-bod p-0" :style="{ border: '1px solid white' }">
+                   <router-link class="list-group-item list-group-item-action list-group-item-light" to="/DavronV7">
+                      DavronV7
+                   </router-link>
+                 </div>
+               </div>
+             </div>
+            </div>
+
 
            <div class="accordion" id="accordionExample">
              <div class="accordion-item">
@@ -66,6 +87,9 @@
                  <div class="accordion-bod p-0" :style="{ border: '1px solid white' }">
                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/omon_todo">
                       omon
+                   </router-link>
+                   <router-link class="list-group-item list-group-item-action list-group-item-light" to="/primer1">
+                      primer1
                    </router-link>
                  </div>
                </div>
@@ -142,6 +166,14 @@ const toggle2= () => {
   isOpen2.value = !isOpen2.value;
 };
 
+
+const isOpen3 = ref(false);
+
+const toggle3= () => {
+  isOpen3.value = !isOpen3.value;
+};
+
+console.log(path);
 console.log(path);
 console.log(path);
 

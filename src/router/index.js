@@ -10,6 +10,7 @@ import DavronV7 from '../views/DavronV7.vue'
 import Jasur from '../views/Jasur.vue'
 import Music from '../views/Music.vue'
 import OmonTodo from '../views/Omon/todo.vue'
+import Primer from '../views/Omon/primer.vue'
 
 const routes = [
   {
@@ -28,6 +29,12 @@ const routes = [
     path: '/DavronV7',
     name: 'DavronV7',
     component: DavronV7
+  },
+
+  {
+    path: '/primer',
+    name: 'Primer',
+    component: Primer
   },
   
   {
