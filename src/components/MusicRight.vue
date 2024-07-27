@@ -17,8 +17,8 @@
       </div>
     </div>
     <div>
-      <div class="iwuc mt-5 ">
-        <p style="margin-top:7px;">Fans Also Like</p>
+      <div class="iwuc mt-5">
+        <p>Fans Also Like</p>
         <a class="uwhiu">See All</a>
       </div>
       <div class="isucbk">
@@ -29,10 +29,7 @@
       </div>
     </div>
 
-    <MusicRightAlbom :item="it"></MusicRightAlbom>
-    <div style="height: 80px;">
-
-    </div>
+    <MusicRightAlbom :item="it" class="music-list"></MusicRightAlbom>
   </div>
 </template>
 
