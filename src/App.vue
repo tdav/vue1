@@ -64,8 +64,11 @@
                 <div id="collapseFour" class="accordion-collapse collapse" :class="{ show: isOpen4 }"
                  aria-labelledby="headingFour" data-bs-parent="#accordionExample" :style="{ backgroundColor: '#282f39' }">
                   <div class="accordion-body p-0" :style="{ border: '1px solid white' }">
-                   <router-link class="list-group-item list-group-item-action list-group-item-light" to="/Aziz">
-                  Aziz
+                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/Aziz">
+                      Operators
+                    </router-link>
+                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/newOperators">
+                      NewOperators
                     </router-link>
                     </div>
                 </div>

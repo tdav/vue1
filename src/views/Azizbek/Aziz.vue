@@ -2,8 +2,8 @@
     <h1 class="text-center">Azizbek Developer</h1>
 
     <h1 class="text-primary">Operatorlar</h1>
-    <h3>Арифметик операторлар: + - * / </h3>
-    <h3>Таққослаш операторлари: == === != !== !=== < > <= >= </h3>
+    <h3>Арифметик операторлар: + - * / %</h3>
+    <h3>Таққослаш операторлари: == === != < > <= >= </h3>
     <h3>Мантиқий операторлар: || && !</h3>
     <h3>Тенглик ва таъриф операторлари: = += -= *= /= </h3>
 </template>
@@ -221,35 +221,37 @@ console.log(`
 
 console.log(`Result ${res7}`);
 
-// !== 
+// errors 
 
-let r1 = 2;
-let r2 = "2";
-let res8 = r1 !== r2;
+// // !== 
 
-console.log(`
+// let r1 = 2;
+// let r2 = "2";
+// let res8 = r1 !== r2;
+
+// console.log(`
     
-        !==
+//         !==
 
-    let e1 = 5;
-    let e2 = 3;
-    let res2 = e1 !== e2; 
-`);
+//     let e1 = 5;
+//     let e2 = 3;
+//     let res2 = e1 !== e2; 
+// `);
 
-console.log(`Result ${res8}`);
+// console.log(`Result ${res8}`);
 
 
 
-console.log(`
+// console.log(`
     
-        !===
+//         !===
 
-    let t1 = 5;
-    let t2 = 3;
-    let res2 = t1 !=== t2; 
-`);
+//     let t1 = 5;
+//     let t2 = 3;
+//     let res2 = t1 !=== t2; 
+// `);
 
-console.log(`Result ${res8}`);
+// console.log(`Result ${res8}`);
 
 
 </script>

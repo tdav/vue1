@@ -12,6 +12,7 @@ import Music from '../views/Music.vue'
 import OmonTodo from '../views/Omon/todo.vue'
 import Aziz from '../views/Azizbek/Aziz.vue'
 import Operatorlar from '../views/Omon/operatorlar.vue'
+import newOperators from '@/views/Azizbek/newOperators.vue'
 import Sikllar from '../views/Omon/sikllar.vue'
 import Function from '../views/Omon/Function.vue'
 
@@ -44,6 +45,12 @@ const routes = [
     path: '/aziz',
     name: 'Aziz',
     component: Aziz
+  },
+
+  {
+    path: '/newOperators',
+    name: 'newOperators',
+    component: newOperators
   },
   
   {
