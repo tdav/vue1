@@ -93,7 +93,7 @@
                     <MusicMain></MusicMain>
                 </div>
 
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-3 ps-0">
                     <MusicRight></MusicRight>
                 </div>
 

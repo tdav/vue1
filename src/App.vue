@@ -32,26 +32,26 @@
           </RouterLink>
 
 
+
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed lkjnb" style="background-color: rgb(91 99 110); color: white" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  Mavzular
+                <button class="accordion-button" :class="{ collapsed: !isOpen }"
+                  :style="{ backgroundColor: '#5b636e', color: 'white' }" type="button" @click="toggle"
+                  aria-expanded="false" aria-controls="collapseOne">
+                  Jasur
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample" style="background-color: #282f39;">
-                <div class="accordion-body p-0 dhg" style="border: white;">
-                  <router-link class="list-group-item list-group-item-action list-group-item-light dhg" to="/Jasur">7 -
-                    Jasur</router-link>
+              <div id="collapseOne" class="accordion-collapse collapse" :class="{ show: isOpen }"
+                aria-labelledby="headingOne" data-bs-parent="#accordionExample" :style="{ backgroundColor: '#282f39' }">
+                <div class="accordion-body p-0" :style="{ border: '1px solid white' }">
+                  <router-link class="list-group-item list-group-item-action list-group-item-light" to="/Jasur">
+                    7 - Jasur
+                  </router-link>
                 </div>
               </div>
             </div>
           </div>
-
-
-
 
 
           <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/about">About
@@ -109,6 +109,14 @@ import { computed } from 'vue'
 const route = useRoute();
 const path = computed(() => route.path)
 
+// Accordion holatini boshqarish uchun o'zgaruvchi
+const isOpen = ref(false);
+
+// Accordion holatini o'zgartirish uchun funksiya
+const toggle = () => {
+  isOpen.value = !isOpen.value;
+};
+
 console.log(path);
 
 </script>
@@ -120,7 +128,8 @@ console.log(path);
   color: #e5e9f0;
   border: none;
 }
-.lkjnb{
+
+.lkjnb {
   .lkjnb :focus {
     color: red;
   }

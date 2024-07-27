@@ -38,7 +38,7 @@
                 </svg>
                 <!-- < -->
                 <div style="display: inline-block; height: 35px; width: 35px; border-radius: 50px;"
-                    class="p-0 ms-4 m-0 me-2  ms-md-0 iug">
+                    class="p-0 ms-4 ms-sm-1  m-0 me-2  ms-md-0 iug">
                     <svg v-if="isPlaying" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                         class="bi bi-pause-circle-fill jabx" style="color: white;" viewBox="0 0 16 16"
                         @click="toggleIcons">

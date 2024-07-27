@@ -77,12 +77,12 @@ import MusicRightAlbom from "../components/MusicRightAlbom.vue";
 }
 
 .isucbk {
-  height: 195px;
-  width: 195px;
   position: relative;
   bottom: 30px;
   border-radius: 20px;
   background: url("../assets/img/music/Rectangle5.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .iwuc {
