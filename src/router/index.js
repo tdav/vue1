@@ -13,6 +13,7 @@ import OmonTodo from '../views/Omon/todo.vue'
 import Aziz from '../views/Azizbek/Aziz.vue'
 import Operatorlar from '../views/Omon/operatorlar.vue'
 import Sikllar from '../views/Omon/sikllar.vue'
+import Function from '../views/Omon/Function.vue'
 
 const routes = [
   {
@@ -20,7 +21,13 @@ const routes = [
     name: 'home',
     component: HomeView
   },
-  
+ 
+  {
+    path: '/function',
+    name: 'Function',
+    component: Function
+  },
+
   {
     path: '/omon_todo',
     name: 'OmonTodo',

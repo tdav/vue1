@@ -115,6 +115,9 @@
                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/sikllar">
                     sikllar
                    </router-link>
+                   <router-link class="list-group-item list-group-item-action list-group-item-light" to="/function">
+                    Function
+                   </router-link>
                  </div>
                </div>
              </div>
