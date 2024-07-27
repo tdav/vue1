@@ -10,9 +10,9 @@ import DavronV7 from '../views/DavronV7.vue'
 import Jasur from '../views/Jasur.vue'
 import Music from '../views/Music.vue'
 import OmonTodo from '../views/Omon/todo.vue'
-import Primer from '../views/Omon/primer.vue'
 import Aziz from '../views/Azizbek/Aziz.vue'
-import Primer from '../views/Omon/operatorlar.vue'
+import Operatorlar from '../views/Omon/operatorlar.vue'
+import Sikllar from '../views/Omon/sikllar.vue'
 
 const routes = [
   {
@@ -25,6 +25,12 @@ const routes = [
     path: '/omon_todo',
     name: 'omon_todo',
     component: OmonTodo
+  },
+
+  {
+    path: '/sikllar',
+    name: 'Sikllar',
+    component:Sikllar
   },
 
   {
