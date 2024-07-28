@@ -17,8 +17,8 @@
       </div>
     </div>
     <div>
-      <div class="iwuc mt-5 ">
-        <p style="margin-top:7px;">Fans Also Like</p>
+      <div class="iwuc mt-5">
+        <p>Fans Also Like</p>
         <a class="uwhiu">See All</a>
       </div>
       <div class="isucbk">
@@ -29,10 +29,7 @@
       </div>
     </div>
 
-    <MusicRightAlbom :item="it"></MusicRightAlbom>
-    <div style="height: 80px;">
-
-    </div>
+    <MusicRightAlbom :item="it" class="music-list"></MusicRightAlbom>
   </div>
 </template>
 
@@ -77,12 +74,12 @@ import MusicRightAlbom from "../components/MusicRightAlbom.vue";
 }
 
 .isucbk {
-  height: 195px;
-  width: 195px;
   position: relative;
   bottom: 30px;
   border-radius: 20px;
   background: url("../assets/img/music/Rectangle5.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .iwuc {

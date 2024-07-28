@@ -1,27 +1,32 @@
 <template>
     <div class="container">
+        <!-- Yangi element qo'shish uchun kiritish maydoni va tugma -->
         <div class="row">
             <div class="col">
-                <input type="text" class="sdf" v-model="msg">
-                <button @click="OnCreate" class="iuj">Qo'shish</button>
+                <input type="text" class="razmeri" v-model="msg">
+                <button @click="OnCreate" class="Qushish-tugmasi">Qo'shish</button>
             </div>
         </div>
 
+        <!-- Vazifa ro'yxati bo'limi -->
         <div class="row">
             <div class="col">
-                <h3>Todo List</h3>
+                <h3>Vazifa Ro'yxati</h3>
                 <ul class="list-group">
                     <li v-for="it in list" :key="it.id">
                         <input type="checkbox" v-model="it.checked" @change="handleCheck(it)" />
                         <p class="mytext ms-2"> {{ it.name }}</p>
+                        <button @click="clearCompleted(it)" class="ochirish-tugmasi">O'chirish</button>
+                        <button @click="editItem(it)" class="tahrirlash-tugmasi">Tahrirlash</button>
                     </li>
                 </ul>
             </div>
         </div>
+
+        <!-- Bajarilgan vazifalar ro'yxati bo'limi -->
         <div class="row">
-           
-            <h3 class="mt-4">Bajarilgan</h3>
             <div class="col">
+                <h3 class="mt-4">Bajarilgan</h3>
                 <ul class="list-group mt-3">
                     <li v-for="it in donelist" :key="it.id">
                         <input type="checkbox" v-model="it.checked" @change="handleCheck(it)" />
@@ -36,30 +41,53 @@
 <script setup>
 import { ref } from 'vue';
 
-const list = ref([]);
-const donelist = ref([]);
+const list = ref([]); // Asosiy vazifa ro'yxati
+const donelist = ref([]); // Bajarilgan vazifalar ro'yxati
 
-let msg = ref("");
+let msg = ref(""); // Kiritish maydoni uchun o'zgaruvchi
 
+// Vazifani qo'shish funktsiyasi
 function OnCreate() {
-    var it = {
-        id: Date.now(),
+    if (msg.value.trim() === "") return; // Bo'sh vazifa qo'shishni to'xtatish
+
+    const newItem = {
+        id: Date.now(), // Vaqtstempel bo'yicha xususiylangan ID
         checked: false,
-        name: msg.value
+        name: msg.value.trim()
     };
 
-    msg.value = "";
+    msg.value = ""; // Kiritish maydonini tozalash
 
-    list.value.push(it);
+    list.value.push(newItem); // Vazifani asosiy ro'yxatga qo'shish
 }
 
+// Checkbox holatini boshqarish funktsiyasi
 function handleCheck(item) {
     if (item.checked) {
+        // Vazifani bajarilganlar ro'yxatiga ko'chirish
         list.value = list.value.filter(it => it.id !== item.id);
         donelist.value.push(item);
     } else {
+        // Vazifani qayta asosiy ro'yxatga qaytarish
         donelist.value = donelist.value.filter(it => it.id !== item.id);
         list.value.push(item);
+    }
+}
+
+// Vazifa nomini tahrirlash funktsiyasi
+function editItem(item) {
+    const newName = prompt("Yangi vazifa nomini kiriting:", item.name);
+    if (newName && newName.trim() !== "") {
+        item.name = newName.trim();
+    }
+}
+
+// Bajarilgan vazifalarni o'chirish funktsiyasi
+function clearCompleted(item) {
+    if (item.checked) {
+        donelist.value = donelist.value.filter(it => it.id !== item.id);
+    } else {
+        list.value = list.value.filter(it => it.id !== item.id);
     }
 }
 </script>
@@ -70,15 +98,33 @@ function handleCheck(item) {
     font-weight: 500;
 }
 
-.iuj {
-    background: grey;
-    border: 2px solid black;
+.Qushish-tugmasi {
+    background: green;
+    border: 2px solid rgb(2, 77, 2);
     color: black;
-    margin-left: 2rem;
+    margin-left: 0.5rem; /* Tugmalar orasidagi bo'shliqni sozlash */
     border-radius: 10px;
 }
-.sdf {
+
+.razmeri {
     width: 17rem;
     height: 2rem;
+}
+
+.ochirish-tugmasi {
+    background: red;
+    border: 2px solid rgb(84, 5, 5);
+    color: black;
+    margin-left: 0.5rem; /* Tugmalar orasidagi bo'shliqni sozlash */
+    border-radius: 10px;   
+}
+
+.tahrirlash-tugmasi {
+    background-color: blue;
+    border: 2px solid rgb(4, 4, 95);
+    color: black;
+    margin-left: 0.5rem; /* Tugmalar orasidagi bo'shliqni sozlash */
+    border-radius: 10px; 
+
 }
 </style>
