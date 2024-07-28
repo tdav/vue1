@@ -27,9 +27,9 @@ const routes = [
   },
 
   {
-    path: '/aziz_todo',
-    name: 'aziz_todo',
-    component: AzizTodo
+    path: '/aziz',
+    name: 'Aziz',
+    component: Aziz
   },
   
   {
