@@ -2,7 +2,7 @@
     <h1 class="text-center">Azizbek Developer</h1>
 
     <h3 class="text-primary">Operatorlar</h3>
-    <pre class="text-danger">
+    <pre class="text-success">
         Albatta, mana arifmetik operatorlar nazariyasi va amaliy misollari bilan lotin alifbosida: 
 
         Nazariy Qism
@@ -88,6 +88,15 @@
 
     </pre>
 </template>
+
+<script setup>
+
+let a = 5;
+let b = 3;
+let sum = a + b;
+console.log(sum);
+
+</script>
 
 <style scoped>
 
