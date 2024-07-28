@@ -109,8 +109,8 @@
                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/omon_todo">
                       omon
                    </router-link>
-                   <router-link class="list-group-item list-group-item-action list-group-item-light" to="/primer1">
-                      primer1
+                   <router-link class="list-group-item list-group-item-action list-group-item-light" to="/operatorlar">
+                      operatorlar
                    </router-link>
                  </div>
                </div>

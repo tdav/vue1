@@ -12,6 +12,7 @@ import Music from '../views/Music.vue'
 import OmonTodo from '../views/Omon/todo.vue'
 import Primer from '../views/Omon/primer.vue'
 import Aziz from '../views/Azizbek/Aziz.vue'
+import Primer from '../views/Omon/operatorlar.vue'
 
 const routes = [
   {
@@ -39,9 +40,9 @@ const routes = [
   },
 
   {
-    path: '/primer',
-    name: 'Primer',
-    component: Primer
+    path: '/operatorlar',
+    name: 'Operatorlar',
+    component: Operatorlar
   },
   
   {
