@@ -5,7 +5,7 @@
 <style>
 
 h1 {
-    color: red;
+    color: crimson;
     text-align: center;
 }
 
