@@ -11,7 +11,7 @@ import Jasur from '../views/Jasur.vue'
 import Music from '../views/Music.vue'
 import OmonTodo from '../views/Omon/todo.vue'
 import Primer from '../views/Omon/primer.vue'
-import Aziz from '../views/Azizbek/Aziz.vue'
+import Aziz from  '../views/Azizbek/Aziz.vue'
 import Primer from '../views/Omon/operatorlar.vue'
 
 const routes = [
