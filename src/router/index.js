@@ -11,6 +11,7 @@ import Jasur from '../views/Jasur.vue'
 import Music from '../views/Music.vue'
 import OmonTodo from '../views/Omon/todo.vue'
 import Primer from '../views/Omon/primer.vue'
+import Aziz from '../views/Azizbek/Aziz.vue'
 
 const routes = [
   {
@@ -23,6 +24,12 @@ const routes = [
     path: '/omon_todo',
     name: 'omon_todo',
     component: OmonTodo
+  },
+
+  {
+    path: '/aziz_todo',
+    name: 'aziz_todo',
+    component: AzizTodo
   },
   
   {
