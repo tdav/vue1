@@ -79,8 +79,8 @@
                     <router-link class="list-group-item list-group-item-action list-group-item-light" to="/Loop">
                       Loop
                     </router-link>
-                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/homework_1">
-                      Homeworks
+                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/dom">
+                      DOM
                     </router-link>
                     </div>
                 </div>
