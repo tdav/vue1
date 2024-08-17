@@ -67,5 +67,18 @@
   
   const obj = { a: 1, b: 2, c: 3 };
   const arr = [10, 20, 30];
+
+  function salomAyt(name) {
+    console.log(`Salom, ${name}!`);
+}
+
+salomAyt("Ali");
+
+function qalesan(ism) {
+  console.log(`Qalesan, ${ism}?`);
+}
+
+qalesan("Jasur");
+
   </script>
   
