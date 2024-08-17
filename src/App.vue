@@ -44,7 +44,13 @@
                   aria-labelledby="headingThree" data-bs-parent="#accordionExample" :style="{ backgroundColor: '#282f39' }">
                  <div class="accordion-bod p-0" :style="{ border: '1px solid white' }">
                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/DavronV7">
-                      DavronV7
+                      Test1
+                   </router-link>
+                 </div>
+                 
+                 <div class="accordion-bod p-0" :style="{ border: '1px solid white' }">
+                   <router-link class="list-group-item list-group-item-action list-group-item-light" to="/DavronDom">
+                      TestDom
                    </router-link>
                  </div>
                </div>
@@ -215,12 +221,7 @@ const toggle4= () => {
   isOpen4.value = !isOpen4.value;
 };
 
-console.log(path);
-console.log(path);
-console.log(path);
-console.log(path);
-
-
+ 
 
 </script>
 

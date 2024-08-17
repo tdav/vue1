@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h1>Hello Function</h1>
-  </div>
+    <div>
+        <h1>Hello Function</h1>
+    </div>
 </template>
 
 <script setup>
@@ -12,7 +12,7 @@ function add(a, b) {
 }
 
 // Ифодали функция
-const subtract = function(a, b) {
+const subtract = function (a, b) {
     return a - b;
 };
 
@@ -20,6 +20,74 @@ const subtract = function(a, b) {
 const multiply = (a, b) => {
     return a * b;
 };
+
+let  addFun = (a, b) => {
+    return a + b
+}
+
+
+var obj = {}
+obj.func=(a, b) => {
+    return a + b
+}
+
+
+const fnOyna = (a, b) => {
+    //return a * b;
+
+    text.css = 'active'
+};
+
+
+let sum= fnOyna(19,2);
+
+
+function multiply11(a,b) {
+    return a * b;
+};
+
+
+var funcList = [];
+funcList['m'] = multiply;
+funcList['oyna'] = fnOyna;
+
+
+funcList['motor']();
+funcList['oyna']();
+
+
+function Stanok(...list) {
+
+    for (let i = 0; i < list.length; i++) {
+        const el = list[i];
+
+
+        fnOyna(1,2)
+        fnOyna(2,2,2)
+
+
+        switch (typeof (el)) {
+            case 'motor':
+                funcList['m'](el);
+                motorFunc(el);
+
+                break;
+
+            case 'oyna':
+                funcList['oyna'](el);
+                oynaFunc(el)
+
+                break;
+
+            default:
+                break;
+        }
+
+
+    }
+}
+
+
 
 // Қисқа ёзилган ўқ функцияси
 const divide = (a, b) => a / b;
@@ -40,7 +108,7 @@ function greet(greeting = "Hello", ...names) {
 // Функцияни чақириш
 greet(); // Hello, Guest!
 greet("Hi"); // Hi, Guest!
-greet("Hey", "Alice", "Bob", "Charlie"); 
+greet("Hey", "Alice", "Bob", "Charlie");
 // Hey, Alice!
 // Hey, Bob!
 // Hey, Charlie!
