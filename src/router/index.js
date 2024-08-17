@@ -16,6 +16,7 @@ import newOperators from '@/views/Azizbek/newOperators.vue'
 import Loop from '@/views/Azizbek/Loop.vue'
 import Sikllar from '../views/Omon/sikllar.vue'
 import Function from '../views/Omon/Function.vue'
+import Dom from '../views/Omon/dom.vue'
 
 const routes = [
   {
@@ -41,6 +42,13 @@ const routes = [
     name: 'Sikllar',
     component:Sikllar
   },
+
+  {
+    path: '/dom',
+    name: 'Dom',
+    component:Dom
+  },
+
 
   {
     path: '/aziz',
