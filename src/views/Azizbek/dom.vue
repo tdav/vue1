@@ -40,7 +40,7 @@
 
     <!-- <p id="inputValue"></p>/ -->
 
-    <input class="d-block" type="text" id="input" onchange="inputP()">
+    <input class="d-block" type="text" id="input" >
   </template>
   
   <script setup>
@@ -109,13 +109,6 @@
         h1.value = 'sdsdsdsdsd';
     }
 
-    
-
-
-
-
-
-
     // 10. mouseover ҳодисасини <li> элементга қўшинг ва унга рангини ўзгартирувчи функцияни бириктиринг.
 
     const mouseover = document.querySelector('.list-color');
@@ -125,27 +118,17 @@
 
     function addLI()
     {
+        const li = document.createElement('li');
 
-    }
-
-
-    function mouseoverClick() {
-        // mouseover.style.fontSize = '30px';
-        const li = document.querySelector('li');
-        li.innerHTML = `<li>Light</li>`
+        mouseover.style.color ='red';
         colorUl.appendChild(li)
-
     }
 
-
-
-
-
-    mouseover.addEventListener('mouseover', mouseoverClick);
-
+    
     // 11. input ҳодисасини <input> элементга қўшинг ва унга <p> элементнинг мазмунини ўзгартирувчи функцияни бириктиринг.
 
     const input = document.querySelector('#input');
+    mouseover.addEventListener('onchange', inputP)
 
     function inputP() {
         const pElement = document.createElement('p');
@@ -153,7 +136,6 @@
         pElement.innerHTML = input.value
         document.body.appendChild('pElement')
     }
-
-    input.addEventListener('click', inputP)
+ 
   </script>
   

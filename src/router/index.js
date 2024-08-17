@@ -74,7 +74,7 @@ const routes = [
     path: '/dom',
     name: 'dom',
     component: dom
-  }
+  },
   
   {
     path: '/DavronV7',
