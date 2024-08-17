@@ -126,6 +126,6 @@ export default {
 
 <style>
 li {
-    color: red;
+    color: red; 
 }
 </style>
