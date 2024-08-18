@@ -1,7 +1,7 @@
 <template>
     <h1 id="domH1">DOM Homework</h1>
 
-    <h3 class="exercise">Exerscise 2</h3>
+    <p class="exercise">Exerscise 2</p>
 
     <ul>
         <li>Exercise 1</li>
@@ -28,13 +28,13 @@
 
     <p class="atr">setAttribute</p>
 
-    <a id="href" href="huxn"></a>
+    <a id="myHref" href="huxn"></a>
 
 
     <h1 id="event">Event</h1>
-    <button class="d-block btn  btn-danger" onclick="deleteList()" id="click">Click</button>
+    <button class="d-block btn  btn-danger" id="myClick">Click</button>
 
-    <span class="btn btn-info" id="mouseover" onclick="mouseoverClick()">
+    <span class="btn btn-info" id="mouseover" >
         mouseover
     </span>
 
@@ -63,7 +63,7 @@
 
     // 4. textContent билан <h1> элементнинг мазмунини 
 
-    const h1TextContext = document.querySelector('#textContent');
+    const h1TextContext = document.getElementById('textContent');
 
     h1TextContext.textContent = 'h1TextContent'
 
@@ -88,28 +88,46 @@
 
     // 8. getAttribute билан <a> элементнинг href атрибути қийматини олинг ва шу қийматни веб-саҳифада кўрсатинг.
 
-    const getAttribute = document.querySelector('#href');
+    const getAttribute = document.querySelector('#myHref');
 
-    getAttribute.getAttribute('href');
+    var val = getAttribute.getAttribute('href');
 
-    console.log(getAttribute);
+    console.log(val);
+
+
+
+
 
     // 9. addEventListener ёрдамида <button> элементга click ҳодисаси қўшинг ва унга <h1> элементнинг мазмунини ўзгартирувчи функцияни бириктиринг.
 
-    const onClick = document.querySelector('#click');
-    const deleteH1 = document.getElementById('event')
+    const btn = document.querySelector('#myClick');
+    btn.addEventListener('click', deleteList)
+    
 
     function deleteList() {
-        
+        var h1 = document.getElementById('domH1')
+        h1.value = 'sdsdsdsdsd';
     }
 
-    onClick.addEventListener('click', deleteList)
+    
+
+
+
+
 
 
     // 10. mouseover ҳодисасини <li> элементга қўшинг ва унга рангини ўзгартирувчи функцияни бириктиринг.
 
-    const mouseover = document.querySelector('#mouseover');
+    const mouseover = document.querySelector('.list-color');
+    mouseover.addEventListener('mouseover', addLI)
+
     const colorUl = document.querySelector('.list-color');
+
+    function addLI()
+    {
+
+    }
+
 
     function mouseoverClick() {
         // mouseover.style.fontSize = '30px';
@@ -118,6 +136,10 @@
         colorUl.appendChild(li)
 
     }
+
+
+
+
 
     mouseover.addEventListener('mouseover', mouseoverClick);
 

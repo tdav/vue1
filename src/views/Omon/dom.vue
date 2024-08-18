@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h1 id="main-heading">Dom</h1>
+    <div id="myDiv1" class="myClass">
+        <h2 id="main-heading">Dom</h2>
     </div>
 
     <div>
@@ -28,11 +28,11 @@
     </div>
 
     <div>
-        <p ref="paragraph">Bu yerda matn bor</p>
+        <p >Bu yerda matn bor</p>
     </div>
 
     <div>
-        <a ref="link" href="https://omon"></a>
+        <a  href="https://omon"></a>
         <p>: {{ hrefValue }}</p>
     </div>
 
@@ -54,16 +54,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
-
-const heading = ref('Eski');
-const heading1 = ref(null);
-const myButton = ref(null);
-const paragraph = ref(null);
-const link = ref(null);
-const textColor = ref('black');
-const text = ref('');
-const paragraphContent = ref('Bu yerda matn yangilandi');
-const hrefValue = ref('');
+ 
 
 const changeHeading = () => {
     heading.value = 'Yangi';
@@ -84,6 +75,12 @@ const changeMessage = () => {
 };
 
 onMounted(() => {
+    
+    var myDiv1 = document.getElementById('myDiv1');
+    var h2 = document.querySelector("div.myClass > h2");
+
+
+
     if (link.value) {
         hrefValue.value = link.value.getAttribute('href');
     }
@@ -91,6 +88,10 @@ onMounted(() => {
     if (myButton.value) {
         myButton.value.addEventListener('click', changeMessage);
     }
+
+
+
+    var paragraph = document.getElementById('myDiv1');
 
     if (paragraph.value) {
         paragraph.value.setAttribute('title', 'Бу параграфнинг title атрибути');
@@ -109,5 +110,9 @@ onMounted(() => {
 <style>
 li {
     color: red;
+}
+
+.myClass{
+    color: aqua;
 }
 </style>
