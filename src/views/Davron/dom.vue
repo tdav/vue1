@@ -24,7 +24,7 @@
 function onSave() {
 
     var va = document.getElementById('div1')
-   
+
 
     va.style.display = 'none';
 
@@ -37,7 +37,7 @@ function onSave() {
 
     console.log('-------------------------------------');
 
-alert ('aa')
+    alert('aa')
 
     const elall = document.querySelectorAll(".form-group");
     console.log(elall);
