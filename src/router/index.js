@@ -14,6 +14,7 @@ import Aziz from '../views/Azizbek/Aziz.vue'
 import Operatorlar from '../views/Omon/operatorlar.vue'
 import newOperators from '@/views/Azizbek/newOperators.vue'
 import Loop from '@/views/Azizbek/Loop.vue'
+import homework_1 from '@/views/Azizbek/homework_1.vue'
 import Sikllar from '../views/Omon/sikllar.vue'
 import Function from '../views/Omon/Function.vue'
 
@@ -58,6 +59,12 @@ const routes = [
     path: '/Loop',
     name: 'Loop',
     component: Loop
+  },
+
+  {
+    path: '/homework_1',
+    name: 'homework_1',
+    component: homework_1
   },
   
   {
