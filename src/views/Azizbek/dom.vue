@@ -1,5 +1,5 @@
 <template>
-    <h1 class="domH1">DOM Homework</h1>
+    <h1 id="domH1">DOM Homework</h1>
 
     <h3 class="exercise">Exerscise 2</h3>
 
@@ -49,14 +49,17 @@
     // 1. document.getElementById билан веб-саҳифадаги <h1> элементни танланг.
 
     const h1 = document.getElementById('domH1');
+    console.log(h1);
 
     // 2. document.querySelector билан <p> элементни танланг.
 
     const h3 = document.querySelector('.exercise');
+    console.log(h3);
 
     // 3. document.querySelectorAll билан барча <li> элементларни танлан
 
     const li = document.querySelectorAll('li');
+    console.log(li);
 
     // 4. textContent билан <h1> элементнинг мазмунини 
 
