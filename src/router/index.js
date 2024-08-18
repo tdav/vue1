@@ -6,7 +6,7 @@ import TableView from '../views/TableView.vue'
 import ValuableView from '../views/ValuableView.vue'
 import ShartliOperatorView from '../views/ShartliOperatorView.vue'
 import ComponentSlotView from '../views/ComponentSlotView.vue'
-import DavronV7 from '../views/DavronV7.vue'
+import DavronV7 from '../views/Davron/DavronV7.vue'
 import Jasur from '../views/Jasur.vue'
 import Music from '../views/Music.vue'
 import OmonTodo from '../views/Omon/todo.vue'
@@ -17,6 +17,7 @@ import Loop from '@/views/Azizbek/Loop.vue'
 import homework_1 from '@/views/Azizbek/homework_1.vue'
 import Sikllar from '../views/Omon/sikllar.vue'
 import Function from '../views/Omon/Function.vue'
+import DavronDom from '../views/Davron/dom.vue'
 
 const routes = [
   {
@@ -71,6 +72,12 @@ const routes = [
     path: '/DavronV7',
     name: 'DavronV7',
     component: DavronV7
+  },
+  
+  {
+    path: '/DavronDom',
+    name: 'DavronDom',
+    component: DavronDom
   },
 
   {
