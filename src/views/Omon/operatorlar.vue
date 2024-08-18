@@ -28,7 +28,9 @@ console.log(`olmos * murod  ${olmos * murod}`);
 
 console.log(`bohodir / omon  ${bohodir / omon}`);
 
-console.log(`o % d  ${o % d}`);
+console.log(`o % d 
+
+ ${o % d}`);
 
 // Taqqoslash operatorlari
 console.log(`a = 5, c = "5"`);

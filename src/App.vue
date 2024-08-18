@@ -122,16 +122,19 @@
                   aria-labelledby="headingTwo" data-bs-parent="#accordionExample" :style="{ backgroundColor: '#282f39' }">
                  <div class="accordion-bod p-0" :style="{ border: '1px solid white' }">
                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/omon_todo">
-                      omon
+                      Omon
                    </router-link>
                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/operatorlar">
                       operatorlar
                    </router-link>
                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/sikllar">
-                    sikllar
+                    Sikllar
                    </router-link>
                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/function">
                     Function
+                   </router-link>
+                   <router-link class="list-group-item list-group-item-action list-group-item-light" to="/dom">
+                    Dom
                    </router-link>
                  </div>
                </div>

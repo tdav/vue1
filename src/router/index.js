@@ -18,6 +18,7 @@ import homework_1 from '@/views/Azizbek/homework_1.vue'
 import Sikllar from '../views/Omon/sikllar.vue'
 import Function from '../views/Omon/Function.vue'
 import DavronDom from '../views/Davron/dom.vue'
+import Dom from '../views/Omon/dom.vue'
 
 const routes = [
   {
@@ -43,6 +44,13 @@ const routes = [
     name: 'Sikllar',
     component:Sikllar
   },
+
+  {
+    path: '/dom',
+    name: 'Dom',
+    component:Dom
+  },
+
 
   {
     path: '/aziz',
