@@ -13,6 +13,7 @@ import OmonTodo from '../views/Omon/todo.vue'
 import Aziz from '../views/Azizbek/Aziz.vue'
 import Operatorlar from '../views/Omon/operatorlar.vue'
 import newOperators from '@/views/Azizbek/newOperators.vue'
+import Loop from '@/views/Azizbek/Loop.vue'
 import Sikllar from '../views/Omon/sikllar.vue'
 import Function from '../views/Omon/Function.vue'
 
@@ -51,6 +52,12 @@ const routes = [
     path: '/newOperators',
     name: 'newOperators',
     component: newOperators
+  },
+
+  {
+    path: '/Loop',
+    name: 'Loop',
+    component: Loop
   },
   
   {

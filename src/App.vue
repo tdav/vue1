@@ -58,7 +58,7 @@
                   <button class="accordion-button" :class="{ collapsed: !isOpen4 }"
                     :style="{ backgroundColor: '#282f39', color: 'white' }" type="button" @click="toggle4"
                    aria-expanded="false" aria-controls="collapseFour">
-                    Aziz
+                    Azizbek
                  </button>
                </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" :class="{ show: isOpen4 }"
@@ -69,6 +69,9 @@
                     </router-link>
                     <router-link class="list-group-item list-group-item-action list-group-item-light" to="/newOperators">
                       NewOperators
+                    </router-link>
+                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/Loop">
+                      Loop
                     </router-link>
                     </div>
                 </div>
