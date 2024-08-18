@@ -100,7 +100,7 @@
     const deleteH1 = document.getElementById('event')
 
     function deleteList() {
-        deleteH1.remove()
+        
     }
 
     onClick.addEventListener('click', deleteList)
