@@ -40,7 +40,7 @@
 
     <!-- <p id="inputValue"></p>/ -->
 
-    <input class="d-block" type="text" id="input" onchange="inputP()">
+    <input class="d-block" type="text" id="input" >
   </template>
   
   <script setup>
@@ -128,6 +128,7 @@
     // 11. input ҳодисасини <input> элементга қўшинг ва унга <p> элементнинг мазмунини ўзгартирувчи функцияни бириктиринг.
 
     const input = document.querySelector('#input');
+    mouseover.addEventListener('onchange', inputP)
 
     function inputP() {
         const pElement = document.createElement('p');
@@ -135,7 +136,6 @@
         pElement.innerHTML = input.value
         document.body.appendChild('pElement')
     }
-
-    input.addEventListener('click', inputP)
+ 
   </script>
   
