@@ -20,7 +20,7 @@
   <h2 id="mazmun">Eski</h2>
 
   <!--5-->
-  <p id="innerHtml">Inner HTML</p>
+  <h4 id="innerHtml">Inner HTML</h4>
 
   <!--6-->
   <div id="setAttributeW" data-custom="someValue">omon</div>
@@ -72,7 +72,7 @@ export default {
       // 7.
       const link = document.getElementById("link");
       if (link) {
-        console.log(link.getAttribute("href"));
+        console.log(link.getAttribute("target"));
       }
 
       // 8.
