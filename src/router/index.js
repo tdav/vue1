@@ -19,12 +19,19 @@ import Sikllar from '../views/Omon/sikllar.vue'
 import Function from '../views/Omon/Function.vue'
 import DavronDom from '../views/Davron/dom.vue'
 import Dom from '../views/Omon/dom.vue'
+import dom2 from '@/views/Omon/dom2.vue' 
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+
+  {
+    path: '/dom2',
+    name: 'dom2',
+    component: dom2
   },
  
   {

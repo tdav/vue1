@@ -238,9 +238,15 @@
                   </router-link>
                   <router-link
                     class="list-group-item list-group-item-action list-group-item-light"
-                    to="/Dom"
+                    to="/dom"
                   >
                     Dom
+                  </router-link>
+                  <router-link
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    to="/dom2"
+                  >
+                    Dom2
                   </router-link>
                 </div>
               </div>
