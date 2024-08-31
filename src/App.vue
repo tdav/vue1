@@ -118,82 +118,7 @@
               </div>
             </div>
           </div>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
-                <button
-                  class="accordion-button"
-                  :class="{ collapsed: !isOpen4 }"
-                  :style="{ backgroundColor: '#282f39', color: 'white' }"
-                  type="button"
-                  @click="toggle4"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
-                >
-                  Azizbek
-                </button>
-              </h2>
-              <div
-                id="collapseFour"
-                class="accordion-collapse collapse"
-                :class="{ show: isOpen4 }"
-                aria-labelledby="headingFour"
-                data-bs-parent="#accordionExample"
-                :style="{ backgroundColor: '#282f39' }"
-              >
-                <div class="accordion-body p-0" :style="{ border: '1px solid white' }">
-                  <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
-                    to="/Aziz"
-                  >
-                    Operators
-                  </router-link>
-                  <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
-                    to="/newOperators"
-                  >
-                    NewOperators
-                  </router-link>
-                  <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
-                    to="/Loop"
-                  >
-                    Loop
-                  </router-link>
-                  <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
-                    to="/js_dom"
-                  >
-                    DOM
-                  </router-link>
-                  <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
-                    to="/js_dom_2"
-                  >
-                    DOM 2
-                  </router-link>
-                  <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
-                    to="/age"
-                  >
-                    Age
-                  </router-link>
-                  <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
-                    to="/vue_3"
-                  >
-                    <img
-                      style="width: 30px; height: 30px; margin-top: -5px"
-                      src="./assets/logo.png"
-                      alt=""
-                    />
-                    Vue 3
-                  </router-link>
-                </div>
-              </div>
-            </div>
-          </div>
-          1
+
           <div class="accordion" id="accordionExample">
             <div class="accordion-item hgf">
               <h2 class="accordion-header" id="headingFour">
@@ -253,6 +178,12 @@
                     to="/age"
                   >
                     Age
+                  </router-link>
+                  <router-link
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    to="/vue_3"
+                  >
+                    Vue 3
                   </router-link>
                 </div>
               </div>
@@ -359,6 +290,12 @@
                     to="/vazifa1"
                   >
                     Vazifa 1
+                  </router-link>
+                  <router-link
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    to="/vazifa2"
+                  >
+                    Vazifa 2
                   </router-link>
                 </div>
               </div>
