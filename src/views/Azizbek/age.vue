@@ -1,12 +1,31 @@
 <template>
-    <h1>Age</h1>
-</template>
-<script setup>
+    <div>
+        <h1>Age: {{ age }} </h1>
 
+        <input 
+            type="number" 
+            class="form-control w-25" 
+            placeholder="Tug'ulgan yilingizni kiriting" 
+            v-model="year" 
+        />
+
+        <button 
+            class="btn btn-primary w-25" 
+            @click="calculateAge"
+        >
+            Tug'ulgan yilingizni aniqla
+        </button>
+    </div>
+</template>
+
+<script setup>
 import { ref } from 'vue'
 
-let year = prompt('Сколько тебе лет?');
+const year = ref('')
+const age = ref(null)
 
-alert(`Тебе ${2024 - year} age!`); 
-
+function calculateAge() {
+    const currentYear = new Date().getFullYear()
+    age.value = currentYear - year.value
+}
 </script>
