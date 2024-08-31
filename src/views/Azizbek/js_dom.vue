@@ -89,7 +89,11 @@ const getAttribute = document.querySelector("#myHref");
 
 var val = getAttribute.getAttribute("href");
 
-console.log(val);
+    console.log(val);
+
+
+
+
 
 // 9. addEventListener ёрдамида <button> элементга click ҳодисаси қўшинг ва унга <h1> элементнинг мазмунини ўзгартирувчи функцияни бириктиринг.
 
@@ -111,11 +115,12 @@ const colorUl = document.querySelector(".list-color");
 function addLI() {
   const li = document.createElement("li");
 
-  mouseover.style.color = "red";
-  colorUl.appendChild(li);
-}
+        mouseover.style.color ='red';
+        colorUl.appendChild(li)
+    }
 
-// 11. input ҳодисасини <input> элементга қўшинг ва унга <p> элементнинг мазмунини ўзгартирувчи функцияни бириктиринг.
+
+    // 11. input ҳодисасини <input> элементга қўшинг ва унга <p> элементнинг мазмунини ўзгартирувчи функцияни бириктиринг.
 
 const input = document.querySelector("#input");
 mouseover.addEventListener("onchange", inputP);
@@ -123,7 +128,9 @@ mouseover.addEventListener("onchange", inputP);
 function inputP() {
   const pElement = document.createElement("p");
 
-  pElement.innerHTML = input.value;
-  document.body.appendChild("pElement");
-}
-</script>
+        pElement.innerHTML = input.value
+        document.body.appendChild('pElement')
+    }
+
+    input.addEventListener('click', inputP);
+</script>  

@@ -99,59 +99,41 @@
               </div>
             </div>
           </div>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
-                <button
-                  class="accordion-button"
-                  :class="{ collapsed: !isOpen4 }"
-                  :style="{ backgroundColor: '#282f39', color: 'white' }"
-                  type="button"
-                  @click="toggle4"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
-                >
-                  Azizbek
-                </button>
-              </h2>
-              <div
-                id="collapseFour"
-                class="accordion-collapse collapse"
-                :class="{ show: isOpen4 }"
-                aria-labelledby="headingFour"
-                data-bs-parent="#accordionExample"
-                :style="{ backgroundColor: '#282f39' }"
-              >
-                <div class="accordion-body p-0" :style="{ border: '1px solid white' }">
-                  <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
-                    to="/Aziz"
-                  >
-                    Operators
-                  </router-link>
-                  <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
-                    to="/newOperators"
-                  >
-                    NewOperators
-                  </router-link>
-                  <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
-                    to="/Loop"
-                  >
-                    Loop
-                  </router-link>
-                  <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
-                    to="/dom"
-                  >
-                    DOM
-                  </router-link>
+            <div class="accordion" id="accordionExample">
+             <div class="accordion-item">
+               <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button" :class="{ collapsed: !isOpen4 }"
+                    :style="{ backgroundColor: '#282f39', color: 'white' }" type="button" @click="toggle4"
+                   aria-expanded="false" aria-controls="collapseFour">
+                    Azizbek
+                 </button>
+               </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" :class="{ show: isOpen4 }"
+                 aria-labelledby="headingFour" data-bs-parent="#accordionExample" :style="{ backgroundColor: '#282f39' }">
+                  <div class="accordion-body p-0" :style="{ border: '1px solid white' }">
+                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/Aziz">
+                      Operators
+                    </router-link>
+                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/newOperators">
+                      NewOperators
+                    </router-link>
+                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/Loop">
+                      Loop
+                    </router-link>
+                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/js_dom">
+                      DOM
+                    </router-link>
+                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/js_dom_2">
+                       DOM 2
+                    </router-link>
+                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/age">
+                      Age
+                    </router-link>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
+               </div>
+           </div>
+
 
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -284,7 +266,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                <li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#!">Home</a>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="#!">Link</a></li>
                 <li class="nav-item dropdown">
                   <a
@@ -317,9 +301,11 @@
         </div>
       </div>
     </div>
-  </div>
-  <div v-else>
-    <router-view></router-view>
+
+    <!-- Fallback for '/Music' path -->
+    <!-- <div v-else>
+      <router-view></router-view>
+    </div> -->
   </div>
 </template>
 
@@ -328,15 +314,14 @@ import { ref } from "vue";
 import { RouterLink, useRoute } from "vue-router";
 import { computed } from "vue";
 
+// Route path
 const route = useRoute();
 const path = computed(() => route.path);
 
-// Accordion holatini boshqarish uchun o'zgaruvchi
-const isOpen = ref(false);
-
-// Accordion holatini o'zgartirish uchun funksiya
-const toggle = () => {
-  isOpen.value = !isOpen.value;
+// Accordion states
+const isOpenDavron = ref(false);
+const toggleDavron = () => {
+  isOpenDavron.value = !isOpenDavron.value;
 };
 
 const isOpen2 = ref(false);

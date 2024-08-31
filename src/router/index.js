@@ -13,8 +13,10 @@ import OmonTodo from '../views/Omon/todo.vue'
 import Aziz from '../views/Azizbek/Aziz.vue'
 import Operatorlar from '../views/Omon/operatorlar.vue'
 import newOperators from '@/views/Azizbek/newOperators.vue'
+import js_dom from '@/views/Azizbek/js_dom.vue'
 import Loop from '@/views/Azizbek/Loop.vue'
-import dom from '@/views/Azizbek/dom.vue'
+import js_dom_2 from '@/views/Azizbek/js_dom_2.vue'
+import age from '../views/Azizbek/age.vue'
 import Sikllar from '../views/Omon/sikllar.vue'
 import Function from '../views/Omon/Function.vue'
 import DavronDom from '../views/Davron/dom.vue'
@@ -85,9 +87,21 @@ const routes = [
   },
 
   {
-    path: '/dom',
-    name: 'dom',
-    component: dom
+    path: '/js_dom',
+    name: 'js_dom',
+    component: js_dom
+  },
+
+  {
+    path: '/js_dom_2',
+    name: 'js_dom_2',
+    component: js_dom_2
+  },
+
+  {
+    path: '/age',
+    name: 'age',
+    component: age
   },
   
   {
