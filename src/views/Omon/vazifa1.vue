@@ -1,9 +1,14 @@
 <template>
   <div>
-    <button @click="numbers" class="btn btn-success" style="height: 4rem">
+    <button @click="numbers" class="btn btn-success form-control" style="height: 4rem">
       Sonlarni Kiriting
     </button>
-    <h2 v-if="maxNumber !== null">Енг катта сон: {{ maxNumber }}</h2>
+    <h1 v-if="maxNumber !== null">Енг катта сон: {{ maxNumber }}</h1>
+    <ul v-if="filteredNumbersList.length > 0">
+      <li v-for="(num, index) in filteredNumbersList" :key="index">
+        Kiritilgan son: {{ num }}
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -12,18 +17,22 @@ export default {
   data() {
     return {
       maxNumber: null,
+      numbersList: [],
+      filteredNumbersList: [],
     };
   },
 
   methods: {
     numbers() {
-      const number1 = prompt("xoxlagn son ", "0");
-      const number2 = prompt("xoxlagn son", "0");
-      const number3 = prompt("xoxlagn son", "0");
+      const number1 = Number(prompt("xoxlagn son ", "0"));
+      const number2 = Number(prompt("xoxlagn son", "0"));
+      const number3 = Number(prompt("xoxlagn son", "0"));
 
-      const numbers = [number1, number2, number3].filter((num) => !isNaN(num));
+      this.numbersList = [number1, number2, number3].filter((num) => !isNaN(num));
 
-      this.maxNumber = numbers.length > 0 ? Math.max(...numbers) : null;
+      this.maxNumber = this.numbersList.length > 0 ? Math.max(...this.numbersList) : null;
+
+      this.filteredNumbersList = this.numbersList.filter((num) => num !== this.maxNumber);
     },
   },
 };
