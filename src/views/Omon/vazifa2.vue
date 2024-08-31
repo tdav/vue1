@@ -3,8 +3,8 @@
     <h1>ToDo Ro'yxati</h1>
 
     <div class="input-group">
-      <input v-model="newTask" placeholder="Yangi vazifa kiriting" />
-      <button @click="addTask">Vazifa qo'shish</button>
+      <input v-model="newTask" placeholder="Yangi vazifa yozing" />
+      <button @click="addTask">Qo'shish</button>
     </div>
 
     <p v-if="tasks.length === 0" class="no-tasks-message">
@@ -38,7 +38,7 @@ export default {
 
     const addTask = () => {
       if (newTask.value.trim() === "") {
-        alert("Vazifa nomi kiritilmagan!");
+        alert("Maydon bo'sh!");
         return;
       }
       state.tasks.push({ name: newTask.value, completed: false });
