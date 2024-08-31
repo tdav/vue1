@@ -248,6 +248,12 @@
                   >
                     Dom2
                   </router-link>
+                  <router-link
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    to="/vazifa1"
+                  >
+                    Vazifa 1
+                  </router-link>
                 </div>
               </div>
             </div>
