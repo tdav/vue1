@@ -12,7 +12,7 @@
         <nav class="list-group list-group-flush">
           <!-- ------------------------------------------------------------------ -->
           <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
+            <div class="accordion-item hgf">
               <h2 class="accordion-header" id="headingFive">
                 <button
                   class="accordion-button fds"
@@ -76,12 +76,16 @@
           <!-- -------------------------------------------------------------- -->
 
           <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
+            <div class="accordion-item hgf">
               <h2 class="accordion-header" id="headingthree">
                 <button
                   class="accordion-button"
                   :class="{ collapsed: !isOpen3 }"
-                  :style="{ backgroundColor: '#262b33', color: 'white', border: 'none' }"
+                  :style="{
+                    backgroundColor: '#262b33',
+                    color: '#FFFF',
+                    border: 'none',
+                  }"
                   type="button"
                   @click="toggle3"
                   aria-expanded="false"
@@ -96,9 +100,9 @@
                 :class="{ show: isOpen3 }"
                 aria-labelledby="headingThree"
                 data-bs-parent="#accordionExample"
-                :style="{ backgroundColor: '#282f39' }"
+                :style="{ backgroundColor: '#262b33' }"
               >
-                <div class="accordion-bod p-0" :style="{ border: '1px solid white' }">
+                <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
                     class="list-group-item list-group-item-action list-group-item-light dhg"
                     to="/DavronV7"
@@ -107,9 +111,10 @@
                   </router-link>
                 </div>
 
-                <div class="accordion-bod p-0" :style="{ border: '1px solid white' }">
+                <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
                     class="list-group-item list-group-item-action list-group-item-light dhg"
+                    style="border: none"
                     to="/DavronDom"
                   >
                     TestDom
@@ -156,12 +161,12 @@
               </div>
             </div>1
           <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
+            <div class="accordion-item hgf">
               <h2 class="accordion-header" id="headingFour">
                 <button
                   class="accordion-button"
                   :class="{ collapsed: !isOpen4 }"
-                  :style="{ backgroundColor: '#282f39', color: 'white' }"
+                  :style="{ backgroundColor: '#262b33', color: 'white' }"
                   type="button"
                   @click="toggle4"
                   aria-expanded="false"
@@ -178,7 +183,7 @@
                 data-bs-parent="#accordionExample"
                 :style="{ backgroundColor: '#282f39' }"
               >
-                <div class="accordion-body p-0" :style="{ border: '1px solid white' }">
+                <div class="accordion-body p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
                     class="list-group-item list-group-item-action list-group-item-light dhg"
                     to="/Aziz"
@@ -221,12 +226,12 @@
           </div>
 
           <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
+            <div class="accordion-item hgf">
               <h2 class="accordion-header" id="headingOne">
                 <button
                   class="accordion-button"
                   :class="{ collapsed: !isOpen1 }"
-                  :style="{ backgroundColor: '#282f39', color: 'white' }"
+                  :style="{ backgroundColor: '#262b33', color: 'white' }"
                   type="button"
                   @click="toggle1"
                   aria-expanded="false"
@@ -243,7 +248,7 @@
                 data-bs-parent="#accordionExample"
                 :style="{ backgroundColor: '#282f39' }"
               >
-                <div class="accordion-body p-0" :style="{ border: '1px solid white' }">
+                <div class="accordion-body p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
                     class="list-group-item list-group-item-action list-group-item-light dhg"
                     to="/Jasur"
@@ -256,7 +261,7 @@
           </div>
 
           <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
+            <div class="accordion-item hgf">
               <h2 class="accordion-header" id="headingTwo">
                 <button
                   class="accordion-button"
@@ -278,7 +283,7 @@
                 data-bs-parent="#accordionExample"
                 :style="{ backgroundColor: '#282f39' }"
               >
-                <div class="accordion-bod p-0" :style="{ border: '1px solid white' }">
+                <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
                     class="list-group-item list-group-item-action list-group-item-light dhg"
                     to="/omon_todo"
@@ -455,5 +460,12 @@ const toggle1 = () => {
 }
 .lkjnb :focus {
   color: red;
+}
+
+.hgf {
+  border-color: black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 </style>
