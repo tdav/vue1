@@ -26,6 +26,6 @@ const age = ref(null)
 
 function calculateAge() {
     const currentYear = new Date().getFullYear()
-    age.value = currentYear - parseInt(year.value, 10)
+    age.value = currentYear - year.value
 }
 </script>
