@@ -1,118 +1,73 @@
 <template>
-    <div id="myDiv1" class="myClass">
-        <h2 id="main-heading">Dom</h2>
-    </div>
-
-    <div>
-        <p>Omon</p>
-        <p>JAsur</p>
-        <p>Aziz</p>
-    </div>
-
-    <div>
-        <ul>
-            <li>Damas</li>
-            <li>Nexia2</li>
-            <li>Gentra</li>
-        </ul>
-    </div>
-
-    <div>
-        <h1>{{ heading }}</h1>
-        <button @click="changeHeading">Change</button>
-    </div>
-
-    <div class="mt-4">
-        <p v-html="paragraphContent"></p>
-        <button @click="changeContent">Change</button>
-    </div>
-
-    <div>
-        <p >Bu yerda matn bor</p>
-    </div>
-
-    <div>
-        <a  href="https://omon"></a>
-        <p>: {{ hrefValue }}</p>
-    </div>
-
-    <h1 ref="heading1">Salom!</h1>
-    <button ref="myButton">Change</button>
-
-    <ul>
-        <li :style="{ color: textColor }" @mouseover="changeColor('red')" @mouseleave="changeColor('black')">
-            Mover
-        </li>
-    </ul>
-
-    <div>
-        <input v-model="text" placeholder="Yozing" type="text" />
-        <p>{{ text }}</p>
-    </div>
+  <div>
+    <div id="myDiv">Salom</div>
+  </div>
+  <div>
+    <h2 id="name">Omon</h2>
+  </div>
+  <div>
+    <span>Bmw</span>
+    <span>Cls</span>
+    <span>Lamborghini</span>
+    <span>Rolls-Royce</span>
+    <span>Nexia2</span>
+  </div>
+  <h2 id="number">Oldingi Matn</h2>
+  <p id="innerHtml">innerHtml</p>
+  <div id="setAttribute1">omon</div>
+  <a id="imageLink" href="img1">Image Link</a>
+  <div id="button1">Salom</div>
+  <button id="changeButton">Change</button>
+  <span id="mouseoverSpan" class="btn btn-success">mouseover</span>
+  <input type="text" id="inputField" />
 </template>
 
-<script setup>
-import { ref, onMounted } from 'vue';
+<script>
+import { onMounted } from "vue";
 
- 
+export default {
+  setup() {
+    onMounted(() => {
+      // DOM manipulyatsiyasini to'g'ridan-to'g'ri bajarish
+      document.getElementById("myDiv").textContent = "Yangilangan Salom";
 
-const changeHeading = () => {
-    heading.value = 'Yangi';
-};
+      document.getElementById("name").textContent = "Omon Yangilandi";
 
-const changeColor = (color) => {
-    textColor.value = color;
-};
+      document
+        .querySelectorAll("span")
+        .forEach((span) => (span.style.backgroundColor = "blue"));
 
-const changeContent = () => {
-    paragraphContent.value = "Matn o'zgardi!";
-};
+      document.getElementById("number").textContent = "omon";
 
-const changeMessage = () => {
-    if (heading1.value) {
-        heading1.value.textContent = 'Xayr!';
-    }
-};
+      document.getElementById("innerHtml").innerHTML = "<b>innerHtml</b>";
 
-onMounted(() => {
-    
-    var myDiv1 = document.getElementById('myDiv1');
-    var h2 = document.querySelector("div.myClass > h2");
+      document.getElementById("setAttribute1").setAttribute("data-custom", "someValue");
 
+      const imageLink = document.getElementById("imageLink");
+      console.log(imageLink.getAttribute("href"));
 
+      document.getElementById("changeButton").addEventListener("click", () => {
+        document.getElementById("button1").textContent = "Xayr";
+      });
 
-    if (link.value) {
-        hrefValue.value = link.value.getAttribute('href');
-    }
+      document.getElementById("mouseoverSpan").addEventListener("mouseover", () => {
+        const li = document.createElement("li");
+        li.textContent = "Red";
+        const listColor = document.querySelector(".list-color");
+        if (listColor) {
+          listColor.appendChild(li);
+        }
+      });
 
-    if (myButton.value) {
-        myButton.value.addEventListener('click', changeMessage);
-    }
-
-
-
-    var paragraph = document.getElementById('myDiv1');
-
-    if (paragraph.value) {
-        paragraph.value.setAttribute('title', 'Бу параграфнинг title атрибути');
-    }
-
-    const liElements = document.querySelectorAll('li');
-    liElements.forEach(li => {
-        console.log(li.textContent);
+      document.getElementById("inputField").addEventListener("change", () => {
+        const inputField = document.getElementById("inputField");
+        const p = document.createElement("p");
+        p.textContent = inputField.value;
+        document.body.appendChild(p);
+      });
     });
-});
-
-
-
+  },
+};
 </script>
 
-<style>
-li {
-    color: red;
-}
-
-.myClass{
-    color: aqua;
-}
-</style>
+<style scoped></style>
