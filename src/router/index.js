@@ -24,12 +24,19 @@ import DavronDom from '../views/Davron/dom.vue'
 import Dom from '../views/Omon/dom.vue'
 import dom2 from '@/views/Omon/dom2.vue'
 import vazifa1 from '@/views/Omon/vazifa1.vue'  
+import vazifa2 from '@/views/Omon/vazifa2.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+
+  {
+    path: '/vazifa2',
+    name: 'vazifa2',
+    component: vazifa2
   },
 
   {
