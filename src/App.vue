@@ -10,52 +10,71 @@
         <div class="sidebar-heading border-bottom" style="color: #e5e9f0">Bootstrap</div>
 
         <nav class="list-group list-group-flush">
-          <RouterLink
-            class="list-group-item list-group-item-action list-group-item-light dhg"
-            to="/"
-            >Main</RouterLink
-          >
-          <RouterLink
-            class="list-group-item list-group-item-action list-group-item-light dhg"
-            to="/valuable"
-            >1 - O`zgaruvchi</RouterLink
-          >
-          <RouterLink
-            class="list-group-item list-group-item-action list-group-item-light dhg"
-            to="/shartli"
-            >2 - ShartliOperator</RouterLink
-          >
-          <RouterLink
-            class="list-group-item list-group-item-action list-group-item-light dhg"
-            to="/array"
-            >3 - Array
-          </RouterLink>
-          <RouterLink
-            class="list-group-item list-group-item-action list-group-item-light dhg"
-            to="/table"
-            >4 - Table
-          </RouterLink>
-          <RouterLink
-            class="list-group-item list-group-item-action list-group-item-light dhg"
-            to="/component"
-            >5 - Component</RouterLink
-          >
-          <RouterLink
-            class="list-group-item list-group-item-action list-group-item-light dhg"
-            to="/slot"
-            >6 - Component Slot</RouterLink
-          >
-          <!-- <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/DavronV7">7 - Davron
-          </RouterLink> -->
-          <!-- <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/Jasur">7 - Jasur
-          </RouterLink> -->
-          <RouterLink
-            class="list-group-item list-group-item-action list-group-item-light dhg"
-            to="/Music"
-            >Music
-          </RouterLink>
-          <!-- <RouterLink class="list-group-item list-group-item-action list-group-item-light dhg" to="/omon_todo">Omon
-          </RouterLink> -->
+          <!-- ------------------------------------------------------------------ -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button fds"
+                  :class="{ collapsed: !isOpen5 }"
+                  :style="{ backgroundColor: '#262b33', color: 'white', border: 'none' }"
+                  type="button"
+                  @click="toggle5"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  MENU
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                :class="{ show: isOpen5 }"
+                aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample"
+                :style="{ backgroundColor: '#282f39' }"
+              >
+                <RouterLink
+                  class="list-group-item list-group-item-action list-group-item-light dhg"
+                  to="/"
+                  >Main</RouterLink
+                >
+                <RouterLink
+                  class="list-group-item list-group-item-action list-group-item-light dhg"
+                  to="/valuable"
+                  >1 - O`zgaruvchi</RouterLink
+                >
+                <RouterLink
+                  class="list-group-item list-group-item-action list-group-item-light dhg"
+                  to="/shartli"
+                  >2 - ShartliOperator</RouterLink
+                >
+                <RouterLink
+                  class="list-group-item list-group-item-action list-group-item-light dhg"
+                  to="/array"
+                  >3 - Array
+                </RouterLink>
+                <RouterLink
+                  class="list-group-item list-group-item-action list-group-item-light dhg"
+                  to="/table"
+                  >4 - Table
+                </RouterLink>
+                <RouterLink
+                  class="list-group-item list-group-item-action list-group-item-light dhg"
+                  to="/component"
+                  >5 - Component</RouterLink
+                >
+                <RouterLink
+                  class="list-group-item list-group-item-action list-group-item-light dhg"
+                  to="/slot"
+                  >6 - Component Slot</RouterLink
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- -------------------------------------------------------------- -->
+
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingthree">
@@ -81,7 +100,7 @@
               >
                 <div class="accordion-bod p-0" :style="{ border: '1px solid white' }">
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
                     to="/DavronV7"
                   >
                     Test1
@@ -90,7 +109,7 @@
 
                 <div class="accordion-bod p-0" :style="{ border: '1px solid white' }">
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
                     to="/DavronDom"
                   >
                     TestDom
@@ -99,6 +118,7 @@
               </div>
             </div>
           </div>
+<<<<<<< HEAD
             <div class="accordion" id="accordionExample">
              <div class="accordion-item">
                <h2 class="accordion-header" id="headingFour">
@@ -133,20 +153,82 @@
                       <img style="width: 30px; height: 30px; margin-top: -5px;" src="./assets/logo.png" alt="">   Vue 3 
                     </router-link>
                     </div>
+=======
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button"
+                  :class="{ collapsed: !isOpen4 }"
+                  :style="{ backgroundColor: '#282f39', color: 'white' }"
+                  type="button"
+                  @click="toggle4"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Azizbek
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                :class="{ show: isOpen4 }"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+                :style="{ backgroundColor: '#282f39' }"
+              >
+                <div class="accordion-body p-0" :style="{ border: '1px solid white' }">
+                  <router-link
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    to="/Aziz"
+                  >
+                    Operators
+                  </router-link>
+                  <router-link
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    to="/newOperators"
+                  >
+                    NewOperators
+                  </router-link>
+                  <router-link
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    to="/Loop"
+                  >
+                    Loop
+                  </router-link>
+                  <router-link
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    to="/js_dom"
+                  >
+                    DOM
+                  </router-link>
+                  <router-link
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    to="/js_dom_2"
+                  >
+                    DOM 2
+                  </router-link>
+                  <router-link
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    to="/age"
+                  >
+                    Age
+                  </router-link>
+>>>>>>> 6a443d56b0535b5b8959b38ff38c72261c1aedd2
                 </div>
-               </div>
-           </div>
-
+              </div>
+            </div>
+          </div>
 
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button
                   class="accordion-button"
-                  :class="{ collapsed: !isOpen }"
+                  :class="{ collapsed: !isOpen1 }"
                   :style="{ backgroundColor: '#282f39', color: 'white' }"
                   type="button"
-                  @click="toggle"
+                  @click="toggle1"
                   aria-expanded="false"
                   aria-controls="collapseOne"
                 >
@@ -156,14 +238,14 @@
               <div
                 id="collapseOne"
                 class="accordion-collapse collapse"
-                :class="{ show: isOpen }"
+                :class="{ show: isOpen1 }"
                 aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample"
                 :style="{ backgroundColor: '#282f39' }"
               >
                 <div class="accordion-body p-0" :style="{ border: '1px solid white' }">
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
                     to="/Jasur"
                   >
                     7 - Jasur
@@ -198,43 +280,43 @@
               >
                 <div class="accordion-bod p-0" :style="{ border: '1px solid white' }">
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
                     to="/omon_todo"
                   >
                     Omon
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
                     to="/operatorlar"
                   >
                     operatorlar
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
                     to="/sikllar"
                   >
                     Sikllar
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
                     to="/function"
                   >
                     Function
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
                     to="/dom"
                   >
                     Dom
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
                     to="/dom2"
                   >
                     Dom2
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
                     to="/vazifa1"
                   >
                     Vazifa 1
@@ -243,6 +325,12 @@
               </div>
             </div>
           </div>
+
+          <RouterLink
+            class="list-group-item list-group-item-action list-group-item-light dhg"
+            to="/Music"
+            >Music
+          </RouterLink>
 
           <RouterLink
             class="list-group-item list-group-item-action list-group-item-light dhg"
@@ -343,6 +431,18 @@ const isOpen4 = ref(false);
 
 const toggle4 = () => {
   isOpen4.value = !isOpen4.value;
+};
+
+const isOpen5 = ref(false);
+
+const toggle5 = () => {
+  isOpen5.value = !isOpen5.value;
+};
+
+const isOpen1 = ref(false);
+
+const toggle1 = () => {
+  isOpen1.value = !isOpen1.value;
 };
 </script>
 
