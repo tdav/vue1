@@ -79,8 +79,11 @@
                     <router-link class="list-group-item list-group-item-action list-group-item-light" to="/Loop">
                       Loop
                     </router-link>
-                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/dom">
+                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/js_dom">
                       DOM
+                    </router-link>
+                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/js_dom_2">
+                       DOM 2
                     </router-link>
                     </div>
                 </div>

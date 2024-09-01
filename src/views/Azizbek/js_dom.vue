@@ -40,11 +40,12 @@
 
     <!-- <p id="inputValue"></p>/ -->
 
-    <input class="d-block" type="text" id="input" onchange="inputP()">
-  </template>
+    <input class="d-block" type="text" id="input" >
+
+</template>
   
-  <script setup>
-  // 1. Exercise
+<script setup>
+    // 1. Homework
 
     // 1. document.getElementById билан веб-саҳифадаги <h1> элементни танланг.
 
@@ -94,10 +95,6 @@
 
     console.log(val);
 
-
-
-
-
     // 9. addEventListener ёрдамида <button> элементга click ҳодисаси қўшинг ва унга <h1> элементнинг мазмунини ўзгартирувчи функцияни бириктиринг.
 
     const btn = document.querySelector('#myClick');
@@ -124,7 +121,7 @@
         colorUl.appendChild(li)
     }
 
-    
+
     // 11. input ҳодисасини <input> элементга қўшинг ва унга <p> элементнинг мазмунини ўзгартирувчи функцияни бириктиринг.
 
     const input = document.querySelector('#input');
@@ -136,6 +133,5 @@
         document.body.appendChild('pElement')
     }
 
-    input.addEventListener('click', inputP)
-  </script>
-  
+    input.addEventListener('click', inputP);
+</script>  
