@@ -126,6 +126,9 @@
                     <router-link class="list-group-item list-group-item-action list-group-item-light" to="/js_dom_2">
                        DOM 2
                     </router-link>
+                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/age">
+                      Age
+                    </router-link>
                     </div>
                 </div>
                </div>
