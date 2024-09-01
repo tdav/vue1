@@ -1,134 +1,111 @@
 <template>
-  <!-- 1. Exercise -->
+  <!-- 1. Mashq -->
+
+  <h1>1. Exercise</h1>
+
+  <!-- 1. document.getElementById ёрдамида <footer> элементни танланг. -->
 
   <footer id="footer">
     <h1>Footer Element</h1>
   </footer>
 
-  <!-- 2. Exercise -->
-   
-  <h3>h3 element</h3>
+  <!-- 2. Mashq -->
+  <h3>h3 elementi</h3>
 
-  <!-- 3. Exercise  -->
+  <!-- 3. Mashq -->
+  <button >Button</button>
+  <button >Button</button>
+  <button >Button</button>
+  <button >Button</button>
+  <button >Button</button>
 
-  <button>Buttons</button>
-  <button>Buttons</button>
-  <button>Buttons</button>
-  <button>Buttons</button>
-  <button>Buttons</button>
+  <!-- 4. Mashq -->
+  <h4>h4 elementi</h4>
 
-  <!-- 4. Exercise -->
-
-  <h4>h4 element</h4>
-  
-  <!-- 5. Exercise -->
-
+  <!-- 5. Mashq -->
   <footer>footer innerHTML</footer>
 
-  <!-- 6. Exercise -->
+  <!-- 6. Mashq -->
+  <button>Button Style</button>
 
-  <button>Buttun Style</button>
-
-  <!-- 7. Exercise -->
-
+  <!-- 7. Mashq -->
   <footer>footer setAttribute</footer>
 
-  <!-- 8. Exercise -->
+  <!-- 8. Mashq -->
+  <img src="#" alt="Sample Image" />
 
-  <img src="#">
-
-  <!-- 9. Exercise -->
-  
+  <!-- 9. Mashq -->
   <h2 id="click">Click</h2>
+  <button id="event" class="btn btn-primary">Event</button>
 
-  <button onclick="h2Event()" id="event" class="btn btn-primary">
-    Event 
-  </button>
+  <!-- 10. Mashq -->
 
-  <!-- 11. Exercise  -->
+  <!-- Ushbu mashq skript bo'limida ko'rib chiqiladi. -->
 
-  <input type="text" id="innerText">
-  
+  <!-- 11. Mashq -->
+  <input type="text" id="innerText" />
 </template>
+
 <script setup>
-// 2 - Homework
+import { onMounted } from "vue";
 
-// 1. document.getElementById ёрдамида <footer> элементни танланг.
+onMounted(() => {
+  // 1. <footer> elementini ID bo'yicha tanlang.
+  const footer = document.getElementById("footer");
+  console.log(footer);
 
-const footer = document.getElementById("footer");
-console.log(footer);
+  // 2. <h3> elementini querySelector yordamida tanlang.
+  const h3 = document.querySelector("h3");
+  console.log(h3);
 
-// 2. document.querySelector ёрдамида <h3> элементни танланг
+  // 3. Barcha <button> elementlarini querySelectorAll yordamida tanlang.
+  const buttons = document.querySelectorAll("button");
+  console.log(buttons);
 
-const h3 = document.querySelector("h3");
-console.log(h3);
+  // 4. <h4> elementining kontentini textContent yordamida o'zgartiring.
+  const h4 = document.querySelector("h4");
+  h4.textContent = "Yangilangan h4 elementi";
+  console.log(h4);
 
-// 3. document.querySelectorAll ёрдамида барча <button> элементларни танланг.
+  // 5. <footer> elementining kontentini innerHTML yordamida o'zgartiring.
+  const footerInnerHTML = document.querySelectorAll("footer")[0];
+  footerInnerHTML.innerHTML = "Yangilangan footer innerHTML";
+  console.log(footerInnerHTML);
 
-const buttons = document.querySelectorAll("button");
-console.log(buttons);
+  // 6. <button> elementlarining uslubini o'zgartiring.
+  const buttonStyle = document.querySelector("button");
+  buttonStyle.style.width = "300px";
+  buttonStyle.style.height = "50px";
+  console.log(buttonStyle);
 
-// 4. textContent ёрдамида <h4> элементнинг мазмунини ўзгартиринг.
+  // 7. <footer> elementiga data-info atributini qo'shing.
+  const footerAttr = document.querySelectorAll("footer")[1];
+  footerAttr.setAttribute("data-info", "footer");
+  console.log(footerAttr);
 
-const h3TextContent = document.querySelector("h3");
-h3TextContent.textContent = "Text Content";
-console.log(h3TextContent);
+  // 8. <img> elementining alt atribut qiymatini oling va ko'rsating.
+  const img = document.querySelector("img");
+  const imgAlt = img.getAttribute("alt");
+  console.log(imgAlt);
 
+  // 9. <button> elementiga click hodisasini qo'shing va <h2> kontentini yangilang.
+  const eventBtn = document.getElementById("event");
+  eventBtn.addEventListener("click", () => {
+    const h2 = document.getElementById("click");
+    h2.textContent = "Event Button Click";
+  });
 
-// 5. innerHTML ёрдамида <footer> элементнинг мазмунини HTML-код орқали ўзгартиринг.
+  // 10. <footer> elementiga mouseover hodisasini qo'shing va fon rangini o'zgartiring.
+  const footerForMouseOver = document.getElementById("footer");
+  footerForMouseOver.addEventListener("mouseover", () => {
+    footerForMouseOver.style.backgroundColor = "lightgray";
+  });
 
-const footerInnnerHTML = document.querySelector("footer");
-footerInnnerHTML.innerHTML = "<footer>innerHTML</footer>";
-console.log(footerInnnerHTML);
-
-// 6. style ёрдамида <button> элементларнинг ўлчамларини ўзгартиринг.
-
-const buttonStyle = document.querySelector("button");
-buttonStyle.style.width = "300px";
-console.log(buttonStyle);
-
-// 7. setAttribute ёрдамида <footer> элементга data-info атрибутини қўшинг.
-
-const footerAtr = document.querySelector("footer");
-footerAtr.setAttribute("data-info", "footer");
-console.log(footerAtr);
-
-// 8. getAttribute ёрдамида <img> элементнинг alt атрибути қийматини олинг ва шу қийматни веб-саҳифада кўрсатинг.
-
-const imgAlt = document.querySelector("img");
-// imgAlt.innerHTML = 'imgAlt.getAttribute('alt', 'logo')'
-console.log(imgAlt);
-
-// 9. addEventListener ёрдамида <button> элементга click ҳодисаси қўшинг ва унга <h2>
-// элементнинг мазмунини ўзгартирувчи функцияни бириктиринг.
-
-const eventBtn = document.getElementById('event')
-
-function h2Event() {
-    const h2 = document.getElementById('click');
-    h2.textContent = 'Event'
-}
-eventBtn.addEventListener('click', h2Event)
-// eventBtn.appendChild(h2)
-
-// 10. mouseover ҳодисасини <footer> элементга қўшинг ва унга фон рангини ўзгартирувчи 
-// функцияни бириктиринг.
-
-
-
-// 11. input ҳодисасини <input> элементга қўшинг ва унга <footer> элементнинг мазмунини 
-// ўзгартирувчи функцияни бириктиринг.
-
-const inputFooter = document.getElementById('innerText');
-
-function footerText() {
-    const footerText = document.createElement('footer');
-    footerText.innerText = 'footerEvent'
-}
-
-inputFooter.addEventListener('click', footerText);
-// inputFooter.appendChild(footerText)
-
-
-
+  // 11. <input> elementiga input hodisasini qo'shing va <footer> kontentini yangilang.
+  const input = document.getElementById("innerText");
+  input.addEventListener("input", () => {
+    const footerForInput = document.querySelectorAll("footer")[1];
+    footerForInput.textContent = input.value;
+  });
+});
 </script>
