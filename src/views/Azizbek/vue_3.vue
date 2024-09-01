@@ -12,8 +12,10 @@
 
     <button v-bind="btnInfo" >V-Bind</button>
 
-    
 
+    <h3>3. Exercise</h3>
+
+    
 
 
 </template>
@@ -21,6 +23,8 @@
 import { faWeight } from '@fortawesome/free-solid-svg-icons';
 import {ref} from 'vue';
 let counter = ref(0);
+
+// 1. Exercise
 
 function onIncrement() {
     counter.value++
@@ -30,12 +34,11 @@ function onDecarement() {
     counter.value--
 }
 
+// 2. Exercise
+
 const btnInfo = {
     class: "btn btn-success",
     style: "color: #000;"
 }
 
 </script>
-<style>
-    
-</style>
