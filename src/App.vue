@@ -129,6 +129,9 @@
                     <router-link class="list-group-item list-group-item-action list-group-item-light" to="/age">
                       Age
                     </router-link>
+                    <router-link class="list-group-item list-group-item-action list-group-item-light" to="/vue_3">
+                      <img style="width: 30px; height: 30px; margin-top: -5px;" src="./assets/logo.png" alt="">   Vue 3 
+                    </router-link>
                     </div>
                 </div>
                </div>
