@@ -119,7 +119,7 @@
             </div>
           </div>
             <div class="accordion" id="accordionExample">
-             <div class="accordion-item">
+              <div class="accordion-item">
                <h2 class="accordion-header" id="headingFour">
                   <button class="accordion-button" :class="{ collapsed: !isOpen4 }"
                     :style="{ backgroundColor: '#282f39', color: 'white' }" type="button" @click="toggle4"
@@ -151,7 +151,10 @@
                     <router-link class="list-group-item list-group-item-action list-group-item-light" to="/vue_3">
                       <img style="width: 30px; height: 30px; margin-top: -5px;" src="./assets/logo.png" alt="">   Vue 3 
                     </router-link>
-                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingFour">
