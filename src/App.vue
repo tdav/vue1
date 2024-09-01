@@ -118,7 +118,6 @@
               </div>
             </div>
           </div>
-<<<<<<< HEAD
             <div class="accordion" id="accordionExample">
              <div class="accordion-item">
                <h2 class="accordion-header" id="headingFour">
@@ -153,7 +152,6 @@
                       <img style="width: 30px; height: 30px; margin-top: -5px;" src="./assets/logo.png" alt="">   Vue 3 
                     </router-link>
                     </div>
-=======
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingFour">
@@ -214,7 +212,6 @@
                   >
                     Age
                   </router-link>
->>>>>>> 6a443d56b0535b5b8959b38ff38c72261c1aedd2
                 </div>
               </div>
             </div>
