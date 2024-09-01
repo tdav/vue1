@@ -9,6 +9,12 @@
     <p v-if="isShow">
     MENU
     </p>
+    
+    <br>
+
+    <p v-show="isShow">
+    MENU
+    </p>
 
 
 </template>
