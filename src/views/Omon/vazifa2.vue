@@ -3,8 +3,8 @@
     <h1>ToDo Ro'yxati</h1>
 
     <div class="input-group">
-      <input v-model="newTask" placeholder="Yangi vazifa yozing" />
-      <button @click="addTask">Qo'shish</button>
+      <input v-model="newTask" placeholder="Yozing..." />
+      <button @click="addTask" style="border-radius: 10px">Qo'shish</button>
     </div>
 
     <p v-if="tasks.length === 0" class="no-tasks-message">
@@ -12,7 +12,7 @@
     </p>
 
     <ul class="task-list">
-      <li v-for="(task, index) in tasks" :key="index" class="task-item">
+      <li v-for="(task, index) in tasks" :key="index" class="task-item" style="">
         <input
           type="checkbox"
           :checked="task.completed"
@@ -70,7 +70,7 @@ export default {
   margin: auto;
   padding: 20px;
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

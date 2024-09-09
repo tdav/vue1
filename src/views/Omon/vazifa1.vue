@@ -1,45 +1,62 @@
 <template>
   <div>
-    <button @click="numbers" class="btn btn-success form-control" style="height: 4rem">
+    <!-- Number Input Section -->
+    <button
+      @click="calculateNumbers"
+      class="btn btn-success form-control"
+      style="height: 4rem"
+    >
       Sonlarni Kiriting
     </button>
     <h1 v-if="maxNumber !== null">Енг катта сон: {{ maxNumber }}</h1>
     <ul v-if="filteredNumbersList.length > 0">
       <li v-for="(num, index) in filteredNumbersList" :key="index">
-        Kiritilgan son: {{ num }}
+        Kiritilgan сон: {{ num }}
       </li>
+      <li>Kiritilgan сон: {{ maxNumber }}</li>
     </ul>
+
+    <!-- Checkbox Section -->
+    <h1>Checkbox</h1>
+    <div class="checkbox-container" v-for="(option, index) in options" :key="index">
+      <label>
+        <input type="checkbox" v-model="checkedOptions" :value="option" />
+        {{ option }}
+      </label>
+    </div>
+    <p>Checked: {{ checkedCount }}</p>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      maxNumber: null,
-      numbersList: [],
-      filteredNumbersList: [],
-    };
-  },
+<script setup>
+import { ref, computed } from "vue";
 
-  methods: {
-    numbers() {
-      const number1 = Number(prompt("xoxlagn son ", "0"));
-      const number2 = Number(prompt("xoxlagn son", "0"));
-      const number3 = Number(prompt("xoxlagn son", "0"));
+// Reactive state for number input section
+const maxNumber = ref(null);
+const numbersList = ref([]);
+const filteredNumbersList = ref([]);
 
-      this.numbersList = [number1, number2, number3].filter((num) => !isNaN(num));
+// Reactive state for checkbox section
+const options = ref(["Option 1", "Option 2", "Option 3"]);
+const checkedOptions = ref([]);
 
-      this.maxNumber = this.numbersList.length > 0 ? Math.max(...this.numbersList) : null;
+// Method to prompt user for numbers and calculate max and filtered list
+const calculateNumbers = () => {
+  const number1 = Number(prompt("Enter a number", "0"));
+  const number2 = Number(prompt("Enter a number", "0"));
+  const number3 = Number(prompt("Enter a number", "0"));
 
-      this.filteredNumbersList = this.numbersList.filter((num) => num !== this.maxNumber);
-    },
-  },
+  numbersList.value = [number1, number2, number3].filter((num) => !isNaN(num));
+  maxNumber.value = numbersList.value.length > 0 ? Math.max(...numbersList.value) : null;
+  filteredNumbersList.value = numbersList.value.filter((num) => num !== maxNumber.value);
 };
+
+// Computed property to count checked checkboxes
+const checkedCount = computed(() => checkedOptions.value.length);
 </script>
 
 <style scoped>
-button {
-  margin-top: 16px;
+.checkbox-container {
+  margin-bottom: 10px;
 }
 </style>
