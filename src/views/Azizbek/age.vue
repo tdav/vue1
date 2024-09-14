@@ -13,7 +13,7 @@
             class="btn btn-primary w-25" 
             @click="calculateAge"
         >
-            Tug'ulgan yilingizni aniqla
+            Yosh aniqlash
         </button>
     </div>
 </template>

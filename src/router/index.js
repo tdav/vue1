@@ -18,6 +18,8 @@ import Loop from '@/views/Azizbek/Loop.vue'
 import js_dom_2 from '@/views/Azizbek/js_dom_2.vue'
 import age from '../views/Azizbek/age.vue'
 import vue_3 from '@/views/Azizbek/vue_3.vue'
+import formControl from '@/views/Azizbek/ForrmControl/index.vue'
+import yourFullName from '@/views/Azizbek/ForrmControl/component/comFullName.vue'
 import Sikllar from '../views/Omon/sikllar.vue'
 import Function from '../views/Omon/Function.vue'
 import DavronDom from '../views/Davron/dom.vue'
@@ -123,6 +125,18 @@ const routes = [
     path: '/vue_3',
     name: 'vue_3',
     component: vue_3
+  },
+
+  {
+    path: '/formControl',
+    name: 'formControl',
+    component: formControl
+  },
+
+  {
+    path: '/yourFullName',
+    name: 'yourFullName',
+    component: yourFullName
   },
   
   {

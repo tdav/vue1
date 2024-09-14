@@ -1,0 +1,19 @@
+<template>
+    <div class="bg-secondary-subtle rounded-2 p-2">
+      <div class="row g-3">
+        <div class="col-lg-12 mt-5">
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+            <label class="form-check-label" for="exampleCheck1"
+              >+Add optinal mailing address</label
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+  
+  <script setup></script>
+  
+  <style scoped></style>
+  
