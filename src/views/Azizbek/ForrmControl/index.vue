@@ -10,10 +10,10 @@
     
 </template>
 <script setup>
-import comFullName from './component/comFullName.vue'
-import comId from './component/comId.vue'
-import comAddress from './component/comAddress.vue'
-import comCheckbox from './component/comCheckbox.vue'
-import comAddCheckbox from './component/comAddCheckbox.vue'
+import comFullName from "./component/comFullName.vue";
+import comId from "./component/comId.vue";
+import comAddress from "./component/comAddress.vue";
+import comCheckbox from "./component/comCheckbox.vue";
+import comAddCheckbox from "./component/comAddCheckbox.vue";
 </script>
 <style scoped></style>

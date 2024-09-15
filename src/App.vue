@@ -383,6 +383,12 @@
                   >
                     Vazifa 2
                   </router-link>
+                  <router-link
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    to="/index"
+                  >
+                    forms controls
+                  </router-link>
                 </div>
               </div>
             </div>
