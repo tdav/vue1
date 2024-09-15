@@ -15,6 +15,8 @@
 
     <h3>3. Exercise</h3>
 
+    <input v-model="modal" >
+
     
 
 
@@ -40,5 +42,13 @@ const btnInfo = {
     class: "btn btn-success",
     style: "color: #000;"
 }
+
+// 3. Exercise
+
+const modal = {
+    placeholder: "Enter fullname",
+    type: "type"
+}
+
 
 </script>

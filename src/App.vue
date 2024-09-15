@@ -241,6 +241,12 @@
                   >
                     Vue 3
                   </router-link>
+                  <router-link
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    to="/formControl"
+                  >
+                    Form controls
+                  </router-link>
                 </div>
               </div>
             </div>
