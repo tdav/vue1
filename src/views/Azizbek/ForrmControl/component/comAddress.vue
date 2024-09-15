@@ -30,7 +30,7 @@
           </form>
         </div>
       </div>
-      <div class="row g-3 mt-5">
+      <div class="row g-3 mt-1">
         <div class="col-lg-6">
           <form>
             <label for="exampleFormControlInput1" class="form-label"
@@ -60,7 +60,7 @@
           </form>
         </div>
       </div>
-      <div class="row g-3 mt-2">
+      <div class="row g-3 mt-1">
         <div class="col-lg-6">
           <form>
             <label for="exampleFormControlInput1" class="form-label"
@@ -90,7 +90,7 @@
           </form>
         </div>
       </div>
-      <div class="row g-3 mt-2">
+      <div class="row g-3 mt-1">
         <div class="col-lg-6">
           <form>
             <label for="exampleFormControlInput1" class="form-label"
