@@ -125,7 +125,7 @@ const submit = () => {
 
 <style scoped>
 .forms {
-  background: rgb(220, 220, 221);
+  background-color: rgb(72, 78, 88);
   margin-top: 3rem;
   font-size: large;
   border-radius: 6px;
@@ -133,6 +133,7 @@ const submit = () => {
   width: 98%;
   margin-left: 1%;
   padding-bottom: 30px;
+  color: white;
 }
 
 .citizenShip {

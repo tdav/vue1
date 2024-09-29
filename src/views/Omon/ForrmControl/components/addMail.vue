@@ -22,7 +22,7 @@ const isChecked = ref(false); // Checkbox holatini saqlash uchun
 
 <style scoped>
 .addMail {
-  background: rgb(220, 220, 221);
+  background-color: rgb(72, 78, 88);
   margin-top: 3rem;
   border-radius: 6px;
   padding-top: 30px;
@@ -30,6 +30,6 @@ const isChecked = ref(false); // Checkbox holatini saqlash uchun
   margin-left: 1%;
   padding-bottom: 30px;
   margin-bottom: 3rem;
-  color: grey;
+  color: white;
 }
 </style>

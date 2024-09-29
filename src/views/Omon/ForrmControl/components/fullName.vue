@@ -61,10 +61,11 @@ const submit = () => {
 
 <style scoped>
 .YourFullName {
-  background: rgb(220, 220, 221);
+  background-color: rgb(72, 78, 88);
   margin-top: 3rem;
   border-radius: 6px;
   padding-top: 10px;
+  color: white;
 }
 .form-control {
   width: 94%;
