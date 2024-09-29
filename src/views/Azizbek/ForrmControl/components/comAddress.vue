@@ -1,10 +1,10 @@
 <template>
   <div class="container">
-    <div class="bg-secondary-subtle rounded-2 p-2">
+    <div class="bg-dark rounded-2 p-2">
       <div class="row g-3">
         <div class="col-lg-6">
           <form>
-            <label for="exampleFormControlInput1" class="form-label"
+            <label for="exampleFormControlInput1" class="form-label text-light"
               >Citizenship</label
             >
 
@@ -18,7 +18,7 @@
         </div>
         <div class="col-lg-6">
           <form>
-            <label for="exampleFormControlInput1" class="form-label"
+            <label for="exampleFormControlInput1" class="form-label text-light"
               >Country</label
             >
 

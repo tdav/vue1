@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Form Control</h1>
+    <h1 class=" fst-italic text-light ">Form Control</h1>
     <comFullName class="mb-3" />
     <comId class="mb-3" />
     <comAddress class="mb-3" />
@@ -17,4 +17,8 @@ import comCheckbox from "./components/comCheckbox.vue";
 import comAddCheckbox from "./components/comAddCheckbox.vue";
 </script>
 
-<style scoped></style>
+<style scoped>
+.container {
+  background: #000;
+}
+</style>
