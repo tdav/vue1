@@ -18,7 +18,7 @@ import Loop from '@/views/Azizbek/Loop.vue'
 import js_dom_2 from '@/views/Azizbek/js_dom_2.vue'
 import age from '../views/Azizbek/age.vue'
 import vue_3 from '@/views/Azizbek/vue_3.vue'
-import formControl from '@/views/Azizbek/FormControl/index.vue'
+import formControl from '@/views/Azizbek/ForrmControl/index.vue'
 import Sikllar from '../views/Omon/sikllar.vue'
 import Function from '../views/Omon/Function.vue'
 import DavronDom from '../views/Davron/dom.vue'
@@ -26,7 +26,8 @@ import Dom from '../views/Omon/dom.vue'
 import dom2 from '@/views/Omon/dom2.vue'
 import vazifa1 from '@/views/Omon/vazifa1.vue'
 import vazifa2 from '@/views/Omon/vazifa2.vue'
-import index from '@/views/Omon/FormControl/index.vue'
+import formControlOmon from '../views/Omon/ForrmControl/index.vue'
+import about from '../views/AboutView.vue'
 
 const routes = [
   {
@@ -35,9 +36,9 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/index',
-    name: 'index',
-    component: index
+    path: '/formControlOmon',
+    name: 'formControlOmon',
+    component: formControlOmon
   },
   {
     path: '/vazifa2',
@@ -113,11 +114,6 @@ const routes = [
     path: '/formControl',
     name: 'formControl',
     component: formControl
-  },
-  {
-    path: '/yourFullName',
-    name: 'yourFullName',
-    component: yourFullName
   },
   {
     path: '/DavronV7',

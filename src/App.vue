@@ -393,7 +393,7 @@
                   </router-link>
                   <router-link
                     class="list-group-item list-group-item-action list-group-item-light dhg"
-                    to="/index"
+                    to="/formControlOmon"
                   >
                     forms controls
                   </router-link>
