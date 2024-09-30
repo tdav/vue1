@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="bg-secondary-subtle rounded-2 p-2">
+    <div class="bg-dark rounded-2 p-2">
       <div class="row g-3">
         <div class="col-lg-3">
           <form class="mt-3">
@@ -10,7 +10,7 @@
               id=""
               class="exampleFormControlInput-control"
             />
-            <label for="exampleFormControlInput1" class="form-label ms-1"
+            <label for="exampleFormControlInput1" class="form-label ms-1 text-light"
               >Tax ID</label
             >
           </form>
@@ -23,7 +23,7 @@
               id=""
               class="exampleFormControlInput-control"
             />
-            <label for="exampleFormControlInput1" class="form-label ms-1"
+            <label for="exampleFormControlInput1" class="form-label ms-1 text-light"
               >Social Security Number</label
             >
           </form>
