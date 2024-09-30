@@ -156,7 +156,7 @@
 
                 <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg hgf"
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
                     to="/DavronDom"
                   >
                     TestDom
@@ -403,7 +403,7 @@
           <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
           <RouterLink
             class="list-group-item list-group-item-action list-group-item-light gfd"
-            to="/Music"
+            to="/music"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -419,7 +419,7 @@
               <path fill-rule="evenodd" d="M14 11V2h1v9zM6 3v10H5V3z" />
               <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z" />
             </svg>
-            Musiqalar
+            Music
           </RouterLink>
 
           <RouterLink
@@ -558,7 +558,7 @@ const toggle1 = () => {
   background-color: #393e45;
   color: #ffff;
   border: none;
-  border-left: 26px solid #393e45;
+  border-left: 16px solid #393e45;
 }
 
 .dhg:hover {
