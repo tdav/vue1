@@ -1,4 +1,5 @@
 <template>
+  <div class="container">
     <div class="bg-secondary-subtle rounded-2 p-2">
       <div class="row g-3">
         <div class="col-lg-6">
@@ -6,7 +7,7 @@
             <label for="exampleFormControlInput1" class="form-label"
               >Citizenship</label
             >
-  
+
             <input
               type="text"
               class="form-control"
@@ -20,7 +21,7 @@
             <label for="exampleFormControlInput1" class="form-label"
               >Country</label
             >
-  
+
             <input
               type="text"
               class="form-control"
@@ -36,7 +37,7 @@
             <label for="exampleFormControlInput1" class="form-label"
               >Day Phone</label
             >
-  
+
             <input
               type="tel"
               class="form-control"
@@ -50,7 +51,7 @@
             <label for="exampleFormControlInput1" class="form-label"
               >Evening Phone</label
             >
-  
+
             <input
               type="tel"
               class="form-control"
@@ -66,7 +67,7 @@
             <label for="exampleFormControlInput1" class="form-label"
               >Address Line 1</label
             >
-  
+
             <input
               type="tel"
               class="form-control"
@@ -80,7 +81,7 @@
             <label for="exampleFormControlInput1" class="form-label"
               >Address Line 2</label
             >
-  
+
             <input
               type="tel"
               class="form-control"
@@ -96,7 +97,7 @@
             <label for="exampleFormControlInput1" class="form-label"
               >City</label
             >
-  
+
             <input
               type="tel"
               class="form-control"
@@ -110,7 +111,7 @@
             <label for="exampleFormControlInput1" class="form-label"
               >State</label
             >
-  
+
             <input
               type="number"
               class="form-control"
@@ -123,7 +124,7 @@
             <label for="exampleFormControlInput1" class="form-label"
               >Zip Code</label
             >
-  
+
             <input
               type="text"
               class="form-control"
@@ -133,9 +134,9 @@
         </div>
       </div>
     </div>
-  </template>
-  
-  <script setup></script>
-  
-  <style scoped></style>
-  
+  </div>
+</template>
+
+<script setup></script>
+
+<style scoped></style>
