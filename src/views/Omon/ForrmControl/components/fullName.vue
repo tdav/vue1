@@ -56,6 +56,11 @@ const submit = () => {
     fullName: fullName.value,
     birthDate,
   });
+
+  fullName.value = "";
+  day.value = "";
+  month.value = "";
+  year.value = "";
 };
 </script>
 
@@ -65,7 +70,7 @@ const submit = () => {
   margin-top: 3rem;
   border-radius: 6px;
   padding-top: 10px;
-  color: white;
+  color: #ffff;
 }
 .form-control {
   width: 94%;

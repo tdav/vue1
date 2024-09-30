@@ -18,7 +18,7 @@
       </div>
     </div>
     <button
-      @click="submitAll"
+      @click="submitAll, clearInput"
       class="btn btn-primary form"
       style="width: 98%; margin-left: 1%"
     >

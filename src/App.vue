@@ -108,7 +108,7 @@
             <div class="accordion-item hgf">
               <h2 class="accordion-header" id="headingthree">
                 <button
-                  class="accordion-button"
+                  class="accordion-button fds"
                   :class="{ collapsed: !isOpen3 }"
                   :style="{
                     backgroundColor: '#484E58',
@@ -156,8 +156,7 @@
 
                 <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
-                    style="border: none"
+                    class="list-group-item list-group-item-action list-group-item-light dhg hgf"
                     to="/DavronDom"
                   >
                     TestDom
@@ -171,7 +170,7 @@
             <div class="accordion-item hgf">
               <h2 class="accordion-header" id="headingFour">
                 <button
-                  class="accordion-button"
+                  class="accordion-button fds"
                   :class="{ collapsed: !isOpen4 }"
                   :style="{ backgroundColor: '#484E58', color: '#8B94A3' }"
                   type="button"
@@ -260,7 +259,7 @@
             <div class="accordion-item hgf">
               <h2 class="accordion-header" id="headingOne">
                 <button
-                  class="accordion-button"
+                  class="accordion-button fds"
                   :class="{ collapsed: !isOpen1 }"
                   :style="{ backgroundColor: '#484E58', color: '#8B94A3' }"
                   type="button"
@@ -307,7 +306,7 @@
             <div class="accordion-item hgf">
               <h2 class="accordion-header" id="headingTwo">
                 <button
-                  class="accordion-button"
+                  class="accordion-button fds"
                   :class="{ collapsed: !isOpen2 }"
                   :style="{
                     backgroundColor: '#484E58',
@@ -420,7 +419,7 @@
               <path fill-rule="evenodd" d="M14 11V2h1v9zM6 3v10H5V3z" />
               <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z" />
             </svg>
-            Music
+            Musiqalar
           </RouterLink>
 
           <RouterLink
@@ -556,14 +555,20 @@ const toggle1 = () => {
 
 <style scoped>
 .dhg {
-  height: 42px;
   background-color: #393e45;
   color: #ffff;
   border: none;
+  border-left: 26px solid #393e45;
 }
 
 .dhg:hover {
-  background: #44aff2;
+  border-left: 8px solid blue;
+  transition: all 0.4s ease 0s;
+  box-shadow: 7px 7px 7px rgb(29, 29, 29);
+}
+
+.dhg:focus {
+  border-left: 6px solid blue;
 }
 
 .lkjnb :focus {
@@ -584,10 +589,16 @@ const toggle1 = () => {
   height: 42px;
   background-color: #484e58;
   color: #8b94a3;
-  border: none;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
 }
 
 .jhg {
   color: #8b94a3;
+}
+
+.fds:focus {
+  background: #4b4c4d;
 }
 </style>

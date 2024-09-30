@@ -7,7 +7,7 @@
           type="radio"
           name="taxType"
           id="taxIdRadio"
-          value="Tax-ID"
+          value="TaxID"
           v-model="selectedTaxType"
         />
         <label class="form-check-label" for="taxIdRadio">Tax-ID</label>
@@ -19,7 +19,7 @@
           type="radio"
           name="taxType"
           id="ssnRadio"
-          value="Social Security Number"
+          value="SocialSecurityNumber"
           v-model="selectedTaxType"
         />
         <label class="form-check-label" for="ssnRadio">Social Security Number</label>
