@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto p-4">
+  <div class="container mx-auto p-4 background">
     <div class="flex flex-col gap-4">
       <div class="w-1/2">
         <FullName @submit="handleFormSubmit" />
@@ -53,5 +53,7 @@ const submitAll = () => {
 </script>
 
 <style>
-/* Add custom styling if needed */
+.background {
+  background-color: rgb(40, 47, 57);
+}
 </style>

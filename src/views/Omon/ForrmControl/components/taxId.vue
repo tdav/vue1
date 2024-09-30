@@ -56,10 +56,11 @@ const submit = () => {
 
 <style scoped>
 .taxId {
-  background: rgb(220, 220, 221);
+  background-color: rgb(72, 78, 88);
   border-radius: 6px;
   padding: 20px;
   margin-top: 3rem;
+  color: white;
 }
 
 .radio1 {

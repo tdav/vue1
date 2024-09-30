@@ -48,11 +48,12 @@ const submit = () => {
 
 <style scoped>
 .checks {
-  background: rgb(220, 220, 221);
+  background-color: rgb(72, 78, 88);
   border-radius: 6px;
   padding: 20px;
   margin-top: 3rem;
   width: 98%;
   margin-left: 1%;
+  color: white;
 }
 </style>

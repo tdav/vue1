@@ -200,7 +200,7 @@
                 :class="{ show: isOpen4 }"
                 aria-labelledby="headingFour"
                 data-bs-parent="#accordionExample"
-                :style="{ backgroundColor: '#282f39' }"
+                :style="{ backgroundColor: '#44AFF2' }"
               >
                 <div class="accordion-body p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
@@ -558,15 +558,16 @@ const toggle1 = () => {
 .dhg {
   height: 42px;
   background-color: #393e45;
-  color: #8b94a3;
+  color: #ffff;
   border: none;
-}
-.lkjnb :focus {
-  color: red;
 }
 
 .dhg:hover {
-  background: green;
+  background: #44aff2;
+}
+
+.lkjnb :focus {
+  color: red;
 }
 
 .hgf {
