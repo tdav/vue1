@@ -7,9 +7,9 @@
       </div>
 
       <div class="date-of-birth">
-        <label for="dateOfBirth" class="form-label mt-2 ms-1" style="display: block"
-          >Tug'ilgan Sana</label
-        >
+        <label for="dateOfBirth" class="form-label mt-2 ms-1" style="display: block">
+          Tug'ilgan Sana
+        </label>
         <input
           type="number"
           class="form-control day"
@@ -29,6 +29,8 @@
           v-model.number="year"
         />
       </div>
+
+      <button @click="submit" class="btn btn-primary mt-2">Yuborish</button>
     </div>
   </div>
 </template>
@@ -40,40 +42,49 @@ const fullName = ref("");
 const day = ref(null);
 const month = ref(null);
 const year = ref(null);
+
+const emit = defineEmits(["submit"]);
+
+const submit = () => {
+  const birthDate = {
+    day: day.value,
+    month: month.value,
+    year: year.value,
+  };
+
+  emit("submit", {
+    fullName: fullName.value,
+    birthDate,
+  });
+};
 </script>
 
 <style scoped>
 .YourFullName {
   background: rgb(220, 220, 221);
   margin-top: 3rem;
-  font-size: large;
   border-radius: 6px;
   padding-top: 10px;
 }
 .form-control {
-  width: 98%;
+  width: 94%;
   margin-left: 10px;
-  height: 50px;
 }
-
 .day {
   width: 20%;
   display: inline-block;
-  height: 50px;
+  margin-left: -0.1%;
 }
-
 .month {
   width: 20%;
   display: inline-block;
-  height: 50px;
+  margin-left: 4%;
 }
-
 .year {
-  width: 55%;
+  width: 47%;
   display: inline-block;
-  height: 50px;
+  margin-left: 5%;
 }
-
 .date-of-birth {
   padding: 10px;
   padding-bottom: 30px;

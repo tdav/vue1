@@ -28,10 +28,12 @@
       <input
         type="number"
         class="form-control numbers"
-        style="margin-left: 9%"
+        style="margin-left: 11.5%"
         placeholder="9 Digit Number"
         v-model.number="number"
       />
+
+      <button @click="submit" class="btn btn-primary mt-2">Yuborish</button>
     </div>
   </div>
 </template>
@@ -41,12 +43,20 @@ import { ref } from "vue";
 
 const selectedTaxType = ref(""); // Saqlanadigan radio button tanlovi
 const number = ref(null); // 9 raqamli raqam
+
+const emit = defineEmits(["submit"]);
+
+const submit = () => {
+  emit("submit", {
+    selectedTaxType: selectedTaxType.value,
+    number: number.value,
+  });
+};
 </script>
 
 <style scoped>
 .taxId {
   background: rgb(220, 220, 221);
-  font-size: large;
   border-radius: 6px;
   padding: 20px;
   margin-top: 3rem;
@@ -61,7 +71,6 @@ const number = ref(null); // 9 raqamli raqam
 
 .numbers {
   display: inline-block;
-  width: 49%;
-  height: 50px;
+  width: 46.2%;
 }
 </style>

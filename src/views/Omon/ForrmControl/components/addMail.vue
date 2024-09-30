@@ -24,7 +24,6 @@ const isChecked = ref(false); // Checkbox holatini saqlash uchun
 .addMail {
   background: rgb(220, 220, 221);
   margin-top: 3rem;
-  font-size: x-large;
   border-radius: 6px;
   padding-top: 30px;
   width: 98%;

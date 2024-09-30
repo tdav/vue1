@@ -24,7 +24,7 @@
         </datalist>
       </div>
 
-      <div class="mt-5">
+      <div class="">
         <div class="phone-number" style="width: 45%; display: inline-block">
           <label for="dayPhone" class="form-label">Day Phone</label>
           <input
@@ -87,6 +87,8 @@
           <input type="text" class="form-control" id="zipCode" v-model="zipCode" />
         </div>
       </div>
+
+      <button @click="submit" class="btn btn-primary mt-2">Yuborish</button>
     </div>
   </div>
 </template>
@@ -103,6 +105,22 @@ const address2 = ref("");
 const city = ref("");
 const state = ref("");
 const zipCode = ref("");
+
+const emit = defineEmits(["submit"]);
+
+const submit = () => {
+  emit("submit", {
+    citizenship: citizenship.value,
+    country: country.value,
+    dayPhone: dayPhone.value,
+    evePhone: evePhone.value,
+    address: address.value,
+    address2: address2.value,
+    city: city.value,
+    state: state.value,
+    zipCode: zipCode.value,
+  });
+};
 </script>
 
 <style scoped>

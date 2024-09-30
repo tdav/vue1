@@ -25,6 +25,8 @@
         I want to reinvest my dividends
       </label>
     </div>
+
+    <button @click="submit" class="btn btn-primary mt-2">Yuborish</button>
   </div>
 </template>
 
@@ -33,12 +35,20 @@ import { ref } from "vue";
 
 const isBackupWithholding = ref(false); // Checkbox holatini saqlash uchun
 const wantsReinvestment = ref(false); // Checkbox holatini saqlash uchun
+
+const emit = defineEmits(["submit"]);
+
+const submit = () => {
+  emit("submit", {
+    isBackupWithholding: isBackupWithholding.value,
+    wantsReinvestment: wantsReinvestment.value,
+  });
+};
 </script>
 
 <style scoped>
 .checks {
   background: rgb(220, 220, 221);
-  font-size: x-large;
   border-radius: 6px;
   padding: 20px;
   margin-top: 3rem;

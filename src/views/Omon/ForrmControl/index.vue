@@ -1,17 +1,57 @@
 <template>
-  <div class="container">
-    <fullName></fullName>
-    <taxId></taxId>
-    <formsGroup></formsGroup>
-    <checks></checks>
-    <addMail></addMail>
+  <div class="container mx-auto p-4">
+    <div class="flex flex-col gap-4">
+      <div class="w-1/2">
+        <FullName @submit="handleFormSubmit" />
+      </div>
+      <div class="w-1/2">
+        <TaxId @submit="handleFormSubmit" />
+      </div>
+      <div class="w-1/2">
+        <FormsGroup @submit="handleFormSubmit" />
+      </div>
+      <div class="w-1/2">
+        <Checks @submit="handleFormSubmit" />
+      </div>
+      <div class="w-1/2">
+        <AddMail @submit="handleFormSubmit" />
+      </div>
+    </div>
+    <button
+      @click="submitAll"
+      class="btn btn-primary form"
+      style="width: 98%; margin-left: 1%"
+    >
+      Submit
+    </button>
+
+    <!-- <div v-if="submittedData">
+      <h2>Yuborilgan Ma'lumotlar:</h2>
+      <pre>{{ submittedData }}</pre>
+    </div> -->
   </div>
 </template>
 
 <script setup>
+import { ref } from "vue";
 import FullName from "./components/fullName.vue";
 import TaxId from "./components/taxId.vue";
-import formsGroup from "./components/formsGroup.vue";
-import checks from "./components/checks.vue";
-import addMail from "./components/addMail";
+import FormsGroup from "./components/formsGroup.vue";
+import Checks from "./components/checks.vue";
+import AddMail from "./components/addMail.vue";
+
+const submittedData = ref({});
+
+const handleFormSubmit = (data) => {
+  Object.assign(submittedData.value, data);
+};
+console.log(submittedData);
+
+const submitAll = () => {
+  console.log("Final submitted data:", submittedData.value);
+};
 </script>
+
+<style>
+/* Add custom styling if needed */
+</style>

@@ -11,7 +11,7 @@
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
-            class="bi bi-bootstrap"
+            class="bi bi-bootstrap jhg"
             viewBox="0 0 16 16"
             style="width: 35px; height: 35px; color: white"
           >
@@ -34,7 +34,11 @@
                 <button
                   class="accordion-button fds"
                   :class="{ collapsed: !isOpen5 }"
-                  :style="{ backgroundColor: '#262b33', color: 'white', border: 'none' }"
+                  :style="{
+                    backgroundColor: '#484E58',
+                    color: '#8B94A3',
+                    border: 'none',
+                  }"
                   type="button"
                   @click="toggle5"
                   aria-expanded="false"
@@ -45,7 +49,7 @@
                     width="25"
                     height="25"
                     fill="currentColor"
-                    class="bi bi-list distance"
+                    class="bi bi-list distance jhg"
                     viewBox="0 0 16 16"
                   >
                     <path
@@ -107,8 +111,8 @@
                   class="accordion-button"
                   :class="{ collapsed: !isOpen3 }"
                   :style="{
-                    backgroundColor: '#262b33',
-                    color: '#FFFF',
+                    backgroundColor: '#484E58',
+                    color: '#8B94A3',
                     border: 'none',
                   }"
                   type="button"
@@ -121,7 +125,7 @@
                     width="20"
                     height="20"
                     fill="currentColor"
-                    class="bi bi-person-circle distance"
+                    class="bi bi-person-circle distance jhg"
                     viewBox="0 0 16 16"
                   >
                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
@@ -169,7 +173,7 @@
                 <button
                   class="accordion-button"
                   :class="{ collapsed: !isOpen4 }"
-                  :style="{ backgroundColor: '#262b33', color: 'white' }"
+                  :style="{ backgroundColor: '#484E58', color: '#8B94A3' }"
                   type="button"
                   @click="toggle4"
                   aria-expanded="false"
@@ -180,7 +184,7 @@
                     width="25"
                     height="25"
                     fill="currentColor"
-                    class="bi bi-person distance"
+                    class="bi bi-person distance jhg"
                     viewBox="0 0 16 16"
                   >
                     <path
@@ -258,7 +262,7 @@
                 <button
                   class="accordion-button"
                   :class="{ collapsed: !isOpen1 }"
-                  :style="{ backgroundColor: '#262b33', color: 'white' }"
+                  :style="{ backgroundColor: '#484E58', color: '#8B94A3' }"
                   type="button"
                   @click="toggle1"
                   aria-expanded="false"
@@ -269,7 +273,7 @@
                     width="25"
                     height="25"
                     fill="currentColor"
-                    class="bi bi-person-gear distance"
+                    class="bi bi-person-gear distance jhg"
                     viewBox="0 0 16 16"
                   >
                     <path
@@ -305,7 +309,11 @@
                 <button
                   class="accordion-button"
                   :class="{ collapsed: !isOpen2 }"
-                  :style="{ backgroundColor: '#262b33', color: 'white', border: 'none' }"
+                  :style="{
+                    backgroundColor: '#484E58',
+                    color: '#8B94A3',
+                    border: 'none',
+                  }"
                   type="button"
                   @click="toggle2"
                   aria-expanded="false"
@@ -316,7 +324,7 @@
                     width="25"
                     height="25"
                     fill="currentColor"
-                    class="bi bi-person-fill distance"
+                    class="bi bi-person-fill distance jhg"
                     viewBox="0 0 16 16"
                   >
                     <path
@@ -395,7 +403,7 @@
           </div>
           <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
           <RouterLink
-            class="list-group-item list-group-item-action list-group-item-light dhg"
+            class="list-group-item list-group-item-action list-group-item-light gfd"
             to="/Music"
           >
             <svg
@@ -403,7 +411,7 @@
               width="25"
               height="25"
               fill="currentColor"
-              class="bi bi-music-note-beamed"
+              class="bi bi-music-note-beamed jhg"
               viewBox="0 0 16 16"
             >
               <path
@@ -416,7 +424,8 @@
           </RouterLink>
 
           <RouterLink
-            class="list-group-item list-group-item-action list-group-item-light dhg"
+            class="list-group-item list-group-item-action list-group-item-light gfd"
+            style="border-top: 1px solid #737c8a"
             to="/about"
           >
             <svg
@@ -548,16 +557,20 @@ const toggle1 = () => {
 <style scoped>
 .dhg {
   height: 42px;
-  background-color: #282f39;
-  color: #e5e9f0;
+  background-color: #393e45;
+  color: #8b94a3;
   border: none;
 }
 .lkjnb :focus {
   color: red;
 }
 
+.dhg:hover {
+  background: green;
+}
+
 .hgf {
-  border-color: black;
+  border-color: #585e68;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -565,5 +578,15 @@ const toggle1 = () => {
 
 .distance {
   margin-right: 5px;
+}
+.gfd {
+  height: 42px;
+  background-color: #484e58;
+  color: #8b94a3;
+  border: none;
+}
+
+.jhg {
+  color: #8b94a3;
 }
 </style>
