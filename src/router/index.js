@@ -30,6 +30,7 @@ import vazifa2 from '@/views/Omon/vazifa2.vue'
 import formControlOmon from '../views/Omon/ForrmControl/index.vue'
 import about from '../views/AboutView.vue'
 import tablesAndTodo from '../views/Omon/tablesAndTodo/index.vue'
+import storeDavron from '../views/Davron/myStore/index.vue'
 
 const routes = [
   {
@@ -41,6 +42,12 @@ const routes = [
     path: '/formControlOmon',
     name: 'formControlOmon',
     component: formControlOmon
+  },
+  
+  {
+    path: '/storeDavron',
+    name: 'storeDavron',
+    component: storeDavron
   },
 
   {

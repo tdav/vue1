@@ -134,6 +134,15 @@
                 <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
                     class="list-group-item list-group-item-action list-group-item-light"
+                    to="/storeDavron"
+                  >
+                    Store
+                  </router-link>
+                </div>
+                
+                <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
+                  <router-link
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/DavronV7"
                   >
                     Test1
