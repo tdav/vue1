@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <modalComponent @add-data="addData" />
     <tableComponent :table-data="tableData" />
   </div>
@@ -17,8 +17,4 @@ const addData = (newEntry) => {
 };
 </script>
 
-<style>
-#app {
-  text-align: center;
-}
-</style>
+<style></style>

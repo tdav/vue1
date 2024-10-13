@@ -610,6 +610,31 @@ const toggle1 = () => {
   color: #ffff;
   border: none;
 }
+
+:after:focus {
+  color: #fff;
+}
+
+.accordion-button:focus {
+  border: #3a3f48;
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+  margin-left: -12px;
+}
 </style>
 
 <!-- style="background-color: #282f39" -->
