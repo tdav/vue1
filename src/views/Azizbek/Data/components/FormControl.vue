@@ -1,60 +1,84 @@
 <template>
-
-  <div class="bg-secondar m-5">
-    <h1 class="modal-title fs-5" id="exampleModalLabel">Условия для поиска</h1>
-    <form>
-      <div>
-        <label id="user">Пользватель</label> <br />
-        <input class="w-100 mt-1 form-control" type="text" required id="user" />
+  <div class="w-50 mt-3 text-start">
+    <h1 class="bg-secondary modal-title fs-5 p-2" id="exampleModalLabel">
+      Условия для поиска
+    </h1>
+    <form class="p-3 bg-secondary-subtle text-start">
+      <div class="mb-3">
+        <label for="user1">Пользватель</label>
+        <input class="form-control mt-2" type="text" required id="user1" />
       </div>
-      <div>
-        <label id="user">Дистрибутор</label> <br />
-        <input class="w-100 mt-1 form-control" type="text" required id="user" />
+      <div class="mb-3">
+        <label for="user2">Дистрибутор</label>
+        <input class="form-control mt-2" type="text" required id="user2" />
       </div>
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-start mb-3">
         <div class="w-50">
-          <label for="user1">Дата операцин ( с )</label>
-          <input class="mt-1 form-control" type="date" required id="user1" />
+          <label for="user3">Дата операцин ( с )</label>
+          <input class="form-control mt-1" type="date" required id="user3" />
         </div>
-        <div class="w-50 ms-1">
-          <label for="user2">Дата операцин ( по )</label>
-          <input class="mt-1 form-control" type="date" required id="user2" />
+        <div class="ms-2 w-50">
+          <label for="user4">Дата операцин ( по )</label>
+          <input class="form-control mt-1" type="date" required id="user4" />
         </div>
       </div>
-      <div class="mt-2">
-        <label id="user">Доскумент N</label> <br />
-        <input class="w-100 mt-1 form-control" type="text" required id="user" />
+      <div class="mb-3">
+        <label for="docNumber">Доскумент</label>
+        <input class="form-control mt-1" type="text" required id="docNumber" />
       </div>
-      <div class="mt-2">
-        <label id="user">Щтрих-код</label> <br />
-        <input
-          class="w-100 mt-1 form-control"
-          type="number"
-          required
-          id="user"
-        />
+      <div class="mb-3">
+        <label for="barcode">Щтрих-код</label>
+        <input class="form-control mt-1" type="number" required id="barcode" />
       </div>
-      <div class="mt-2">
-        <label id="user"></label> <br />
-        <input class="w-100 mt-1 form-control" type="text" required id="user" />
+      <div class="mb-3">
+        <label for="extraField">Название препарата</label>
+        <input class="form-control mt-1" type="text" required id="extraField" />
       </div>
-      <br />
-      <button class="btn btn-primary" type="submit">Submit</button>
+      <div class="d-flex justify-content-start mb-3">
+        <div class="w-50">
+          <label for="user3">Срок годности ( с )</label>
+          <input class="form-control mt-1" type="text" required id="user3" />
+        </div>
+        <div class="ms-2 w-50">
+          <label for="user4">Срок годности ( по )</label>
+          <input class="form-control mt-1" type="text" required id="user4" />
+        </div>
+      </div>
+      <div class="w-100">
+        <label for="user3">Серия</label>
+        <input class="form-control mt-1" type="text" required id="user3" />
+      </div>
+      <div class="w-100">
+        <label for="user3">Наценка</label>
+        <input class="form-control mt-1" type="text" required id="user3" />
+      </div>
+      <div class="w-100">
+        <label for="user3">Цена</label>
+        <input class="form-control mt-1" type="text" required id="user3" />
+      </div>
+      <div class="d-flex justify-content-start mb-3">
+        <div class="w-50">
+          <label for="user3">Количество ( с )</label>
+          <input class="form-control mt-1" type="text" required id="user3" />
+        </div>
+        <div class="ms-2 w-50">
+          <label for="user4">Количество ( по )</label>
+          <input class="form-control mt-1" type="text" required id="user4" />
+        </div>
+      </div>
+      <div class="d-flex justify-content-start mb-3">
+        <div class="w-50">
+          <label for="user3">Текушее код ( с )</label>
+          <input class="form-control mt-1" type="text" required id="user3" />
+        </div>
+        <div class="ms-2 w-50">
+          <label for="user4">Текушее код ( по )</label>
+          <input class="form-control mt-1" type="text" required id="user4" />
+        </div>
+      </div>
+      <button class="btn btn-primary ms-auto d-block" type="submit">
+        Submit
+      </button>
     </form>
   </div>
 </template>
-
-<script setup>
-// import { reactive, defineEmits } from 'vue';
-
-// const emit = defineEmits();
-
-// const formData = reactive({
-//   user: '',
-// });
-
-// const search = () => {
-//   emit('search', { ...formData });
-//   formData.user = '';
-// };
-</script>
