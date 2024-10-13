@@ -6,7 +6,7 @@
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
-            class="bi bi-bootstrap my-icon"
+            class="bi bi-bootstrap my-icon button btn"
             viewBox="0 0 16 16"
           >
             <path
@@ -47,7 +47,7 @@
                     />
                   </svg>
 
-                  Main
+                  <p class="list-name">Main</p>
                 </button>
               </h2>
 
@@ -184,7 +184,7 @@
                       d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
                     />
                   </svg>
-                  Azizbek
+                  <p>Azizbek</p>
                 </button>
               </h2>
               <div
@@ -552,6 +552,8 @@ const toggle1 = () => {
 <style scoped>
 .distance {
   margin-right: 5px;
+  height: 30px;
+  width: 30px;
 }
 .accordion-button.collapsed {
   background-color: #3a3f48;
@@ -564,8 +566,6 @@ const toggle1 = () => {
 .accordion-button:not(.collapsed) {
   background-color: #3a3f48;
   color: white;
-  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0
-    var(--bs-accordion-border-color);
 }
 
 .menu-header {
@@ -596,9 +596,10 @@ const toggle1 = () => {
 }
 
 .my-icon {
-  width: 35px;
-  height: 35px;
+  width: 60px;
+  height: 65px;
   color: white;
+  border: #3a3f48;
 }
 
 .my-menu-color {
@@ -611,7 +612,7 @@ const toggle1 = () => {
   color: white;
   border-color: #414751;
   border: none;
-  height: 52px;
+  height: 55px;
 }
 
 .my-menu-item {
@@ -620,29 +621,16 @@ const toggle1 = () => {
   border: none;
 }
 
-:after:focus {
-  color: #fff;
+:after {
+  color: red;
 }
 
-.accordion-button:focus {
-  border: #3a3f48;
+.accordion-button:focus :after {
+  background: #3a3f48;
 }
 
-.container,
-.container-fluid,
-.container-xxl,
-.container-xl,
-.container-lg,
-.container-md,
-.container-sm {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
-  width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
-  margin-right: auto;
-  margin-left: auto;
-  margin-left: -12px;
+p {
+  margin-bottom: 0px;
 }
 </style>
 
