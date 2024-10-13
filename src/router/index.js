@@ -19,6 +19,7 @@ import js_dom_2 from '@/views/Azizbek/js_dom_2.vue'
 import age from '../views/Azizbek/age.vue'
 import vue_3 from '@/views/Azizbek/vue_3.vue'
 import formControl from '@/views/Azizbek/ForrmControl/index.vue'
+import DataTable from '@/views/Azizbek/Data/index.vue'
 import Sikllar from '../views/Omon/sikllar.vue'
 import Function from '../views/Omon/Function.vue'
 import DavronDom from '../views/Davron/dom.vue'
@@ -123,6 +124,13 @@ const routes = [
     name: 'formControl',
     component: formControl
   },
+
+  {
+    path: '/DataTable',
+    name: 'DataTable',
+    component: DataTable
+  },
+   
   {
     path: '/DavronV7',
     name: 'DavronV7',
