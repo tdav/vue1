@@ -21,7 +21,7 @@
         </div>
 
         <nav class="list-group list-group-flush">
-          <!-- ------------------------------------------------------------------ -->
+          <!------------------------------------------------------------------>
           <div class="accordion">
             <div class="accordion-item">
               <h2 class="accordion-header menu-header" id="headingFive">
@@ -60,41 +60,39 @@
                 :style="{ backgroundColor: '#282f39' }"
               >
                 <RouterLink
-                  class="list-group-item list-group-item-action list-group-item-light"
+                  class="list-group-item list-group-item-action list-group-item-light ps-5"
                   to="/valuable"
                   >1 - O`zgaruvchi</RouterLink
                 >
                 <RouterLink
-                  class="list-group-item list-group-item-action list-group-item-light"
+                  class="list-group-item list-group-item-action list-group-item-light ps-5"
                   to="/shartli"
                   >2 - ShartliOperator</RouterLink
                 >
                 <RouterLink
-                  class="list-group-item list-group-item-action list-group-item-light"
+                  class="list-group-item list-group-item-action list-group-item-light ps-5"
                   to="/array"
                   >3 - Array
                 </RouterLink>
                 <RouterLink
-                  class="list-group-item list-group-item-action list-group-item-light"
+                  class="list-group-item list-group-item-action list-group-item-light ps-5"
                   to="/table"
                   >4 - Table
                 </RouterLink>
                 <RouterLink
-                  class="list-group-item list-group-item-action list-group-item-light"
+                  class="list-group-item list-group-item-action list-group-item-light ps-5"
                   to="/component"
                   >5 - Component</RouterLink
                 >
                 <RouterLink
-                  class="list-group-item list-group-item-action list-group-item-light"
+                  class="list-group-item list-group-item-action list-group-item-light ps-5"
                   to="/slot"
                   >6 - Component Slot</RouterLink
                 >
               </div>
             </div>
           </div>
-
-          <!-- -------------------------------------------------------------- -->
-
+          <!------------------------------------------------------------------>
           <div class="accordion">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingthree">
@@ -133,7 +131,7 @@
               >
                 <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/storeDavron"
                   >
                     Store
@@ -142,7 +140,7 @@
                 
                 <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/DavronV7"
                   >
                     Test1
@@ -151,7 +149,7 @@
 
                 <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/DavronDom"
                   >
                     TestDom
@@ -160,7 +158,7 @@
               </div>
             </div>
           </div>
-          <!-- -------------------------------------------------------------------------------- -->
+          <!------------------------------------------------------------------>
           <div class="accordion">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingFour">
@@ -197,55 +195,55 @@
               >
                 <div class="accordion-body p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/Aziz"
                   >
                     Operators
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/newOperators"
                   >
                     NewOperators
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/Loop"
                   >
                     Loop
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/js_dom"
                   >
                     DOM
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/js_dom_2"
                   >
                     DOM 2
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/age"
                   >
                     Age
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/vue_3"
                   >
                     Vue 3
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/formControl"
                   >
                     Form controls
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/DataTable"
                   >
                     Data Table
@@ -254,7 +252,7 @@
               </div>
             </div>
           </div>
-          <!-- ------------------------------------------------------------------------------------------------------------------------ -->
+          <!------------------------------------------------------------------>
           <div class="accordion">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
@@ -266,16 +264,16 @@
                   aria-expanded="false"
                   aria-controls="collapseOne"
                 >
-                  <svg
+                <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
                     height="25"
                     fill="currentColor"
-                    class="bi bi-person-gear distance jhg"
+                    class="bi bi-person distance jhg"
                     viewBox="0 0 16 16"
                   >
                     <path
-                      d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"
+                      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
                     />
                   </svg>
                   Jasur
@@ -291,7 +289,7 @@
               >
                 <div class="accordion-body p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/Jasur"
                   >
                     7 - Jasur
@@ -300,7 +298,7 @@
               </div>
             </div>
           </div>
-          <!-- ------------------------------------------------------------------------------------------------------------- -->
+          <!------------------------------------------------------------------>
           <div class="accordion">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
@@ -321,7 +319,7 @@
                     viewBox="0 0 16 16"
                   >
                     <path
-                      d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
                     />
                   </svg>
                   Omon
@@ -337,62 +335,62 @@
               >
                 <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/omon_todo"
                   >
                     Omon
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/operatorlar"
                   >
                     operatorlar
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/sikllar"
                   >
                     Sikllar
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/function"
                   >
                     Function
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/dom"
                   >
                     Dom
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/dom2"
                   >
                     Dom2
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/vazifa1"
                   >
                     Vazifa 1
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/vazifa2"
                   >
                     Vazifa 2
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/formControlOmon"
                   >
                     forms controls
                   </router-link>
 
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light"
+                    class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/tablesAndTodo"
                   >
                     table and ToDo
@@ -401,7 +399,7 @@
               </div>
             </div>
           </div>
-          <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+          <!------------------------------------------------------------------>
           <RouterLink
             class="list-group-item list-group-item-action list-group-item-light my-menu"
             to="/music"
@@ -570,7 +568,7 @@ const toggle1 = () => {
 
 .menu-header {
   background-color: #3a3f48;
-  color: white;
+  color: white;                                                   
 }
 
 .list-group-item-light {
