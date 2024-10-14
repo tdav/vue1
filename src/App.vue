@@ -235,6 +235,12 @@
                   >
                     Form controls
                   </router-link>
+                  <router-link
+                    class="list-group-item list-group-item-action list-group-item-light"
+                    to="/DataTable"
+                  >
+                    Data Table
+                  </router-link>
                 </div>
               </div>
             </div>
