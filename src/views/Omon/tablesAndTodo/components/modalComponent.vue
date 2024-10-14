@@ -229,10 +229,6 @@ const addData = () => {
 }
 .icon-section {
   border-left: 1px;
-  width: 100%;
-  position: relative;
-  display: inline-block;
-  margin-left: -62rem;
 }
 .buttons {
   height: 100px;
