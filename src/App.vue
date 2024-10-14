@@ -1,19 +1,13 @@
 <template>
   <div v-if="path != '/Music'" style="height: 100vh">
     <div class="d-flex" id="wrapper">
-      <div
-        v-if="path != '/Music'"
-        class="border-end"
-        id="sidebar-wrapper"
-        style="background-color: #282f39"
-      >
-        <div class="sidebar-heading border-bottom" style="color: #e5e9f0">
+      <div v-if="path != '/Music'" class="border-end" id="sidebar-wrapper">
+        <div class="sidebar-heading border-bottom my-menu-color">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
-            class="bi bi-bootstrap jhg"
+            class="bi bi-bootstrap my-icon"
             viewBox="0 0 16 16"
-            style="width: 35px; height: 35px; color: white"
           >
             <path
               d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377z"
@@ -27,17 +21,13 @@
         </div>
 
         <nav class="list-group list-group-flush">
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item hgf">
-              <h2 class="accordion-header" id="headingFive">
+          <!-- ------------------------------------------------------------------ -->
+          <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header menu-header" id="headingFive">
                 <button
-                  class="accordion-button fds"
+                  class="accordion-button my-menu"
                   :class="{ collapsed: !isOpen5 }"
-                  :style="{
-                    backgroundColor: '#484E58',
-                    color: '#8B94A3',
-                    border: 'none',
-                  }"
                   type="button"
                   @click="toggle5"
                   aria-expanded="false"
@@ -48,7 +38,7 @@
                     width="25"
                     height="25"
                     fill="currentColor"
-                    class="bi bi-list distance jhg"
+                    class="bi bi-list distance"
                     viewBox="0 0 16 16"
                   >
                     <path
@@ -56,19 +46,21 @@
                       d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
                     />
                   </svg>
+
                   Main
                 </button>
               </h2>
+
               <div
                 id="collapseFive"
-                class="accordion-collapse collapse"
+                class="accordion-collapse collapse menu-collapse"
                 :class="{ show: isOpen5 }"
                 aria-labelledby="headingFive"
                 data-bs-parent="#accordionExample"
                 :style="{ backgroundColor: '#282f39' }"
               >
                 <RouterLink
-                  class="list-group-item list-group-item-action list-group-item-light"
+                  class="list-group-item list-group-item-action list-group-item-light dhg"
                   to="/valuable"
                   >1 - O`zgaruvchi</RouterLink
                 >
@@ -101,17 +93,14 @@
             </div>
           </div>
 
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item hgf">
+          <!-- -------------------------------------------------------------- -->
+
+          <div class="accordion">
+            <div class="accordion-item">
               <h2 class="accordion-header" id="headingthree">
                 <button
-                  class="accordion-button fds"
+                  class="accordion-button my-menu"
                   :class="{ collapsed: !isOpen3 }"
-                  :style="{
-                    backgroundColor: '#484E58',
-                    color: '#8B94A3',
-                    border: 'none',
-                  }"
                   type="button"
                   @click="toggle3"
                   aria-expanded="false"
@@ -162,14 +151,13 @@
               </div>
             </div>
           </div>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item hgf">
+          <!-- -------------------------------------------------------------------------------- -->
+          <div class="accordion">
+            <div class="accordion-item">
               <h2 class="accordion-header" id="headingFour">
                 <button
-                  class="accordion-button fds"
+                  class="accordion-button my-menu"
                   :class="{ collapsed: !isOpen4 }"
-                  :style="{ backgroundColor: '#484E58', color: '#8B94A3' }"
                   type="button"
                   @click="toggle4"
                   aria-expanded="false"
@@ -251,14 +239,13 @@
               </div>
             </div>
           </div>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item hgf">
+          <!-- ------------------------------------------------------------------------------------------------------------------------ -->
+          <div class="accordion">
+            <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button
-                  class="accordion-button fds"
+                  class="accordion-button my-menu"
                   :class="{ collapsed: !isOpen1 }"
-                  :style="{ backgroundColor: '#484E58', color: '#8B94A3' }"
                   type="button"
                   @click="toggle1"
                   aria-expanded="false"
@@ -298,18 +285,13 @@
               </div>
             </div>
           </div>
-
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item hgf">
+          <!-- ------------------------------------------------------------------------------------------------------------- -->
+          <div class="accordion">
+            <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button
-                  class="accordion-button fds"
+                  class="accordion-button my-menu"
                   :class="{ collapsed: !isOpen2 }"
-                  :style="{
-                    backgroundColor: '#484E58',
-                    color: '#8B94A3',
-                    border: 'none',
-                  }"
                   type="button"
                   @click="toggle2"
                   aria-expanded="false"
@@ -393,19 +375,13 @@
                   >
                     forms controls
                   </router-link>
-                  <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
-                    to="/tablesAndTodo"
-                  >
-                    TablesAndTodo
-                  </router-link>
                 </div>
               </div>
             </div>
           </div>
-
+          <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
           <RouterLink
-            class="list-group-item list-group-item-action list-group-item-light gfd"
+            class="list-group-item list-group-item-action list-group-item-light my-menu"
             to="/music"
           >
             <svg
@@ -413,7 +389,7 @@
               width="25"
               height="25"
               fill="currentColor"
-              class="bi bi-music-note-beamed jhg"
+              class="bi bi-music-note-beamed"
               viewBox="0 0 16 16"
             >
               <path
@@ -426,7 +402,7 @@
           </RouterLink>
 
           <RouterLink
-            class="list-group-item list-group-item-action list-group-item-light gfd"
+            class="list-group-item list-group-item-action list-group-item-light my-menu"
             style="border-top: 1px solid #737c8a"
             to="/about"
           >
@@ -453,6 +429,7 @@
       <div id="page-content-wrapper" style="height: 100vh; overflow-x: auto">
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
           <div class="container-fluid">
+            <!-- <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button> -->
             <button
               class="navbar-toggler"
               type="button"
@@ -551,38 +528,75 @@ const toggle1 = () => {
 </script>
 
 <style scoped>
-.dhg {
-  background-color: #393e45;
-  color: #ffff;
-  border: none;
-}
-
-.hgf {
-  border-color: #585e68;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-}
-
 .distance {
   margin-right: 5px;
 }
-.gfd {
-  height: 42px;
+.accordion-button.collapsed {
+  background-color: #3a3f48;
+}
+
+.accordion-button.collapsed::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #3a3f48;
+  color: white;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0
+    var(--bs-accordion-border-color);
+}
+
+.menu-header {
+  background-color: #3a3f48;
+  color: white;
+}
+
+.list-group-item-light {
+  background-color: #3a3f48;
+  color: white;
+  border-width: 0;
+  border: none;
+  border-radius: none;
+}
+
+.accordion {
+  background-color: #414751;
+  border-width: 0;
+  border: none;
+  border-radius: none;
+}
+
+.accordion-item {
   background-color: #484e58;
-  color: #8b94a3;
-  border-bottom: none;
-  border-top: none;
-  border-right: none;
+  border-width: 0;
+  border: none;
+  border-radius: none;
 }
 
-.jhg {
-  color: #8b94a3;
+.my-icon {
+  width: 35px;
+  height: 35px;
+  color: white;
 }
 
-.accordion-button:focus {
-  color: #393e45;
-  background: #393e45;
-  display: none;
+.my-menu-color {
+  background-color: #414751;
+  color: white;
+}
+
+.my-menu {
+  background-color: #414751;
+  color: white;
+  border-color: #414751;
+  border: none;
+  height: 52px;
+}
+
+.my-menu-item {
+  background-color: #414751;
+  color: #ffff;
+  border: none;
 }
 </style>
+
+<!-- style="background-color: #282f39" -->

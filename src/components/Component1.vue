@@ -3,9 +3,6 @@
 
     <h3>Component ичидан</h3>
     <h1>{{ myvar }}</h1>
-
-   
-
   </div>
 </template>
 
