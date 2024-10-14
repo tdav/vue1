@@ -360,14 +360,14 @@ const addData = () => {
   color: green;
   height: 35px;
   width: 70px;
-  margin-top: -60px;
+  margin-top: -50px;
   margin-left: -3px;
 }
 
 .button-icon2 {
   height: 35px;
   width: 70px;
-  margin-top: -60px;
+  margin-top: -50px;
   margin-left: -3px;
   color: rgb(181, 158, 6);
 }
@@ -375,7 +375,7 @@ const addData = () => {
 .button-icon3 {
   height: 35px;
   width: 70px;
-  margin-top: -60px;
+  margin-top: -50px;
   margin-left: -3px;
   color: #5c887e;
 }
@@ -384,7 +384,11 @@ const addData = () => {
   color: #b33d2a;
   height: 35px;
   width: 70px;
-  margin-top: -60px;
+  margin-top: -50px;
   margin-left: -3px;
+}
+
+p {
+  margin-top: -1px;
 }
 </style>

@@ -60,32 +60,32 @@
                 :style="{ backgroundColor: '#282f39' }"
               >
                 <RouterLink
-                  class="list-group-item list-group-item-action list-group-item-light dhg"
+                  class="list-group-item list-group-item-action list-group-item-light"
                   to="/valuable"
                   >1 - O`zgaruvchi</RouterLink
                 >
                 <RouterLink
-                  class="list-group-item list-group-item-action list-group-item-light dhg"
+                  class="list-group-item list-group-item-action list-group-item-light"
                   to="/shartli"
                   >2 - ShartliOperator</RouterLink
                 >
                 <RouterLink
-                  class="list-group-item list-group-item-action list-group-item-light dhg"
+                  class="list-group-item list-group-item-action list-group-item-light"
                   to="/array"
                   >3 - Array
                 </RouterLink>
                 <RouterLink
-                  class="list-group-item list-group-item-action list-group-item-light dhg"
+                  class="list-group-item list-group-item-action list-group-item-light"
                   to="/table"
                   >4 - Table
                 </RouterLink>
                 <RouterLink
-                  class="list-group-item list-group-item-action list-group-item-light dhg"
+                  class="list-group-item list-group-item-action list-group-item-light"
                   to="/component"
                   >5 - Component</RouterLink
                 >
                 <RouterLink
-                  class="list-group-item list-group-item-action list-group-item-light dhg"
+                  class="list-group-item list-group-item-action list-group-item-light"
                   to="/slot"
                   >6 - Component Slot</RouterLink
                 >
@@ -133,7 +133,7 @@
               >
                 <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/DavronV7"
                   >
                     Test1
@@ -142,7 +142,7 @@
 
                 <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/DavronDom"
                   >
                     TestDom
@@ -188,49 +188,49 @@
               >
                 <div class="accordion-body p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/Aziz"
                   >
                     Operators
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/newOperators"
                   >
                     NewOperators
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/Loop"
                   >
                     Loop
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/js_dom"
                   >
                     DOM
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/js_dom_2"
                   >
                     DOM 2
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/age"
                   >
                     Age
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/vue_3"
                   >
                     Vue 3
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/formControl"
                   >
                     Form controls
@@ -276,7 +276,7 @@
               >
                 <div class="accordion-body p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/Jasur"
                   >
                     7 - Jasur
@@ -322,65 +322,65 @@
               >
                 <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/omon_todo"
                   >
                     Omon
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/operatorlar"
                   >
                     operatorlar
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/sikllar"
                   >
                     Sikllar
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/function"
                   >
                     Function
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/dom"
                   >
                     Dom
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/dom2"
                   >
                     Dom2
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/vazifa1"
                   >
                     Vazifa 1
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/vazifa2"
                   >
                     Vazifa 2
                   </router-link>
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/formControlOmon"
                   >
                     forms controls
                   </router-link>
 
                   <router-link
-                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    class="list-group-item list-group-item-action list-group-item-light"
                     to="/tablesAndTodo"
                   >
-                    ftable and ToDo
+                    table and ToDo
                   </router-link>
                 </div>
               </div>
@@ -592,7 +592,7 @@ const toggle1 = () => {
 }
 
 .my-menu {
-  background-color: #414751;
+  background-color: #484e58;
   color: white;
   border-color: #414751;
   border: none;

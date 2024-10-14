@@ -39,7 +39,7 @@ export default {
 <style scoped>
 table {
   margin-top: px;
-  width: 102%;
+  width: 101.97%;
   margin-left: -1%;
 }
 th,
@@ -48,14 +48,6 @@ td {
   padding: 1px;
   text-align: left;
   border-top: 2px solid black;
-}
-
-table {
-  height: 20px;
-}
-
-thead {
-  height: 0px;
 }
 
 th {
