@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <div class="icon-section">
       <!-- Tugmalar: save, eksport, info, close -->
       <button @click="showModal = true" class="buttons">
@@ -228,8 +228,10 @@ const addData = () => {
   cursor: pointer;
 }
 .icon-section {
-  border-bottom: 2px solid black;
   border-left: 1px;
+  width: 100%;
+  position: relative;
+  display: inline-block;
   margin-left: -62rem;
 }
 .buttons {

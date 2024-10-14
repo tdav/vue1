@@ -38,15 +38,16 @@ export default {
 
 <style scoped>
 table {
-  margin-top: 20px;
-  width: 100%;
-  border-collapse: collapse;
+  margin-top: px;
+  width: 102%;
+  margin-left: -1%;
 }
 th,
 td {
   border: 1px solid black;
-  padding: 8px;
+  padding: 1px;
   text-align: left;
+  border-top: 2px solid black;
 }
 
 table {
@@ -57,7 +58,7 @@ thead {
   height: 0px;
 }
 
-/* th {
-  
-} */
+th {
+  height: 10px;
+}
 </style>
