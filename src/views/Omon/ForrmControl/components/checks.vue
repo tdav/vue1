@@ -1,5 +1,6 @@
 <template>
   <div class="container checks">
+    <!-- 1. Backup withholding uchun checkbox -->
     <div class="form-check check1" style="display: inline-block; width: 45%">
       <input
         class="form-check-input"
@@ -11,6 +12,8 @@
         Subject to backup withholding
       </label>
     </div>
+
+    <!-- 2. Dividendlarn reinvestitsiya qilish uchun checkbox -->
     <div
       class="form-check check1"
       style="display: inline-block; width: 45%; margin-left: 5%"
@@ -26,6 +29,7 @@
       </label>
     </div>
 
+    <!-- Yuborish tugmasi -->
     <button @click="submit" class="btn btn-primary mt-2">Yuborish</button>
   </div>
 </template>
@@ -33,11 +37,14 @@
 <script setup>
 import { ref } from "vue";
 
-const isBackupWithholding = ref(false); // Checkbox holatini saqlash uchun
-const wantsReinvestment = ref(false); // Checkbox holatini saqlash uchun
+// Checkbox holatlarini saqlash uchun o'zgaruvchilar
+const isBackupWithholding = ref(false); // "Subject to backup withholding" checkbox
+const wantsReinvestment = ref(false); // "Reinvest dividends" checkbox
 
+// Eventlarni yuborish uchun defineEmits
 const emit = defineEmits(["submit"]);
 
+// submit funksiyasi
 const submit = () => {
   emit("submit", {
     isBackupWithholding: isBackupWithholding.value,

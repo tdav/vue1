@@ -27,7 +27,6 @@
         </div>
 
         <nav class="list-group list-group-flush">
-          <!-- ------------------------------------------------------------------ -->
           <div class="accordion" id="accordionExample">
             <div class="accordion-item hgf">
               <h2 class="accordion-header" id="headingFive">
@@ -69,7 +68,7 @@
                 :style="{ backgroundColor: '#282f39' }"
               >
                 <RouterLink
-                  class="list-group-item list-group-item-action list-group-item-light dhg"
+                  class="list-group-item list-group-item-action list-group-item-light"
                   to="/valuable"
                   >1 - O`zgaruvchi</RouterLink
                 >
@@ -101,8 +100,6 @@
               </div>
             </div>
           </div>
-
-          <!-- -------------------------------------------------------------- -->
 
           <div class="accordion" id="accordionExample">
             <div class="accordion-item hgf">
@@ -165,7 +162,7 @@
               </div>
             </div>
           </div>
-          <!-- -------------------------------------------------------------------------------- -->
+
           <div class="accordion" id="accordionExample">
             <div class="accordion-item hgf">
               <h2 class="accordion-header" id="headingFour">
@@ -254,7 +251,7 @@
               </div>
             </div>
           </div>
-          <!-- ------------------------------------------------------------------------------------------------------------------------ -->
+
           <div class="accordion" id="accordionExample">
             <div class="accordion-item hgf">
               <h2 class="accordion-header" id="headingOne">
@@ -301,7 +298,7 @@
               </div>
             </div>
           </div>
-          <!-- ------------------------------------------------------------------------------------------------------------- -->
+
           <div class="accordion" id="accordionExample">
             <div class="accordion-item hgf">
               <h2 class="accordion-header" id="headingTwo">
@@ -396,11 +393,17 @@
                   >
                     forms controls
                   </router-link>
+                  <router-link
+                    class="list-group-item list-group-item-action list-group-item-light dhg"
+                    to="/tablesAndTodo"
+                  >
+                    TablesAndTodo
+                  </router-link>
                 </div>
               </div>
             </div>
           </div>
-          <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
           <RouterLink
             class="list-group-item list-group-item-action list-group-item-light gfd"
             to="/music"
@@ -450,7 +453,6 @@
       <div id="page-content-wrapper" style="height: 100vh; overflow-x: auto">
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
           <div class="container-fluid">
-            <!-- <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button> -->
             <button
               class="navbar-toggler"
               type="button"
@@ -499,11 +501,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Fallback for '/Music' path -->
-    <!-- <div v-else>
-      <router-view></router-view>
-    </div> -->
   </div>
 </template>
 
@@ -558,21 +555,6 @@ const toggle1 = () => {
   background-color: #393e45;
   color: #ffff;
   border: none;
-  border-left: 16px solid #393e45;
-}
-
-.dhg:hover {
-  border-left: 8px solid blue;
-  transition: all 0.4s ease 0s;
-  box-shadow: 7px 7px 7px rgb(29, 29, 29);
-}
-
-.dhg:focus {
-  border-left: 6px solid blue;
-}
-
-.lkjnb :focus {
-  color: red;
 }
 
 .hgf {
@@ -598,7 +580,9 @@ const toggle1 = () => {
   color: #8b94a3;
 }
 
-.fds:focus {
-  background: #4b4c4d;
+.accordion-button:focus {
+  color: #393e45;
+  background: #393e45;
+  display: none;
 }
 </style>

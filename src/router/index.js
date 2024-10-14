@@ -28,6 +28,7 @@ import vazifa1 from '@/views/Omon/vazifa1.vue'
 import vazifa2 from '@/views/Omon/vazifa2.vue'
 import formControlOmon from '../views/Omon/ForrmControl/index.vue'
 import about from '../views/AboutView.vue'
+import tablesAndTodo from '../views/Omon/tablesAndTodo/index.vue'
 
 const routes = [
   {
@@ -40,6 +41,13 @@ const routes = [
     name: 'formControlOmon',
     component: formControlOmon
   },
+
+  {
+    path: '/tablesAndTodo',
+    name: 'tablesAndTodo',
+    component: tablesAndTodo
+  },
+
   {
     path: '/vazifa2',
     name: 'vazifa2',

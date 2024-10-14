@@ -1,11 +1,13 @@
 <template>
   <div class="forms">
     <div class="container">
+      <!-- Fuqarolik inputi -->
       <div class="citizenShip mb-1">
         <label for="citizenship" class="form-label mt-2 ms-1">CitizenShip</label>
         <input type="text" class="form-control" id="citizenship" v-model="citizenship" />
       </div>
 
+      <!-- Mamlakat inputi va datalist -->
       <div class="country">
         <label for="country" class="form-label">Country</label>
         <input
@@ -24,6 +26,7 @@
         </datalist>
       </div>
 
+      <!-- Telefon raqamlar (kun va kecha) -->
       <div class="">
         <div class="phone-number" style="width: 45%; display: inline-block">
           <label for="dayPhone" class="form-label">Day Phone</label>
@@ -48,6 +51,8 @@
             v-model="evePhone"
           />
         </div>
+
+        <!-- Manzil inputlari -->
         <div class="mt-1" style="width: 45%; display: inline-block">
           <label for="address" class="form-label">Address</label>
           <input
@@ -88,6 +93,7 @@
         </div>
       </div>
 
+      <!-- Yuborish tugmasi -->
       <button @click="submit" class="btn btn-primary mt-2">Yuborish</button>
     </div>
   </div>
@@ -96,6 +102,7 @@
 <script setup>
 import { ref } from "vue";
 
+// Reactive o'zgaruvchilar
 const citizenship = ref("");
 const country = ref("");
 const dayPhone = ref("");
@@ -106,8 +113,10 @@ const city = ref("");
 const state = ref("");
 const zipCode = ref("");
 
+// Eventni chiqarish uchun defineEmits
 const emit = defineEmits(["submit"]);
 
+// submit funksiyasi
 const submit = () => {
   emit("submit", {
     citizenship: citizenship.value,

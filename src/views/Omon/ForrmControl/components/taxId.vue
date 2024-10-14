@@ -1,6 +1,7 @@
 <template>
   <div class="container mt-2">
     <div class="taxId">
+      <!-- Tax ID uchun radio tugma -->
       <div class="form-check radio1" style="margin-left: 5%">
         <input
           class="form-check-input"
@@ -13,6 +14,7 @@
         <label class="form-check-label" for="taxIdRadio">Tax-ID</label>
       </div>
 
+      <!-- Social Security Number uchun radio tugma -->
       <div class="radio2 form-check" style="margin-left: 11%">
         <input
           class="form-check-input"
@@ -25,6 +27,7 @@
         <label class="form-check-label" for="ssnRadio">Social Security Number</label>
       </div>
 
+      <!-- 9 raqamli raqam inputi -->
       <input
         type="number"
         class="form-control numbers"
@@ -33,6 +36,7 @@
         v-model.number="number"
       />
 
+      <!-- Yuborish tugmasi -->
       <button @click="submit" class="btn btn-primary mt-2">Yuborish</button>
     </div>
   </div>
@@ -41,11 +45,14 @@
 <script setup>
 import { ref } from "vue";
 
-const selectedTaxType = ref(""); // Saqlanadigan radio button tanlovi
+// Radio tugmasidan tanlangan qiymat va 9 raqamli raqam uchun reactive o'zgaruvchilar
+const selectedTaxType = ref(""); // Tax Type (Tax ID yoki SSN)
 const number = ref(null); // 9 raqamli raqam
 
+// Eventni yuborish uchun defineEmits
 const emit = defineEmits(["submit"]);
 
+// submit funksiyasi
 const submit = () => {
   emit("submit", {
     selectedTaxType: selectedTaxType.value,

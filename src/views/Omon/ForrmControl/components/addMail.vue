@@ -1,5 +1,6 @@
 <template>
   <div class="container addMail">
+    <!-- Checkbox: Add optional mailing address -->
     <div class="form-check check1" style="display: inline-block; width: 45%">
       <input
         class="form-check-input"
