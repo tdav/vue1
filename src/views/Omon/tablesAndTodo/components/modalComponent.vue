@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <div class="icon-section">
       <!-- Tugmalar: save, eksport, info, close -->
       <button @click="showModal = true" class="buttons">
@@ -229,14 +229,15 @@ const addData = () => {
 }
 .icon-section {
   border-bottom: 2px solid black;
-  float: left;
   border-left: 1px;
+  margin-left: -62rem;
 }
 .buttons {
   height: 100px;
   width: 75px;
   border-right: 1px solid black;
   padding-top: 50px;
+  background: #ffff;
 }
 
 .buttons:hover {
@@ -247,6 +248,7 @@ const addData = () => {
   height: 100px;
   width: 75px;
   padding-top: 50px;
+  background: #ffff;
 }
 
 .button3:hover {
