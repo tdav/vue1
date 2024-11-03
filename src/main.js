@@ -12,12 +12,18 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 
-import myStore from './store/mystore'
+import smStore from './store/myStote1';
+
+
 
 library.add(fas, far, fab)
 dom.watch();
 
-createApp(App)
-.use(router)
-.use(myStore)
-.mount('#app')
+const app = createApp(App)
+
+
+app.use(smStore)
+
+
+app.use(router)
+app.mount('#app')

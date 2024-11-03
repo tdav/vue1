@@ -1,20 +1,25 @@
 <template>
-    <div>
-        <h3>COM1</h3>
-        <input :value="store.state.keyWord" @input="changeKeyWord" />
-        <br>
-    </div>
+    <div style="background-color: bisque;">
+    Value: {{ count }}
+    <button @click="increment">+</button >    
+  </div>
 </template>
 
-<script setup>
+<script>
+
+import { computed } from 'vue'
 import { useStore } from 'vuex'
-const store = useStore()
 
+export default {
+  setup () {
+    const store = useStore()
 
-function changeKeyWord(evt) {
-    this.store.changeKeyWord(evt.target.value);
+    return {
+      count: computed(() => store.getters.gts_count), 
+      increment: () => store.dispatch('ACTION_INC'),
+    }
+  }
 }
-
 </script>
 
 <style></style>

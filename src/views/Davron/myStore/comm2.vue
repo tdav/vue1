@@ -1,18 +1,26 @@
 <template>
   <div>
-    <input :value="store.state.keyWord" @input="changeKeyWord" />
+    Value: {{ count }}
+    <button @click="increment"> куп * 5</button>
+
   </div>
 </template>
 
-<script>
-export default {
-  inject: ["store"],
-  methods: {
-    changeKeyWord(evt) {
-      this.store.changeKeyWord(evt.target.value);
-    },
-  },
-};
+<script setup>
+
+import { computed } from 'vue'
+import { useStore } from 'vuex'
+
+const store = useStore()
+
+const count = computed(() => {
+  return store.getters.gts_count
+})
+
+function increment() {
+  store.dispatch('ACTION_MX', 3)
+}
+
 </script>
 
 <style></style>

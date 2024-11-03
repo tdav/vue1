@@ -1,18 +1,15 @@
 <template>
-  <div>
-    <input :value="store.state.keyWord" @input="changeKeyWord" />
+    <div>
+      <com1></com1>
+      <br>  
+      <com2></com2>
   </div>
 </template>
 
-<script>
-export default {
-  inject: ["store"],
-  methods: {
-    changeKeyWord(evt) {
-      this.store.changeKeyWord(evt.target.value);
-    },
-  },
-};
+<script setup>
+import com1 from './comm1.vue'
+import com2 from './comm2.vue'
+ 
 </script>
 
 <style></style>
