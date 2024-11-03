@@ -1,13 +1,14 @@
 <template>
   <div v-if="path != '/Music'" style="height: 100vh">
     <div class="d-flex" id="wrapper">
-      <div v-if="path != '/Music'" class="border-end" id="sidebar-wrapper">
+      <div v-if="isSidebarVisible" class="border-end" id="sidebar-wrapper">
         <div class="sidebar-heading border-bottom my-menu-color">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             class="bi bi-bootstrap my-icon button btn"
             viewBox="0 0 16 16"
+            v-if="isSidebarVisible"
           >
             <path
               d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377z"
@@ -17,10 +18,10 @@
             />
           </svg>
 
-          Bootstrap
+          <a v-if="isSidebarVisible">Bootstrap</a>
         </div>
 
-        <nav class="list-group list-group-flush">
+        <nav class="list-group list-group-flush" v-if="isSidebarVisible">
           <!-- ------------------------------------------------------------------ -->
           <div class="accordion">
             <div class="accordion-item">
@@ -139,7 +140,7 @@
                     Store
                   </router-link>
                 </div>
-                
+
                 <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
                   <router-link
                     class="list-group-item list-group-item-action list-group-item-light"
@@ -402,49 +403,51 @@
             </div>
           </div>
           <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
-          <RouterLink
-            class="list-group-item list-group-item-action list-group-item-light my-menu"
-            to="/music"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="25"
-              fill="currentColor"
-              class="bi bi-music-note-beamed"
-              viewBox="0 0 16 16"
+          <div class="About-section">
+            <RouterLink
+              class="list-group-item list-group-item-action list-group-item-light my-menu"
+              to="/music"
             >
-              <path
-                d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"
-              />
-              <path fill-rule="evenodd" d="M14 11V2h1v9zM6 3v10H5V3z" />
-              <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z" />
-            </svg>
-            Music
-          </RouterLink>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-music-note-beamed"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"
+                />
+                <path fill-rule="evenodd" d="M14 11V2h1v9zM6 3v10H5V3z" />
+                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z" />
+              </svg>
+              Music
+            </RouterLink>
 
-          <RouterLink
-            class="list-group-item list-group-item-action list-group-item-light my-menu"
-            style="border-top: 1px solid #737c8a"
-            to="/about"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="25"
-              fill="currentColor"
-              class="bi bi-exclamation-circle"
-              viewBox="0 0 16 16"
+            <RouterLink
+              class="list-group-item list-group-item-action list-group-item-light my-menu about-list"
+              style="border-top: 1px solid #737c8a"
+              to="/about"
             >
-              <path
-                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
-              />
-              <path
-                d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"
-              />
-            </svg>
-            About
-          </RouterLink>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-exclamation-circle"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                />
+                <path
+                  d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"
+                />
+              </svg>
+              About
+            </RouterLink>
+          </div>
         </nav>
       </div>
 
@@ -452,6 +455,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
           <div class="container-fluid">
             <!-- <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button> -->
+            <button @click="toggleSidebar" class="">Menu</button>
             <button
               class="navbar-toggler"
               type="button"
@@ -494,7 +498,6 @@
             </div>
           </div>
         </nav>
-
         <div class="container-fluid">
           <router-view></router-view>
         </div>
@@ -547,9 +550,20 @@ const isOpen1 = ref(false);
 const toggle1 = () => {
   isOpen1.value = !isOpen1.value;
 };
+
+const isSidebarVisible = ref(false);
+
+const toggleSidebar = () => {
+  isSidebarVisible.value = !isSidebarVisible.value;
+};
 </script>
 
 <style scoped>
+.accordion-button.collapsed[data-v-7ba5bd90] {
+  background-color: #3a3f48;
+  width: 184px;
+}
+
 .distance {
   margin-right: 5px;
   height: 30px;
@@ -612,13 +626,21 @@ const toggle1 = () => {
   color: white;
   border-color: #414751;
   border: none;
-  height: 55px;
+  height: 44px;
 }
 
 .my-menu-item {
   background-color: #414751;
   color: #ffff;
   border: none;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active ko'rsatilmaydi */ {
+  opacity: 0;
 }
 
 :after {
@@ -631,6 +653,58 @@ const toggle1 = () => {
 
 p {
   margin-bottom: 0px;
+}
+
+.accordion-header {
+  margin-bottom: 0;
+  background: #3a3f48;
+}
+
+.accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
+  border-bottom-right-radius: var(--bs-accordion-inner-border-radius);
+  border-bottom-left-radius: var(--bs-accordion-inner-border-radius);
+  padding-left: 12px;
+}
+
+.accordion-button:focus {
+  /* z-index: 3; */
+  /* border-color: var(--bs-accordion-btn-focus-border-color); */
+  outline: 0;
+  box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+}
+
+.accordion-button:focus {
+  box-shadow: none; /* Fokus holatida soya ko'rsatmaydi */
+}
+.accordion-button.collapsed[data-v-7ba5bd90]::after {
+  display: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  display: none;
+}
+
+.list-group-item-light[data-v-7ba5bd90] {
+  padding-left: 62px;
+}
+
+.list-group {
+  background: #3a3f48;
+}
+
+.accordion-header[data-v-7ba5bd90] {
+  margin-bottom: 0;
+  background: #3a3f48;
+  padding-left: 16px;
+}
+
+#sidebar-wrapper {
+  margin-left: 0;
+  background: #484e58;
+}
+
+.about-list {
+  margin-bottom: -21.4rem;
 }
 </style>
 
