@@ -38,7 +38,7 @@ export default createStore({
         },
 
         mul6 (state){
-            state.count = state.count *5
+            state.count = state.count * 5
         },
 
         mutX (state, x){
