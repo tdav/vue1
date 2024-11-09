@@ -1,148 +1,252 @@
 <template>
-  <div class="todo-container">
-    <h1>ToDo Ro'yxati</h1>
-
-    <div class="input-group">
-      <input v-model="newTask" placeholder="Yozing..." />
-      <button @click="addTask" style="border-radius: 10px">Qo'shish</button>
+  <div class="app">
+    <h1>Mahsulotlar</h1>
+    <div class="products">
+      <div v-for="product in products" :key="product.id" class="product">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <button @click="addToCart(product)">Korzinkaga qo'shish</button>
+      </div>
     </div>
 
-    <p v-if="tasks.length === 0" class="no-tasks-message">
-      Hech qanday vazifa mavjud emas
-    </p>
+    <div class="cart-icon" @click="toggleCart">🛒 {{ cartItemCount }} ta mahsulot</div>
 
-    <ul class="task-list">
-      <li v-for="(task, index) in tasks" :key="index" class="task-item" style="">
-        <input
-          type="checkbox"
-          :checked="task.completed"
-          @change="toggleComplete(index)"
-          class="task-checkbox"
-        />
-        <span :class="{ completed: task.completed }">{{ task.name }}</span>
-        <button @click="removeTask(index)" class="remove-btn">O'chirish</button>
-      </li>
-    </ul>
+    <div v-if="isCartOpen" class="cart-overlay" @click="toggleCart">
+      <div class="cart" @click.stop>
+        <h2>Korzinka</h2>
+        <div v-for="item in cart" :key="item.id" class="cart-item">
+          <h3>{{ item.name }}</h3>
+          <p>{{ item.description }}</p>
+          <p>Miqdori: {{ item.quantity }}</p>
+          <div class="quantity-controls">
+            <button @click="increaseQuantity(item.id)">+</button>
+            <button @click="decreaseQuantity(item.id)">-</button>
+          </div>
+          <input v-model="item.comment" placeholder="Izoh qo'shish" />
+        </div>
+        <button class="close-btn" @click="toggleCart">Yopish</button>
+      </div>
+    </div>
   </div>
 </template>
 
-<script>
-import { ref, reactive } from "vue";
+<script setup>
+import { reactive, computed } from "vue";
 
-export default {
-  setup() {
-    const newTask = ref("");
-    const state = reactive({
-      tasks: [],
-    });
+// State
+const state = reactive({
+  products: [
+    { id: 1, name: "Mahsulot 1", description: "Bu mahsulot 1 tavsifi" },
+    { id: 2, name: "Mahsulot 2", description: "Bu mahsulot 2 tavsifi" },
+    // Qo'shimcha mahsulotlar...
+  ],
+  cart: [],
+  isCartOpen: false,
+});
 
-    const addTask = () => {
-      if (newTask.value.trim() === "") {
-        alert("Maydon bo'sh!");
-        return;
-      }
-      state.tasks.push({ name: newTask.value, completed: false });
-      newTask.value = "";
-    };
+// Getters
+const cartItemCount = computed(() => {
+  return state.cart.reduce((total, item) => total + item.quantity, 0);
+});
 
-    const removeTask = (index) => {
-      state.tasks.splice(index, 1);
-    };
+// Mutations
+function ADD_TO_CART(product) {
+  const cartItem = state.cart.find((item) => item.id === product.id);
+  if (cartItem) {
+    cartItem.quantity++;
+  } else {
+    state.cart.push({ ...product, quantity: 1, comment: "" });
+  }
+}
 
-    const toggleComplete = (index) => {
-      state.tasks[index].completed = !state.tasks[index].completed;
-    };
+function INCREASE_QUANTITY(id) {
+  const cartItem = state.cart.find((item) => item.id === id);
+  if (cartItem) cartItem.quantity++;
+}
 
-    return {
-      newTask,
-      tasks: state.tasks,
-      addTask,
-      removeTask,
-      toggleComplete,
-    };
-  },
-};
+function DECREASE_QUANTITY(id) {
+  const cartItem = state.cart.find((item) => item.id === id);
+  if (cartItem && cartItem.quantity > 1) {
+    cartItem.quantity--;
+  } else if (cartItem) {
+    const index = state.cart.indexOf(cartItem);
+    state.cart.splice(index, 1);
+  }
+}
+
+function TOGGLE_CART() {
+  state.isCartOpen = !state.isCartOpen;
+}
+
+// Actions
+function addToCart(product) {
+  ADD_TO_CART(product);
+}
+
+function increaseQuantity(id) {
+  INCREASE_QUANTITY(id);
+}
+
+function decreaseQuantity(id) {
+  DECREASE_QUANTITY(id);
+}
+
+function toggleCart() {
+  TOGGLE_CART();
+}
+
+// Mahsulotlar ro'yxatini olish getter orqali
+const products = computed(() => state.products);
+const cart = computed(() => state.cart);
+const isCartOpen = computed(() => state.isCartOpen);
 </script>
 
 <style scoped>
-.todo-container {
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
+.app {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
 }
 
-.input-group {
+h1 {
+  color: #333;
+}
+
+.products {
   display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-input[type="text"] {
-  flex: 1;
-  padding: 10px;
+.product {
   border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  background-color: #007bff;
+.product h3 {
+  margin: 0;
+  color: #555;
+}
+
+.product p {
+  font-size: 14px;
+  color: #777;
+  margin: 10px 0;
+}
+
+.product button {
+  background-color: #4caf50;
   color: white;
+  border: none;
+  padding: 8px 12px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #0056b3;
+.product button:hover {
+  background-color: #45a049;
 }
 
-.task-list {
-  list-style-type: none;
-  padding: 0;
+.cart-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.task-item {
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+  justify-content: center;
+}
+
+.cart {
   background-color: white;
-  border-radius: 4px;
-  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.task-checkbox {
-  cursor: pointer;
+.cart h2 {
+  margin: 0;
+  color: #333;
 }
 
-.remove-btn {
-  background-color: #dc3545;
-  padding: 5px 10px;
+.cart-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.cart-item h3 {
+  margin: 0;
+  color: #555;
+}
+
+.cart-item p {
+  font-size: 14px;
+  color: #777;
+}
+
+.quantity-controls {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.quantity-controls button {
+  background-color: #ddd;
   border: none;
-  border-radius: 4px;
-  color: white;
+  padding: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
-.remove-btn:hover {
-  background-color: #c82333;
+.quantity-controls button:hover {
+  background-color: #bbb;
 }
 
-.no-tasks-message {
-  color: #888;
-  font-style: italic;
+input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
-.completed {
-  text-decoration: line-through;
-  color: #888;
+.close-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+  background-color: #555;
 }
 </style>

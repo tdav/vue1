@@ -13,6 +13,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 
 import smStore from './store/myStote1';
+import stProfile from './store/storeProfile';
 
 
 
@@ -23,6 +24,7 @@ const app = createApp(App)
 
 
 app.use(smStore)
+app.use(stProfile)
 
 
 app.use(router)

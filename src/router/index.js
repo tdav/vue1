@@ -31,6 +31,9 @@ import formControlOmon from '../views/Omon/ForrmControl/index.vue'
 import about from '../views/AboutView.vue'
 import tablesAndTodo from '../views/Omon/tablesAndTodo/index.vue'
 import storeDavron from '../views/Davron/myStore/index.vue'
+import profile from '../views/Omon/Profile/profile.vue'
+import Store from '../views/Omon/StoreOmon/Store.vue'
+
 
 const routes = [
   {
@@ -38,6 +41,19 @@ const routes = [
     name: 'home',
     component: HomeView
   },
+
+  {
+    path: '/store',
+    name: 'Store',
+    component:Store
+  },
+
+  {
+    path: '/profile',
+    name: 'profile',
+    component: profile
+  },
+
   {
     path: '/formControlOmon',
     name: 'formControlOmon',
