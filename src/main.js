@@ -15,6 +15,7 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 import smStore from './store/myStote1';
 import stProfile from './store/storeProfile';
 
+import axios from './utils/axios.js'
 
 
 library.add(fas, far, fab)
@@ -29,3 +30,6 @@ app.use(stProfile)
 
 app.use(router)
 app.mount('#app')
+
+
+app.config.globalProperties.$axios = { ...axios }

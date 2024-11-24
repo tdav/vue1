@@ -6,12 +6,7 @@ ana, sizning kiritgan kodingizga to'liq qidiruv bo'limi qo'shilgan variant: vue 
       <h1>Online Do'kon</h1>
 
       <!-- Qidiruv inputi -->
-      <input
-        type="text"
-        v-model="searchQuery"
-        placeholder="Mahsulotni qidiring..."
-        class="search-input"
-      />
+      <input type="text" v-model="searchQuery" placeholder="Mahsulotni qidiring..." class="search-input" />
 
       <button @click="showCart = !showCart" class="cart-button">
         🛒Savatcha
@@ -21,12 +16,13 @@ ana, sizning kiritgan kodingizga to'liq qidiruv bo'limi qo'shilgan variant: vue 
 
     <main>
       <div class="product-list">
-        <div class="product-card" v-for="product in filteredProducts" :key="product.id">
-          <img :src="product.image" :alt="product.name" />
-          <h3>{{ product.name }}</h3>
-          <p>Price: {{ product.price }} $</p>
+        <div class="product-card" v-for="fo in foods" :key="fo.id">
+          <img :src="fo.imgUrl" :alt="fo.nameUz" />
+          <h5>{{ fo.nameUz }}</h5>
+          <h6>{{ fo.descriptionUz }}</h6>
+          <p>Price: {{ fo.price }} $</p>
           <div class="button-group">
-            <button @click="addProduct(product)" class="add-button">Qo'shish</button>
+            <button @click="addProduct(fo)" class="add-button">Qo'shish</button>
           </div>
         </div>
       </div>
@@ -69,23 +65,12 @@ ana, sizning kiritgan kodingizga to'liq qidiruv bo'limi qo'shilgan variant: vue 
           <form @submit.prevent="submitPurchase">
             <input v-model="formData.name" placeholder="Ism" required />
             <input v-model="formData.surname" placeholder="Familiya" required />
-            <input
-              v-model="formData.phone"
-              placeholder="Telefon raqami"
-              type="tel"
-              required
-            />
+            <input v-model="formData.phone" placeholder="Telefon raqami" type="tel" required />
             <input v-model="formData.age" placeholder="Yosh" type="number" required />
 
             <div class="rating">
-              <span
-                v-for="star in 5"
-                :key="star"
-                class="star"
-                :class="{ active: star <= rating }"
-                @click="setRating(star)"
-                >★</span
-              >
+              <span v-for="star in 5" :key="star" class="star" :class="{ active: star <= rating }"
+                @click="setRating(star)">★</span>
             </div>
 
             <button type="submit">Yuborish</button>
@@ -117,8 +102,9 @@ ana, sizning kiritgan kodingizga to'liq qidiruv bo'limi qo'shilgan variant: vue 
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
+import { ref, computed, onMounted } from "vue";
 import store from "../../../store/storeMarket";
+import axi from '../../../utils/axios.js'
 
 const { state, getters, actions } = store;
 
@@ -140,6 +126,23 @@ const filteredProducts = computed(() => {
     product.name.toLowerCase().includes(searchQuery.value.toLowerCase())
   );
 });
+
+
+let foods = ref([]);
+
+onMounted(() => {
+  axi({ method: 'get', url: '/Food/Paging' })
+    .then(function (response) {
+      debugger
+      if (response.data.isSuccess) {
+        foods.value = response.data.items;
+      }
+      else
+        alert(response.data.data.message)
+    });
+
+})
+
 
 // Korzinkadagi mahsulotlar soni
 const totalItemsInCart = computed(() => {
@@ -252,7 +255,8 @@ input[data-v-61104e78][data-v-61104e78] {
 
 .offcanvas-close-icon:hover {
   color: #c0392b;
-  transform: scale(1.2); /* Hoverda kattalashadi */
+  transform: scale(1.2);
+  /* Hoverda kattalashadi */
 }
 
 /* Ofcanvas container */
@@ -329,12 +333,14 @@ input[data-v-61104e78][data-v-61104e78] {
 
 .star {
   cursor: pointer;
-  color: #bdc3c7; /* Initial star color (white) */
+  color: #bdc3c7;
+  /* Initial star color (white) */
   transition: color 0.3s;
 }
 
 .star.active {
-  color: #f39c12; /* Active star color (yellow) */
+  color: #f39c12;
+  /* Active star color (yellow) */
 }
 
 form div {
@@ -374,6 +380,7 @@ input[type="number"] {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+
 .close-modal-button:hover {
   transform: scale(1.2);
   color: #ff4c4c;
@@ -426,11 +433,13 @@ header {
   background: #f1f1f1;
   color: #34495e;
 }
+
 header h1 {
   font-size: 24px;
   font-weight: bold;
   margin: 0;
 }
+
 .cart-button {
   position: relative;
   background-color: #2c3e50;
@@ -442,9 +451,11 @@ header h1 {
   cursor: pointer;
   border-radius: 4px;
 }
+
 .cart-button:hover {
   background-color: #34495e;
 }
+
 .cart-count {
   position: absolute;
   top: -8px;
@@ -468,6 +479,7 @@ header h1 {
   padding: 20px;
   justify-content: center;
 }
+
 .product-card {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -476,27 +488,33 @@ header h1 {
   background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .product-card:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
 .product-card img {
   max-width: 90px;
   margin-bottom: 8px;
 }
+
 .product-card h3 {
   font-size: 16px;
   margin: 8px 0;
   color: #2c3e50;
 }
+
 .product-card p {
   font-size: 14px;
   color: #666;
 }
+
 .button-group {
   display: flex;
   gap: 8px;
   justify-content: center;
 }
+
 .add-button {
   background-color: #2c3e50;
   color: #fff;
@@ -523,7 +541,8 @@ header h1 {
   position: fixed;
   right: 0;
   top: 0;
-  width: 450px; /* Increase the width */
+  width: 450px;
+  /* Increase the width */
   height: 100%;
   background: #f4f6f9;
   box-shadow: -4px 0 15px rgba(0, 0, 0, 0.2);
@@ -547,14 +566,16 @@ header h1 {
 
 .cart-item {
   display: flex;
-  gap: 20px; /* Increased gap for image and details */
+  gap: 20px;
+  /* Increased gap for image and details */
   margin-bottom: 20px;
   font-size: 16px;
   color: #2c3e50;
 }
 
 .cart-item-image {
-  flex: 0 0 80px; /* Set a fixed width for the image */
+  flex: 0 0 80px;
+  /* Set a fixed width for the image */
 }
 
 .cart-item-image img {
@@ -564,7 +585,8 @@ header h1 {
 
 .cart-item-details {
   display: flex;
-  flex-direction: column; /* Stack name and price vertically */
+  flex-direction: column;
+  /* Stack name and price vertically */
   flex: 1;
 }
 
@@ -635,11 +657,16 @@ header h1 {
 
 /* Mahsulotlar rasmning simmetrik o'lchamlarini to'g'irlash */
 .product-card img {
-  width: 100px; /* O'lchamini belgilash */
-  height: 100px; /* O'lchamini belgilash */
-  object-fit: cover; /* Rasmning o'lchamiga mos kelishini ta'minlash */
-  border-radius: 8px; /* Yuqori burchaklarni yumshatish */
-  background-color: transparent; /* Orqa fonni olib tashlash */
+  width: 100px;
+  /* O'lchamini belgilash */
+  height: 100px;
+  /* O'lchamini belgilash */
+  object-fit: cover;
+  /* Rasmning o'lchamiga mos kelishini ta'minlash */
+  border-radius: 8px;
+  /* Yuqori burchaklarni yumshatish */
+  background-color: transparent;
+  /* Orqa fonni olib tashlash */
   margin-bottom: 8px;
 }
 </style>

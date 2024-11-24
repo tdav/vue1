@@ -35,12 +35,19 @@ import storeDavron from '../views/Davron/myStore/index.vue'
 import profile from '../views/Omon/Profile/profile.vue'
 import Store from '../views/Omon/StoreOmon/Store.vue'
 
+import Login from '../views/Davron/login.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login
   },
 
   {
