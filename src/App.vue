@@ -82,7 +82,7 @@
                 <RouterLink
                   class="list-group-item list-group-item-action list-group-item-light ps-5"
                   to="/component"
-                  >5 - Component</RouterLink
+                  >5 - Components</RouterLink
                 >
                 <RouterLink
                   class="list-group-item list-group-item-action list-group-item-light ps-5"
