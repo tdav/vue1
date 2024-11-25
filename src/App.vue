@@ -129,7 +129,7 @@
                 data-bs-parent="#accordionExample"
                 :style="{ backgroundColor: '#262b33' }"
               >
-                <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
+                <div class="accordion-bod p-0">
                   <router-link
                     class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/storeDavron"
@@ -138,7 +138,7 @@
                   </router-link>
                 </div>
 
-                <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
+                <div class="accordion-bod p-0">
                   <router-link
                     class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/DavronV7"
@@ -147,7 +147,7 @@
                   </router-link>
                 </div>
 
-                <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
+                <div class="accordion-bod p-0">
                   <router-link
                     class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/DavronDom"
@@ -193,7 +193,7 @@
                 data-bs-parent="#accordionExample"
                 :style="{ backgroundColor: '#44AFF2' }"
               >
-                <div class="accordion-body p-0" :style="{ border: '1px solid #262b33' }">
+                <div class="accordion-body p-0">
                   <router-link
                     class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/Aziz"
@@ -293,7 +293,7 @@
                 data-bs-parent="#accordionExample"
                 :style="{ backgroundColor: '#282f39' }"
               >
-                <div class="accordion-body p-0" :style="{ border: '1px solid #262b33' }">
+                <div class="accordion-body p-0">
                   <router-link
                     class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/Jasur"
@@ -343,7 +343,7 @@
                 data-bs-parent="#accordionExample"
                 :style="{ backgroundColor: '#282f39' }"
               >
-                <div class="accordion-bod p-0" :style="{ border: '1px solid #262b33' }">
+                <div class="accordion-bod p-0">
                   <router-link
                     class="list-group-item list-group-item-action list-group-item-light ps-5"
                     to="/omon_todo"
@@ -748,6 +748,9 @@ p {
   border-color: #3a3f48;
   border: none;
   height: 44px;
+}
+.list-group-item-light[data-v-7ba5bd90][data-v-7ba5bd90][data-v-7ba5bd90] {
+  padding-left: 4rem !important;
 }
 </style>
 

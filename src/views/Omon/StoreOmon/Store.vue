@@ -1,16 +1,27 @@
+ana, sizning kiritgan kodingizga to'liq qidiruv bo'limi qo'shilgan variant: vue Копировать
+код
 <template>
   <div id="app">
     <header>
       <h1>Online Do'kon</h1>
+
+      <!-- Qidiruv inputi -->
+      <input
+        type="text"
+        v-model="searchQuery"
+        placeholder="Mahsulotni qidiring..."
+        class="search-input"
+      />
+
       <button @click="showCart = !showCart" class="cart-button">
-        🛒 Korzinka
+        🛒Savatcha
         <span v-if="cartItems.length > 0" class="cart-count">{{ totalItemsInCart }}</span>
       </button>
     </header>
 
     <main>
       <div class="product-list">
-        <div class="product-card" v-for="product in products" :key="product.id">
+        <div class="product-card" v-for="product in filteredProducts" :key="product.id">
           <img :src="product.image" :alt="product.name" />
           <h3>{{ product.name }}</h3>
           <p>Price: {{ product.price }} $</p>
@@ -23,73 +34,83 @@
 
     <div v-if="showCart" class="cart-offcanvas">
       <h2>Korzinka</h2>
-      <ul>
-        <li v-for="item in cartItems" :key="item.id" class="cart-item">
-          <div class="cart-item-image">
-            <img :src="item.image" :alt="item.name" />
-          </div>
-          <div class="cart-item-details">
-            <span class="cart-item-name">{{ item.name }}</span>
-            <span class="cart-item-price">{{ item.price }} $</span>
-            <span class="cart-item-quantity">{{ item.quantity }} ta</span>
-          </div>
-          <div class="cart-item-actions">
-            <button @click="addProduct(item)" class="cart-item-button">+</button>
-            <button @click="removeProduct(item.id)" class="cart-item-button">-</button>
-          </div>
-        </li>
-      </ul>
-      <p>
-        <strong>Umumiy hisob: {{ totalPrice }} $</strong>
-      </p>
-      <button @click="showCart = false" class="close-button">Yopish</button>
-
-      <button @click="openPurchaseModal" class="close-button">Sotib olish</button>
+      <div v-if="showCart" class="cart-offcanvas">
+        <span @click="showCart = false" class="offcanvas-close-icon">×</span>
+        <h2>Korzinka</h2>
+        <ul>
+          <li v-for="item in cartItems" :key="item.id" class="cart-item">
+            <div class="cart-item-image">
+              <img :src="item.image" :alt="item.name" />
+            </div>
+            <div class="cart-item-details">
+              <span class="cart-item-name">{{ item.name }}</span>
+              <span class="cart-item-price">{{ item.price }} $</span>
+              <span class="cart-item-quantity">{{ item.quantity }} ta</span>
+            </div>
+            <div class="cart-item-actions">
+              <button @click="addProduct(item)" class="cart-item-button">+</button>
+              <button @click="removeProduct(item.id)" class="cart-item-button">-</button>
+            </div>
+          </li>
+        </ul>
+        <p>
+          <strong>Umumiy hisob: {{ totalPrice }} $</strong>
+        </p>
+        <button v-if="cartItems.length > 0" @click="openPurchaseModal" class="buy-button">
+          Sotib olish
+        </button>
+      </div>
 
       <!-- Modal -->
       <div v-if="showModal" class="modal">
         <div class="modal-content">
-          <span @click="showModal = false" class="close-icon">×</span>
-          <h3>Sotib olish uchun ma'lumotlarni kiriting</h3>
+          <span @click="closeModal" class="close-modal-button">×</span>
+          <h2>Ma'lumotni kiriting</h2>
           <form @submit.prevent="submitPurchase">
-            <div>
-              <label for="name">Ism:</label>
-              <input v-model="formData.name" id="name" type="text" required />
-            </div>
-            <div>
-              <label for="surname">Familiya:</label>
-              <input v-model="formData.surname" id="surname" type="text" required />
-            </div>
-            <div>
-              <label for="phone">Telefon raqami:</label>
-              <input v-model="formData.phone" id="phone" type="tel" required />
-            </div>
-            <div>
-              <label for="age">Yosh:</label>
-              <input v-model="formData.age" id="age" type="number" min="1" required />
-            </div>
-            <div>
-              <div class="stars">
-                <span
-                  v-for="star in 5"
-                  :key="star"
-                  class="star"
-                  @click="setRating(star)"
-                  :class="{ active: rating >= star }"
-                >
-                  ★
-                </span>
-              </div>
+            <input v-model="formData.name" placeholder="Ism" required />
+            <input v-model="formData.surname" placeholder="Familiya" required />
+            <input
+              v-model="formData.phone"
+              placeholder="Telefon raqami"
+              type="tel"
+              required
+            />
+            <input v-model="formData.age" placeholder="Yosh" type="number" required />
+
+            <div class="rating">
+              <span
+                v-for="star in 5"
+                :key="star"
+                class="star"
+                :class="{ active: star <= rating }"
+                @click="setRating(star)"
+                >★</span
+              >
             </div>
 
-            <!-- Tanlangan mahsulotlarni ko'rsatish -->
-            <div>
-              <p>TotalPrice:{{ totalPrice }}</p>
-            </div>
-
-            <button type="submit" class="submit-button">Sotib olish</button>
+            <button type="submit">Yuborish</button>
           </form>
         </div>
+      </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div v-if="showConfirmationModal" class="modal">
+      <div class="modal-content">
+        <span @click="closeConfirmationModal" class="close-modal-button">×</span>
+        <h2>Sotib olingan mahsulotlar</h2>
+        <ul>
+          <li v-for="item in cartItems" :key="item.id" class="cart-item">
+            <div class="cart-item-details">
+              <span class="cart-item-name">{{ item.name }}</span>
+              <span class="cart-item-price">{{ item.price }} $</span>
+              <span class="cart-item-quantity">{{ item.quantity }} ta</span>
+            </div>
+          </li>
+        </ul>
+        <p>
+          <strong>Umumiy hisob: {{ totalPrice }} $</strong>
+        </p>
       </div>
     </div>
   </div>
@@ -110,12 +131,22 @@ const addProduct = actions.addProductToCart;
 const removeProduct = actions.removeProductFromCart;
 const showCart = ref(false);
 
-// Calculate the total number of items in the cart
+// Qidiruv so'zi
+const searchQuery = ref("");
+
+// Mahsulotlar ro'yxatini qidiruv so'zi bo'yicha filtrlash
+const filteredProducts = computed(() => {
+  return products.filter((product) =>
+    product.name.toLowerCase().includes(searchQuery.value.toLowerCase())
+  );
+});
+
+// Korzinkadagi mahsulotlar soni
 const totalItemsInCart = computed(() => {
   return cartItems.reduce((total, item) => total + item.quantity, 0);
 });
 
-const showModal = ref(false); // Modalni ko'rsatish o'zgaruvchisi
+const showModal = ref(false);
 const formData = ref({
   name: "",
   surname: "",
@@ -125,21 +156,121 @@ const formData = ref({
 const rating = ref(0);
 
 const openPurchaseModal = () => {
-  showModal.value = true; // Modalni ochish
+  showModal.value = true;
+};
+
+const closeModal = () => {
+  resetModal();
+  showModal.value = false;
+};
+
+const resetModal = () => {
+  formData.value = {
+    name: "",
+    surname: "",
+    phone: "",
+    age: "",
+  };
+  rating.value = 0;
 };
 
 const setRating = (star) => {
-  rating.value = star; // Yulduzlarni belgilash
+  rating.value = star;
 };
 
 const submitPurchase = () => {
-  // Bu yerda sotib olishni amalga oshiradigan logika qo'yish mumkin
   console.log("Sotib olish amalga oshdi:", formData.value, "Baholash:", rating.value);
-  showModal.value = false; // Modalni yopish
+  closeModal();
 };
 </script>
 
 <style scoped>
+/* Qidiruv inputini bezash */
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: -43rem;
+  padding-top: 5px;
+}
+
+input[data-v-61104e78][data-v-61104e78] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #2c3e50;
+  margin-bottom: 9px;
+  height: 40px;
+}
+
+.buy-button {
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  width: 150px;
+  margin-left: 32%;
+}
+
+.buy-button:hover {
+  background-color: #34495e;
+  transform: scale(1.1);
+}
+
+.buy-button:active {
+  transform: scale(0.95);
+}
+
+.buy-button:disabled {
+  background-color: #d6d6d6;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Ofcanvas close button style */
+.offcanvas-close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #e74c3c;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.offcanvas-close-icon:hover {
+  color: #c0392b;
+  transform: scale(1.2); /* Hoverda kattalashadi */
+}
+
+/* Ofcanvas container */
+.cart-offcanvas {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  background-color: #fff;
+  height: 100%;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+
 /* Modal stilini qo'shish */
 #name {
   height: 35px;
@@ -232,6 +363,22 @@ input[type="number"] {
   background-color: #f9f9f9;
 }
 
+.close-modal-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #c3bfbf;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.close-modal-button:hover {
+  transform: scale(1.2);
+  color: #ff4c4c;
+}
+
 .submit-button {
   background-color: #2c3e50;
   padding: 12px;
@@ -248,7 +395,6 @@ input[type="number"] {
 }
 
 .close-icon {
-  position: absolute;
   top: 10px;
   right: 10px;
   font-size: 24px;
@@ -260,14 +406,25 @@ input[type="number"] {
   color: #e74c3c;
 }
 
+input[data-v-61104e78] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
 /* Header */
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background: #1a1a1a;
-  color: #fff;
+  background: #f1f1f1;
+  color: #34495e;
 }
 header h1 {
   font-size: 24px;
