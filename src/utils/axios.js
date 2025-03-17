@@ -1,8 +1,8 @@
-import axios from 'axios'
+import axios from 'axios';
 
 
-axios.defaults.baseURL = 'https://api.scafe.uz/api'
-axios.defaults.headers.post['Content-Type'] = 'application/json';
+axios.defaults.baseURL = 'https://api.scafe.uz/api';
+axios.defaults.headers.common['Authorization'] = "";
 
 axios.interceptors.request.use((config) => {
     const token = localStorage.getItem('authToken')
