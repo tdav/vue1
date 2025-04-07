@@ -22,8 +22,9 @@
             }
             return Promise.resolve(response)
         },
+        
 
-        (error) => {
+        (error) => { 
             if (error.response) {
                 if (error.response.status === 401) {
                     // Redirect to login page
