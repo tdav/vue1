@@ -82,7 +82,7 @@ const routes = [
 
   {
     path: '/vazifa2',
-    name: 'vazifa2',
+    name: 'vazifa2',  
     component: vazifa2
   },
   {
